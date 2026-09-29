@@ -1,0 +1,24 @@
+{
+  "command": [
+    "<local-home>/.local/bin/uv.exe",
+    "run",
+    "--frozen",
+    "pytest",
+    "tests/integration/test_m6_benchmark.py",
+    "-q",
+    "--basetemp",
+    "<temporary-workspace>/kineimu-m6-cp3-final22"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T07:38:54.908120+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 0,
+  "log": "focused-final22.log",
+  "sha256": "f4e3dfc029b800735e168e34fe676f189f68e1308b523895689383d1296d964e",
+  "started_utc": "2026-09-28T07:38:53.411104+00:00"
+}

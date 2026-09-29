@@ -1,0 +1,556 @@
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF...         [100%]
+================================== FAILURES ===================================
+___________ test_sample_matches_independently_frozen_cp0_inventory ____________
+tests\integration\test_m6_sample.py:28: in test_sample_matches_independently_frozen_cp0_inventory
+    before = {name: sha256((SAMPLE / name).read_bytes()).hexdigest() for name in NAMES}
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1013: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: '.\\datasets\\samples\\m6_synthetic\\SHA256SUMS.json'
+_________ test_provenance_covers_selection_omissions_and_source_lock __________
+tests\integration\test_m6_sample.py:35: in test_provenance_covers_selection_omissions_and_source_lock
+    provenance = json.loads((SAMPLE / "provenance.json").read_bytes())
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1013: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: '.\\datasets\\samples\\m6_synthetic\\provenance.json'
+_____________ test_sample_capture_is_complete_sensor_input[A-F90] _____________
+tests\integration\test_m6_sample.py:55: in test_sample_capture_is_complete_sensor_input
+    hashes = input_audit(SAMPLE)
+             ^^^^^^^^^^^^^^^^^^^
+kineimu_shoulder\validation\stored_demo.py:40: in input_audit
+    content = (input_root / "SHA256SUMS.json").read_bytes()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1013: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: '.\\datasets\\samples\\m6_synthetic\\SHA256SUMS.json'
+____________ test_sample_capture_is_complete_sensor_input[A-AL90] _____________
+tests\integration\test_m6_sample.py:55: in test_sample_capture_is_complete_sensor_input
+    hashes = input_audit(SAMPLE)
+             ^^^^^^^^^^^^^^^^^^^
+kineimu_shoulder\validation\stored_demo.py:40: in input_audit
+    content = (input_root / "SHA256SUMS.json").read_bytes()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1013: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: '.\\datasets\\samples\\m6_synthetic\\SHA256SUMS.json'
+____________ test_sample_capture_is_complete_sensor_input[A-AR90] _____________
+tests\integration\test_m6_sample.py:55: in test_sample_capture_is_complete_sensor_input
+    hashes = input_audit(SAMPLE)
+             ^^^^^^^^^^^^^^^^^^^
+kineimu_shoulder\validation\stored_demo.py:40: in input_audit
+    content = (input_root / "SHA256SUMS.json").read_bytes()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1013: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: '.\\datasets\\samples\\m6_synthetic\\SHA256SUMS.json'
+____________ test_sample_capture_is_complete_sensor_input[A-T-MIX] ____________
+tests\integration\test_m6_sample.py:55: in test_sample_capture_is_complete_sensor_input
+    hashes = input_audit(SAMPLE)
+             ^^^^^^^^^^^^^^^^^^^
+kineimu_shoulder\validation\stored_demo.py:40: in input_audit
+    content = (input_root / "SHA256SUMS.json").read_bytes()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1013: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: '.\\datasets\\samples\\m6_synthetic\\SHA256SUMS.json'
+_____________ test_sample_capture_is_complete_sensor_input[B-F90] _____________
+tests\integration\test_m6_sample.py:55: in test_sample_capture_is_complete_sensor_input
+    hashes = input_audit(SAMPLE)
+             ^^^^^^^^^^^^^^^^^^^
+kineimu_shoulder\validation\stored_demo.py:40: in input_audit
+    content = (input_root / "SHA256SUMS.json").read_bytes()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1013: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: '.\\datasets\\samples\\m6_synthetic\\SHA256SUMS.json'
+____________ test_sample_capture_is_complete_sensor_input[B-AL90] _____________
+tests\integration\test_m6_sample.py:55: in test_sample_capture_is_complete_sensor_input
+    hashes = input_audit(SAMPLE)
+             ^^^^^^^^^^^^^^^^^^^
+kineimu_shoulder\validation\stored_demo.py:40: in input_audit
+    content = (input_root / "SHA256SUMS.json").read_bytes()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1013: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: '.\\datasets\\samples\\m6_synthetic\\SHA256SUMS.json'
+____________ test_sample_capture_is_complete_sensor_input[B-AR90] _____________
+tests\integration\test_m6_sample.py:55: in test_sample_capture_is_complete_sensor_input
+    hashes = input_audit(SAMPLE)
+             ^^^^^^^^^^^^^^^^^^^
+kineimu_shoulder\validation\stored_demo.py:40: in input_audit
+    content = (input_root / "SHA256SUMS.json").read_bytes()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1013: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: '.\\datasets\\samples\\m6_synthetic\\SHA256SUMS.json'
+____________ test_sample_capture_is_complete_sensor_input[B-T-MIX] ____________
+tests\integration\test_m6_sample.py:55: in test_sample_capture_is_complete_sensor_input
+    hashes = input_audit(SAMPLE)
+             ^^^^^^^^^^^^^^^^^^^
+kineimu_shoulder\validation\stored_demo.py:40: in input_audit
+    content = (input_root / "SHA256SUMS.json").read_bytes()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1013: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: '.\\datasets\\samples\\m6_synthetic\\SHA256SUMS.json'
+___________ test_missing_sample_member_is_refused[SHA256SUMS.json] ____________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+___________ test_missing_sample_member_is_refused[annotations.json] ___________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_______ test_missing_sample_member_is_refused[observation-labels.json] ________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+__________ test_missing_sample_member_is_refused[case-manifest.json] __________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+____________ test_missing_sample_member_is_refused[manifest.json] _____________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+______________ test_missing_sample_member_is_refused[F90/A.kimu] ______________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+______________ test_missing_sample_member_is_refused[F90/B.kimu] ______________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+__________ test_missing_sample_member_is_refused[F90/metadata.json] ___________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+____________ test_missing_sample_member_is_refused[F90/A-si.json] _____________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+____________ test_missing_sample_member_is_refused[F90/B-si.json] _____________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_____________ test_missing_sample_member_is_refused[AL90/A.kimu] ______________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_____________ test_missing_sample_member_is_refused[AL90/B.kimu] ______________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+__________ test_missing_sample_member_is_refused[AL90/metadata.json] __________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+____________ test_missing_sample_member_is_refused[AL90/A-si.json] ____________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+____________ test_missing_sample_member_is_refused[AL90/B-si.json] ____________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_____________ test_missing_sample_member_is_refused[AR90/A.kimu] ______________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_____________ test_missing_sample_member_is_refused[AR90/B.kimu] ______________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+__________ test_missing_sample_member_is_refused[AR90/metadata.json] __________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+____________ test_missing_sample_member_is_refused[AR90/A-si.json] ____________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+____________ test_missing_sample_member_is_refused[AR90/B-si.json] ____________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_____________ test_missing_sample_member_is_refused[T-MIX/A.kimu] _____________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_____________ test_missing_sample_member_is_refused[T-MIX/B.kimu] _____________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_________ test_missing_sample_member_is_refused[T-MIX/metadata.json] __________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+___________ test_missing_sample_member_is_refused[T-MIX/A-si.json] ____________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+___________ test_missing_sample_member_is_refused[T-MIX/B-si.json] ____________
+tests\integration\test_m6_sample.py:70: in test_missing_sample_member_is_refused
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+__ test_changed_sample_member_is_refused_before_processing[SHA256SUMS.json] ___
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+__ test_changed_sample_member_is_refused_before_processing[annotations.json] __
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_ test_changed_sample_member_is_refused_before_processing[observation-labels.json] _
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_ test_changed_sample_member_is_refused_before_processing[case-manifest.json] _
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+___ test_changed_sample_member_is_refused_before_processing[manifest.json] ____
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_____ test_changed_sample_member_is_refused_before_processing[F90/A.kimu] _____
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_____ test_changed_sample_member_is_refused_before_processing[F90/B.kimu] _____
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_ test_changed_sample_member_is_refused_before_processing[F90/metadata.json] __
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+___ test_changed_sample_member_is_refused_before_processing[F90/A-si.json] ____
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+___ test_changed_sample_member_is_refused_before_processing[F90/B-si.json] ____
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+____ test_changed_sample_member_is_refused_before_processing[AL90/A.kimu] _____
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+____ test_changed_sample_member_is_refused_before_processing[AL90/B.kimu] _____
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_ test_changed_sample_member_is_refused_before_processing[AL90/metadata.json] _
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+___ test_changed_sample_member_is_refused_before_processing[AL90/A-si.json] ___
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+___ test_changed_sample_member_is_refused_before_processing[AL90/B-si.json] ___
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+____ test_changed_sample_member_is_refused_before_processing[AR90/A.kimu] _____
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+____ test_changed_sample_member_is_refused_before_processing[AR90/B.kimu] _____
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_ test_changed_sample_member_is_refused_before_processing[AR90/metadata.json] _
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+___ test_changed_sample_member_is_refused_before_processing[AR90/A-si.json] ___
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+___ test_changed_sample_member_is_refused_before_processing[AR90/B-si.json] ___
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+____ test_changed_sample_member_is_refused_before_processing[T-MIX/A.kimu] ____
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+____ test_changed_sample_member_is_refused_before_processing[T-MIX/B.kimu] ____
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+_ test_changed_sample_member_is_refused_before_processing[T-MIX/metadata.json] _
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+__ test_changed_sample_member_is_refused_before_processing[T-MIX/A-si.json] ___
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+__ test_changed_sample_member_is_refused_before_processing[T-MIX/B-si.json] ___
+tests\integration\test_m6_sample.py:79: in test_changed_sample_member_is_refused_before_processing
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+__________ test_recomputed_map_cannot_authorize_changed_observations __________
+tests\integration\test_m6_sample.py:89: in test_recomputed_map_cannot_authorize_changed_observations
+    shutil.copytree(SAMPLE, copied)
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\shutil.py:598: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '.\\datasets\\samples\\m6_synthetic'
+=========================== short test summary info ===========================
+FAILED tests/integration/test_m6_sample.py::test_sample_matches_independently_frozen_cp0_inventory
+FAILED tests/integration/test_m6_sample.py::test_provenance_covers_selection_omissions_and_source_lock
+FAILED tests/integration/test_m6_sample.py::test_sample_capture_is_complete_sensor_input[A-F90]
+FAILED tests/integration/test_m6_sample.py::test_sample_capture_is_complete_sensor_input[A-AL90]
+FAILED tests/integration/test_m6_sample.py::test_sample_capture_is_complete_sensor_input[A-AR90]
+FAILED tests/integration/test_m6_sample.py::test_sample_capture_is_complete_sensor_input[A-T-MIX]
+FAILED tests/integration/test_m6_sample.py::test_sample_capture_is_complete_sensor_input[B-F90]
+FAILED tests/integration/test_m6_sample.py::test_sample_capture_is_complete_sensor_input[B-AL90]
+FAILED tests/integration/test_m6_sample.py::test_sample_capture_is_complete_sensor_input[B-AR90]
+FAILED tests/integration/test_m6_sample.py::test_sample_capture_is_complete_sensor_input[B-T-MIX]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[SHA256SUMS.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[annotations.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[observation-labels.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[case-manifest.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[manifest.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[F90/A.kimu]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[F90/B.kimu]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[F90/metadata.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[F90/A-si.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[F90/B-si.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[AL90/A.kimu]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[AL90/B.kimu]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[AL90/metadata.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[AL90/A-si.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[AL90/B-si.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[AR90/A.kimu]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[AR90/B.kimu]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[AR90/metadata.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[AR90/A-si.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[AR90/B-si.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[T-MIX/A.kimu]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[T-MIX/B.kimu]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[T-MIX/metadata.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[T-MIX/A-si.json]
+FAILED tests/integration/test_m6_sample.py::test_missing_sample_member_is_refused[T-MIX/B-si.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[SHA256SUMS.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[annotations.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[observation-labels.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[case-manifest.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[manifest.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[F90/A.kimu]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[F90/B.kimu]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[F90/metadata.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[F90/A-si.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[F90/B-si.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[AL90/A.kimu]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[AL90/B.kimu]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[AL90/metadata.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[AL90/A-si.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[AL90/B-si.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[AR90/A.kimu]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[AR90/B.kimu]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[AR90/metadata.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[AR90/A-si.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[AR90/B-si.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[T-MIX/A.kimu]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[T-MIX/B.kimu]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[T-MIX/metadata.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[T-MIX/A-si.json]
+FAILED tests/integration/test_m6_sample.py::test_changed_sample_member_is_refused_before_processing[T-MIX/B-si.json]
+FAILED tests/integration/test_m6_sample.py::test_recomputed_map_cannot_authorize_changed_observations
+61 failed, 3 passed in 3.53s

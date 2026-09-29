@@ -1,0 +1,9 @@
+/*
+ * The XIAO Sense board powers the IMU from a boot-on fixed regulator. Zephyr
+ * 4.4.0 does not apply startup-delay-us when that regulator is initialized in
+ * the already-enabled path, so initialize the sensor from main after a
+ * measured-safe power-up interval.
+ */
+&lsm6ds3tr_c {
+	zephyr,deferred-init;
+};

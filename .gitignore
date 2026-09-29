@@ -1,0 +1,55 @@
+# Local Python environments and generated files
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+.worktrees/
+/.cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+*.egg-info/
+/build/
+/dist/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Firmware build products and local SDK configuration
+/firmware/**/build/
+/firmware/**/managed_components/
+/firmware/**/sdkconfig
+/firmware/**/sdkconfig.old
+
+# Local settings and credentials
+.agents/skills/
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Local research data: explicitly review before any public inclusion
+/datasets/raw/**
+!/datasets/raw/.gitkeep
+/datasets/processed/**
+!/datasets/processed/.gitkeep
+/datasets/derived/**
+!/datasets/derived/.gitkeep
+/datasets/annotations/**
+!/datasets/annotations/.gitkeep
+/datasets/calibration/**
+!/datasets/calibration/.gitkeep
+/datasets/private/**
+!/datasets/private/.gitkeep
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Original ZIP stays on disk; extracted sources have a checksum manifest
+/KineIMU_Project_Pack.zip
+/experiments/M5_CP3_UNBLOCK_20260927/formal*/run*/operational/

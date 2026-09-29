@@ -1,0 +1,14 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
+/ {
+	node_a_test_gpio: node-a-test-gpio {
+		compatible = "zephyr,gpio-emul";
+		gpio-controller;
+		#gpio-cells = <2>;
+		ngpios = <1>;
+		rising-edge;
+		status = "okay";
+	};
+};

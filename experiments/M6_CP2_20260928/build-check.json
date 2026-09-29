@@ -1,0 +1,20 @@
+{
+  "command": [
+    "uv",
+    "build",
+    "--out-dir",
+    ".tmp-m6-cp2-build"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T06:46:28.414060+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 0,
+  "log": "build.log",
+  "sha256": "b1c2ab4ad5504af3fd6b243a1a0008f4811f87ed2b5c2f6dc0c4cad67900519d",
+  "started_utc": "2026-09-28T06:46:21.612699+00:00"
+}

@@ -1,0 +1,297 @@
+{
+  "record_version": "m6-sample-provenance/1.0",
+  "project": "KineIMU Shoulder",
+  "source_type": "synthetic",
+  "anatomical_eligible": false,
+  "human_or_personal_data": false,
+  "license_status": "INTERNAL ONLY / public redistribution pending",
+  "original_root": "experiments/M5_CP1_20260926/run1",
+  "original_map_sha256": "2aa180e32003f91e57accf1d53c5b4b914e0c9e9c0ab4cdb22db02a3ab0964f9",
+  "generation_source_commit": "ee0741334e430c7cf8b5b9845d0a9b48426fecad",
+  "original_cp1_delivery_commit": "1e174f265daa6d09896683013d3c5f50a6da271f",
+  "cp0_contract_commit": "83dc0fb112b36bce7d2cf417f7232bbe0aa88bb5",
+  "packaging_entry_head": "7b3be2b7a1eb44f60bd1a845f0386ca75ab3adac",
+  "generation_source_sha256": {
+    "examples/m5_sensor_source.py": "b0683f13c34c1770d64e441c21de30e3c8c2eed418766ab6c8249ec2200ff700",
+    "experiments/M5_CP1_20260926/case-manifest.json": "5bab237edd4386c630fa25ddae4fa774d41e4d51cf2493f2d3f23b458234edee",
+    "kineimu_shoulder/io/m1_capture.py": "8e9a5dfbafdb59f0f8463a5bd200efba98800f43705d62eaf1f7c43fdbccded5",
+    "kineimu_shoulder/io/m1_packet.py": "91a7cd4bc53db67fbe2d83663e162b7729f1b3a6d322c7106f51e38720fe8a74",
+    "kineimu_shoulder/io/m2_replay.py": "289113f0ede0eb2e57f07ce02d118fcdbcf7d17d817b8d7def03a1d63b133693",
+    "kineimu_shoulder/validation/__init__.py": "54165f33131d9018845e617a38540db863e73f738d13921565bf6babd611e978",
+    "kineimu_shoulder/validation/manifest.py": "49ef995d6437907d589efcb2b8708d761696c6d9a6c1ce9edec2e7a331a1f543",
+    "kineimu_shoulder/validation/motions.py": "0fbbb062250c39f8bce2682be068ef6d7d928bfaf124ca1ecc81c60b85ecfdbd",
+    "kineimu_shoulder/validation/oracle.py": "1c041a20ec7d7afc4a5bf14a6d6c5849077d84010c7b53a2e19b8e0f0253fb29",
+    "kineimu_shoulder/validation/source.py": "fa6c9961da7ee13477c0c153eea36d322bda3437bfb1231b240797cf6fe5f55d",
+    "protocols/M5_VALIDATION_CONTRACT.md": "e8a76451e0ebc39d8467fc6bdb20fb81737fa3df5b5561c2105427f4a10f42be",
+    "tests/fixtures/M5_KNOWN_SENSOR_MOTIONS.md": "1cd431c694f09ddf5e62b31353bde39939481f5a5bca417acb9049c3c86636fe",
+    "uv.lock": "ff2893aaa21f7ec97dfe487ca4c0e80af18d45e1293e47e28cd696feaf8d7c3e"
+  },
+  "generation_runtime": {
+    "imucal": "2.6.0",
+    "imufusion": "1.3.3",
+    "numpy": "2.5.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "scipy": "1.18.1"
+  },
+  "configuration_references": [
+    "manifest.json",
+    "case-manifest.json",
+    "F90/metadata.json",
+    "AL90/metadata.json",
+    "AR90/metadata.json",
+    "T-MIX/metadata.json"
+  ],
+  "selected_files": [
+    {
+      "path": "SHA256SUMS.json",
+      "bytes": 3201,
+      "sha256": "2aa180e32003f91e57accf1d53c5b4b914e0c9e9c0ab4cdb22db02a3ab0964f9"
+    },
+    {
+      "path": "annotations.json",
+      "bytes": 90684,
+      "sha256": "8b4211a5d4bdef93dcf4f970f44d99a57b7110d58665155c4d3dac65c111df9d"
+    },
+    {
+      "path": "observation-labels.json",
+      "bytes": 3007,
+      "sha256": "f8c34af7377c975c1b69423461798ca6ece798596243efd2656e295a8135e452"
+    },
+    {
+      "path": "case-manifest.json",
+      "bytes": 363061,
+      "sha256": "5bab237edd4386c630fa25ddae4fa774d41e4d51cf2493f2d3f23b458234edee"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 2982,
+      "sha256": "257499bcc53a1fb94f10b956159fd1030f30611272504fb9ed4a2bd97273cbfb"
+    },
+    {
+      "path": "F90/A.kimu",
+      "bytes": 73142,
+      "sha256": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487"
+    },
+    {
+      "path": "F90/B.kimu",
+      "bytes": 73142,
+      "sha256": "d07f099f4171a6a4c316e37c30c63731da98ac5733e59a172f16b471a6b1977b"
+    },
+    {
+      "path": "F90/metadata.json",
+      "bytes": 58871,
+      "sha256": "350cfadd4ea809d2ec8f4930cbe05aed56ed2bc735bba4749f60bc75ceebcc9f"
+    },
+    {
+      "path": "F90/A-si.json",
+      "bytes": 362465,
+      "sha256": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd"
+    },
+    {
+      "path": "F90/B-si.json",
+      "bytes": 421289,
+      "sha256": "8d6a956bc3dbb51e0c25cae5b60e2d78ed8f0e9e3beade4da766bd713db9e916"
+    },
+    {
+      "path": "AL90/A.kimu",
+      "bytes": 73142,
+      "sha256": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487"
+    },
+    {
+      "path": "AL90/B.kimu",
+      "bytes": 73142,
+      "sha256": "ec5e32d084468464ba74801c7aa63a478ff42176f7b6be2030cc0cb894e2203b"
+    },
+    {
+      "path": "AL90/metadata.json",
+      "bytes": 58871,
+      "sha256": "a28560b20526595da782d14de8234153cca7fd0eb4794539e0e9f8410285a964"
+    },
+    {
+      "path": "AL90/A-si.json",
+      "bytes": 362465,
+      "sha256": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd"
+    },
+    {
+      "path": "AL90/B-si.json",
+      "bytes": 405020,
+      "sha256": "aad1e89ca579dc574c7927e687d5ba99e0b2245f2fe22989ee658d11265120e0"
+    },
+    {
+      "path": "AR90/A.kimu",
+      "bytes": 73142,
+      "sha256": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487"
+    },
+    {
+      "path": "AR90/B.kimu",
+      "bytes": 73142,
+      "sha256": "de64431c62f58609ee807e3c655acc57caa957c32e2bb25039c3233483f64f3a"
+    },
+    {
+      "path": "AR90/metadata.json",
+      "bytes": 58871,
+      "sha256": "11dce28f3fa52913f4d1f906b83054b0cde569a6e5e40350fc183739cb764142"
+    },
+    {
+      "path": "AR90/A-si.json",
+      "bytes": 362465,
+      "sha256": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd"
+    },
+    {
+      "path": "AR90/B-si.json",
+      "bytes": 406292,
+      "sha256": "16d1b1bfa3c0275949baf48b759739b0539488568de60217908cb824d9009561"
+    },
+    {
+      "path": "T-MIX/A.kimu",
+      "bytes": 73142,
+      "sha256": "848ff4efcc35bfe66a98f09eb0208a49b2eaeb644f9c0a8144c0231ea2aa7ac3"
+    },
+    {
+      "path": "T-MIX/B.kimu",
+      "bytes": 73142,
+      "sha256": "4f759b2b564cf2930dbee8c636af7937df8377541a4fd7901e7568107af02999"
+    },
+    {
+      "path": "T-MIX/metadata.json",
+      "bytes": 58871,
+      "sha256": "71a8bcbe9e7cebd4c299a5319e56e5b1a1bbe60c6a10c46648058fc0ac8a9649"
+    },
+    {
+      "path": "T-MIX/A-si.json",
+      "bytes": 470049,
+      "sha256": "8c4c60a7b191891e90e4e874b2e25260d6dc85bbf87f6a4e5e89797806957ac0"
+    },
+    {
+      "path": "T-MIX/B-si.json",
+      "bytes": 465458,
+      "sha256": "9e02955eff0085aa533b09545d69e63222bb9d2287094acf21b0d2d29ecdb0a8"
+    }
+  ],
+  "unshipped_map_members": [
+    {
+      "path": "AL90/A.bin",
+      "sha256": "5f0f21a8a6a77efdf53073d79082f5b0cd670a24ff1305edeca3d984276aaa07"
+    },
+    {
+      "path": "AL90/B.bin",
+      "sha256": "e61dce3739bcae413a7fa80685ed0189fa78415b39a2e0f341c192ff2fb2f3be"
+    },
+    {
+      "path": "AL90/exact-orientations.json",
+      "sha256": "7d398520796a950c3d212c9561b39d5a55d8b7664aa079cb58afec9c7c79c280"
+    },
+    {
+      "path": "AR90/A.bin",
+      "sha256": "5f0f21a8a6a77efdf53073d79082f5b0cd670a24ff1305edeca3d984276aaa07"
+    },
+    {
+      "path": "AR90/B.bin",
+      "sha256": "26cd9616a08138e77aca7b871a75c50449482280c9dc3e90ff8a849931b3bdbc"
+    },
+    {
+      "path": "AR90/exact-orientations.json",
+      "sha256": "0058e66627d3765886649d56f0c273c117338f40488ca578936d1e9797b23357"
+    },
+    {
+      "path": "F90/A.bin",
+      "sha256": "5f0f21a8a6a77efdf53073d79082f5b0cd670a24ff1305edeca3d984276aaa07"
+    },
+    {
+      "path": "F90/B.bin",
+      "sha256": "407d16b0237bfdaac8b11805a3f5ba8e077daf20ffcbc0c2292a7eeedba90363"
+    },
+    {
+      "path": "F90/exact-orientations.json",
+      "sha256": "a22d4f22c8771121ea03dab0f40012e7deeced3ec43070e0fbb9484146d68106"
+    },
+    {
+      "path": "T-MIX/A.bin",
+      "sha256": "3f326deefb8ddfdec72fea2947c3dd3c026fa8e113e7de95a08b1a818d9c3c40"
+    },
+    {
+      "path": "T-MIX/B.bin",
+      "sha256": "8ce7366f4f4cfc2e7da004e551ad58f003efe78b5a9b8e1773c42118e3092eb3"
+    },
+    {
+      "path": "T-MIX/exact-orientations.json",
+      "sha256": "a5f899ded0596559f81ccfb10d84d7d19900612e491bb0701328f7aae7a71e20"
+    }
+  ],
+  "selected_file_count": 25,
+  "selected_bytes": 4539058,
+  "original_map_member_count": 36,
+  "original_copy_complete": false,
+  "capture_bytes": 585136,
+  "node_samples": 17208,
+  "packets": 4304,
+  "trajectories": [
+    {
+      "id": "F90",
+      "side": "left",
+      "exercise": "flexion",
+      "case_id": "F90/CLEAN-Q/SAME/0",
+      "node_roles": {
+        "A": "thorax",
+        "B": "humerus"
+      }
+    },
+    {
+      "id": "AL90",
+      "side": "left",
+      "exercise": "abduction",
+      "case_id": "AL90/CLEAN-Q/SAME/0",
+      "node_roles": {
+        "A": "thorax",
+        "B": "humerus"
+      }
+    },
+    {
+      "id": "AR90",
+      "side": "right",
+      "exercise": "abduction",
+      "case_id": "AR90/CLEAN-Q/SAME/0",
+      "node_roles": {
+        "A": "thorax",
+        "B": "humerus"
+      }
+    },
+    {
+      "id": "T-MIX",
+      "side": "left",
+      "exercise": "flexion",
+      "case_id": "T-MIX/CLEAN-Q/SAME/0",
+      "node_roles": {
+        "A": "thorax",
+        "B": "humerus"
+      }
+    }
+  ],
+  "sample_hz": 100,
+  "device_time_range_us": [
+    0,
+    21500000
+  ],
+  "evaluation_range_us": [
+    5000000,
+    21500000
+  ],
+  "units": {
+    "time": "integer us",
+    "acceleration": "m/s^2",
+    "angular_rate": "rad/s",
+    "angle": "rad",
+    "orientation": "unit quaternion wxyz"
+  },
+  "frames": "active Hamilton wxyz; right-handed columns; R_AB maps B to A; R_NS before AHRS, R_NK once after",
+  "synthetic_assumptions": "known shared world, initial q_WN, identity calibration, zero translation/lever arm",
+  "evidence_labels": {
+    "captures": "Observed synthetic quantized sensor counts",
+    "si_references": "independent retained pre-Q synthetic SI observations",
+    "annotations": "independent analytical references; not sensor observations",
+    "frames_calibration_heading": "Assumed / Experimental; not anatomical validation"
+  },
+  "omitted_reason": "per-trajectory A.bin/B.bin and exact-orientations.json are not stored-Q input dependencies",
+  "mutation_policy": "no regeneration, normalization, deduplication or raw overwrite"
+}

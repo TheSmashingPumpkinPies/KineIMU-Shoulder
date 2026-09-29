@@ -1,0 +1,13 @@
+{
+  "all_bytes_equal": true,
+  "all_output_hashes_valid": true,
+  "byte_count_per_run": 9991724,
+  "case_manifest_sha256": "5bab237edd4386c630fa25ddae4fa774d41e4d51cf2493f2d3f23b458234edee",
+  "code_lock": "ee0741334e430c7cf8b5b9845d0a9b48426fecad",
+  "disposition": "PASS",
+  "file_count_per_run": 37,
+  "run_manifest_sha256": "257499bcc53a1fb94f10b956159fd1030f30611272504fb9ed4a2bd97273cbfb",
+  "scope": "CP1 source tools only",
+  "sha256sums_sha256": "2aa180e32003f91e57accf1d53c5b4b914e0c9e9c0ab4cdb22db02a3ab0964f9",
+  "tracked_dirty_at_launch": false
+}

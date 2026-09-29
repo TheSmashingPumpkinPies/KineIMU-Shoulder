@@ -1,0 +1,28 @@
+"""Copy the consumed external formal batch once; prove complete exact-byte retention."""
+import json
+import shutil
+import sys
+from datetime import UTC, datetime
+from hashlib import sha256
+from pathlib import Path
+
+EVIDENCE = Path(__file__).resolve().parent
+source = Path(sys.argv[1]).resolve()
+target = EVIDENCE / "batch01"
+assert source.is_dir() and not target.exists()
+assert json.loads((source / "summary.json").read_bytes())["cp3_passed"]
+
+
+def snapshot(root):
+    return {p.relative_to(root).as_posix(): sha256(p.read_bytes()).hexdigest()
+            for p in sorted(root.rglob("*")) if p.is_file()}
+
+
+before = snapshot(source)
+shutil.copytree(source, target)
+assert snapshot(target) == snapshot(source) == before
+with (EVIDENCE / "retention.json").open("x", encoding="utf-8", newline="\n") as stream:
+    stream.write(json.dumps(dict(original_root=str(source), retained_root=str(target),
+                                exact_bytes=True, files=len(before), copied_utc=datetime.now(UTC).isoformat(),
+                                sha256=before), sort_keys=True, indent=2) + "\n")
+print("exact-byte batch retained", len(before))

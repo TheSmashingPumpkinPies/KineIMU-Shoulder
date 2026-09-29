@@ -1,0 +1,153 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "name": "wheel-venv",
+      "command": [
+        "uv",
+        "venv",
+        "--python",
+        "3.12.14",
+        "<temporary-workspace>\\kineimu-m6-cp4-final-install-02\\wheel-env"
+      ],
+      "cwd": "<temporary-workspace>\\kineimu-m6-cp4-final-install-02",
+      "started_utc": "2026-09-28T13:13:52.604028+00:00",
+      "ended_utc": "2026-09-28T13:13:52.691151+00:00",
+      "exit_code": 0,
+      "log": "candidate02-wheel-venv.log",
+      "log_sha256": "fa77bc6d109686e7d05ead9fa6e619f8ccdf548d4f1aa295d330400334eeec78"
+    },
+    {
+      "name": "wheel-dependencies",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--python",
+        "<temporary-workspace>\\kineimu-m6-cp4-final-install-02\\wheel-env\\Scripts\\python.exe",
+        "--require-hashes",
+        "--only-binary",
+        ":all:",
+        "-r",
+        ".\\experiments\\M6_CP4_FINAL_20260928\\analysis-requirements.txt"
+      ],
+      "cwd": "<temporary-workspace>\\kineimu-m6-cp4-final-install-02",
+      "started_utc": "2026-09-28T13:13:52.691151+00:00",
+      "ended_utc": "2026-09-28T13:13:56.875445+00:00",
+      "exit_code": 0,
+      "log": "candidate02-wheel-dependencies.log",
+      "log_sha256": "1c8f404acd59aae3109fa89a2ebfee60e8bf94bd15c76b02c22d98cf1517843f"
+    },
+    {
+      "name": "wheel-install",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--python",
+        "<temporary-workspace>\\kineimu-m6-cp4-final-install-02\\wheel-env\\Scripts\\python.exe",
+        "--no-deps",
+        ".\\experiments\\M6_CP4_FINAL_20260928\\artifacts\\candidate02\\kineimu_shoulder-0.1.0-py3-none-any.whl"
+      ],
+      "cwd": "<temporary-workspace>\\kineimu-m6-cp4-final-install-02",
+      "started_utc": "2026-09-28T13:13:56.876444+00:00",
+      "ended_utc": "2026-09-28T13:13:57.871825+00:00",
+      "exit_code": 0,
+      "log": "candidate02-wheel-install.log",
+      "log_sha256": "4e7459ccfadd07f61f6e9542cb5c870efe46c3d93e3e043487c41e14b8b0eb8f"
+    },
+    {
+      "name": "wheel-api",
+      "command": [
+        "<temporary-workspace>\\kineimu-m6-cp4-final-install-02\\wheel-env\\Scripts\\python.exe",
+        "-I",
+        ".\\experiments\\M6_CP4_FINAL_20260928\\installed_api_check.py",
+        "."
+      ],
+      "cwd": "<temporary-workspace>\\kineimu-m6-cp4-final-install-02",
+      "started_utc": "2026-09-28T13:13:57.872827+00:00",
+      "ended_utc": "2026-09-28T13:14:05.494625+00:00",
+      "exit_code": 0,
+      "log": "candidate02-wheel-api.log",
+      "log_sha256": "52572c007c1f14e09f9a96696c9bfb9b2594f908038d95b8c274eb341e18cd95"
+    },
+    {
+      "name": "sdist-venv",
+      "command": [
+        "uv",
+        "venv",
+        "--python",
+        "3.12.14",
+        "<temporary-workspace>\\kineimu-m6-cp4-final-install-02\\sdist-env"
+      ],
+      "cwd": "<temporary-workspace>\\kineimu-m6-cp4-final-install-02",
+      "started_utc": "2026-09-28T13:14:05.496076+00:00",
+      "ended_utc": "2026-09-28T13:14:05.580709+00:00",
+      "exit_code": 0,
+      "log": "candidate02-sdist-venv.log",
+      "log_sha256": "22d48886c5aad299c86fec3a6a5b358e41016f3a287c57ee568bb92b00d15d36"
+    },
+    {
+      "name": "sdist-dependencies",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--python",
+        "<temporary-workspace>\\kineimu-m6-cp4-final-install-02\\sdist-env\\Scripts\\python.exe",
+        "--require-hashes",
+        "--only-binary",
+        ":all:",
+        "-r",
+        ".\\experiments\\M6_CP4_FINAL_20260928\\analysis-requirements.txt"
+      ],
+      "cwd": "<temporary-workspace>\\kineimu-m6-cp4-final-install-02",
+      "started_utc": "2026-09-28T13:14:05.581712+00:00",
+      "ended_utc": "2026-09-28T13:14:08.316108+00:00",
+      "exit_code": 0,
+      "log": "candidate02-sdist-dependencies.log",
+      "log_sha256": "c63f3adf4a76a6d24774c853a4903a3405718a1240fda1d7efcf9d2216331334"
+    },
+    {
+      "name": "sdist-install",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--python",
+        "<temporary-workspace>\\kineimu-m6-cp4-final-install-02\\sdist-env\\Scripts\\python.exe",
+        "--no-deps",
+        ".\\experiments\\M6_CP4_FINAL_20260928\\artifacts\\candidate02\\kineimu_shoulder-0.1.0.tar.gz"
+      ],
+      "cwd": "<temporary-workspace>\\kineimu-m6-cp4-final-install-02",
+      "started_utc": "2026-09-28T13:14:08.317111+00:00",
+      "ended_utc": "2026-09-28T13:14:12.683198+00:00",
+      "exit_code": 0,
+      "log": "candidate02-sdist-install.log",
+      "log_sha256": "e40a3e0d077d4566f4e04a97456d17d79e0f583bb87fa01192e022c2889b5df5"
+    },
+    {
+      "name": "sdist-api",
+      "command": [
+        "<temporary-workspace>\\kineimu-m6-cp4-final-install-02\\sdist-env\\Scripts\\python.exe",
+        "-I",
+        ".\\experiments\\M6_CP4_FINAL_20260928\\installed_api_check.py",
+        "."
+      ],
+      "cwd": "<temporary-workspace>\\kineimu-m6-cp4-final-install-02",
+      "started_utc": "2026-09-28T13:14:12.683198+00:00",
+      "ended_utc": "2026-09-28T13:14:19.677897+00:00",
+      "exit_code": 0,
+      "log": "candidate02-sdist-api.log",
+      "log_sha256": "50312e83acc8ae9cf3d8c603969e09cc35fc2dccfa8d1aa330eb11310205a0e9"
+    }
+  ],
+  "root": "<temporary-workspace>\\kineimu-m6-cp4-final-install-02",
+  "KINEIMU_M1_RAW_ROOT": null,
+  "PYTHONPATH": null,
+  "requirements_sha256": "e436b7b34b8df720fb43f16f89bf5601ee1440f6909519d7b839f282ed9280f2",
+  "artifact_sha256": {
+    "kineimu_shoulder-0.1.0-py3-none-any.whl": "4ea9adec9098c6f62315279b4189c3755de83e48fed02a0fb6259b544148c278",
+    "kineimu_shoulder-0.1.0.tar.gz": "8f317668585f99d59cd9e6b263180b5947d9404bf58b0357f47cb764858782f7"
+  }
+}

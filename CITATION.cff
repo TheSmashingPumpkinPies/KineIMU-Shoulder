@@ -1,0 +1,23 @@
+# Maintainer-approved release candidate metadata; publication date is not yet set.
+cff-version: 1.2.0
+message: "If you use KineIMU Shoulder, please cite it using this metadata and record the exact source revision."
+type: software
+title: "KineIMU Shoulder"
+version: "0.1.0"
+authors:
+  - family-names: Liao
+    given-names: Hongbo
+license: MIT
+repository-code: "https://github.com/TheSmashingPumpkinPies/KineIMU-Shoulder"
+abstract: >-
+  A dual-IMU research framework for quantitative shoulder movement analysis,
+  with tested dual-USB acquisition, explicit quaternion processing and
+  hardware-free synthetic replay. Human and clinical accuracy are unvalidated.
+keywords:
+  - shoulder
+  - humerothoracic movement
+  - inertial measurement unit
+  - reproducible research
+# repository-code is the maintainer-created destination; no DOI or release tag is declared.
+# date-released and DOI are omitted until an actual publication exists.
+# ORCID and affiliation are omitted at the maintainer's request.

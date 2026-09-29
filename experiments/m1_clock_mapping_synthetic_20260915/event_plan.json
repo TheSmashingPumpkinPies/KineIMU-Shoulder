@@ -1,0 +1,209 @@
+{
+  "events": [
+    {
+      "common_time_us": 10000000.0,
+      "event_id": "E01",
+      "observations": [
+        {
+          "clock_epoch": 0,
+          "device_time_us": 9998550,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "A",
+          "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "sample_sequence": null
+        },
+        {
+          "clock_epoch": 0,
+          "device_time_us": 10001050,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "B",
+          "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "sample_sequence": null
+        }
+      ],
+      "phase": "beginning",
+      "reference_method": "synthetic_exact_common_clock",
+      "reference_resolution_us": 1.0,
+      "reference_uncertainty_us": 0.2886751345948129,
+      "role": "fit"
+    },
+    {
+      "common_time_us": 300000000.0,
+      "event_id": "E02",
+      "observations": [
+        {
+          "clock_epoch": 0,
+          "device_time_us": 299992750,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "A",
+          "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "sample_sequence": null
+        },
+        {
+          "clock_epoch": 0,
+          "device_time_us": 300009750,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "B",
+          "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "sample_sequence": null
+        }
+      ],
+      "phase": "beginning",
+      "reference_method": "synthetic_exact_common_clock",
+      "reference_resolution_us": 1.0,
+      "reference_uncertainty_us": 0.2886751345948129,
+      "role": "held_out"
+    },
+    {
+      "common_time_us": 900000000.0,
+      "event_id": "E03",
+      "observations": [
+        {
+          "clock_epoch": 0,
+          "device_time_us": 899980750,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "A",
+          "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "sample_sequence": null
+        },
+        {
+          "clock_epoch": 0,
+          "device_time_us": 900027751,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "B",
+          "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "sample_sequence": null
+        }
+      ],
+      "phase": "middle",
+      "reference_method": "synthetic_exact_common_clock",
+      "reference_resolution_us": 1.0,
+      "reference_uncertainty_us": 0.2886751345948129,
+      "role": "fit"
+    },
+    {
+      "common_time_us": 1200000000.0,
+      "event_id": "E04",
+      "observations": [
+        {
+          "clock_epoch": 0,
+          "device_time_us": 1199974751,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "A",
+          "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "sample_sequence": null
+        },
+        {
+          "clock_epoch": 0,
+          "device_time_us": 1200036751,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "B",
+          "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "sample_sequence": null
+        }
+      ],
+      "phase": "middle",
+      "reference_method": "synthetic_exact_common_clock",
+      "reference_resolution_us": 1.0,
+      "reference_uncertainty_us": 0.2886751345948129,
+      "role": "held_out"
+    },
+    {
+      "common_time_us": 1790000000.0,
+      "event_id": "E05",
+      "observations": [
+        {
+          "clock_epoch": 0,
+          "device_time_us": 1789962951,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "A",
+          "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "sample_sequence": null
+        },
+        {
+          "clock_epoch": 0,
+          "device_time_us": 1790054452,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "B",
+          "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "sample_sequence": null
+        }
+      ],
+      "phase": "end",
+      "reference_method": "synthetic_exact_common_clock",
+      "reference_resolution_us": 1.0,
+      "reference_uncertainty_us": 0.2886751345948129,
+      "role": "fit"
+    },
+    {
+      "common_time_us": 1800000000.0,
+      "event_id": "E06",
+      "observations": [
+        {
+          "clock_epoch": 0,
+          "device_time_us": 1799962751,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "A",
+          "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "sample_sequence": null
+        },
+        {
+          "clock_epoch": 0,
+          "device_time_us": 1800054752,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "B",
+          "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "sample_sequence": null
+        }
+      ],
+      "phase": "end",
+      "reference_method": "synthetic_exact_common_clock",
+      "reference_resolution_us": 1.0,
+      "reference_uncertainty_us": 0.2886751345948129,
+      "role": "held_out"
+    }
+  ],
+  "fixture": {
+    "description": "deterministic common events for TDD only",
+    "id": "synthetic-rigid-fixture"
+  },
+  "method_version": "kineimu.m1.clock-mapping.ols-wls/0.1",
+  "raw_streams": [
+    {
+      "node_id": "A",
+      "path": "synthetic/node-a.raw",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "node_id": "B",
+      "path": "synthetic/node-b.raw",
+      "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+  ],
+  "schema_version": "kineimu.m1.sync-event-plan/0.1",
+  "session_id": "synthetic-known-offset-drift"
+}

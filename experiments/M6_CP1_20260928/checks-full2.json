@@ -1,0 +1,16 @@
+{
+  "full2": {
+    "command": [
+      ".\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "--tb=short",
+      "--basetemp",
+      ".pytest-m6-cp1-full2-normal"
+    ],
+    "exit_code": 0,
+    "log": "full2.log",
+    "sha256": "23f3896fb1555f9f11a0cb33e802647725d904f46a27193a5ac75310634c3a57",
+    "external_raw_root": "<external-data>/kineimu_m1_usb_30min_20260925_01"
+  }
+}

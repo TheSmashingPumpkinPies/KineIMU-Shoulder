@@ -1,0 +1,8 @@
+tests:
+  kineimu.node_a.acquisition:
+    harness: ztest
+    platform_allow:
+      - qemu_cortex_m3
+    tags:
+      - sensor
+      - unit

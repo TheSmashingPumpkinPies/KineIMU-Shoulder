@@ -1,0 +1,18 @@
+[
+  {
+    "name": "pyserial-v3.5",
+    "url": "https://raw.githubusercontent.com/pyserial/pyserial/v3.5/LICENSE.txt",
+    "status": "RETAINED_VERSION_TAG_REFERENCE",
+    "path": "docs/release/licenses/upstream/pyserial-v3.5.txt",
+    "bytes": 1885,
+    "sha256": "f91cb9813de6a5b142b8f7f2dede630b5134160aedaeaf55f4d6a7e2593ca3f3"
+  },
+  {
+    "name": "pywinrt-v3.2.1",
+    "url": "https://raw.githubusercontent.com/pywinrt/pywinrt/v3.2.1/LICENSE",
+    "status": "RETAINED_VERSION_TAG_REFERENCE",
+    "path": "docs/release/licenses/upstream/pywinrt-v3.2.1.txt",
+    "bytes": 1225,
+    "sha256": "6e898069e8b3c6d8d23dc70ac7067cc2b7c9db14c36df873026758db82c0891d"
+  }
+]

@@ -1,0 +1,29 @@
+"""Record one exact command, exit and original combined process bytes, exclusively."""
+import json
+import os
+import subprocess
+import sys
+from datetime import UTC, datetime
+from hashlib import sha256
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+EVIDENCE = Path(__file__).resolve().parent
+name, *command = sys.argv[1:]
+assert name.replace("-", "").replace("_", "").isalnum() and command
+log = EVIDENCE / f"{name}.log"
+record = EVIDENCE / f"{name}-check.json"
+assert not log.exists() and not record.exists()
+started = datetime.now(UTC).isoformat()
+process = subprocess.run(command, cwd=ROOT, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, check=False)
+with log.open("xb") as stream:
+    stream.write(process.stdout)
+value = dict(command=command, cwd=str(ROOT), started_utc=started, ended_utc=datetime.now(UTC).isoformat(),
+             exit_code=process.returncode, log=log.name, sha256=sha256(process.stdout).hexdigest(),
+             environment={key: os.environ.get(key) for key in
+                          ("KINEIMU_M1_RAW_ROOT", "OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS")})
+with record.open("x", encoding="utf-8", newline="\n") as stream:
+    stream.write(json.dumps(value, sort_keys=True, indent=2) + "\n")
+print(json.dumps(value))
+print(process.stdout.decode("utf-8", errors="replace")[-2200:])
+raise SystemExit(process.returncode)

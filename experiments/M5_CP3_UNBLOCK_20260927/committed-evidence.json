@@ -1,0 +1,16 @@
+{
+  "canonical_files_per_run": 5380,
+  "cp3_passed": true,
+  "evidence_git_commit": "739714f3d0363478f78bf94ef5ece58bd9071371",
+  "exact_source_snapshot_git_sha256": "bad69498250d231c3768055e8fcdcc2c0abee4ff1ba0b073844f466fb0f300de",
+  "frozen_artifact_sha256": {
+    "experiments/M5_CP1_20260926/case-manifest.json": "5bab237edd4386c630fa25ddae4fa774d41e4d51cf2493f2d3f23b458234edee",
+    "protocols/M5_VALIDATION_CONTRACT.md": "8c406660fb73746ff0761c20d9d8e5c3abd310ac68a4d14102c1b72352c8991f",
+    "tests/fixtures/M5_KNOWN_SENSOR_MOTIONS.md": "1cd431c694f09ddf5e62b31353bde39939481f5a5bca417acb9049c3c86636fe"
+  },
+  "git_blobs_match_audited_disk_bytes": true,
+  "git_product_maps_equal": true,
+  "source_lock": "01c4e23bd82bcbec6ae775bf6db6c67471fa6ac3",
+  "synthetic_raw_capture_files_per_run": 56,
+  "synthetic_raw_capture_hashes_equal_previous_failed_run": true
+}

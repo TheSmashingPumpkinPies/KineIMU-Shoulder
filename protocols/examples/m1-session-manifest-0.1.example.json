@@ -1,0 +1,89 @@
+{
+  "schema_version": "kineimu.m1.session/0.1",
+  "example_only": true,
+  "session_id": "synthetic-m1-example-0001",
+  "created_utc": "2026-09-11T00:00:00Z",
+  "test_side": null,
+  "protocol_version": "kineimu.m1.ble/1",
+  "mounting_protocol_version": null,
+  "nodes": [
+    {
+      "node_id": "A",
+      "role": "thorax",
+      "device_id": "SYNTHETIC-NODE-A",
+      "board_model": "Seeed Studio XIAO nRF52840 Sense",
+      "board_revision": null,
+      "imu_model": "LSM6DS3TR-C",
+      "firmware_version": "0.1.0-dev",
+      "firmware_git_commit": "0000000000000000000000000000000000000000",
+      "driver": "zephyr/st/lsm6dsl",
+      "transport": "ble",
+      "clock_id": "node-a-mcu-monotonic-us",
+      "clock_epoch_initial": 0,
+      "timestamp_source": "mcu_drdy_isr",
+      "sampling_rate_hz_nominal": 100,
+      "accel_odr_hz": 104,
+      "gyro_odr_hz": 104,
+      "accel_range_g": 4,
+      "gyro_range_dps": 500,
+      "filter_config": {
+        "register_order": "kineimu.m1.lsm6ds3trc-registers/1",
+        "register_snapshot_hex": "000102030405060708090a0b0c0d0e0f101112"
+      },
+      "calibration_id": null,
+      "alignment_id": null,
+      "placement": "thorax"
+    },
+    {
+      "node_id": "B",
+      "role": "upper_arm",
+      "device_id": "SYNTHETIC-NODE-B",
+      "board_model": "Seeed Studio XIAO nRF52840 Sense",
+      "board_revision": null,
+      "imu_model": "LSM6DS3TR-C",
+      "firmware_version": "0.1.0-dev",
+      "firmware_git_commit": "0000000000000000000000000000000000000000",
+      "driver": "zephyr/st/lsm6dsl",
+      "transport": "ble",
+      "clock_id": "node-b-mcu-monotonic-us",
+      "clock_epoch_initial": 0,
+      "timestamp_source": "mcu_drdy_isr",
+      "sampling_rate_hz_nominal": 100,
+      "accel_odr_hz": 104,
+      "gyro_odr_hz": 104,
+      "accel_range_g": 4,
+      "gyro_range_dps": 500,
+      "filter_config": {
+        "register_order": "kineimu.m1.lsm6ds3trc-registers/1",
+        "register_snapshot_hex": "000102030405060708090a0b0c0d0e0f101112"
+      },
+      "calibration_id": null,
+      "alignment_id": null,
+      "placement": "upper_arm"
+    }
+  ],
+  "streams": [
+    {
+      "node_id": "A",
+      "raw_path": "raw/node-a.kimu",
+      "raw_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "transport_events_path": "raw/node-a.events.ndjson",
+      "transport_events_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "byte_length": 0,
+      "packet_count": 0,
+      "sample_count": 0
+    },
+    {
+      "node_id": "B",
+      "raw_path": "raw/node-b.kimu",
+      "raw_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "transport_events_path": "raw/node-b.events.ndjson",
+      "transport_events_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "byte_length": 0,
+      "packet_count": 0,
+      "sample_count": 0
+    }
+  ],
+  "clock_mapping_artifacts": [],
+  "notes": "Synthetic schema example only; not acquisition evidence."
+}

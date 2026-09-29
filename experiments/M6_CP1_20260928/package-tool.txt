@@ -1,0 +1,75 @@
+"""Reproduce a new CP1 sample copy; source and existing targets stay immutable."""
+import json
+import subprocess
+import sys
+from hashlib import sha256
+from pathlib import Path
+
+root = Path.cwd()
+inventory = json.loads((root / "experiments/M6_CP0_20260928/inventory.json").read_bytes())
+source = root / inventory["input_root"]
+target = Path(sys.argv[1]).resolve()
+assert not target.exists(), "exclusive new copy required"
+original = {p.relative_to(source).as_posix(): sha256(p.read_bytes()).hexdigest()
+            for p in source.rglob("*") if p.is_file()}
+assert len(original) == 37
+selected = [{k: row[k] for k in ("path", "bytes", "sha256")} for row in inventory["inputs"]]
+map_hash = "2aa180e32003f91e57accf1d53c5b4b914e0c9e9c0ab4cdb22db02a3ab0964f9"
+assert original["SHA256SUMS.json"] == map_hash
+frozen = json.loads((source / "SHA256SUMS.json").read_bytes())
+for row in selected:
+    content = (source / row["path"]).read_bytes()
+    assert len(content) == row["bytes"] and sha256(content).hexdigest() == row["sha256"]
+    if row["path"] != "SHA256SUMS.json":
+        assert frozen[row["path"]] == row["sha256"]
+manifest = json.loads((source / "manifest.json").read_bytes())
+delivery = "1e174f265daa6d09896683013d3c5f50a6da271f"
+for row in selected:
+    git_path = f'{inventory["input_root"]}/{row["path"]}'
+    content = subprocess.check_output(["git", "show", f"{delivery}:{git_path}"], cwd=root)
+    assert sha256(content).hexdigest() == row["sha256"], git_path
+target.mkdir(parents=True, exist_ok=False)
+for row in selected:
+    path = target / row["path"]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("xb") as stream:
+        stream.write((source / row["path"]).read_bytes())
+unshipped = [{"path": name, "sha256": digest} for name, digest in sorted(frozen.items())
+            if name not in {row["path"] for row in selected}]
+provenance = dict(
+    record_version="m6-sample-provenance/1.0", project="KineIMU Shoulder",
+    source_type="synthetic", anatomical_eligible=False, human_or_personal_data=False,
+    license_status="INTERNAL ONLY / public redistribution pending",
+    original_root=inventory["input_root"], original_map_sha256=map_hash,
+    generation_source_commit=manifest["git_commit"], original_cp1_delivery_commit=delivery,
+    cp0_contract_commit="83dc0fb112b36bce7d2cf417f7232bbe0aa88bb5",
+    packaging_entry_head=subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True).strip(),
+    generation_source_sha256=manifest["source_hashes"], generation_runtime=manifest["runtime"],
+    configuration_references=["manifest.json", "case-manifest.json"] +
+        [f'{row["id"]}/metadata.json' for row in inventory["trajectories"]],
+    selected_files=selected, unshipped_map_members=unshipped,
+    selected_file_count=len(selected), selected_bytes=sum(row["bytes"] for row in selected),
+    original_map_member_count=len(frozen), original_copy_complete=False,
+    capture_bytes=inventory["capture_bytes"], node_samples=inventory["node_samples"],
+    packets=inventory["packets"], trajectories=[dict(**row, case_id=f'{row["id"]}/CLEAN-Q/SAME/0',
+        node_roles={"A": "thorax", "B": "humerus"}) for row in inventory["trajectories"]],
+    sample_hz=100, device_time_range_us=[0, 21500000], evaluation_range_us=[5000000, 21500000],
+    units=dict(time="integer us", acceleration="m/s^2", angular_rate="rad/s", angle="rad",
+               orientation="unit quaternion wxyz"),
+    frames="active Hamilton wxyz; right-handed columns; R_AB maps B to A; R_NS before AHRS, R_NK once after",
+    synthetic_assumptions="known shared world, initial q_WN, identity calibration, zero translation/lever arm",
+    evidence_labels=dict(captures="Observed synthetic quantized sensor counts",
+        si_references="independent retained pre-Q synthetic SI observations",
+        annotations="independent analytical references; not sensor observations",
+        frames_calibration_heading="Assumed / Experimental; not anatomical validation"),
+    omitted_reason="per-trajectory A.bin/B.bin and exact-orientations.json are not stored-Q input dependencies",
+    mutation_policy="no regeneration, normalization, deduplication or raw overwrite",
+)
+(target / "provenance.json").write_text(json.dumps(provenance, ensure_ascii=False, indent=2) + "\n",
+                                       encoding="utf-8", newline="\n")
+(target / ".gitattributes").write_text("# Preserve copied inputs across checkout platforms.\n*.json -text\n*.kimu -text\n",
+                                      encoding="utf-8", newline="\n")
+assert original == {p.relative_to(source).as_posix(): sha256(p.read_bytes()).hexdigest()
+                    for p in source.rglob("*") if p.is_file()}
+print(json.dumps(dict(selected_files=len(selected), selected_bytes=provenance["selected_bytes"],
+                     original_unchanged=True, unshipped=len(unshipped))))

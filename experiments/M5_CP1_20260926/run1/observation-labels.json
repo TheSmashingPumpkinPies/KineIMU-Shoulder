@@ -1,0 +1,130 @@
+{
+  "AL90": [
+    {
+      "end_us": 9280000,
+      "label_type": "observation-grid",
+      "peak_rad": 1.5707963267948966,
+      "peak_us": 6500000,
+      "reason": null,
+      "start_us": 5340000,
+      "truth_id": "AL90:rep-1",
+      "valid": true
+    },
+    {
+      "end_us": 14780000,
+      "label_type": "observation-grid",
+      "peak_rad": 1.5707963267948966,
+      "peak_us": 12000000,
+      "reason": null,
+      "start_us": 10840000,
+      "truth_id": "AL90:rep-2",
+      "valid": true
+    },
+    {
+      "end_us": 20280000,
+      "label_type": "observation-grid",
+      "peak_rad": 1.5707963267948966,
+      "peak_us": 17500000,
+      "reason": null,
+      "start_us": 16340000,
+      "truth_id": "AL90:rep-3",
+      "valid": true
+    }
+  ],
+  "AR90": [
+    {
+      "end_us": 9280000,
+      "label_type": "observation-grid",
+      "peak_rad": 1.5707963267948966,
+      "peak_us": 6500000,
+      "reason": null,
+      "start_us": 5340000,
+      "truth_id": "AR90:rep-1",
+      "valid": true
+    },
+    {
+      "end_us": 14780000,
+      "label_type": "observation-grid",
+      "peak_rad": 1.5707963267948966,
+      "peak_us": 12000000,
+      "reason": null,
+      "start_us": 10840000,
+      "truth_id": "AR90:rep-2",
+      "valid": true
+    },
+    {
+      "end_us": 20280000,
+      "label_type": "observation-grid",
+      "peak_rad": 1.5707963267948966,
+      "peak_us": 17500000,
+      "reason": null,
+      "start_us": 16340000,
+      "truth_id": "AR90:rep-3",
+      "valid": true
+    }
+  ],
+  "F90": [
+    {
+      "end_us": 9280000,
+      "label_type": "observation-grid",
+      "peak_rad": 1.5707963267948966,
+      "peak_us": 6500000,
+      "reason": null,
+      "start_us": 5340000,
+      "truth_id": "F90:rep-1",
+      "valid": true
+    },
+    {
+      "end_us": 14780000,
+      "label_type": "observation-grid",
+      "peak_rad": 1.5707963267948966,
+      "peak_us": 12000000,
+      "reason": null,
+      "start_us": 10840000,
+      "truth_id": "F90:rep-2",
+      "valid": true
+    },
+    {
+      "end_us": 20280000,
+      "label_type": "observation-grid",
+      "peak_rad": 1.5707963267948966,
+      "peak_us": 17500000,
+      "reason": null,
+      "start_us": 16340000,
+      "truth_id": "F90:rep-3",
+      "valid": true
+    }
+  ],
+  "T-MIX": [
+    {
+      "end_us": 9280000,
+      "label_type": "observation-grid",
+      "peak_rad": 1.5707963267948966,
+      "peak_us": 6500000,
+      "reason": null,
+      "start_us": 5340000,
+      "truth_id": "T-MIX:rep-1",
+      "valid": true
+    },
+    {
+      "end_us": 14780000,
+      "label_type": "observation-grid",
+      "peak_rad": 1.5707963267948966,
+      "peak_us": 12000000,
+      "reason": null,
+      "start_us": 10840000,
+      "truth_id": "T-MIX:rep-2",
+      "valid": true
+    },
+    {
+      "end_us": 20280000,
+      "label_type": "observation-grid",
+      "peak_rad": 1.5707963267948966,
+      "peak_us": 17500000,
+      "reason": null,
+      "start_us": 16340000,
+      "truth_id": "T-MIX:rep-3",
+      "valid": true
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Preserve copied inputs across checkout platforms.
+*.json -text
+*.kimu -text

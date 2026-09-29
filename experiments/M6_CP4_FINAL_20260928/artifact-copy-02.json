@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "source_head": "e5b8b45fa31f8b5c385303a5ac32ddb921b1507d",
+  "from": "dist/m6-candidate-02",
+  "to": "experiments/M6_CP4_FINAL_20260928/artifacts/candidate02",
+  "files": {
+    "kineimu_shoulder-0.1.0-py3-none-any.whl": {
+      "bytes": 292847,
+      "sha256": "4ea9adec9098c6f62315279b4189c3755de83e48fed02a0fb6259b544148c278"
+    },
+    "kineimu_shoulder-0.1.0.tar.gz": {
+      "bytes": 221578,
+      "sha256": "8f317668585f99d59cd9e6b263180b5947d9404bf58b0357f47cb764858782f7"
+    }
+  }
+}

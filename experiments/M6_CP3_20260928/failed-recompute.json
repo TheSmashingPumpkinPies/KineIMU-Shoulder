@@ -1,0 +1,19 @@
+{
+  "batch_inventory_sha256": "d63bdedb627dae7080622f8bc13b2600590f1a7ce65f452c0c6ebb13fd3f0403",
+  "independent_audits": [
+    {
+      "independently_correct": true,
+      "slot": "warmup"
+    }
+  ],
+  "inventory_verified": true,
+  "summary": {
+    "cp3_passed": false,
+    "inputs_and_source_unchanged": true,
+    "node_samples_per_s": null,
+    "protocol": "m6-demo-benchmark/1.0",
+    "source_head": "addcdd7fb0ce2e187ebf32daa6af6051241113cd",
+    "timed_count": 5,
+    "wall_s": null
+  }
+}

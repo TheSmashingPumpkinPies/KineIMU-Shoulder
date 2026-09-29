@@ -1,0 +1,25 @@
+{
+  "command": [
+    "<local-home>/.local/bin/uv.exe",
+    "run",
+    "--frozen",
+    "python",
+    "benchmarks/demo/run_benchmark.py",
+    "--recompute",
+    "<temporary-workspace>\\kineimu-m6-cp3-3e0647c4-batch03",
+    "--output",
+    "experiments/M6_CP3_20260928/original-recompute.json"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T08:06:53.422259+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 0,
+  "log": "original-recompute.log",
+  "sha256": "d494446eb7a2e43fa31e1eb9f8faf3c86da8b1dcb0a365a6fa79062a74940810",
+  "started_utc": "2026-09-28T08:06:32.699279+00:00"
+}

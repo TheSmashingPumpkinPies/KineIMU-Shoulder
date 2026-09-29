@@ -1,0 +1,21 @@
+{
+  "command": [
+    "<local-home>/.local/bin/uv.exe",
+    "run",
+    "--frozen",
+    "python",
+    "scripts/check_docs_consistency.py"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T07:28:24.788204+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 0,
+  "log": "docs-lock.log",
+  "sha256": "3ddab9ff445a171c1c84099f935262fb376bb25dcc57fe88b833649d5c0bc84d",
+  "started_utc": "2026-09-28T07:27:57.292841+00:00"
+}

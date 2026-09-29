@@ -1,0 +1,3346 @@
+{
+  "AL90": {
+    "motion": {
+      "analysis_end_us": null,
+      "analysis_start_us": 5000000,
+      "axis": "X",
+      "cycles": [
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        }
+      ],
+      "end_us": 21500000,
+      "side": "left",
+      "sign": 1,
+      "thorax": "fixed"
+    },
+    "nominal_m4": [
+      {
+        "complete": true,
+        "confirm_end_us": 9480000,
+        "confirm_start_us": 5540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 9280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 6500000,
+        "physical_end_us": 9500000,
+        "physical_start_us": 5000000,
+        "plateau_support_us": [
+          6500000,
+          7500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 5340000,
+        "truth_id": "AL90:rep-1"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 14980000,
+        "confirm_start_us": 11040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 14780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 12000000,
+        "physical_end_us": 15000000,
+        "physical_start_us": 10500000,
+        "plateau_support_us": [
+          12000000,
+          13000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 10840000,
+        "truth_id": "AL90:rep-2"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 20480000,
+        "confirm_start_us": 16540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 20280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 17500000,
+        "physical_end_us": 20500000,
+        "physical_start_us": 16000000,
+        "plateau_support_us": [
+          17500000,
+          18500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 16340000,
+        "truth_id": "AL90:rep-3"
+      }
+    ],
+    "summary": {
+      "active_s": 11.82,
+      "cadence_per_s": 0.25380710659898476,
+      "physical_count": 3,
+      "rest_s": [
+        1.56,
+        1.56
+      ],
+      "rom_cv": 0.0,
+      "rom_max_rad": 1.3980087308474578,
+      "rom_mean_rad": 1.3980087308474578,
+      "rom_range_rad": 0.0,
+      "rom_sd_rad": 0.0,
+      "valid_count": 3
+    }
+  },
+  "AR90": {
+    "motion": {
+      "analysis_end_us": null,
+      "analysis_start_us": 5000000,
+      "axis": "X",
+      "cycles": [
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        }
+      ],
+      "end_us": 21500000,
+      "side": "right",
+      "sign": -1,
+      "thorax": "fixed"
+    },
+    "nominal_m4": [
+      {
+        "complete": true,
+        "confirm_end_us": 9480000,
+        "confirm_start_us": 5540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 9280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 6500000,
+        "physical_end_us": 9500000,
+        "physical_start_us": 5000000,
+        "plateau_support_us": [
+          6500000,
+          7500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 5340000,
+        "truth_id": "AR90:rep-1"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 14980000,
+        "confirm_start_us": 11040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 14780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 12000000,
+        "physical_end_us": 15000000,
+        "physical_start_us": 10500000,
+        "plateau_support_us": [
+          12000000,
+          13000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 10840000,
+        "truth_id": "AR90:rep-2"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 20480000,
+        "confirm_start_us": 16540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 20280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 17500000,
+        "physical_end_us": 20500000,
+        "physical_start_us": 16000000,
+        "plateau_support_us": [
+          17500000,
+          18500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 16340000,
+        "truth_id": "AR90:rep-3"
+      }
+    ],
+    "summary": {
+      "active_s": 11.82,
+      "cadence_per_s": 0.25380710659898476,
+      "physical_count": 3,
+      "rest_s": [
+        1.56,
+        1.56
+      ],
+      "rom_cv": 0.0,
+      "rom_max_rad": 1.3980087308474578,
+      "rom_mean_rad": 1.3980087308474578,
+      "rom_range_rad": 0.0,
+      "rom_sd_rad": 0.0,
+      "valid_count": 3
+    }
+  },
+  "F90": {
+    "motion": {
+      "analysis_end_us": null,
+      "analysis_start_us": 5000000,
+      "axis": "Y",
+      "cycles": [
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        }
+      ],
+      "end_us": 21500000,
+      "side": "left",
+      "sign": -1,
+      "thorax": "fixed"
+    },
+    "nominal_m4": [
+      {
+        "complete": true,
+        "confirm_end_us": 9480000,
+        "confirm_start_us": 5540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 9280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 6500000,
+        "physical_end_us": 9500000,
+        "physical_start_us": 5000000,
+        "plateau_support_us": [
+          6500000,
+          7500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 5340000,
+        "truth_id": "F90:rep-1"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 14980000,
+        "confirm_start_us": 11040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 14780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 12000000,
+        "physical_end_us": 15000000,
+        "physical_start_us": 10500000,
+        "plateau_support_us": [
+          12000000,
+          13000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 10840000,
+        "truth_id": "F90:rep-2"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 20480000,
+        "confirm_start_us": 16540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 20280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 17500000,
+        "physical_end_us": 20500000,
+        "physical_start_us": 16000000,
+        "plateau_support_us": [
+          17500000,
+          18500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 16340000,
+        "truth_id": "F90:rep-3"
+      }
+    ],
+    "summary": {
+      "active_s": 11.82,
+      "cadence_per_s": 0.25380710659898476,
+      "physical_count": 3,
+      "rest_s": [
+        1.56,
+        1.56
+      ],
+      "rom_cv": 0.0,
+      "rom_max_rad": 1.3980087308474578,
+      "rom_mean_rad": 1.3980087308474578,
+      "rom_range_rad": 0.0,
+      "rom_sd_rad": 0.0,
+      "valid_count": 3
+    }
+  },
+  "F90-30": {
+    "motion": {
+      "analysis_end_us": null,
+      "analysis_start_us": 5000000,
+      "axis": "Y",
+      "cycles": [
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        }
+      ],
+      "end_us": 35000000,
+      "side": "left",
+      "sign": -1,
+      "thorax": "fixed"
+    },
+    "nominal_m4": [
+      {
+        "complete": true,
+        "confirm_end_us": 9480000,
+        "confirm_start_us": 5540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 9280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 6500000,
+        "physical_end_us": 9500000,
+        "physical_start_us": 5000000,
+        "plateau_support_us": [
+          6500000,
+          7500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 5340000,
+        "truth_id": "F90-30:rep-1"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 14980000,
+        "confirm_start_us": 11040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 14780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 12000000,
+        "physical_end_us": 15000000,
+        "physical_start_us": 10500000,
+        "plateau_support_us": [
+          12000000,
+          13000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 10840000,
+        "truth_id": "F90-30:rep-2"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 20480000,
+        "confirm_start_us": 16540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 20280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 17500000,
+        "physical_end_us": 20500000,
+        "physical_start_us": 16000000,
+        "plateau_support_us": [
+          17500000,
+          18500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 16340000,
+        "truth_id": "F90-30:rep-3"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 25980000,
+        "confirm_start_us": 22040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 25780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 23000000,
+        "physical_end_us": 26000000,
+        "physical_start_us": 21500000,
+        "plateau_support_us": [
+          23000000,
+          24000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 21840000,
+        "truth_id": "F90-30:rep-4"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 31480000,
+        "confirm_start_us": 27540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 31280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 28500000,
+        "physical_end_us": 31500000,
+        "physical_start_us": 27000000,
+        "plateau_support_us": [
+          28500000,
+          29500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 27340000,
+        "truth_id": "F90-30:rep-5"
+      },
+      {
+        "complete": false,
+        "confirm_end_us": 36980000,
+        "confirm_start_us": 33040000,
+        "duration_s": 3.94,
+        "eligible": false,
+        "end_us": 36780000,
+        "expected_exclusion": "partial_end",
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 34000000,
+        "physical_end_us": 37000000,
+        "physical_start_us": 32500000,
+        "plateau_support_us": [
+          34000000,
+          35000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 32840000,
+        "truth_id": "F90-30:rep-6"
+      }
+    ],
+    "summary": {
+      "active_s": 19.7,
+      "cadence_per_s": 0.25380710659898476,
+      "physical_count": 6,
+      "rest_s": [
+        1.56,
+        1.56,
+        1.56,
+        1.56
+      ],
+      "rom_cv": 0.0,
+      "rom_max_rad": 1.3980087308474578,
+      "rom_mean_rad": 1.3980087308474578,
+      "rom_range_rad": 0.0,
+      "rom_sd_rad": 0.0,
+      "valid_count": 5
+    }
+  },
+  "F90-NEXT": {
+    "motion": {
+      "analysis_end_us": null,
+      "analysis_start_us": 5000000,
+      "axis": "Y",
+      "cycles": [
+        {
+          "hold_us": 1000000,
+          "peak_deg": 100,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 100,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 100,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        }
+      ],
+      "end_us": 21500000,
+      "side": "left",
+      "sign": -1,
+      "thorax": "fixed"
+    },
+    "nominal_m4": [
+      {
+        "complete": true,
+        "confirm_end_us": 9500000,
+        "confirm_start_us": 5500000,
+        "duration_s": 4.0,
+        "eligible": true,
+        "end_us": 9300000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.1635528346628865,
+        "mean_speed_rads": 0.7417649320975901,
+        "peak_rad": 1.7453292519943295,
+        "peak_us": 6500000,
+        "physical_end_us": 9500000,
+        "physical_start_us": 5000000,
+        "plateau_support_us": [
+          6500000,
+          7500000
+        ],
+        "return_s": 1.8,
+        "rise_s": 1.2,
+        "rom_rad": 1.5707963267948966,
+        "start_us": 5300000,
+        "truth_id": "F90-NEXT:rep-1"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 15000000,
+        "confirm_start_us": 11000000,
+        "duration_s": 4.0,
+        "eligible": true,
+        "end_us": 14800000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.1635528346628865,
+        "mean_speed_rads": 0.7417649320975901,
+        "peak_rad": 1.7453292519943295,
+        "peak_us": 12000000,
+        "physical_end_us": 15000000,
+        "physical_start_us": 10500000,
+        "plateau_support_us": [
+          12000000,
+          13000000
+        ],
+        "return_s": 1.8,
+        "rise_s": 1.2,
+        "rom_rad": 1.5707963267948966,
+        "start_us": 10800000,
+        "truth_id": "F90-NEXT:rep-2"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 20500000,
+        "confirm_start_us": 16500000,
+        "duration_s": 4.0,
+        "eligible": true,
+        "end_us": 20300000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.1635528346628865,
+        "mean_speed_rads": 0.7417649320975901,
+        "peak_rad": 1.7453292519943295,
+        "peak_us": 17500000,
+        "physical_end_us": 20500000,
+        "physical_start_us": 16000000,
+        "plateau_support_us": [
+          17500000,
+          18500000
+        ],
+        "return_s": 1.8,
+        "rise_s": 1.2,
+        "rom_rad": 1.5707963267948966,
+        "start_us": 16300000,
+        "truth_id": "F90-NEXT:rep-3"
+      }
+    ],
+    "summary": {
+      "active_s": 12.0,
+      "cadence_per_s": 0.25,
+      "physical_count": 3,
+      "rest_s": [
+        1.5,
+        1.5
+      ],
+      "rom_cv": 0.0,
+      "rom_max_rad": 1.5707963267948966,
+      "rom_mean_rad": 1.5707963267948966,
+      "rom_range_rad": 0.0,
+      "rom_sd_rad": 0.0,
+      "valid_count": 3
+    }
+  },
+  "F90L": {
+    "motion": {
+      "analysis_end_us": null,
+      "analysis_start_us": 5000000,
+      "axis": "Y",
+      "cycles": [
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        }
+      ],
+      "end_us": 305000000,
+      "side": "left",
+      "sign": -1,
+      "thorax": "fixed"
+    },
+    "nominal_m4": [
+      {
+        "complete": true,
+        "confirm_end_us": 9480000,
+        "confirm_start_us": 5540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 9280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 6500000,
+        "physical_end_us": 9500000,
+        "physical_start_us": 5000000,
+        "plateau_support_us": [
+          6500000,
+          7500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 5340000,
+        "truth_id": "F90L:rep-1"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 14980000,
+        "confirm_start_us": 11040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 14780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 12000000,
+        "physical_end_us": 15000000,
+        "physical_start_us": 10500000,
+        "plateau_support_us": [
+          12000000,
+          13000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 10840000,
+        "truth_id": "F90L:rep-2"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 20480000,
+        "confirm_start_us": 16540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 20280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 17500000,
+        "physical_end_us": 20500000,
+        "physical_start_us": 16000000,
+        "plateau_support_us": [
+          17500000,
+          18500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 16340000,
+        "truth_id": "F90L:rep-3"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 25980000,
+        "confirm_start_us": 22040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 25780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 23000000,
+        "physical_end_us": 26000000,
+        "physical_start_us": 21500000,
+        "plateau_support_us": [
+          23000000,
+          24000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 21840000,
+        "truth_id": "F90L:rep-4"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 31480000,
+        "confirm_start_us": 27540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 31280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 28500000,
+        "physical_end_us": 31500000,
+        "physical_start_us": 27000000,
+        "plateau_support_us": [
+          28500000,
+          29500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 27340000,
+        "truth_id": "F90L:rep-5"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 36980000,
+        "confirm_start_us": 33040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 36780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 34000000,
+        "physical_end_us": 37000000,
+        "physical_start_us": 32500000,
+        "plateau_support_us": [
+          34000000,
+          35000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 32840000,
+        "truth_id": "F90L:rep-6"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 42480000,
+        "confirm_start_us": 38540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 42280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 39500000,
+        "physical_end_us": 42500000,
+        "physical_start_us": 38000000,
+        "plateau_support_us": [
+          39500000,
+          40500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 38340000,
+        "truth_id": "F90L:rep-7"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 47980000,
+        "confirm_start_us": 44040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 47780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 45000000,
+        "physical_end_us": 48000000,
+        "physical_start_us": 43500000,
+        "plateau_support_us": [
+          45000000,
+          46000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 43840000,
+        "truth_id": "F90L:rep-8"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 53480000,
+        "confirm_start_us": 49540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 53280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 50500000,
+        "physical_end_us": 53500000,
+        "physical_start_us": 49000000,
+        "plateau_support_us": [
+          50500000,
+          51500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 49340000,
+        "truth_id": "F90L:rep-9"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 58980000,
+        "confirm_start_us": 55040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 58780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 56000000,
+        "physical_end_us": 59000000,
+        "physical_start_us": 54500000,
+        "plateau_support_us": [
+          56000000,
+          57000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 54840000,
+        "truth_id": "F90L:rep-10"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 64480000,
+        "confirm_start_us": 60540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 64280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 61500000,
+        "physical_end_us": 64500000,
+        "physical_start_us": 60000000,
+        "plateau_support_us": [
+          61500000,
+          62500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 60340000,
+        "truth_id": "F90L:rep-11"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 69980000,
+        "confirm_start_us": 66040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 69780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 67000000,
+        "physical_end_us": 70000000,
+        "physical_start_us": 65500000,
+        "plateau_support_us": [
+          67000000,
+          68000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 65840000,
+        "truth_id": "F90L:rep-12"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 75480000,
+        "confirm_start_us": 71540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 75280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 72500000,
+        "physical_end_us": 75500000,
+        "physical_start_us": 71000000,
+        "plateau_support_us": [
+          72500000,
+          73500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 71340000,
+        "truth_id": "F90L:rep-13"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 80980000,
+        "confirm_start_us": 77040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 80780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 78000000,
+        "physical_end_us": 81000000,
+        "physical_start_us": 76500000,
+        "plateau_support_us": [
+          78000000,
+          79000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 76840000,
+        "truth_id": "F90L:rep-14"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 86480000,
+        "confirm_start_us": 82540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 86280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 83500000,
+        "physical_end_us": 86500000,
+        "physical_start_us": 82000000,
+        "plateau_support_us": [
+          83500000,
+          84500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 82340000,
+        "truth_id": "F90L:rep-15"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 91980000,
+        "confirm_start_us": 88040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 91780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 89000000,
+        "physical_end_us": 92000000,
+        "physical_start_us": 87500000,
+        "plateau_support_us": [
+          89000000,
+          90000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 87840000,
+        "truth_id": "F90L:rep-16"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 97480000,
+        "confirm_start_us": 93540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 97280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 94500000,
+        "physical_end_us": 97500000,
+        "physical_start_us": 93000000,
+        "plateau_support_us": [
+          94500000,
+          95500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 93340000,
+        "truth_id": "F90L:rep-17"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 102980000,
+        "confirm_start_us": 99040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 102780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 100000000,
+        "physical_end_us": 103000000,
+        "physical_start_us": 98500000,
+        "plateau_support_us": [
+          100000000,
+          101000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 98840000,
+        "truth_id": "F90L:rep-18"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 108480000,
+        "confirm_start_us": 104540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 108280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 105500000,
+        "physical_end_us": 108500000,
+        "physical_start_us": 104000000,
+        "plateau_support_us": [
+          105500000,
+          106500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 104340000,
+        "truth_id": "F90L:rep-19"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 113980000,
+        "confirm_start_us": 110040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 113780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 111000000,
+        "physical_end_us": 114000000,
+        "physical_start_us": 109500000,
+        "plateau_support_us": [
+          111000000,
+          112000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 109840000,
+        "truth_id": "F90L:rep-20"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 119480000,
+        "confirm_start_us": 115540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 119280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 116500000,
+        "physical_end_us": 119500000,
+        "physical_start_us": 115000000,
+        "plateau_support_us": [
+          116500000,
+          117500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 115340000,
+        "truth_id": "F90L:rep-21"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 124980000,
+        "confirm_start_us": 121040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 124780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 122000000,
+        "physical_end_us": 125000000,
+        "physical_start_us": 120500000,
+        "plateau_support_us": [
+          122000000,
+          123000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 120840000,
+        "truth_id": "F90L:rep-22"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 130480000,
+        "confirm_start_us": 126540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 130280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 127500000,
+        "physical_end_us": 130500000,
+        "physical_start_us": 126000000,
+        "plateau_support_us": [
+          127500000,
+          128500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 126340000,
+        "truth_id": "F90L:rep-23"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 135980000,
+        "confirm_start_us": 132040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 135780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 133000000,
+        "physical_end_us": 136000000,
+        "physical_start_us": 131500000,
+        "plateau_support_us": [
+          133000000,
+          134000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 131840000,
+        "truth_id": "F90L:rep-24"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 141480000,
+        "confirm_start_us": 137540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 141280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 138500000,
+        "physical_end_us": 141500000,
+        "physical_start_us": 137000000,
+        "plateau_support_us": [
+          138500000,
+          139500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 137340000,
+        "truth_id": "F90L:rep-25"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 146980000,
+        "confirm_start_us": 143040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 146780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 144000000,
+        "physical_end_us": 147000000,
+        "physical_start_us": 142500000,
+        "plateau_support_us": [
+          144000000,
+          145000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 142840000,
+        "truth_id": "F90L:rep-26"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 152480000,
+        "confirm_start_us": 148540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 152280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 149500000,
+        "physical_end_us": 152500000,
+        "physical_start_us": 148000000,
+        "plateau_support_us": [
+          149500000,
+          150500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 148340000,
+        "truth_id": "F90L:rep-27"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 157980000,
+        "confirm_start_us": 154040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 157780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 155000000,
+        "physical_end_us": 158000000,
+        "physical_start_us": 153500000,
+        "plateau_support_us": [
+          155000000,
+          156000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 153840000,
+        "truth_id": "F90L:rep-28"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 163480000,
+        "confirm_start_us": 159540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 163280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 160500000,
+        "physical_end_us": 163500000,
+        "physical_start_us": 159000000,
+        "plateau_support_us": [
+          160500000,
+          161500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 159340000,
+        "truth_id": "F90L:rep-29"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 168980000,
+        "confirm_start_us": 165040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 168780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 166000000,
+        "physical_end_us": 169000000,
+        "physical_start_us": 164500000,
+        "plateau_support_us": [
+          166000000,
+          167000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 164840000,
+        "truth_id": "F90L:rep-30"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 174480000,
+        "confirm_start_us": 170540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 174280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 171500000,
+        "physical_end_us": 174500000,
+        "physical_start_us": 170000000,
+        "plateau_support_us": [
+          171500000,
+          172500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 170340000,
+        "truth_id": "F90L:rep-31"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 179980000,
+        "confirm_start_us": 176040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 179780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 177000000,
+        "physical_end_us": 180000000,
+        "physical_start_us": 175500000,
+        "plateau_support_us": [
+          177000000,
+          178000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 175840000,
+        "truth_id": "F90L:rep-32"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 185480000,
+        "confirm_start_us": 181540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 185280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 182500000,
+        "physical_end_us": 185500000,
+        "physical_start_us": 181000000,
+        "plateau_support_us": [
+          182500000,
+          183500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 181340000,
+        "truth_id": "F90L:rep-33"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 190980000,
+        "confirm_start_us": 187040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 190780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 188000000,
+        "physical_end_us": 191000000,
+        "physical_start_us": 186500000,
+        "plateau_support_us": [
+          188000000,
+          189000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 186840000,
+        "truth_id": "F90L:rep-34"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 196480000,
+        "confirm_start_us": 192540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 196280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 193500000,
+        "physical_end_us": 196500000,
+        "physical_start_us": 192000000,
+        "plateau_support_us": [
+          193500000,
+          194500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 192340000,
+        "truth_id": "F90L:rep-35"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 201980000,
+        "confirm_start_us": 198040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 201780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 199000000,
+        "physical_end_us": 202000000,
+        "physical_start_us": 197500000,
+        "plateau_support_us": [
+          199000000,
+          200000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 197840000,
+        "truth_id": "F90L:rep-36"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 207480000,
+        "confirm_start_us": 203540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 207280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 204500000,
+        "physical_end_us": 207500000,
+        "physical_start_us": 203000000,
+        "plateau_support_us": [
+          204500000,
+          205500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 203340000,
+        "truth_id": "F90L:rep-37"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 212980000,
+        "confirm_start_us": 209040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 212780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 210000000,
+        "physical_end_us": 213000000,
+        "physical_start_us": 208500000,
+        "plateau_support_us": [
+          210000000,
+          211000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 208840000,
+        "truth_id": "F90L:rep-38"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 218480000,
+        "confirm_start_us": 214540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 218280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 215500000,
+        "physical_end_us": 218500000,
+        "physical_start_us": 214000000,
+        "plateau_support_us": [
+          215500000,
+          216500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 214340000,
+        "truth_id": "F90L:rep-39"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 223980000,
+        "confirm_start_us": 220040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 223780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 221000000,
+        "physical_end_us": 224000000,
+        "physical_start_us": 219500000,
+        "plateau_support_us": [
+          221000000,
+          222000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 219840000,
+        "truth_id": "F90L:rep-40"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 229480000,
+        "confirm_start_us": 225540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 229280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 226500000,
+        "physical_end_us": 229500000,
+        "physical_start_us": 225000000,
+        "plateau_support_us": [
+          226500000,
+          227500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 225340000,
+        "truth_id": "F90L:rep-41"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 234980000,
+        "confirm_start_us": 231040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 234780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 232000000,
+        "physical_end_us": 235000000,
+        "physical_start_us": 230500000,
+        "plateau_support_us": [
+          232000000,
+          233000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 230840000,
+        "truth_id": "F90L:rep-42"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 240480000,
+        "confirm_start_us": 236540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 240280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 237500000,
+        "physical_end_us": 240500000,
+        "physical_start_us": 236000000,
+        "plateau_support_us": [
+          237500000,
+          238500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 236340000,
+        "truth_id": "F90L:rep-43"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 245980000,
+        "confirm_start_us": 242040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 245780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 243000000,
+        "physical_end_us": 246000000,
+        "physical_start_us": 241500000,
+        "plateau_support_us": [
+          243000000,
+          244000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 241840000,
+        "truth_id": "F90L:rep-44"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 251480000,
+        "confirm_start_us": 247540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 251280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 248500000,
+        "physical_end_us": 251500000,
+        "physical_start_us": 247000000,
+        "plateau_support_us": [
+          248500000,
+          249500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 247340000,
+        "truth_id": "F90L:rep-45"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 256980000,
+        "confirm_start_us": 253040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 256780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 254000000,
+        "physical_end_us": 257000000,
+        "physical_start_us": 252500000,
+        "plateau_support_us": [
+          254000000,
+          255000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 252840000,
+        "truth_id": "F90L:rep-46"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 262480000,
+        "confirm_start_us": 258540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 262280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 259500000,
+        "physical_end_us": 262500000,
+        "physical_start_us": 258000000,
+        "plateau_support_us": [
+          259500000,
+          260500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 258340000,
+        "truth_id": "F90L:rep-47"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 267980000,
+        "confirm_start_us": 264040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 267780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 265000000,
+        "physical_end_us": 268000000,
+        "physical_start_us": 263500000,
+        "plateau_support_us": [
+          265000000,
+          266000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 263840000,
+        "truth_id": "F90L:rep-48"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 273480000,
+        "confirm_start_us": 269540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 273280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 270500000,
+        "physical_end_us": 273500000,
+        "physical_start_us": 269000000,
+        "plateau_support_us": [
+          270500000,
+          271500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 269340000,
+        "truth_id": "F90L:rep-49"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 278980000,
+        "confirm_start_us": 275040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 278780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 276000000,
+        "physical_end_us": 279000000,
+        "physical_start_us": 274500000,
+        "plateau_support_us": [
+          276000000,
+          277000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 274840000,
+        "truth_id": "F90L:rep-50"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 284480000,
+        "confirm_start_us": 280540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 284280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 281500000,
+        "physical_end_us": 284500000,
+        "physical_start_us": 280000000,
+        "plateau_support_us": [
+          281500000,
+          282500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 280340000,
+        "truth_id": "F90L:rep-51"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 289980000,
+        "confirm_start_us": 286040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 289780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 287000000,
+        "physical_end_us": 290000000,
+        "physical_start_us": 285500000,
+        "plateau_support_us": [
+          287000000,
+          288000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 285840000,
+        "truth_id": "F90L:rep-52"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 295480000,
+        "confirm_start_us": 291540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 295280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 292500000,
+        "physical_end_us": 295500000,
+        "physical_start_us": 291000000,
+        "plateau_support_us": [
+          292500000,
+          293500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 291340000,
+        "truth_id": "F90L:rep-53"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 300980000,
+        "confirm_start_us": 297040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 300780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 298000000,
+        "physical_end_us": 301000000,
+        "physical_start_us": 296500000,
+        "plateau_support_us": [
+          298000000,
+          299000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 296840000,
+        "truth_id": "F90L:rep-54"
+      },
+      {
+        "complete": false,
+        "confirm_end_us": 306480000,
+        "confirm_start_us": 302540000,
+        "duration_s": 3.94,
+        "eligible": false,
+        "end_us": 306280000,
+        "expected_exclusion": "partial_end",
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 303500000,
+        "physical_end_us": 306500000,
+        "physical_start_us": 302000000,
+        "plateau_support_us": [
+          303500000,
+          304500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 302340000,
+        "truth_id": "F90L:rep-55"
+      }
+    ],
+    "summary": {
+      "active_s": 212.76,
+      "cadence_per_s": 0.25380710659898476,
+      "physical_count": 55,
+      "rest_s": [
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56,
+        1.56
+      ],
+      "rom_cv": 0.0,
+      "rom_max_rad": 1.3980087308474578,
+      "rom_mean_rad": 1.3980087308474578,
+      "rom_range_rad": 0.0,
+      "rom_sd_rad": 0.0,
+      "valid_count": 54
+    }
+  },
+  "NOHOLD": {
+    "motion": {
+      "analysis_end_us": null,
+      "analysis_start_us": 5000000,
+      "axis": "Y",
+      "cycles": [
+        {
+          "hold_us": 0,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 0,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 0,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        }
+      ],
+      "end_us": 18500000,
+      "side": "left",
+      "sign": -1,
+      "thorax": "fixed"
+    },
+    "nominal_m4": [
+      {
+        "complete": true,
+        "confirm_end_us": 8480000,
+        "confirm_start_us": 5540000,
+        "duration_s": 2.94,
+        "eligible": true,
+        "end_us": 8280000,
+        "expected_exclusion": null,
+        "hold_s": 0.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.8886931599440514,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 6500000,
+        "physical_end_us": 8500000,
+        "physical_start_us": 5000000,
+        "plateau_support_us": [
+          6500000,
+          6500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 5340000,
+        "truth_id": "NOHOLD:rep-1"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 12980000,
+        "confirm_start_us": 10040000,
+        "duration_s": 2.94,
+        "eligible": true,
+        "end_us": 12780000,
+        "expected_exclusion": null,
+        "hold_s": 0.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.8886931599440514,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 11000000,
+        "physical_end_us": 13000000,
+        "physical_start_us": 9500000,
+        "plateau_support_us": [
+          11000000,
+          11000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 9840000,
+        "truth_id": "NOHOLD:rep-2"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 17480000,
+        "confirm_start_us": 14540000,
+        "duration_s": 2.94,
+        "eligible": true,
+        "end_us": 17280000,
+        "expected_exclusion": null,
+        "hold_s": 0.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.8886931599440514,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 15500000,
+        "physical_end_us": 17500000,
+        "physical_start_us": 14000000,
+        "plateau_support_us": [
+          15500000,
+          15500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 14340000,
+        "truth_id": "NOHOLD:rep-3"
+      }
+    ],
+    "summary": {
+      "active_s": 8.82,
+      "cadence_per_s": 0.3401360544217687,
+      "physical_count": 3,
+      "rest_s": [
+        1.56,
+        1.56
+      ],
+      "rom_cv": 0.0,
+      "rom_max_rad": 1.3980087308474578,
+      "rom_mean_rad": 1.3980087308474578,
+      "rom_range_rad": 0.0,
+      "rom_sd_rad": 0.0,
+      "valid_count": 3
+    }
+  },
+  "PARTIAL": {
+    "motion": {
+      "analysis_end_us": 20000000,
+      "analysis_start_us": 5800000,
+      "axis": "Y",
+      "cycles": [
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        }
+      ],
+      "end_us": 21500000,
+      "side": "left",
+      "sign": -1,
+      "thorax": "fixed"
+    },
+    "nominal_m4": [
+      {
+        "complete": false,
+        "confirm_end_us": 9480000,
+        "confirm_start_us": 5540000,
+        "duration_s": 3.94,
+        "eligible": false,
+        "end_us": 9280000,
+        "expected_exclusion": "partial_start",
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 6500000,
+        "physical_end_us": 9500000,
+        "physical_start_us": 5000000,
+        "plateau_support_us": [
+          6500000,
+          7500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 5340000,
+        "truth_id": "PARTIAL:rep-1"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 14980000,
+        "confirm_start_us": 11040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 14780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 12000000,
+        "physical_end_us": 15000000,
+        "physical_start_us": 10500000,
+        "plateau_support_us": [
+          12000000,
+          13000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 10840000,
+        "truth_id": "PARTIAL:rep-2"
+      },
+      {
+        "complete": false,
+        "confirm_end_us": 20480000,
+        "confirm_start_us": 16540000,
+        "duration_s": 3.94,
+        "eligible": false,
+        "end_us": 20280000,
+        "expected_exclusion": "partial_end",
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 17500000,
+        "physical_end_us": 20500000,
+        "physical_start_us": 16000000,
+        "plateau_support_us": [
+          17500000,
+          18500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 16340000,
+        "truth_id": "PARTIAL:rep-3"
+      }
+    ],
+    "summary": {
+      "active_s": 3.94,
+      "cadence_per_s": 0.25380710659898476,
+      "physical_count": 3,
+      "rest_s": [],
+      "rom_cv": null,
+      "rom_max_rad": 1.3980087308474578,
+      "rom_mean_rad": 1.3980087308474578,
+      "rom_range_rad": 0.0,
+      "rom_sd_rad": null,
+      "valid_count": 1
+    }
+  },
+  "QUIET": {
+    "motion": {
+      "analysis_end_us": null,
+      "analysis_start_us": 5000000,
+      "axis": "Y",
+      "cycles": [],
+      "end_us": 35000000,
+      "side": "left",
+      "sign": -1,
+      "thorax": "fixed"
+    },
+    "nominal_m4": [],
+    "summary": {
+      "active_s": null,
+      "cadence_per_s": null,
+      "physical_count": 0,
+      "rest_s": [],
+      "rom_cv": null,
+      "rom_max_rad": null,
+      "rom_mean_rad": null,
+      "rom_range_rad": null,
+      "rom_sd_rad": null,
+      "valid_count": 0
+    }
+  },
+  "T-EXT": {
+    "motion": {
+      "analysis_end_us": null,
+      "analysis_start_us": 5000000,
+      "axis": "Y",
+      "cycles": [
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        }
+      ],
+      "end_us": 21500000,
+      "side": "left",
+      "sign": -1,
+      "thorax": "extension"
+    },
+    "nominal_m4": [
+      {
+        "complete": true,
+        "confirm_end_us": 9480000,
+        "confirm_start_us": 5540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 9280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 6500000,
+        "physical_end_us": 9500000,
+        "physical_start_us": 5000000,
+        "plateau_support_us": [
+          6500000,
+          7500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 5340000,
+        "truth_id": "T-EXT:rep-1"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 14980000,
+        "confirm_start_us": 11040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 14780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 12000000,
+        "physical_end_us": 15000000,
+        "physical_start_us": 10500000,
+        "plateau_support_us": [
+          12000000,
+          13000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 10840000,
+        "truth_id": "T-EXT:rep-2"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 20480000,
+        "confirm_start_us": 16540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 20280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 17500000,
+        "physical_end_us": 20500000,
+        "physical_start_us": 16000000,
+        "plateau_support_us": [
+          17500000,
+          18500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 16340000,
+        "truth_id": "T-EXT:rep-3"
+      }
+    ],
+    "summary": {
+      "active_s": 11.82,
+      "cadence_per_s": 0.25380710659898476,
+      "physical_count": 3,
+      "rest_s": [
+        1.56,
+        1.56
+      ],
+      "rom_cv": 0.0,
+      "rom_max_rad": 1.3980087308474578,
+      "rom_mean_rad": 1.3980087308474578,
+      "rom_range_rad": 0.0,
+      "rom_sd_rad": 0.0,
+      "valid_count": 3
+    }
+  },
+  "T-MIX": {
+    "motion": {
+      "analysis_end_us": null,
+      "analysis_start_us": 5000000,
+      "axis": "Y",
+      "cycles": [
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        }
+      ],
+      "end_us": 21500000,
+      "side": "left",
+      "sign": -1,
+      "thorax": "mixed"
+    },
+    "nominal_m4": [
+      {
+        "complete": true,
+        "confirm_end_us": 9480000,
+        "confirm_start_us": 5540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 9280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 6500000,
+        "physical_end_us": 9500000,
+        "physical_start_us": 5000000,
+        "plateau_support_us": [
+          6500000,
+          7500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 5340000,
+        "truth_id": "T-MIX:rep-1"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 14980000,
+        "confirm_start_us": 11040000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 14780000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 12000000,
+        "physical_end_us": 15000000,
+        "physical_start_us": 10500000,
+        "plateau_support_us": [
+          12000000,
+          13000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 10840000,
+        "truth_id": "T-MIX:rep-2"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 20480000,
+        "confirm_start_us": 16540000,
+        "duration_s": 3.94,
+        "eligible": true,
+        "end_us": 20280000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 17500000,
+        "physical_end_us": 20500000,
+        "physical_start_us": 16000000,
+        "plateau_support_us": [
+          17500000,
+          18500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 16340000,
+        "truth_id": "T-MIX:rep-3"
+      }
+    ],
+    "summary": {
+      "active_s": 11.82,
+      "cadence_per_s": 0.25380710659898476,
+      "physical_count": 3,
+      "rest_s": [
+        1.56,
+        1.56
+      ],
+      "rom_cv": 0.0,
+      "rom_max_rad": 1.3980087308474578,
+      "rom_mean_rad": 1.3980087308474578,
+      "rom_range_rad": 0.0,
+      "rom_sd_rad": 0.0,
+      "valid_count": 3
+    }
+  },
+  "VAR": {
+    "motion": {
+      "analysis_end_us": null,
+      "analysis_start_us": 5000000,
+      "axis": "Y",
+      "cycles": [
+        {
+          "hold_us": 500000,
+          "peak_deg": 70,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1000000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 80,
+          "rest_us": 1000000,
+          "return_us": 1000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1500000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 1500000,
+          "rise_us": 2000000
+        }
+      ],
+      "end_us": 21000000,
+      "side": "left",
+      "sign": -1,
+      "thorax": "fixed"
+    },
+    "nominal_m4": [
+      {
+        "complete": true,
+        "confirm_end_us": 8420000,
+        "confirm_start_us": 5490000,
+        "duration_s": 2.93,
+        "eligible": true,
+        "end_us": 8220000,
+        "expected_exclusion": null,
+        "hold_s": 0.5,
+        "max_speed_rads": 1.2217304763960306,
+        "mean_speed_rads": 0.6546473883760302,
+        "peak_rad": 1.2217304763960306,
+        "peak_us": 6000000,
+        "physical_end_us": 8500000,
+        "physical_start_us": 5000000,
+        "plateau_support_us": [
+          6000000,
+          6500000
+        ],
+        "return_s": 1.72,
+        "rise_s": 0.71,
+        "rom_rad": 1.0506882097005865,
+        "start_us": 5290000,
+        "truth_id": "VAR:rep-1"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 13080000,
+        "confirm_start_us": 10080000,
+        "duration_s": 3.0,
+        "eligible": true,
+        "end_us": 12880000,
+        "expected_exclusion": null,
+        "hold_s": 1.0,
+        "max_speed_rads": 1.3962634015954636,
+        "mean_speed_rads": 0.7570850444206514,
+        "peak_rad": 1.3962634015954636,
+        "peak_us": 11000000,
+        "physical_end_us": 13000000,
+        "physical_start_us": 9500000,
+        "plateau_support_us": [
+          11000000,
+          12000000
+        ],
+        "return_s": 0.88,
+        "rise_s": 1.12,
+        "rom_rad": 1.2287117934040082,
+        "start_us": 9880000,
+        "truth_id": "VAR:rep-2"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 19040000,
+        "confirm_start_us": 14650000,
+        "duration_s": 4.39,
+        "eligible": true,
+        "end_us": 18840000,
+        "expected_exclusion": null,
+        "hold_s": 1.5,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.5969503124987439,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 16000000,
+        "physical_end_us": 19000000,
+        "physical_start_us": 14000000,
+        "plateau_support_us": [
+          16000000,
+          17500000
+        ],
+        "return_s": 1.34,
+        "rise_s": 1.55,
+        "rom_rad": 1.403244718603441,
+        "start_us": 14450000,
+        "truth_id": "VAR:rep-3"
+      }
+    ],
+    "summary": {
+      "active_s": 10.32,
+      "cadence_per_s": 0.29069767441860467,
+      "physical_count": 3,
+      "rest_s": [
+        1.66,
+        1.57
+      ],
+      "rom_cv": 0.14360424192161553,
+      "rom_max_rad": 1.403244718603441,
+      "rom_mean_rad": 1.2275482405693452,
+      "rom_range_rad": 0.3525565089028544,
+      "rom_sd_rad": 0.17628113450917374,
+      "valid_count": 3
+    }
+  },
+  "WRONG": {
+    "motion": {
+      "analysis_end_us": null,
+      "analysis_start_us": 5000000,
+      "axis": "X",
+      "cycles": [
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        },
+        {
+          "hold_us": 1000000,
+          "peak_deg": 90,
+          "rest_us": 1000000,
+          "return_us": 2000000,
+          "rise_us": 1500000
+        }
+      ],
+      "end_us": 21500000,
+      "side": "left",
+      "sign": -1,
+      "thorax": "fixed"
+    },
+    "nominal_m4": [
+      {
+        "complete": true,
+        "confirm_end_us": 9480000,
+        "confirm_start_us": 5540000,
+        "duration_s": 3.94,
+        "eligible": false,
+        "end_us": 9280000,
+        "expected_exclusion": "plane_mismatch",
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 6500000,
+        "physical_end_us": 9500000,
+        "physical_start_us": 5000000,
+        "plateau_support_us": [
+          6500000,
+          7500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 5340000,
+        "truth_id": "WRONG:rep-1"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 14980000,
+        "confirm_start_us": 11040000,
+        "duration_s": 3.94,
+        "eligible": false,
+        "end_us": 14780000,
+        "expected_exclusion": "plane_mismatch",
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 12000000,
+        "physical_end_us": 15000000,
+        "physical_start_us": 10500000,
+        "plateau_support_us": [
+          12000000,
+          13000000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 10840000,
+        "truth_id": "WRONG:rep-2"
+      },
+      {
+        "complete": true,
+        "confirm_end_us": 20480000,
+        "confirm_start_us": 16540000,
+        "duration_s": 3.94,
+        "eligible": false,
+        "end_us": 20280000,
+        "expected_exclusion": "plane_mismatch",
+        "hold_s": 1.0,
+        "max_speed_rads": 1.0471975511965976,
+        "mean_speed_rads": 0.663136520364343,
+        "peak_rad": 1.5707963267948966,
+        "peak_us": 17500000,
+        "physical_end_us": 20500000,
+        "physical_start_us": 16000000,
+        "plateau_support_us": [
+          17500000,
+          18500000
+        ],
+        "return_s": 1.78,
+        "rise_s": 1.16,
+        "rom_rad": 1.3980087308474578,
+        "start_us": 16340000,
+        "truth_id": "WRONG:rep-3"
+      }
+    ],
+    "summary": {
+      "active_s": null,
+      "cadence_per_s": null,
+      "physical_count": 3,
+      "rest_s": [],
+      "rom_cv": null,
+      "rom_max_rad": null,
+      "rom_mean_rad": null,
+      "rom_range_rad": null,
+      "rom_sd_rad": null,
+      "valid_count": 0
+    }
+  }
+}

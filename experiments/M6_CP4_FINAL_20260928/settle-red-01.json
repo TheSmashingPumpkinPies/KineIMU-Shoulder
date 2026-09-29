@@ -1,0 +1,25 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "--frozen",
+    "pytest",
+    "tests/contracts/test_m1_ble_link_matrix_event_timing.py::test_settle_window_rechecks_deadline_after_an_early_timer_wakeup",
+    "--basetemp",
+    "<temporary-workspace>/kineimu-m6-cp4-settle-red-01"
+  ],
+  "cwd": ".",
+  "started_utc": "2026-09-28T13:06:22.031206+00:00",
+  "ended_utc": "2026-09-28T13:06:23.647233+00:00",
+  "exit_code": 1,
+  "log": "settle-red-01.log",
+  "log_sha256": "4ee16e755844c4e9ca37c82f45c308fcd1ac08dc2ab39c1d82ae1b7ef2189171",
+  "source_head": "bf1119f22dd5f147c117f15156a9bd17b0393d17",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "UV_CACHE_DIR": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null
+  }
+}

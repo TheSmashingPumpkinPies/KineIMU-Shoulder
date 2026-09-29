@@ -1,0 +1,21 @@
+{
+  "command": [
+    "<local-home>/.local/bin/uv.exe",
+    "run",
+    "--frozen",
+    "python",
+    "experiments/M6_CP3_20260928/tamper-tool.txt"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T08:14:23.005156+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 0,
+  "log": "tamper-controls.log",
+  "sha256": "e46b45dfb5a3912fec33416d251b5e89b253ba4dba34a135ea33523db22355f6",
+  "started_utc": "2026-09-28T08:14:09.423190+00:00"
+}

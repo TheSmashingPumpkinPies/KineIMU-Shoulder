@@ -1,0 +1,23 @@
+{
+  "command": [
+    "<local-home>/.local/bin/uv.exe",
+    "run",
+    "--frozen",
+    "pytest",
+    "tests/integration/test_m6_benchmark.py",
+    "-q",
+    "--basetemp=.tmp-m6-cp3-red"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T07:13:58.533009+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 1,
+  "log": "red-statistics.log",
+  "sha256": "987043af74f5e9e824ec36e398f0f43e77daeccaa91862d2dcb6403537c99f37",
+  "started_utc": "2026-09-28T07:13:56.955281+00:00"
+}

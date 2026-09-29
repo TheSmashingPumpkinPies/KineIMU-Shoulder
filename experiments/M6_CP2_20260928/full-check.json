@@ -1,0 +1,22 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "--tb=short",
+    "--basetemp",
+    "<temporary-workspace>/kineimu-m6-cp2-full"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T06:55:46.436312+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": "<external-data>/kineimu_m1_usb_30min_20260925_01",
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 0,
+  "log": "full.log",
+  "sha256": "ac04c8cf52c1813d3e7bf0b5abd13644a3695a1498b40cfcec490f4b9f3e792c",
+  "started_utc": "2026-09-28T06:44:42.833361+00:00"
+}

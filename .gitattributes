@@ -1,0 +1,6 @@
+# Keep exported bytes stable; CRLF is intentional in original research records.
+* -text whitespace=cr-at-eol
+# Exact upstream/archival text can contain original trailing spaces; never normalize it.
+docs/release/licenses/** -whitespace
+experiments/** -whitespace
+firmware/**/LICENSE*.txt -whitespace

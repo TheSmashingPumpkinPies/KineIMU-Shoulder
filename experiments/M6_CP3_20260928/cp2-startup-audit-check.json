@@ -1,0 +1,27 @@
+{
+  "command": [
+    "<local-home>/.local/bin/uv.exe",
+    "run",
+    "--frozen",
+    "python",
+    "experiments/M6_CP2_20260928/audit.py",
+    "--run1",
+    "experiments/M6_CP2_20260928/run1",
+    "--run2",
+    "experiments/M6_CP2_20260928/run2",
+    "--output",
+    "experiments/M6_CP3_20260928/cp2-startup-audit.json"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T07:22:37.194913+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 0,
+  "log": "cp2-startup-audit.log",
+  "sha256": "c1619c186de2a2236fe1bf0a0dce7b9a78a700dfa463d98642dbe2c72211303e",
+  "started_utc": "2026-09-28T07:22:32.929282+00:00"
+}

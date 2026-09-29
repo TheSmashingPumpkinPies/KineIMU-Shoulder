@@ -1,0 +1,9 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: .
+configfile: pyproject.toml
+collected 28 items / 1 deselected / 27 selected
+
+tests\integration\test_m6_demo.py ...........................            [100%]
+
+====================== 27 passed, 1 deselected in 4.03s =======================

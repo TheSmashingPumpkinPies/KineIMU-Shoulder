@@ -1,0 +1,57 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: .
+configfile: pyproject.toml
+collected 27 items
+
+tests\integration\test_m6_demo.py ...................F...FF.F            [100%]
+
+================================== FAILURES ===================================
+_________________ test_input_refusal_before_mkdir[missing-2] __________________
+tests\integration\test_m6_demo.py:73: in test_input_refusal_before_mkdir
+    assert module.run_demo(output, input_root=inputs) == exit_code
+E   AssertionError: assert 1 == 2
+E    +  where 1 = <function run_demo at 0x0000000000000101>(WindowsPath('./.pytest-m6-cp2-green/test_input_refusal_before_mkdi0/out'), input_root=WindowsPath('./.pytest-m6-cp2-green/test_input_refusal_before_mkdi0/inputs'))
+E    +    where <function run_demo at 0x0000000000000101> = <module 'kineimu_shoulder.validation.demo' from '.\\kineimu_shoulder\\validation\\demo.py'>.run_demo
+---------------------------- Captured stderr call -----------------------------
+FAILED: ['preflight:ValueError:repository output must be a new top-level demo-output-* directory']; no root created: .\.pytest-m6-cp2-green\test_input_refusal_before_mkdi0\out
+______ test_interrupted_export_retains_partial_root_and_not_run_reasons _______
+tests\integration\test_m6_demo.py:112: in test_interrupted_export_retains_partial_root_and_not_run_reasons
+    assert (output / "replay/partial.txt").read_bytes() == b"preserved"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1013: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: '.\\.pytest-m6-cp2-green\\test_interrupted_export_retain0\\out\\replay\\partial.txt'
+---------------------------- Captured stderr call -----------------------------
+FAILED: ['preflight:ValueError:repository output must be a new top-level demo-output-* directory']; no root created: .\.pytest-m6-cp2-green\test_interrupted_export_retain0\out
+_____________ test_numerical_failure_takes_priority_over_blocked ______________
+tests\integration\test_m6_demo.py:137: in test_numerical_failure_takes_priority_over_blocked
+    run = json.loads((output / "run.json").read_bytes())
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1013: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: '.\\.pytest-m6-cp2-green\\test_numerical_failure_takes_p0\\out\\run.json'
+---------------------------- Captured stderr call -----------------------------
+FAILED: ['preflight:ValueError:repository output must be a new top-level demo-output-* directory']; no root created: .\.pytest-m6-cp2-green\test_numerical_failure_takes_p0\out
+_______ test_complete_demo_reads_sample_without_generating_observations _______
+tests\integration\test_m6_demo.py:165: in test_complete_demo_reads_sample_without_generating_observations
+    assert module.run_demo(output) == 0
+E   AssertionError: assert 1 == 0
+E    +  where 1 = <function run_demo at 0x0000000000000101>(WindowsPath('./.pytest-m6-cp2-green/test_complete_demo_reads_sampl0/demo'))
+E    +    where <function run_demo at 0x0000000000000101> = <module 'kineimu_shoulder.validation.demo' from '.\\kineimu_shoulder\\validation\\demo.py'>.run_demo
+---------------------------- Captured stderr call -----------------------------
+FAILED: ['preflight:ValueError:repository output must be a new top-level demo-output-* directory']; no root created: .\.pytest-m6-cp2-green\test_complete_demo_reads_sampl0\demo
+=========================== short test summary info ===========================
+FAILED tests/integration/test_m6_demo.py::test_input_refusal_before_mkdir[missing-2]
+FAILED tests/integration/test_m6_demo.py::test_interrupted_export_retains_partial_root_and_not_run_reasons
+FAILED tests/integration/test_m6_demo.py::test_numerical_failure_takes_priority_over_blocked
+FAILED tests/integration/test_m6_demo.py::test_complete_demo_reads_sample_without_generating_observations
+======================== 4 failed, 23 passed in 2.96s =========================

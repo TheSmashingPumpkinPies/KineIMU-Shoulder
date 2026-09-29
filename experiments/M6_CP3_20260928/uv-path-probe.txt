@@ -1,0 +1,10 @@
+"""Read-only diagnosis of uv availability inside the invoking Python environment."""
+import json
+import os
+import shutil
+import subprocess
+from pathlib import Path
+
+pinned = Path(os.environ["USERPROFILE"]) / ".local/bin/uv.exe"
+print(json.dumps(dict(path_resolution=shutil.which("uv"), pinned_executable=str(pinned),
+                      pinned_version=subprocess.check_output([str(pinned), "--version"], text=True).strip())))

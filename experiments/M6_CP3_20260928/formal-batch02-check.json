@@ -1,0 +1,23 @@
+{
+  "command": [
+    "<local-home>/.local/bin/uv.exe",
+    "run",
+    "--frozen",
+    "python",
+    "benchmarks/demo/run_benchmark.py",
+    "--output",
+    "<temporary-workspace>\\kineimu-m6-cp3-addcdd7f-batch02"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T07:50:56.679793+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 1,
+  "log": "formal-batch02.log",
+  "sha256": "ab2d25da4b00d55565dc14505d7774bf177af5628f657205f8670056572ecdee",
+  "started_utc": "2026-09-28T07:43:15.523807+00:00"
+}

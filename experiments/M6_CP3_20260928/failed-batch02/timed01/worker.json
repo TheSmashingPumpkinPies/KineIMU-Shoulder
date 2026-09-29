@@ -1,0 +1,11 @@
+{
+  "executable": ".\\.venv\\Scripts\\python.exe",
+  "external_m1_root": null,
+  "pid": 15684,
+  "ppid": 16048,
+  "threads": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

@@ -1,0 +1,42 @@
+.............FF....                                                      [100%]
+================================== FAILURES ===================================
+_______ test_child_failure_retains_command_pid_threads_and_both_streams _______
+
+tmp_path = WindowsPath('./.tmp-m6-cp3-red-worker/test_child_failure_retains_com0')
+
+    def test_child_failure_retains_command_pid_threads_and_both_streams(tmp_path):
+        module = runner()
+        env = module.child_environment()
+        command = [sys.executable, "-c",
+                   "import os,sys; print(os.getpid()); "
+                   "print(','.join(os.environ[k] for k in "
+                   "['OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS'])); "
+                   "print('failure retained',file=sys.stderr); sys.exit(7)"]
+        result = module.measure(command, tmp_path, env, tmp_path)
+        assert result["exit_code"] == 7 and result["command"] == command
+        assert result["wall_ns"] > 0 and result["wall_s"] == result["wall_ns"] / 1e9
+        stdout = (tmp_path / "stdout.log").read_text().splitlines()
+        assert int(stdout[0]) > 0 and int(stdout[0]) != os.getpid()
+>       assert result["launch_pid"] > 0 and result["launch_pid"] != os.getpid()
+               ^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'launch_pid'
+
+tests\integration\test_m6_benchmark.py:87: KeyError
+__ test_worker_identity_binds_actual_python_to_launch_and_preserves_failure ___
+
+tmp_path = WindowsPath('./.tmp-m6-cp3-red-worker/test_worker_identity_binds_act0')
+
+    def test_worker_identity_binds_actual_python_to_launch_and_preserves_failure(tmp_path):
+        module = runner()
+        worker = ROOT / "benchmarks/demo/worker.py"
+>       assert worker.exists(), "CP3 worker identity wrapper is missing"
+E       AssertionError: CP3 worker identity wrapper is missing
+E       assert False
+E        +  where False = exists()
+E        +    where exists = WindowsPath('./benchmarks/demo/worker.py').exists
+
+tests\integration\test_m6_benchmark.py:97: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/integration/test_m6_benchmark.py::test_child_failure_retains_command_pid_threads_and_both_streams
+FAILED tests/integration/test_m6_benchmark.py::test_worker_identity_binds_actual_python_to_launch_and_preserves_failure
+2 failed, 17 passed in 0.75s

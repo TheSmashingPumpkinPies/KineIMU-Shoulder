@@ -1,0 +1,53 @@
+"""Read-only numerical/metadata diagnosis, not relaxation of the CP2 whitelist."""
+import copy
+import importlib.util
+import json
+import traceback
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+EVIDENCE = Path(__file__).resolve().parent
+BATCH = EVIDENCE / "failed-batch02"
+spec = importlib.util.spec_from_file_location("cp2", ROOT / "experiments/M6_CP2_20260928/audit.py")
+audit = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(audit)
+rows = []
+reference = None
+for slot in ("warmup", "timed01", "timed02", "timed03", "timed04", "timed05"):
+    child = BATCH / slot / "demo"
+    scientific = audit.audit_run(child)
+    normalized = copy.deepcopy(scientific)
+    normalized["product_sha256"].pop("run.json")
+    if reference is None:
+        reference = normalized
+    assert reference == normalized
+    rows.append(dict(slot=slot, numerical_audit_passed=True,
+                     error_scalars=scientific["independently_recomputed_error_scalars"],
+                     equal_24_other_product_hashes=True))
+a = json.loads((BATCH / "warmup/demo/run.json").read_bytes())
+b = json.loads((BATCH / "timed01/demo/run.json").read_bytes())
+for row in (a, b):
+    for name in ("output_absolute_path", "started_utc", "ended_utc", "duration_s", "pid"):
+        row.pop(name)
+    row["command"][row["command"].index("--output") + 1] = "<output>"
+assert a != b and {k for k in a if a[k] != b[k]} == {"command"}
+for row in (a, b):
+    row["command"][row["command"].index("--identity") + 1] = "<identity>"
+assert a == b  # DIAGNOSIS ONLY; acceptance still fails the frozen unmodified auditor.
+try:
+    audit.audit_pair(BATCH / "warmup/demo", BATCH / "timed01/demo")
+except AssertionError:
+    trace = traceback.format_exc()
+else:
+    raise AssertionError("original pair audit unexpectedly passed")
+report = dict(disposition="FAIL_RETAINED", numerical_runs=rows,
+              cause="worker --identity value varies in sys.orig_argv beyond frozen CP2 whitelist",
+              acceptance_whitelist_unchanged=True, original_pair_traceback=trace,
+              transient_test_draft="During timed05 diagnosis, a test-only draft was briefly added then restored. "
+                                   "No executed source changed; before/after hashes match. This failed batch "
+                                   "does not establish continuous clean-source compliance.",
+              next="test-first remove variable --identity argument; derive sidecar from output parent; "
+                   "freeze protocol1.1/new source lock/new batch03; retain this failed batch")
+with (EVIDENCE / "failed-diagnosis.json").open("x", encoding="utf-8", newline="\n") as stream:
+    stream.write(json.dumps(report, sort_keys=True, indent=2) + "\n")
+print(json.dumps(dict(numerically_correct_runs=6, failed_pair_cause=report["cause"])))

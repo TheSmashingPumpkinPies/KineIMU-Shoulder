@@ -1,0 +1,42 @@
+{
+  "audit-red.log": {
+    "exit_code": 1,
+    "sha256": "5ae8f0893bdb53d748eef9f56e7164e75d1ba7b3590d7772f6c9a3023c3b73ca"
+  },
+  "failure-red.log": {
+    "exit_code": 1,
+    "sha256": "0587dda333f7ccec1ccf13a1ad7ae37522e19df2bec10bf581c51f99e4c8fa62"
+  },
+  "focused-final.log": {
+    "exit_code": 0,
+    "sha256": "eb73188f11ec012604f9cb7e9b9a460af127028d05faf88c8c0e9c869cddc521"
+  },
+  "green.log": {
+    "exit_code": 1,
+    "sha256": "897863446ccacaa4801b4f4edba48664354e1651eda02c2b225b28b4bbf85b61"
+  },
+  "green2.log": {
+    "exit_code": 0,
+    "sha256": "f3b4d800bbc63d28a40be9d9734f3ed5ff2b57bcb8cb93555b6e018ea324af39"
+  },
+  "mypy.log": {
+    "exit_code": 0,
+    "sha256": "0d42646ff848fddea83e113f5e72c066dc050fc901c93d17176142ab98c966e9"
+  },
+  "negative-green.log": {
+    "exit_code": 0,
+    "sha256": "43c6a5c2157d51e17e8ac507bef56687923c9615531ba11dbc1f8071cfbbb08b"
+  },
+  "pair-red.log": {
+    "exit_code": 1,
+    "sha256": "b1492ee0cd79ed61e3710478ac150c31c92940ee7fbf8edda63b18c9d60c29f1"
+  },
+  "red.log": {
+    "exit_code": 1,
+    "sha256": "76b3dfa317393524c818d289cb495410ae7d356965bb3c735054b67259c887e4"
+  },
+  "ruff-initial.log": {
+    "exit_code": 0,
+    "sha256": "72e1ec110d13621e09f00100a32cfeac552dcd543f891cf3e9f987817e0889a3"
+  }
+}

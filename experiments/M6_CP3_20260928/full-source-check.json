@@ -1,0 +1,21 @@
+{
+  "command": [
+    "<local-home>/.local/bin/uv.exe",
+    "run",
+    "--frozen",
+    "pytest",
+    "--basetemp=.tmp-m6-cp3-full-source"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T07:33:54.485844+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": "<external-data>/kineimu_m1_usb_30min_20260925_01",
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 1,
+  "log": "full-source.log",
+  "sha256": "98d9c9f2f5ca9f7ede013f0a556dcd5fd2825264a1eb6576a82fb8efea12499e",
+  "started_utc": "2026-09-28T07:21:28.769143+00:00"
+}

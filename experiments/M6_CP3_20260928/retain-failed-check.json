@@ -1,0 +1,22 @@
+{
+  "command": [
+    "<local-home>/.local/bin/uv.exe",
+    "run",
+    "--frozen",
+    "python",
+    "experiments/M6_CP3_20260928/retain-failed-tool.txt",
+    "<temporary-workspace>\\kineimu-m6-cp3-addcdd7f-batch02"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T07:52:46.426823+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 0,
+  "log": "retain-failed.log",
+  "sha256": "8d94218afbf15fd1bde273c04b6a12bf7fd2e9b44802080e116a59dc078eecc8",
+  "started_utc": "2026-09-28T07:52:45.479908+00:00"
+}

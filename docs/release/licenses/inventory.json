@@ -1,0 +1,835 @@
+{
+  "purpose": "Third-party notice review; no project license or public release approval",
+  "platform": "win32",
+  "python": "3.12.14 (main, Aug 14 2026, 15:40:22) [MSC v.1944 64 bit (AMD64)]",
+  "source": "Existing locked all-extras development environment; original distribution members",
+  "uv_lock_sha256": "ff2893aaa21f7ec97dfe487ca4c0e80af18d45e1293e47e28cd696feaf8d7c3e",
+  "distributions": [
+    {
+      "name": "ast_serialize",
+      "version": "0.9.0",
+      "role": "development-tool-or-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Homepage, https://github.com/mypyc/ast_serialize",
+        "Issues, https://github.com/mypyc/ast_serialize/issues"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "ast_serialize-0.9.0.dist-info/licenses/LICENSE",
+          "copy": "docs/release/licenses/ast-serialize-0.9.0/ast_serialize-0.9.0.dist-info/licenses/LICENSE.txt",
+          "bytes": 1308,
+          "sha256": "91e1749165651f2ad405f1533a921fc8d5cb0de2fd88a4b82090a8b571b5598d"
+        },
+        {
+          "distribution_member": "ast_serialize-0.9.0.dist-info/licenses/crates/LICENSE",
+          "copy": "docs/release/licenses/ast-serialize-0.9.0/ast_serialize-0.9.0.dist-info/licenses/crates/LICENSE.txt",
+          "bytes": 21161,
+          "sha256": "f798046f335b4c84dc851224aeeb8a96b6a1eb70f02f058e860bb00d9d7551cc"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "bleak",
+      "version": "3.0.2",
+      "role": "direct",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Homepage, https://github.com/hbldh/bleak",
+        "Documentation, https://bleak.readthedocs.io",
+        "Changelog, https://github.com/hbldh/bleak/blob/develop/CHANGELOG.rst",
+        "Support, https://github.com/hbldh/bleak/discussions",
+        "Issues, https://github.com/hbldh/bleak/issues"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "bleak-3.0.2.dist-info/licenses/LICENSE",
+          "copy": "docs/release/licenses/bleak-3.0.2/bleak-3.0.2.dist-info/licenses/LICENSE.txt",
+          "bytes": 1072,
+          "sha256": "c4029a2b63b3824ab68be841f414addbdde20cb79cdbe272fa80c0b2abe65374"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "role": "development-tool-or-transitive",
+      "metadata_license_expression": null,
+      "metadata_license_first_line": "",
+      "license_classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ],
+      "project_urls": [
+        "Homepage, https://github.com/tartley/colorama"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "colorama-0.4.6.dist-info/licenses/LICENSE.txt",
+          "copy": "docs/release/licenses/colorama-0.4.6/colorama-0.4.6.dist-info/licenses/LICENSE.txt.txt",
+          "bytes": 1491,
+          "sha256": "cac35c02686e5d04a5a7140bfb3b36e73aed496656e891102e428886d7930318"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "imucal",
+      "version": "2.6.0",
+      "role": "direct",
+      "metadata_license_expression": null,
+      "metadata_license_first_line": "MIT",
+      "license_classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "project_urls": [
+        "Documentation, https://imcucal.readthedocs.io/en/latest/",
+        "Repository, https://github.com/mad-lab-fau/imucal"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "imucal-2.6.0.dist-info/LICENSE",
+          "copy": "docs/release/licenses/imucal-2.6.0/imucal-2.6.0.dist-info/LICENSE.txt",
+          "bytes": 1073,
+          "sha256": "ec4e89acd61d1de40f67368ffcf29358a37d88f5357ed88914c354e55a090a0a"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "imufusion",
+      "version": "1.3.3",
+      "role": "direct",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Repository, https://github.com/xioTechnologies/Fusion"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "imufusion-1.3.3.dist-info/licenses/LICENSE.md",
+          "copy": "docs/release/licenses/imufusion-1.3.3/imufusion-1.3.3.dist-info/licenses/LICENSE.md.txt",
+          "bytes": 1107,
+          "sha256": "4944da874d0ac3e9b9a59eb031181e0962a7c4abbfcf129a5ef555be85965c4f"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.0",
+      "role": "development-tool-or-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Homepage, https://github.com/pytest-dev/iniconfig"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "iniconfig-2.3.0.dist-info/licenses/LICENSE",
+          "copy": "docs/release/licenses/iniconfig-2.3.0/iniconfig-2.3.0.dist-info/licenses/LICENSE.txt",
+          "bytes": 1098,
+          "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "librt",
+      "version": "0.15.0",
+      "role": "development-tool-or-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Homepage, https://github.com/mypyc/librt",
+        "Issues, https://github.com/mypyc/mypyc/issues"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "librt-0.15.0.dist-info/licenses/LICENSE",
+          "copy": "docs/release/licenses/librt-0.15.0/librt-0.15.0.dist-info/licenses/LICENSE.txt",
+          "bytes": 13052,
+          "sha256": "81b7ac7e5dc9410dd4aa4c8f8c5884b43cb821137904dc247b381132389b6aa8"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "mypy",
+      "version": "2.3.1",
+      "role": "development-tool-or-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Homepage, https://www.mypy-lang.org/",
+        "Documentation, https://mypy.readthedocs.io/en/stable/index.html",
+        "Repository, https://github.com/python/mypy",
+        "Changelog, https://github.com/python/mypy/blob/master/CHANGELOG.md",
+        "Issues, https://github.com/python/mypy/issues"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "mypy-2.3.1.dist-info/licenses/LICENSE",
+          "copy": "docs/release/licenses/mypy-2.3.1/mypy-2.3.1.dist-info/licenses/LICENSE.txt",
+          "bytes": 13106,
+          "sha256": "1cdee80ea9363fbe69582df40fa64e1853d7647fb4978c2b376f5854d88142be"
+        },
+        {
+          "distribution_member": "mypy-2.3.1.dist-info/licenses/mypy/typeshed/LICENSE",
+          "copy": "docs/release/licenses/mypy-2.3.1/mypy-2.3.1.dist-info/licenses/mypy/typeshed/LICENSE.txt",
+          "bytes": 12894,
+          "sha256": "13c71e0962836d8850762bda0f6234ff213034871fa66b6c42962549d73517a4"
+        },
+        {
+          "distribution_member": "mypy/typeshed/LICENSE",
+          "copy": "docs/release/licenses/mypy-2.3.1/mypy/typeshed/LICENSE.txt",
+          "bytes": 12894,
+          "sha256": "13c71e0962836d8850762bda0f6234ff213034871fa66b6c42962549d73517a4"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "mypy_extensions",
+      "version": "1.1.0",
+      "role": "development-tool-or-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Homepage, https://github.com/python/mypy_extensions"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "mypy_extensions-1.1.0.dist-info/licenses/LICENSE",
+          "copy": "docs/release/licenses/mypy-extensions-1.1.0/mypy_extensions-1.1.0.dist-info/licenses/LICENSE.txt",
+          "bytes": 1204,
+          "sha256": "a50450da1d53cd777b80ced77c58ff96abe0ccd879706bd142c3ec20e245f0b4"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.2",
+      "role": "direct",
+      "metadata_license_expression": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "homepage, https://numpy.org",
+        "documentation, https://numpy.org/doc/",
+        "source, https://github.com/numpy/numpy",
+        "download, https://pypi.org/project/numpy/#files",
+        "tracker, https://github.com/numpy/numpy/issues",
+        "release notes, https://numpy.org/doc/stable/release"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/LICENSE.txt",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/LICENSE.txt.txt",
+          "bytes": 45831,
+          "sha256": "a804dff0ead9fadc5293456410bcbfc32bf024be9c4513459663fb7b442d2341"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt.txt",
+          "bytes": 1039,
+          "sha256": "d544761558b510866c21f7e8a2d5716fca76e0b98117e3b6b86314db7244d150"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING.txt",
+          "bytes": 704,
+          "sha256": "aea41976c720f91bd19725c16916a1ace40eb1ea42620d340e587a5de4bbcea0"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/_core/src/highway/LICENSE.txt",
+          "bytes": 21155,
+          "sha256": "d208152e2777ffd0126eacc1bd21c0320d69e4e6b622d21a2a12a47e8ef73763"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt.txt",
+          "bytes": 1441,
+          "sha256": "b0fd592d4ead563148e3977e7b589169d46a5ef2ff133c755a81af880a3fc919"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md.txt",
+          "bytes": 1542,
+          "sha256": "a732977853530066790c42817087f4829b518dd98d340c916acbfd227e39d3cb"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE.txt",
+          "bytes": 1573,
+          "sha256": "585483905b13d4b42f800c55ba99e89d6e2e33ccd5f503e201c07531d148ff41"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md.txt",
+          "bytes": 1523,
+          "sha256": "8db000e158c162e7249787852d8c69764706502ccee725c06641b31c1e95c8af"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt.txt",
+          "bytes": 2314,
+          "sha256": "19060ef465e1797d682ee0fc3081bd25ab1395e995e43d25c9d13c95d9a3cd6b"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/ma/LICENSE.txt",
+          "bytes": 1616,
+          "sha256": "d78dbb208b80d92b4d333e41a4baae50d12444f46e53199fa7726a91de6e2da7"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/random/LICENSE.md.txt",
+          "bytes": 3582,
+          "sha256": "b4bc2f4fa1c95778f1ed3dd8f14706bece399475b978f9f34b5d3cd72521b48a"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md.txt",
+          "bytes": 2805,
+          "sha256": "cf5619f25b112d5ce7c896efffc8e610bcb345dfadcc19f2c1460aa48fff2c9e"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md.txt",
+          "bytes": 2986,
+          "sha256": "92c10699884321f1c2947fe2a70ab23b0fbf1507f756d89dd08f38c61fc3d4fa"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md.txt",
+          "bytes": 1176,
+          "sha256": "41190663b77bee5302386495a07b7eabfbfa571aa0ae2f11da6764162062fc4f"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md.txt",
+          "bytes": 1540,
+          "sha256": "322ac46d870c8aeead6c53adcccc839296fb3c8e456eae155081297daf7f8013"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md.txt",
+          "bytes": 1253,
+          "sha256": "28cad82ce1379dc529df30da78ec012d7d0d1d576b03ddcb93388aee53659f59"
+        },
+        {
+          "distribution_member": "numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md.txt",
+          "bytes": 340,
+          "sha256": "454ec7350e478e037061850b67395753b425b1cb0a34bbc26290b020bf89d763"
+        },
+        {
+          "distribution_member": "numpy/_core/include/numpy/random/LICENSE.txt",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy/_core/include/numpy/random/LICENSE.txt.txt",
+          "bytes": 1039,
+          "sha256": "d544761558b510866c21f7e8a2d5716fca76e0b98117e3b6b86314db7244d150"
+        },
+        {
+          "distribution_member": "numpy/ma/LICENSE",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy/ma/LICENSE.txt",
+          "bytes": 1616,
+          "sha256": "d78dbb208b80d92b4d333e41a4baae50d12444f46e53199fa7726a91de6e2da7"
+        },
+        {
+          "distribution_member": "numpy/random/LICENSE.md",
+          "copy": "docs/release/licenses/numpy-2.5.2/numpy/random/LICENSE.md.txt",
+          "bytes": 3582,
+          "sha256": "b4bc2f4fa1c95778f1ed3dd8f14706bece399475b978f9f34b5d3cd72521b48a"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "role": "development-tool-or-transitive",
+      "metadata_license_expression": "Apache-2.0 OR BSD-2-Clause",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Documentation, https://packaging.pypa.io/",
+        "Source, https://github.com/pypa/packaging"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "packaging-26.3.dist-info/licenses/LICENSE",
+          "copy": "docs/release/licenses/packaging-26.3/packaging-26.3.dist-info/licenses/LICENSE.txt",
+          "bytes": 197,
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+        },
+        {
+          "distribution_member": "packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+          "copy": "docs/release/licenses/packaging-26.3/packaging-26.3.dist-info/licenses/LICENSE.APACHE.txt",
+          "bytes": 10174,
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+        },
+        {
+          "distribution_member": "packaging-26.3.dist-info/licenses/LICENSE.BSD",
+          "copy": "docs/release/licenses/packaging-26.3/packaging-26.3.dist-info/licenses/LICENSE.BSD.txt",
+          "bytes": 1344,
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "pandas",
+      "version": "3.0.5",
+      "role": "direct",
+      "metadata_license_expression": null,
+      "metadata_license_first_line": "BSD 3-Clause License",
+      "license_classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ],
+      "project_urls": [
+        "homepage, https://pandas.pydata.org",
+        "documentation, https://pandas.pydata.org/docs/",
+        "repository, https://github.com/pandas-dev/pandas"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "pandas-3.0.5.dist-info/LICENSE",
+          "copy": "docs/release/licenses/pandas-3.0.5/pandas-3.0.5.dist-info/LICENSE.txt",
+          "bytes": 1634,
+          "sha256": "9850f6b5bdef7346503065807b878deb8058b976c5c329f4c4d23bf4796ce9ae"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "pathspec",
+      "version": "1.1.1",
+      "role": "development-tool-or-transitive",
+      "metadata_license_expression": null,
+      "metadata_license_first_line": "",
+      "license_classifiers": [
+        "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
+      ],
+      "project_urls": [
+        "Change Log, https://python-path-specification.readthedocs.io/en/latest/changes.html",
+        "Documentation, https://python-path-specification.readthedocs.io/en/latest/index.html",
+        "Issue Tracker, https://github.com/cpburnz/python-pathspec/issues",
+        "Source Code, https://github.com/cpburnz/python-pathspec"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "pathspec-1.1.1.dist-info/licenses/LICENSE",
+          "copy": "docs/release/licenses/pathspec-1.1.1/pathspec-1.1.1.dist-info/licenses/LICENSE.txt",
+          "bytes": 16726,
+          "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "role": "development-tool-or-transitive",
+      "metadata_license_expression": null,
+      "metadata_license_first_line": "MIT",
+      "license_classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "project_urls": [],
+      "copied_files": [
+        {
+          "distribution_member": "pluggy-1.6.0.dist-info/licenses/LICENSE",
+          "copy": "docs/release/licenses/pluggy-1.6.0/pluggy-1.6.0.dist-info/licenses/LICENSE.txt",
+          "bytes": 1110,
+          "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "role": "development-tool-or-transitive",
+      "metadata_license_expression": "BSD-2-Clause",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Homepage, https://pygments.org",
+        "Documentation, https://pygments.org/docs",
+        "Source, https://github.com/pygments/pygments",
+        "Bug Tracker, https://github.com/pygments/pygments/issues",
+        "Changelog, https://github.com/pygments/pygments/blob/master/CHANGES"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "pygments-2.21.0.dist-info/licenses/AUTHORS",
+          "copy": "docs/release/licenses/pygments-2.21.0/pygments-2.21.0.dist-info/licenses/AUTHORS.txt",
+          "bytes": 11048,
+          "sha256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f"
+        },
+        {
+          "distribution_member": "pygments-2.21.0.dist-info/licenses/LICENSE",
+          "copy": "docs/release/licenses/pygments-2.21.0/pygments-2.21.0.dist-info/licenses/LICENSE.txt",
+          "bytes": 1331,
+          "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "pyserial",
+      "version": "3.5",
+      "role": "direct",
+      "metadata_license_expression": null,
+      "metadata_license_first_line": "BSD",
+      "license_classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ],
+      "project_urls": [],
+      "copied_files": [],
+      "installed_text_status": "NOT_SUPPLIED_BY_INSTALLED_DISTRIBUTION"
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "role": "development-tool-or-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Changelog, https://docs.pytest.org/en/stable/changelog.html",
+        "Contact, https://docs.pytest.org/en/stable/contact.html",
+        "Funding, https://docs.pytest.org/en/stable/sponsor.html",
+        "Homepage, https://docs.pytest.org/en/latest/",
+        "Source, https://github.com/pytest-dev/pytest",
+        "Tracker, https://github.com/pytest-dev/pytest/issues"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "pytest-9.1.1.dist-info/licenses/LICENSE",
+          "copy": "docs/release/licenses/pytest-9.1.1/pytest-9.1.1.dist-info/licenses/LICENSE.txt",
+          "bytes": 1091,
+          "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "role": "runtime-transitive",
+      "metadata_license_expression": null,
+      "metadata_license_first_line": "Dual License",
+      "license_classifiers": [
+        "License :: OSI Approved :: BSD License",
+        "License :: OSI Approved :: Apache Software License"
+      ],
+      "project_urls": [
+        "Documentation, https://dateutil.readthedocs.io/en/stable/",
+        "Source, https://github.com/dateutil/dateutil"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "python_dateutil-2.9.0.post0.dist-info/LICENSE",
+          "copy": "docs/release/licenses/python-dateutil-2.9.0.post0/python_dateutil-2.9.0.post0.dist-info/LICENSE.txt",
+          "bytes": 2889,
+          "sha256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "ruff",
+      "version": "0.16.6",
+      "role": "development-tool-or-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Changelog, https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md",
+        "Documentation, https://docs.astral.sh/ruff/",
+        "Repository, https://github.com/astral-sh/ruff"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "ruff-0.16.6.dist-info/licenses/LICENSE",
+          "copy": "docs/release/licenses/ruff-0.16.6/ruff-0.16.6.dist-info/licenses/LICENSE.txt",
+          "bytes": 20731,
+          "sha256": "2597d854122b77ddc71971564ca2350a37608575ce324adc5650a2b2051c8f18"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.1",
+      "role": "direct",
+      "metadata_license_expression": null,
+      "metadata_license_first_line": "Copyright (c) 2001-2002 Enthought, Inc. 2003, SciPy Developers.",
+      "license_classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ],
+      "project_urls": [
+        "homepage, https://scipy.org/",
+        "documentation, https://docs.scipy.org/doc/scipy/",
+        "source, https://github.com/scipy/scipy",
+        "download, https://github.com/scipy/scipy/releases",
+        "tracker, https://github.com/scipy/scipy/issues"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "scipy-1.18.1.dist-info/LICENSE.txt",
+          "copy": "docs/release/licenses/scipy-1.18.1/scipy-1.18.1.dist-info/LICENSE.txt.txt",
+          "bytes": 45881,
+          "sha256": "f0f5c56b298ec9795df1199edc328a987242716d14a1bde6813112e22dc15f99"
+        },
+        {
+          "distribution_member": "scipy/_lib/_uarray/LICENSE",
+          "copy": "docs/release/licenses/scipy-1.18.1/scipy/_lib/_uarray/LICENSE.txt",
+          "bytes": 1543,
+          "sha256": "e4c4acc31e8287066d7c995d26e3ef902ca1977ee187b260b11c278366503811"
+        },
+        {
+          "distribution_member": "scipy/fft/_duccfft/LICENSE.md",
+          "copy": "docs/release/licenses/scipy-1.18.1/scipy/fft/_duccfft/LICENSE.md.txt",
+          "bytes": 1523,
+          "sha256": "c04661685cff9d8035fe1c4c3ab357e7f7633cafc06a73e9d90c3c5fede8a86a"
+        },
+        {
+          "distribution_member": "scipy/integrate/LICENSE_DOP",
+          "copy": "docs/release/licenses/scipy-1.18.1/scipy/integrate/LICENSE_DOP.txt",
+          "bytes": 3648,
+          "sha256": "6cc2ed6e35b8f376ff3d8f86aeef4e0c34c2309bd6f4a0565936d577839ba023"
+        },
+        {
+          "distribution_member": "scipy/spatial/qhull_src/COPYING_QHULL.txt",
+          "copy": "docs/release/licenses/scipy-1.18.1/scipy/spatial/qhull_src/COPYING_QHULL.txt.txt",
+          "bytes": 1759,
+          "sha256": "2a6ebb495e26dd5f88cbc40c593733da6edb27b64936f70409cd5a1acafb1c32"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "role": "runtime-transitive",
+      "metadata_license_expression": null,
+      "metadata_license_first_line": "MIT",
+      "license_classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "project_urls": [],
+      "copied_files": [
+        {
+          "distribution_member": "six-1.17.0.dist-info/LICENSE",
+          "copy": "docs/release/licenses/six-1.17.0/six-1.17.0.dist-info/LICENSE.txt",
+          "bytes": 1066,
+          "sha256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "role": "runtime-transitive",
+      "metadata_license_expression": "PSF-2.0",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Bug Tracker, https://github.com/python/typing_extensions/issues",
+        "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+        "Documentation, https://typing-extensions.readthedocs.io/",
+        "Home, https://github.com/python/typing_extensions",
+        "Q & A, https://github.com/python/typing/discussions",
+        "Repository, https://github.com/python/typing_extensions"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+          "copy": "docs/release/licenses/typing-extensions-4.16.0/typing_extensions-4.16.0.dist-info/licenses/LICENSE.txt",
+          "bytes": 13936,
+          "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.3",
+      "role": "runtime-transitive",
+      "metadata_license_expression": null,
+      "metadata_license_first_line": "Apache-2.0",
+      "license_classifiers": [],
+      "project_urls": [
+        "Bug Reports, https://github.com/python/tzdata/issues",
+        "Source, https://github.com/python/tzdata",
+        "Documentation, https://tzdata.python.org"
+      ],
+      "copied_files": [
+        {
+          "distribution_member": "tzdata-2026.3.dist-info/licenses/LICENSE",
+          "copy": "docs/release/licenses/tzdata-2026.3/tzdata-2026.3.dist-info/licenses/LICENSE.txt",
+          "bytes": 625,
+          "sha256": "df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46"
+        },
+        {
+          "distribution_member": "tzdata-2026.3.dist-info/licenses/licenses/LICENSE_APACHE",
+          "copy": "docs/release/licenses/tzdata-2026.3/tzdata-2026.3.dist-info/licenses/licenses/LICENSE_APACHE.txt",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "installed_text_status": "RETAINED"
+    },
+    {
+      "name": "winrt-runtime",
+      "version": "3.2.1",
+      "role": "runtime-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "copied_files": [],
+      "installed_text_status": "NOT_SUPPLIED_BY_INSTALLED_DISTRIBUTION"
+    },
+    {
+      "name": "winrt-Windows.Devices.Bluetooth",
+      "version": "3.2.1",
+      "role": "runtime-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "copied_files": [],
+      "installed_text_status": "NOT_SUPPLIED_BY_INSTALLED_DISTRIBUTION"
+    },
+    {
+      "name": "winrt-Windows.Devices.Bluetooth.Advertisement",
+      "version": "3.2.1",
+      "role": "runtime-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "copied_files": [],
+      "installed_text_status": "NOT_SUPPLIED_BY_INSTALLED_DISTRIBUTION"
+    },
+    {
+      "name": "winrt-Windows.Devices.Bluetooth.GenericAttributeProfile",
+      "version": "3.2.1",
+      "role": "runtime-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "copied_files": [],
+      "installed_text_status": "NOT_SUPPLIED_BY_INSTALLED_DISTRIBUTION"
+    },
+    {
+      "name": "winrt-Windows.Devices.Enumeration",
+      "version": "3.2.1",
+      "role": "runtime-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "copied_files": [],
+      "installed_text_status": "NOT_SUPPLIED_BY_INSTALLED_DISTRIBUTION"
+    },
+    {
+      "name": "winrt-Windows.Devices.Radios",
+      "version": "3.2.1",
+      "role": "runtime-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "copied_files": [],
+      "installed_text_status": "NOT_SUPPLIED_BY_INSTALLED_DISTRIBUTION"
+    },
+    {
+      "name": "winrt-Windows.Foundation",
+      "version": "3.2.1",
+      "role": "runtime-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "copied_files": [],
+      "installed_text_status": "NOT_SUPPLIED_BY_INSTALLED_DISTRIBUTION"
+    },
+    {
+      "name": "winrt-Windows.Foundation.Collections",
+      "version": "3.2.1",
+      "role": "runtime-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "copied_files": [],
+      "installed_text_status": "NOT_SUPPLIED_BY_INSTALLED_DISTRIBUTION"
+    },
+    {
+      "name": "winrt-Windows.Storage.Streams",
+      "version": "3.2.1",
+      "role": "runtime-transitive",
+      "metadata_license_expression": "MIT",
+      "metadata_license_first_line": "",
+      "license_classifiers": [],
+      "project_urls": [
+        "Documentation, https://pywinrt.readthedocs.io",
+        "Repository, https://github.com/pywinrt/pywinrt",
+        "Changelog, https://github.com/pywinrt/pywinrt/blob/main/CHANGELOG.md"
+      ],
+      "copied_files": [],
+      "installed_text_status": "NOT_SUPPLIED_BY_INSTALLED_DISTRIBUTION"
+    }
+  ]
+}

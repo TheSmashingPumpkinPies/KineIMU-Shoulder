@@ -1,0 +1,22 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: .
+configfile: pyproject.toml
+collected 29 items / 28 deselected / 1 selected
+
+tests\integration\test_m6_demo.py F                                      [100%]
+
+================================== FAILURES ===================================
+_______ test_complete_demo_reads_sample_without_generating_observations _______
+tests\integration\test_m6_demo.py:262: in test_complete_demo_reads_sample_without_generating_observations
+    assert independent_auditor().audit_pair(output, other, require_clean=False)["cp2_passed"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+experiments\M6_CP2_20260928\audit.py:125: in audit_pair
+    assert a == b
+           ^^^^^^
+E   AssertionError
+---------------------------- Captured stdout call -----------------------------
+Four trajectories complete; summary: <temporary-workspace>\kineimu-m6-cp2-pair-red\test_complete_demo_reads_sampl0\demo\summary.md; synthetic, anatomical_eligible=false.
+=========================== short test summary info ===========================
+FAILED tests/integration/test_m6_demo.py::test_complete_demo_reads_sample_without_generating_observations
+================= 1 failed, 28 deselected in 67.87s (0:01:07) =================

@@ -1,0 +1,78 @@
+{
+  "anatomical_eligible": false,
+  "backend": {
+    "processing": "fresh Ahrs; initial synthetic q_WN; skip_startup; no set_settings; no magnetometer; no CP1 AHRS execution",
+    "public_api": [
+      "get_earth_acceleration",
+      "get_flags",
+      "get_gravity",
+      "get_internal_states",
+      "get_linear_acceleration",
+      "get_quaternion",
+      "restart",
+      "set_heading",
+      "set_quaternion",
+      "set_sample_period",
+      "set_settings",
+      "skip_startup",
+      "update",
+      "update_external_heading",
+      "update_no_magnetometer"
+    ],
+    "settings": "not exposed by installed Ahrs API"
+  },
+  "checkpoint_scope": "CP1 source tools only; CP2-CP5 not run",
+  "demo_trajectories": [
+    "F90",
+    "AL90",
+    "AR90",
+    "T-MIX"
+  ],
+  "git_commit": "ee0741334e430c7cf8b5b9845d0a9b48426fecad",
+  "gravity_mps2": 9.80665,
+  "gyro_rule": "left derivative at knots; otherwise continuous right-endpoint observation",
+  "lever_arm_m": [
+    0,
+    0,
+    0
+  ],
+  "quantization": {
+    "accel_lsb_mps2": 0.0011964113,
+    "clipping": "reject",
+    "gyro_lsb_rads": 0.0003054326190990077,
+    "rounding": "ties-to-even",
+    "samples_per_packet": 4
+  },
+  "runtime": {
+    "imucal": "2.6.0",
+    "imufusion": "1.3.3",
+    "numpy": "2.5.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "scipy": "1.18.1"
+  },
+  "sample_hz": 100,
+  "source_hashes": {
+    "examples/m5_sensor_source.py": "b0683f13c34c1770d64e441c21de30e3c8c2eed418766ab6c8249ec2200ff700",
+    "experiments/M5_CP1_20260926/case-manifest.json": "5bab237edd4386c630fa25ddae4fa774d41e4d51cf2493f2d3f23b458234edee",
+    "kineimu_shoulder/io/m1_capture.py": "8e9a5dfbafdb59f0f8463a5bd200efba98800f43705d62eaf1f7c43fdbccded5",
+    "kineimu_shoulder/io/m1_packet.py": "91a7cd4bc53db67fbe2d83663e162b7729f1b3a6d322c7106f51e38720fe8a74",
+    "kineimu_shoulder/io/m2_replay.py": "289113f0ede0eb2e57f07ce02d118fcdbcf7d17d817b8d7def03a1d63b133693",
+    "kineimu_shoulder/validation/__init__.py": "54165f33131d9018845e617a38540db863e73f738d13921565bf6babd611e978",
+    "kineimu_shoulder/validation/manifest.py": "49ef995d6437907d589efcb2b8708d761696c6d9a6c1ce9edec2e7a331a1f543",
+    "kineimu_shoulder/validation/motions.py": "0fbbb062250c39f8bce2682be068ef6d7d928bfaf124ca1ecc81c60b85ecfdbd",
+    "kineimu_shoulder/validation/oracle.py": "1c041a20ec7d7afc4a5bf14a6d6c5849077d84010c7b53a2e19b8e0f0253fb29",
+    "kineimu_shoulder/validation/source.py": "fa6c9961da7ee13477c0c153eea36d322bda3437bfb1231b240797cf6fe5f55d",
+    "protocols/M5_VALIDATION_CONTRACT.md": "e8a76451e0ebc39d8467fc6bdb20fb81737fa3df5b5561c2105427f4a10f42be",
+    "tests/fixtures/M5_KNOWN_SENSOR_MOTIONS.md": "1cd431c694f09ddf5e62b31353bde39939481f5a5bca417acb9049c3c86636fe",
+    "uv.lock": "ff2893aaa21f7ec97dfe487ca4c0e80af18d45e1293e47e28cd696feaf8d7c3e"
+  },
+  "source_type": "synthetic",
+  "tracked_dirty": false,
+  "translation_mps2": [
+    0,
+    0,
+    0
+  ],
+  "version": "m5-source/1.0"
+}

@@ -1,0 +1,21 @@
+{
+  "command": [
+    "<local-home>/.local/bin/uv.exe",
+    "run",
+    "--frozen",
+    "python",
+    "experiments/M6_CP3_20260928/failed-diagnosis-tool.txt"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T07:53:09.182548+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 0,
+  "log": "failed-diagnosis.log",
+  "sha256": "1d8bad46089eae17b10d94c8ebd2e6354bf9a613005edb014861fd9984b6a1a3",
+  "started_utc": "2026-09-28T07:52:49.785149+00:00"
+}

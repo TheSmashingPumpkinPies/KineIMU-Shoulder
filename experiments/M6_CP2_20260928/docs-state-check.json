@@ -1,0 +1,18 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "scripts/check_docs_consistency.py"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T06:49:06.923635+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 0,
+  "log": "docs-state.log",
+  "sha256": "7666f8fd57495443f2ed1eb27adf83d658e765501737152509a3e53d8cac66fe",
+  "started_utc": "2026-09-28T06:48:48.069983+00:00"
+}

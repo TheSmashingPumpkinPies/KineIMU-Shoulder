@@ -1,0 +1,277 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: .
+configfile: pyproject.toml
+testpaths: tests
+collected 874 items
+
+tests\contracts\test_m1_bench_summary.py .....                           [  0%]
+tests\contracts\test_m1_ble_connparam_independent_analysis.py .......... [  1%]
+..                                                                       [  1%]
+tests\contracts\test_m1_ble_fresh_device_factory.py ....                 [  2%]
+tests\contracts\test_m1_ble_link_count_formal.py ....................    [  4%]
+tests\contracts\test_m1_ble_link_count_formal_v8.py .....                [  5%]
+tests\contracts\test_m1_ble_link_count_formal_v9.py ......               [  5%]
+tests\contracts\test_m1_ble_link_count_precheck.py ..................... [  8%]
+.......                                                                  [  9%]
+tests\contracts\test_m1_ble_link_matrix.py ............                  [ 10%]
+tests\contracts\test_m1_ble_link_matrix_audit.py .......                 [ 11%]
+tests\contracts\test_m1_ble_link_matrix_control.py ...............       [ 13%]
+tests\contracts\test_m1_ble_link_matrix_event_timing.py ................ [ 14%]
+..                                                                       [ 15%]
+tests\contracts\test_m1_ble_link_matrix_preflight.py ..........          [ 16%]
+tests\contracts\test_m1_ble_link_matrix_session.py .....                 [ 16%]
+tests\contracts\test_m1_ble_physical_gates.py .............              [ 18%]
+tests\contracts\test_m1_ble_recorder.py ................................ [ 21%]
+......                                                                   [ 22%]
+tests\contracts\test_m1_ble_recovery.py ..                               [ 22%]
+tests\contracts\test_m1_capture.py .........                             [ 23%]
+tests\contracts\test_m1_control.py ...........                           [ 25%]
+tests\contracts\test_m1_packet.py .......                                [ 25%]
+tests\contracts\test_m1_sequence_qc.py ..........                        [ 27%]
+tests\contracts\test_m1_usb.py ......                                    [ 27%]
+tests\contracts\test_m1_usb_dual_bench.py .....                          [ 28%]
+tests\integration\test_dependency_smoke.py ...                           [ 28%]
+tests\integration\test_docs_consistency.py .                             [ 28%]
+tests\integration\test_m1_clock_mapping_synthetic.py ..                  [ 29%]
+tests\integration\test_m1_single_node_smoke.py ..                        [ 29%]
+tests\integration\test_m2_offline_example.py ..                          [ 29%]
+tests\integration\test_m2_replay_m1_bench.py ..                          [ 29%]
+tests\integration\test_m2_replay_recorded.py .                           [ 29%]
+tests\integration\test_m3_synthetic_pipeline.py .                        [ 29%]
+tests\integration\test_m4_synthetic_pipeline.py .                        [ 30%]
+tests\integration\test_m5_baseline.py .........                          [ 31%]
+tests\integration\test_m5_formal_replay.py ..............                [ 32%]
+tests\integration\test_m5_perturbation.py .....................          [ 35%]
+tests\integration\test_m5_recorded_dual.py ......................        [ 37%]
+tests\integration\test_m5_recorded_node.py .....................         [ 40%]
+tests\integration\test_m5_recorded_segments.py ......................... [ 42%]
+.....                                                                    [ 43%]
+tests\integration\test_m5_replay_entry.py .............................. [ 46%]
+                                                                         [ 46%]
+tests\integration\test_m5_source_export.py .                             [ 47%]
+tests\integration\test_m5_stored_demo.py ..............                  [ 48%]
+tests\integration\test_m6_benchmark.py ...................               [ 50%]
+tests\integration\test_m6_demo.py ....................F...FFFFF          [ 54%]
+tests\integration\test_m6_sample.py .................................... [ 58%]
+............................                                             [ 61%]
+tests\unit\test_m1_clock_mapping.py ..........                           [ 62%]
+tests\unit\test_m1_raw_adapter.py ...                                    [ 62%]
+tests\unit\test_m2_calibration.py ..........                             [ 64%]
+tests\unit\test_m2_frames.py ........                                    [ 64%]
+tests\unit\test_m2_orientation.py ..............                         [ 66%]
+tests\unit\test_m2_relative_orientation.py ................              [ 68%]
+tests\unit\test_m2_replay.py ........                                    [ 69%]
+tests\unit\test_m3_angular_speed.py ............                         [ 70%]
+tests\unit\test_m3_elevation.py .................                        [ 72%]
+tests\unit\test_m3_interval_rom.py ..............                        [ 74%]
+tests\unit\test_m4_metrics.py ...................................        [ 78%]
+tests\unit\test_m4_segmentation.py ..................................... [ 82%]
+......................                                                   [ 85%]
+tests\unit\test_m4_summary.py .......................................    [ 89%]
+tests\unit\test_m4_thorax.py ........................................... [ 94%]
+............                                                             [ 95%]
+tests\unit\test_m5_manifest.py ...                                       [ 96%]
+tests\unit\test_m5_source.py ..........................                  [ 99%]
+tests\unit\test_reconstruction.py ........                               [100%]
+
+================================== FAILURES ===================================
+_________________ test_input_refusal_before_mkdir[missing-2] __________________
+
+change = 'missing', exit_code = 2
+tmp_path = WindowsPath('./.tmp-m6-cp3-full-source/test_input_refusal_before_mkdi0')
+
+    @pytest.mark.parametrize("change,exit_code", [("missing", 2), ("tampered", 1)])
+    def test_input_refusal_before_mkdir(change, exit_code, tmp_path):
+        module = runner()
+        inputs = tmp_path / "inputs"
+        shutil.copytree(SAMPLE, inputs)
+        capture = inputs / "F90/B.kimu"
+        if change == "missing":
+            capture.unlink()
+        else:
+            capture.write_bytes(capture.read_bytes() + b"corrupt")
+        output = tmp_path / "out"
+>       assert module.run_demo(output, input_root=inputs) == exit_code
+E       AssertionError: assert 1 == 2
+E        +  where 1 = <function run_demo at 0x0000000000000102>(WindowsPath('./.tmp-m6-cp3-full-source/test_input_refusal_before_mkdi0/out'), input_root=WindowsPath('./.tmp-m6-cp3-full-source/test_input_refusal_before_mkdi0/inputs'))
+E        +    where <function run_demo at 0x0000000000000102> = <module 'kineimu_shoulder.validation.demo' from '.\\kineimu_shoulder\\validation\\demo.py'>.run_demo
+
+tests\integration\test_m6_demo.py:89: AssertionError
+---------------------------- Captured stderr call -----------------------------
+FAILED: ['preflight:ValueError:repository output must be a new top-level demo-output-* directory']; no root created: .\.tmp-m6-cp3-full-source\test_input_refusal_before_mkdi0\out
+______ test_interrupted_export_retains_partial_root_and_not_run_reasons _______
+
+tmp_path = WindowsPath('./.tmp-m6-cp3-full-source/test_interrupted_export_retain0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000000000000104>
+
+    def test_interrupted_export_retains_partial_root_and_not_run_reasons(tmp_path, monkeypatch):
+        module = runner()
+        from kineimu_shoulder.validation import stored_demo
+    
+        def interrupted(output, *, input_root):
+            output.mkdir()
+            (output / "partial.txt").write_bytes(b"preserved")
+            raise RuntimeError("controlled processing interruption")
+    
+        monkeypatch.setattr(stored_demo, "export_stored", interrupted)
+        output = tmp_path / "out"
+        assert module.run_demo(output) == 1
+>       assert (output / "replay/partial.txt").read_bytes() == b"preserved"
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\integration\test_m6_demo.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('./.tmp-m6-cp3-full-source/test_interrupted_export_retain0/out/replay/partial.txt')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '.\\.tmp-m6-cp3-full-source\\test_interrupted_export_retain0\\out\\replay\\partial.txt'
+
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1013: FileNotFoundError
+---------------------------- Captured stderr call -----------------------------
+FAILED: ['preflight:ValueError:repository output must be a new top-level demo-output-* directory']; no root created: .\.tmp-m6-cp3-full-source\test_interrupted_export_retain0\out
+_____________ test_numerical_failure_takes_priority_over_blocked ______________
+
+tmp_path = WindowsPath('./.tmp-m6-cp3-full-source/test_numerical_failure_takes_p0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000000000000105>
+
+    def test_numerical_failure_takes_priority_over_blocked(tmp_path, monkeypatch):
+        module = runner()
+        from kineimu_shoulder.validation import stored_demo
+    
+        def mixed(output, *, input_root):
+            output.mkdir()
+            for name, disposition in (("F90", "FAILED"), ("AL90", "BLOCKED")):
+                folder = output / f"cases/Q-{name}"
+                folder.mkdir(parents=True)
+                (folder / "result.json").write_text(json.dumps(dict(passed=False, stage_disposition=disposition,
+                                                                     failed_gates=["controlled_gate"])))
+            return 2
+    
+        monkeypatch.setattr(stored_demo, "export_stored", mixed)
+        output = tmp_path / "out"
+        assert module.run_demo(output) == 1
+>       run = json.loads((output / "run.json").read_bytes())
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\integration\test_m6_demo.py:153: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('./.tmp-m6-cp3-full-source/test_numerical_failure_takes_p0/out/run.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '.\\.tmp-m6-cp3-full-source\\test_numerical_failure_takes_p0\\out\\run.json'
+
+<python-installations>\cpython-3.12.14-windows-x86_64-none\Lib\pathlib.py:1013: FileNotFoundError
+---------------------------- Captured stderr call -----------------------------
+FAILED: ['preflight:ValueError:repository output must be a new top-level demo-output-* directory']; no root created: .\.tmp-m6-cp3-full-source\test_numerical_failure_takes_p0\out
+_______ test_blocked_export_and_lost_input_still_retain_failure_record ________
+
+tmp_path = WindowsPath('./.tmp-m6-cp3-full-source/test_blocked_export_and_lost_i0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000000000000106>
+
+    def test_blocked_export_and_lost_input_still_retain_failure_record(tmp_path, monkeypatch):
+        module = runner()
+        from kineimu_shoulder.validation import stored_demo
+    
+        inputs = tmp_path / "inputs"
+        shutil.copytree(SAMPLE, inputs)
+    
+        def blocked(output, *, input_root):
+            output.mkdir()
+            (input_root / "F90/B.kimu").unlink()
+            raise FileNotFoundError("controlled loss of required input")
+    
+        monkeypatch.setattr(stored_demo, "export_stored", blocked)
+        output = tmp_path / "out"
+>       assert module.run_demo(output, input_root=inputs) == 2
+E       AssertionError: assert 1 == 2
+E        +  where 1 = <function run_demo at 0x0000000000000102>(WindowsPath('./.tmp-m6-cp3-full-source/test_blocked_export_and_lost_i0/out'), input_root=WindowsPath('./.tmp-m6-cp3-full-source/test_blocked_export_and_lost_i0/inputs'))
+E        +    where <function run_demo at 0x0000000000000102> = <module 'kineimu_shoulder.validation.demo' from '.\\kineimu_shoulder\\validation\\demo.py'>.run_demo
+
+tests\integration\test_m6_demo.py:174: AssertionError
+---------------------------- Captured stderr call -----------------------------
+FAILED: ['preflight:ValueError:repository output must be a new top-level demo-output-* directory']; no root created: .\.tmp-m6-cp3-full-source\test_blocked_export_and_lost_i0\out
+___________________ test_cli_help_usage_and_existing_output ___________________
+
+tmp_path = WindowsPath('./.tmp-m6-cp3-full-source/test_cli_help_usage_and_existi0')
+
+    def test_cli_help_usage_and_existing_output(tmp_path):
+        entry = ROOT / "examples/m6_demo.py"
+        assert entry.exists(), "M6 one-command entry is missing"
+        for args, code in ((["--help"], 0), ([], 2), (["--unknown"], 2), (["--output", str(tmp_path)], 1)):
+            process = subprocess.run([sys.executable, str(entry), *args], cwd=tmp_path,
+                                     capture_output=True, text=True)
+            assert process.returncode == code, process.stdout + process.stderr
+        # No site packages: help works; missing scientific dependencies are BLOCKED, never success.
+        output = tmp_path / "without-dependencies"
+        process = subprocess.run([sys.executable, "-S", str(entry), "--output", str(output)],
+                                 cwd=tmp_path, capture_output=True, text=True)
+>       assert process.returncode == 2 and "BLOCKED" in process.stderr
+E       assert (1 == 2)
+E        +  where 1 = CompletedProcess(args=['.\\.venv\\Scripts\\python.exe', '-S', '.\\examples\\m6_demo.py', '...]; no root created: .\\.tmp-m6-cp3-full-source\\test_cli_help_usage_and_existi0\\without-dependencies\n").returncode
+
+tests\integration\test_m6_demo.py:194: AssertionError
+_______ test_complete_demo_reads_sample_without_generating_observations _______
+
+tmp_path = WindowsPath('./.tmp-m6-cp3-full-source/test_complete_demo_reads_sampl0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000000000000103>
+
+    def test_complete_demo_reads_sample_without_generating_observations(tmp_path, monkeypatch):
+        module = runner()
+        from kineimu_shoulder.validation import perturbation, source, stored_demo
+    
+        def forbidden(*args, **kwargs):
+            pytest.fail("stored Demo must never generate or encode replacement sensor observations")
+    
+        monkeypatch.setattr(perturbation, "generate", forbidden)
+        monkeypatch.setattr(perturbation, "packets", forbidden)
+        monkeypatch.setattr(source, "generate", forbidden)
+        before = stored_demo.input_audit(SAMPLE)
+        output = tmp_path / "demo"
+>       assert module.run_demo(output, command=[sys.executable, str(ROOT / "examples/m6_demo.py"),
+                                               "--output", str(output)]) == 0
+E       AssertionError: assert 1 == 0
+E        +  where 1 = <function run_demo at 0x0000000000000102>(WindowsPath('./.tmp-m6-cp3-full-source/test_complete_demo_reads_sampl0/demo'), command=['.\\.venv\\Scripts\\python.exe', '.\\examples\\m6_demo.py', '--output', '.\\.tmp-m6-cp3-full-source\\test_complete_demo_reads_sampl0\\demo'])
+E        +    where <function run_demo at 0x0000000000000102> = <module 'kineimu_shoulder.validation.demo' from '.\\kineimu_shoulder\\validation\\demo.py'>.run_demo
+
+tests\integration\test_m6_demo.py:210: AssertionError
+---------------------------- Captured stderr call -----------------------------
+FAILED: ['preflight:ValueError:repository output must be a new top-level demo-output-* directory']; no root created: .\.tmp-m6-cp3-full-source\test_complete_demo_reads_sampl0\demo
+=========================== short test summary info ===========================
+FAILED tests/integration/test_m6_demo.py::test_input_refusal_before_mkdir[missing-2]
+FAILED tests/integration/test_m6_demo.py::test_interrupted_export_retains_partial_root_and_not_run_reasons
+FAILED tests/integration/test_m6_demo.py::test_numerical_failure_takes_priority_over_blocked
+FAILED tests/integration/test_m6_demo.py::test_blocked_export_and_lost_input_still_retain_failure_record
+FAILED tests/integration/test_m6_demo.py::test_cli_help_usage_and_existing_output
+FAILED tests/integration/test_m6_demo.py::test_complete_demo_reads_sample_without_generating_observations
+================== 6 failed, 868 passed in 744.59s (0:12:24) ==================

@@ -1,0 +1,18 @@
+{
+  "disposition": "EXPECTED_INCOMPLETE_DRAFT",
+  "yaml_parse": "PASS",
+  "cff_schema_valid": false,
+  "errors": [
+    "'authors' is a required property"
+  ],
+  "maintainer_gate": "approved authors and public repository/release identity required before CP4",
+  "python": "3.11.15 (main, Aug  7 2026, 02:24:19) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "<firmware-workspace>\\Apps\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+  "tooling": {
+    "PyYAML": "6.0.3",
+    "jsonschema": "4.26.0"
+  },
+  "tooling_scope": "Existing external tooling environment; not added to project runtime or lock",
+  "citation_sha256": "414e22c7661af71daf8bde5e6577d9db2d9167652afd94761d9947d2e0dd4feb",
+  "schema_sha256": "0b8d22140da702d766df318dcff3a91af2f39521298dcf36d76315fd99cc169b"
+}

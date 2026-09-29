@@ -1,0 +1,77 @@
+{
+  "all_required_checkpoint_evidence_available": true,
+  "all_working_accuracy_coverage_recall_and_count_gates_pass": true,
+  "canonical_inventory_groups": [
+    {
+      "checkpoint": "CP1",
+      "files": 37,
+      "root": "experiments/M5_CP1_20260926/run1"
+    },
+    {
+      "checkpoint": "CP1",
+      "files": 37,
+      "root": "experiments/M5_CP1_20260926/run2"
+    },
+    {
+      "checkpoint": "CP2",
+      "files": 131,
+      "root": "experiments/M5_CP2_20260926/retry1/run1"
+    },
+    {
+      "checkpoint": "CP2",
+      "files": 131,
+      "root": "experiments/M5_CP2_20260926/retry1/run2"
+    },
+    {
+      "checkpoint": "CP3",
+      "files": 5380,
+      "root": "experiments/M5_CP3_UNBLOCK_20260927/formal1/run1"
+    },
+    {
+      "checkpoint": "CP3",
+      "files": 5380,
+      "root": "experiments/M5_CP3_UNBLOCK_20260927/formal1/run2"
+    },
+    {
+      "checkpoint": "CP4",
+      "files": 36,
+      "root": "experiments/M5_CP4_FORMAL2_20260928/run1"
+    },
+    {
+      "checkpoint": "CP4",
+      "files": 36,
+      "root": "experiments/M5_CP4_FORMAL2_20260928/run2"
+    }
+  ],
+  "class_table_matches_complete_report": true,
+  "cp2_passed_cases": 30,
+  "cp3_archive_hash_matches_original_git_proof": true,
+  "cp3_class_counts": {
+    "C": 33,
+    "W": 589,
+    "boundary": 67,
+    "evidence": 122,
+    "rejection": 34,
+    "stress": 297
+  },
+  "cp3_failed": 0,
+  "cp3_not_run": 0,
+  "cp3_passed_cases": 1142,
+  "entry_head": "aba175f1f071800751d5b47f0d6099ebf0b2f731",
+  "evidence_index_sha256": "347df0a21da52dbcf6a57dee2186802c449b233a9e7d67940b472c78617401d9",
+  "external_files_checked_including_manifest": 12,
+  "numerical_processing_rerun": false,
+  "original_input_snapshot_unchanged": true,
+  "passed": true,
+  "prior_runtime_source_bindings_unchanged": true,
+  "production_tests_firmware_protocol_examples_and_lock_unchanged": true,
+  "repository_files_checked": 11302,
+  "scope": "Fresh byte/inventory/acceptance audit of retained evidence; prior independent numerical audits are referenced, not rerun",
+  "source_archive_entries_checked": {
+    "experiments/M5_CP3_UNBLOCK_20260927/source-lock-01c4e23.zip": 86,
+    "experiments/M5_CP4_STAGE_E2_20260928/source-lock-a72bdd18.zip": 63,
+    "experiments/M5_CP4_STAGE_E4_20260928/audit-tool-lock-fbcb118b.zip": 4
+  },
+  "working_cases_checked": 589,
+  "wrong_expected_hash_control": "hash-control.json"
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "<local-home>/.local/bin/uv.exe",
+    "run",
+    "--frozen",
+    "mypy"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T07:21:30.385926+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 0,
+  "log": "mypy-source.log",
+  "sha256": "0d42646ff848fddea83e113f5e72c066dc050fc901c93d17176142ab98c966e9",
+  "started_utc": "2026-09-28T07:21:29.350494+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "command": [
+    "<local-home>/.local/bin/uv.exe",
+    "run",
+    "--frozen",
+    "pytest",
+    "tests/integration/test_m6_benchmark.py",
+    "-q",
+    "--basetemp=.tmp-m6-cp3-green-worker"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T07:20:28.091996+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 0,
+  "log": "green-worker.log",
+  "sha256": "0a57e4f874908100077d7323ed8383098e0e7b33b727c3b7149f549aee741070",
+  "started_utc": "2026-09-28T07:20:26.591751+00:00"
+}

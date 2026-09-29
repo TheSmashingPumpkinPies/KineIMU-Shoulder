@@ -1,0 +1,23 @@
+{
+  "command": [
+    "<local-home>/.local/bin/uv.exe",
+    "run",
+    "--frozen",
+    "pytest",
+    "tests/integration/test_m6_benchmark.py",
+    "-q",
+    "--basetemp=.tmp-m6-cp3-focused-lock"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T07:25:05.822553+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 0,
+  "log": "focused-lock.log",
+  "sha256": "5ab4f939c1da6c5fb53932ff9db21652acff77132c61bff91d826333e4d07662",
+  "started_utc": "2026-09-28T07:25:04.125939+00:00"
+}

@@ -1,0 +1,198 @@
+{
+  "schema": "kineimu-public-verification/1.0",
+  "date": "2026-09-29",
+  "result": "Final audited public copies PASS locally; transfer OPEN",
+  "scientific_execution_head": "7dd991878b5e8b40d6fab12cb3a58a37155c9b6a",
+  "scientific_execution_identity": "Independent local reviewed-copy checkpoint, not a claimed published Git commit",
+  "platform": "Windows",
+  "python": "3.12.14",
+  "uv": "0.12.5",
+  "independent_clone_no_hardlinks": true,
+  "independent_venv": true,
+  "pythonpath": "UNSET",
+  "external_m1_root": "UNSET",
+  "tests": {
+    "passed": 883,
+    "skipped": 2,
+    "skip_reason": "Expected omitted external M1 capture roots",
+    "pytest_seconds": 674.99
+  },
+  "demo": {
+    "processes": 2,
+    "trajectories_per_run": 4,
+    "files_per_run": 26,
+    "independently_recomputed_error_scalars_per_run": 27160,
+    "equal_canonical_products": 22,
+    "equal_summary": true,
+    "audit_sha256": "723bfeb0d5018942de4fcb3aa8e70cb105e349be61d07a2b80bfe7a9168be618"
+  },
+  "static": {
+    "ruff": "PASS",
+    "strict_mypy_package_source_files": 33,
+    "strict_mypy_benchmark_source_files": 1,
+    "executed_docs": {
+      "markdown_files": 194,
+      "immutable_members": 1089,
+      "errors": 0
+    }
+  },
+  "benchmark": {
+    "result": "PASS reviewed-copy six-slot numerical audits and original statistics",
+    "runtime_source_members": 54,
+    "new_performance_measurements": false,
+    "method": "PUBLIC_BENCHMARK.md"
+  },
+  "packages": {
+    "result": "PASS",
+    "source_members": 34,
+    "notice_files": 57,
+    "independent_environments": 2,
+    "isolated_python": true,
+    "artifacts": [
+      {
+        "name": "kineimu_shoulder-0.1.0-py3-none-any.whl",
+        "bytes": 293040,
+        "sha256": "13b9e39fef587783d74bb3be7954b779781da016745bad882af8096bdbb953fb"
+      },
+      {
+        "name": "kineimu_shoulder-0.1.0.tar.gz",
+        "bytes": 221311,
+        "sha256": "3c5c79be7c3a5036b61e54e4bb432d0155bc7d3beb8a0dd71605cca4c8c70454"
+      }
+    ],
+    "checker_sha256": "7d062d954ed15ba746ec8e68ec6c308ab3d43da9905b5ef30849aa5431555c8a",
+    "checker_adaptation": "Only expected GitHub destination casing/URL changed; all original numerical/missing-evidence/import-isolation/metadata/installed-notice assertions retained"
+  },
+  "preserved_preparation_attempts": [
+    {
+      "operation": "First final full pytest",
+      "result": "882passed/2expectedskips/1Windows temporary-directory rename denied",
+      "code_or_assertion_relaxed": false,
+      "resolution": "New shorter unused temporary directory; full unchanged suite passed"
+    },
+    {
+      "operation": "First final package archive audit",
+      "result": "README CRLF versus standard metadata LF mismatch",
+      "resolution": "Only public README newline normalization; new build and original archive/install assertions passed"
+    }
+  ],
+  "publication_reports_and_index": "Closing documentation/index differ from execution checkpoint; every production/test/example/reference input is byte-identical, final docs/integrity repeated separately",
+  "linux_execution": "NOT RUN; remote CI pending",
+  "transfer": "OPEN",
+  "command_records": [
+    {
+      "name": "final-pytest-02",
+      "exit_code": 0,
+      "seconds": 675.75,
+      "log_sha256": "9cb5504750264c986c9f8f31d9f5f32897e88da24b2dd54222e642dbffcefc60"
+    },
+    {
+      "name": "final-ruff",
+      "exit_code": 0,
+      "seconds": 0.234,
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "name": "final-mypy",
+      "exit_code": 0,
+      "seconds": 8.812,
+      "log_sha256": "0d42646ff848fddea83e113f5e72c066dc050fc901c93d17176142ab98c966e9"
+    },
+    {
+      "name": "final-benchmark-mypy",
+      "exit_code": 0,
+      "seconds": 1.172,
+      "log_sha256": "8e63ae22e8213e327a5e9cbd584067681681bd8ef7f25c869877887ccdcfc4ff"
+    },
+    {
+      "name": "final-docs",
+      "exit_code": 0,
+      "seconds": 4.563,
+      "log_sha256": "09088931d2b66a5c631d5ee1b3bfd2f2e500853a0ce9a75000e8990f4ab4c283"
+    },
+    {
+      "name": "final-whitespace",
+      "exit_code": 0,
+      "seconds": 0.078,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "final-demo-01",
+      "exit_code": 0,
+      "seconds": 95.937,
+      "log_sha256": "9506e42607e443b1acc3c349b5c0390915f8092a72d320eb6b2d0b2c725d4633"
+    },
+    {
+      "name": "final-demo-02",
+      "exit_code": 0,
+      "seconds": 95.078,
+      "log_sha256": "ace1dc7e8feb25849620e235b020c18f217997fcd147bd63ea0c1adb8ef2a781"
+    },
+    {
+      "name": "final-demo-audit",
+      "exit_code": 0,
+      "seconds": 4.844,
+      "log_sha256": "c1619c186de2a2236fe1bf0a0dce7b9a78a700dfa463d98642dbe2c72211303e"
+    },
+    {
+      "name": "audited-build",
+      "exit_code": 0,
+      "seconds": 5.5,
+      "log_sha256": "eeceeff7d4a13da184b58023ad8cadacd6a0684fe66dc0b3a9d6b5aadbabe01f"
+    },
+    {
+      "name": "audited-package-archive",
+      "exit_code": 0,
+      "seconds": 0.422,
+      "log_sha256": "70391137ae33fb338c727ecd284ef19d2300ae47f9424aedef2a16d3fea3ed16"
+    },
+    {
+      "name": "wheel-venv",
+      "exit_code": 0,
+      "seconds": 0.078,
+      "log_sha256": "3627f9a8dcb06b8f7ed484d36db36534d7218d5ce73d15129d26dac18f2e8eb0"
+    },
+    {
+      "name": "wheel-dependencies",
+      "exit_code": 0,
+      "seconds": 9.609,
+      "log_sha256": "8aa824b5b95e3872996b00aae09f71a990f423ab93d2c79226fc4db6c665488e"
+    },
+    {
+      "name": "wheel-install",
+      "exit_code": 0,
+      "seconds": 1.125,
+      "log_sha256": "a49854bfc1f4fa3a188c4487d9c6115c16fa314371ff53d3b7eae1e030ed36b8"
+    },
+    {
+      "name": "wheel-isolated-api",
+      "exit_code": 0,
+      "seconds": 7.156,
+      "log_sha256": "5858b589ec379473a58ac38086d58bdf7ede60c28b6c112540e79b9aad7a5080"
+    },
+    {
+      "name": "sdist-venv",
+      "exit_code": 0,
+      "seconds": 0.078,
+      "log_sha256": "3409a789ad1eb7b87a04fbc23f6f81f9f4de426b3df10ffacc78810c1150446c"
+    },
+    {
+      "name": "sdist-dependencies",
+      "exit_code": 0,
+      "seconds": 8.235,
+      "log_sha256": "80091409e338dff986f85acb139aa989308bc0365aa3c7499735cc99fa1dae5c"
+    },
+    {
+      "name": "sdist-install",
+      "exit_code": 0,
+      "seconds": 4.359,
+      "log_sha256": "5bc530f37d5ff44eddebd99f32c07759215aa4f5c1579e2e72d6958d88f214fc"
+    },
+    {
+      "name": "sdist-isolated-api",
+      "exit_code": 0,
+      "seconds": 7.656,
+      "log_sha256": "1f39253e46df9bb91cae342a9400c57ed84747716cd76cd9efc2315824beb342"
+    }
+  ]
+}

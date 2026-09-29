@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kineimu.org/schemas/m1-session-manifest-0.1.schema.json",
+  "title": "KineIMU Shoulder M1 session manifest 0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "example_only",
+    "session_id",
+    "created_utc",
+    "test_side",
+    "protocol_version",
+    "mounting_protocol_version",
+    "nodes",
+    "streams",
+    "clock_mapping_artifacts",
+    "notes"
+  ],
+  "properties": {
+    "schema_version": {"const": "kineimu.m1.session/0.1"},
+    "example_only": {"type": "boolean"},
+    "session_id": {"type": "string", "minLength": 1},
+    "created_utc": {"type": "string", "format": "date-time"},
+    "test_side": {"type": ["string", "null"], "enum": ["left", "right", null]},
+    "protocol_version": {"const": "kineimu.m1.ble/1"},
+    "mounting_protocol_version": {"type": ["string", "null"]},
+    "nodes": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {"$ref": "#/$defs/node"},
+      "allOf": [
+        {"contains": {"properties": {"node_id": {"const": "A"}}, "required": ["node_id"]}},
+        {"contains": {"properties": {"node_id": {"const": "B"}}, "required": ["node_id"]}}
+      ]
+    },
+    "streams": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {"$ref": "#/$defs/stream"},
+      "allOf": [
+        {"contains": {"properties": {"node_id": {"const": "A"}}, "required": ["node_id"]}},
+        {"contains": {"properties": {"node_id": {"const": "B"}}, "required": ["node_id"]}}
+      ]
+    },
+    "clock_mapping_artifacts": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/artifact"}
+    },
+    "notes": {"type": ["string", "null"]}
+  },
+  "$defs": {
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {"properties": {"node_id": {"const": "A"}}, "required": ["node_id"]},
+          "then": {
+            "properties": {
+              "role": {"const": "thorax"},
+              "placement": {"const": "thorax"}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"node_id": {"const": "B"}}, "required": ["node_id"]},
+          "then": {
+            "properties": {
+              "role": {"const": "upper_arm"},
+              "placement": {"const": "upper_arm"}
+            }
+          }
+        }
+      ],
+      "required": [
+        "node_id",
+        "role",
+        "device_id",
+        "board_model",
+        "board_revision",
+        "imu_model",
+        "firmware_version",
+        "firmware_git_commit",
+        "driver",
+        "transport",
+        "clock_id",
+        "clock_epoch_initial",
+        "timestamp_source",
+        "sampling_rate_hz_nominal",
+        "accel_odr_hz",
+        "gyro_odr_hz",
+        "accel_range_g",
+        "gyro_range_dps",
+        "filter_config",
+        "calibration_id",
+        "alignment_id",
+        "placement"
+      ],
+      "properties": {
+        "node_id": {"type": "string", "enum": ["A", "B"]},
+        "role": {"type": "string", "enum": ["thorax", "upper_arm"]},
+        "device_id": {"type": "string", "minLength": 1},
+        "board_model": {"const": "Seeed Studio XIAO nRF52840 Sense"},
+        "board_revision": {"type": ["string", "null"]},
+        "imu_model": {"const": "LSM6DS3TR-C"},
+        "firmware_version": {"type": "string", "minLength": 1},
+        "firmware_git_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "driver": {"type": "string", "minLength": 1},
+        "transport": {"const": "ble"},
+        "clock_id": {"type": "string", "minLength": 1},
+        "clock_epoch_initial": {"type": "integer", "minimum": 0},
+        "timestamp_source": {
+          "type": "string",
+          "enum": ["mcu_drdy_isr", "sensor_internal", "reconstructed"]
+        },
+        "sampling_rate_hz_nominal": {"const": 100},
+        "accel_odr_hz": {"type": "number", "exclusiveMinimum": 0},
+        "gyro_odr_hz": {"type": "number", "exclusiveMinimum": 0},
+        "accel_range_g": {"type": "number", "exclusiveMinimum": 0},
+        "gyro_range_dps": {"type": "number", "exclusiveMinimum": 0},
+        "filter_config": {"type": "object"},
+        "calibration_id": {"type": ["string", "null"]},
+        "alignment_id": {"type": ["string", "null"]},
+        "placement": {"type": "string", "enum": ["thorax", "upper_arm"]}
+      }
+    },
+    "stream": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node_id",
+        "raw_path",
+        "raw_sha256",
+        "transport_events_path",
+        "transport_events_sha256",
+        "byte_length",
+        "packet_count",
+        "sample_count"
+      ],
+      "properties": {
+        "node_id": {"type": "string", "enum": ["A", "B"]},
+        "raw_path": {"type": "string", "minLength": 1},
+        "raw_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "transport_events_path": {"type": "string", "minLength": 1},
+        "transport_events_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "byte_length": {"type": "integer", "minimum": 0},
+        "packet_count": {"type": "integer", "minimum": 0},
+        "sample_count": {"type": "integer", "minimum": 0}
+      }
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "method_version"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "method_version": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

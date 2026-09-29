@@ -1,0 +1,24 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "--frozen",
+    "pytest",
+    "--basetemp",
+    "<temporary-workspace>/kineimu-m6-cp4-full-01"
+  ],
+  "cwd": ".",
+  "started_utc": "2026-09-28T09:35:18.449803+00:00",
+  "ended_utc": "2026-09-28T09:46:56.101282+00:00",
+  "exit_code": 0,
+  "log": "full-01.log",
+  "log_sha256": "83cea883302ede028257e3f3de67f6bca7af622d0fd2a3f430610d5e27b350d5",
+  "source_head": "acab57accbeee2d1fdb3cab0b6ab09c511dda0ec",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": "<external-data>/kineimu_m1_usb_30min_20260925_01",
+    "UV_CACHE_DIR": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null
+  }
+}

@@ -1,0 +1,1674 @@
+{
+  "accuracy_passed": true,
+  "anatomical_eligible": false,
+  "condition": "CLEAN-Q",
+  "counts": {
+    "false": 0,
+    "missed": 0,
+    "truth": 3,
+    "valid": 3
+  },
+  "coverage": {
+    "denominator_s": 16.5,
+    "invalid_duration_s": 0.0,
+    "proxy": 1.0,
+    "recall": 1.0,
+    "relative": 1.0,
+    "valid_duration_s": 16.5
+  },
+  "elevation_reasons": [
+    "valid"
+  ],
+  "error_summary": {
+    "A.initialization": {
+      "gate": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "n": 2,
+      "rmse": 1.5700924586837752e-16,
+      "tolerance": 0.006981317007977318,
+      "unit": "rad"
+    },
+    "A.orientation": {
+      "gate": true,
+      "max_abs_error": 0.0006462048529307916,
+      "n": 1651,
+      "rmse": 0.00035506171823227486,
+      "tolerance": 0.006981317007977318,
+      "unit": "rad"
+    },
+    "B.initialization": {
+      "gate": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "n": 2,
+      "rmse": 1.5700924586837752e-16,
+      "tolerance": 0.006981317007977318,
+      "unit": "rad"
+    },
+    "B.orientation": {
+      "gate": true,
+      "max_abs_error": 0.0061434053833784325,
+      "n": 1651,
+      "rmse": 0.003330495950936241,
+      "tolerance": 0.006981317007977318,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.earliest_peak": {
+      "gate": false,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-1.elevation_duration_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "T-MIX:rep-1.elevation_speed_max_rads": {
+      "gate": true,
+      "max_abs_error": 0.004502995205457161,
+      "n": 1,
+      "rmse": 0.004502995205457161,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-1.elevation_speed_mean_rads": {
+      "gate": true,
+      "max_abs_error": 0.003350633405986514,
+      "n": 1,
+      "rmse": 0.003350633405986514,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-1.end_confirmation": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-1.end_us": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-1.hold_duration_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "T-MIX:rep-1.hold_speed_max_rads": {
+      "gate": true,
+      "max_abs_error": 0.002756335377933405,
+      "n": 1,
+      "rmse": 0.002756335377933405,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-1.hold_speed_mean_rads": {
+      "gate": true,
+      "max_abs_error": 0.0021739147451651,
+      "n": 1,
+      "rmse": 0.0021739147451651,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-1.peak_elevation_rad": {
+      "gate": true,
+      "max_abs_error": 0.005520077999633166,
+      "n": 1,
+      "rmse": 0.005520077999633166,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.peak_support": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-1.phase_conservation": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 1e-12,
+      "unit": "s"
+    },
+    "T-MIX:rep-1.plane_fraction": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.02,
+      "unit": "1"
+    },
+    "T-MIX:rep-1.proxy.axial_rotation.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 1.8953589809828086e-05,
+      "n": 1,
+      "rmse": 1.8953589809828086e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy.axial_rotation.max_rad": {
+      "gate": true,
+      "max_abs_error": 1.8953589809828086e-05,
+      "n": 1,
+      "rmse": 1.8953589809828086e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy.axial_rotation.min_rad": {
+      "gate": true,
+      "max_abs_error": 4.187570335898415e-05,
+      "n": 1,
+      "rmse": 4.187570335898415e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy.extension.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 0.0004308184666012571,
+      "n": 1,
+      "rmse": 0.0004308184666012571,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy.extension.max_rad": {
+      "gate": true,
+      "max_abs_error": 0.0004308184666012571,
+      "n": 1,
+      "rmse": 0.0004308184666012571,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy.extension.min_rad": {
+      "gate": true,
+      "max_abs_error": 0.0005587126640399752,
+      "n": 1,
+      "rmse": 0.0005587126640399752,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy.lateral_flexion.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 0.00014144528644075005,
+      "n": 1,
+      "rmse": 0.00014144528644075005,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy.lateral_flexion.max_rad": {
+      "gate": true,
+      "max_abs_error": 0.00016600329084367604,
+      "n": 1,
+      "rmse": 0.00016600329084367604,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy.lateral_flexion.min_rad": {
+      "gate": true,
+      "max_abs_error": 0.00014144528644075005,
+      "n": 1,
+      "rmse": 0.00014144528644075005,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy_estimated_support.axial_rotation.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 1.8953589809828086e-05,
+      "n": 1,
+      "rmse": 1.8953589809828086e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy_estimated_support.axial_rotation.max_rad": {
+      "gate": true,
+      "max_abs_error": 1.8953589809828086e-05,
+      "n": 1,
+      "rmse": 1.8953589809828086e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy_estimated_support.axial_rotation.min_rad": {
+      "gate": true,
+      "max_abs_error": 4.187570335898415e-05,
+      "n": 1,
+      "rmse": 4.187570335898415e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy_estimated_support.extension.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 0.0004308184666012571,
+      "n": 1,
+      "rmse": 0.0004308184666012571,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy_estimated_support.extension.max_rad": {
+      "gate": true,
+      "max_abs_error": 0.0004308184666012571,
+      "n": 1,
+      "rmse": 0.0004308184666012571,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy_estimated_support.extension.min_rad": {
+      "gate": true,
+      "max_abs_error": 0.0005587126640399752,
+      "n": 1,
+      "rmse": 0.0005587126640399752,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy_estimated_support.lateral_flexion.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 0.00014144528644075005,
+      "n": 1,
+      "rmse": 0.00014144528644075005,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy_estimated_support.lateral_flexion.max_rad": {
+      "gate": true,
+      "max_abs_error": 0.00016600329084367604,
+      "n": 1,
+      "rmse": 0.00016600329084367604,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.proxy_estimated_support.lateral_flexion.min_rad": {
+      "gate": true,
+      "max_abs_error": 0.00014144528644075005,
+      "n": 1,
+      "rmse": 0.00014144528644075005,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.rep_duration_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "T-MIX:rep-1.rep_speed_max_rads": {
+      "gate": true,
+      "max_abs_error": 0.004502995205457161,
+      "n": 1,
+      "rmse": 0.004502995205457161,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-1.rep_speed_mean_rads": {
+      "gate": true,
+      "max_abs_error": 0.0032181810824916113,
+      "n": 1,
+      "rmse": 0.0032181810824916113,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-1.return_duration_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "T-MIX:rep-1.return_speed_max_rads": {
+      "gate": true,
+      "max_abs_error": 0.005684868227145312,
+      "n": 1,
+      "rmse": 0.005684868227145312,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-1.return_speed_mean_rads": {
+      "gate": true,
+      "max_abs_error": 0.003718530319610891,
+      "n": 1,
+      "rmse": 0.003718530319610891,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-1.rom_rad": {
+      "gate": true,
+      "max_abs_error": 0.008789315209804194,
+      "n": 1,
+      "rmse": 0.008789315209804194,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad"
+    },
+    "T-MIX:rep-1.speed_estimated_mean": {
+      "gate": true,
+      "max_abs_error": 0.0032181810824917223,
+      "n": 1,
+      "rmse": 0.0032181810824917223,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-1.speed_nominal_mean": {
+      "gate": true,
+      "max_abs_error": 0.0032181810824917223,
+      "n": 1,
+      "rmse": 0.0032181810824917223,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-1.start_confirmation": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-1.start_us": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-2.earliest_peak": {
+      "gate": false,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-2.elevation_duration_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "T-MIX:rep-2.elevation_speed_max_rads": {
+      "gate": true,
+      "max_abs_error": 0.005489676329684334,
+      "n": 1,
+      "rmse": 0.005489676329684334,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-2.elevation_speed_mean_rads": {
+      "gate": true,
+      "max_abs_error": 0.00410524185137362,
+      "n": 1,
+      "rmse": 0.00410524185137362,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-2.end_confirmation": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-2.end_us": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-2.hold_duration_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "T-MIX:rep-2.hold_speed_max_rads": {
+      "gate": true,
+      "max_abs_error": 0.0022282468661298715,
+      "n": 1,
+      "rmse": 0.0022282468661298715,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-2.hold_speed_mean_rads": {
+      "gate": true,
+      "max_abs_error": 0.001757537625674063,
+      "n": 1,
+      "rmse": 0.001757537625674063,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-2.peak_elevation_rad": {
+      "gate": true,
+      "max_abs_error": 0.004483659098004633,
+      "n": 1,
+      "rmse": 0.004483659098004633,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.peak_support": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-2.phase_conservation": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 1e-12,
+      "unit": "s"
+    },
+    "T-MIX:rep-2.plane_fraction": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.02,
+      "unit": "1"
+    },
+    "T-MIX:rep-2.preceding_rest_duration_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "T-MIX:rep-2.proxy.axial_rotation.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 1.539094408162245e-05,
+      "n": 1,
+      "rmse": 1.539094408162245e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy.axial_rotation.max_rad": {
+      "gate": true,
+      "max_abs_error": 1.539094408162245e-05,
+      "n": 1,
+      "rmse": 1.539094408162245e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy.axial_rotation.min_rad": {
+      "gate": true,
+      "max_abs_error": 4.30660374493904e-05,
+      "n": 1,
+      "rmse": 4.30660374493904e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy.extension.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 0.0005288603152483196,
+      "n": 1,
+      "rmse": 0.0005288603152483196,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy.extension.max_rad": {
+      "gate": true,
+      "max_abs_error": 0.0005288603152483196,
+      "n": 1,
+      "rmse": 0.0005288603152483196,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy.extension.min_rad": {
+      "gate": true,
+      "max_abs_error": 0.0003706324642128861,
+      "n": 1,
+      "rmse": 0.0003706324642128861,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy.lateral_flexion.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 0.00015979301769417087,
+      "n": 1,
+      "rmse": 0.00015979301769417087,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy.lateral_flexion.max_rad": {
+      "gate": true,
+      "max_abs_error": 0.00011481401776377697,
+      "n": 1,
+      "rmse": 0.00011481401776377697,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy.lateral_flexion.min_rad": {
+      "gate": true,
+      "max_abs_error": 0.00015979301769417087,
+      "n": 1,
+      "rmse": 0.00015979301769417087,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy_estimated_support.axial_rotation.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 1.539094408162245e-05,
+      "n": 1,
+      "rmse": 1.539094408162245e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy_estimated_support.axial_rotation.max_rad": {
+      "gate": true,
+      "max_abs_error": 1.539094408162245e-05,
+      "n": 1,
+      "rmse": 1.539094408162245e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy_estimated_support.axial_rotation.min_rad": {
+      "gate": true,
+      "max_abs_error": 4.30660374493904e-05,
+      "n": 1,
+      "rmse": 4.30660374493904e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy_estimated_support.extension.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 0.0005288603152483196,
+      "n": 1,
+      "rmse": 0.0005288603152483196,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy_estimated_support.extension.max_rad": {
+      "gate": true,
+      "max_abs_error": 0.0005288603152483196,
+      "n": 1,
+      "rmse": 0.0005288603152483196,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy_estimated_support.extension.min_rad": {
+      "gate": true,
+      "max_abs_error": 0.0003706324642128861,
+      "n": 1,
+      "rmse": 0.0003706324642128861,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy_estimated_support.lateral_flexion.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 0.00015979301769417087,
+      "n": 1,
+      "rmse": 0.00015979301769417087,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy_estimated_support.lateral_flexion.max_rad": {
+      "gate": true,
+      "max_abs_error": 0.00011481401776377697,
+      "n": 1,
+      "rmse": 0.00011481401776377697,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.proxy_estimated_support.lateral_flexion.min_rad": {
+      "gate": true,
+      "max_abs_error": 0.00015979301769417087,
+      "n": 1,
+      "rmse": 0.00015979301769417087,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.rep_duration_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "T-MIX:rep-2.rep_speed_max_rads": {
+      "gate": true,
+      "max_abs_error": 0.005489676329684334,
+      "n": 1,
+      "rmse": 0.005489676329684334,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-2.rep_speed_mean_rads": {
+      "gate": true,
+      "max_abs_error": 0.0032448036088810195,
+      "n": 1,
+      "rmse": 0.0032448036088810195,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-2.return_duration_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "T-MIX:rep-2.return_speed_max_rads": {
+      "gate": true,
+      "max_abs_error": 0.0053845964821807035,
+      "n": 1,
+      "rmse": 0.0053845964821807035,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-2.return_speed_mean_rads": {
+      "gate": true,
+      "max_abs_error": 0.0035196112616429076,
+      "n": 1,
+      "rmse": 0.0035196112616429076,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-2.rom_rad": {
+      "gate": true,
+      "max_abs_error": 0.008016590140987656,
+      "n": 1,
+      "rmse": 0.008016590140987656,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad"
+    },
+    "T-MIX:rep-2.speed_estimated_mean": {
+      "gate": true,
+      "max_abs_error": 0.0032448036088811305,
+      "n": 1,
+      "rmse": 0.0032448036088811305,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-2.speed_nominal_mean": {
+      "gate": true,
+      "max_abs_error": 0.0032448036088811305,
+      "n": 1,
+      "rmse": 0.0032448036088811305,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-2.start_confirmation": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-2.start_us": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-3.earliest_peak": {
+      "gate": false,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-3.elevation_duration_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "T-MIX:rep-3.elevation_speed_max_rads": {
+      "gate": true,
+      "max_abs_error": 0.005565020343795579,
+      "n": 1,
+      "rmse": 0.005565020343795579,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-3.elevation_speed_mean_rads": {
+      "gate": true,
+      "max_abs_error": 0.0041686796629418765,
+      "n": 1,
+      "rmse": 0.0041686796629418765,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-3.end_confirmation": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-3.end_us": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-3.hold_duration_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "T-MIX:rep-3.hold_speed_max_rads": {
+      "gate": true,
+      "max_abs_error": 0.002195712375477121,
+      "n": 1,
+      "rmse": 0.002195712375477121,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-3.hold_speed_mean_rads": {
+      "gate": true,
+      "max_abs_error": 0.0017311913466931245,
+      "n": 1,
+      "rmse": 0.0017311913466931245,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-3.peak_elevation_rad": {
+      "gate": true,
+      "max_abs_error": 0.004441366189999574,
+      "n": 1,
+      "rmse": 0.004441366189999574,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.peak_support": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-3.phase_conservation": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 1e-12,
+      "unit": "s"
+    },
+    "T-MIX:rep-3.plane_fraction": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.02,
+      "unit": "1"
+    },
+    "T-MIX:rep-3.preceding_rest_duration_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "T-MIX:rep-3.proxy.axial_rotation.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 1.528826104843506e-05,
+      "n": 1,
+      "rmse": 1.528826104843506e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy.axial_rotation.max_rad": {
+      "gate": true,
+      "max_abs_error": 1.528826104843506e-05,
+      "n": 1,
+      "rmse": 1.528826104843506e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy.axial_rotation.min_rad": {
+      "gate": true,
+      "max_abs_error": 4.3092150345314106e-05,
+      "n": 1,
+      "rmse": 4.3092150345314106e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy.extension.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 0.0005350209974633591,
+      "n": 1,
+      "rmse": 0.0005350209974633591,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy.extension.max_rad": {
+      "gate": true,
+      "max_abs_error": 0.0005350209974633591,
+      "n": 1,
+      "rmse": 0.0005350209974633591,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy.extension.min_rad": {
+      "gate": true,
+      "max_abs_error": 0.000358723147025064,
+      "n": 1,
+      "rmse": 0.000358723147025064,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy.lateral_flexion.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 0.00016063871251545403,
+      "n": 1,
+      "rmse": 0.00016063871251545403,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy.lateral_flexion.max_rad": {
+      "gate": true,
+      "max_abs_error": 0.00011275480368936035,
+      "n": 1,
+      "rmse": 0.00011275480368936035,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy.lateral_flexion.min_rad": {
+      "gate": true,
+      "max_abs_error": 0.00016063871251545403,
+      "n": 1,
+      "rmse": 0.00016063871251545403,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy_estimated_support.axial_rotation.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 1.528826104843506e-05,
+      "n": 1,
+      "rmse": 1.528826104843506e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy_estimated_support.axial_rotation.max_rad": {
+      "gate": true,
+      "max_abs_error": 1.528826104843506e-05,
+      "n": 1,
+      "rmse": 1.528826104843506e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy_estimated_support.axial_rotation.min_rad": {
+      "gate": true,
+      "max_abs_error": 4.3092150345314106e-05,
+      "n": 1,
+      "rmse": 4.3092150345314106e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy_estimated_support.extension.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 0.0005350209974633591,
+      "n": 1,
+      "rmse": 0.0005350209974633591,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy_estimated_support.extension.max_rad": {
+      "gate": true,
+      "max_abs_error": 0.0005350209974633591,
+      "n": 1,
+      "rmse": 0.0005350209974633591,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy_estimated_support.extension.min_rad": {
+      "gate": true,
+      "max_abs_error": 0.000358723147025064,
+      "n": 1,
+      "rmse": 0.000358723147025064,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy_estimated_support.lateral_flexion.magnitude_rad": {
+      "gate": true,
+      "max_abs_error": 0.00016063871251545403,
+      "n": 1,
+      "rmse": 0.00016063871251545403,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy_estimated_support.lateral_flexion.max_rad": {
+      "gate": true,
+      "max_abs_error": 0.00011275480368936035,
+      "n": 1,
+      "rmse": 0.00011275480368936035,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.proxy_estimated_support.lateral_flexion.min_rad": {
+      "gate": true,
+      "max_abs_error": 0.00016063871251545403,
+      "n": 1,
+      "rmse": 0.00016063871251545403,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.rep_duration_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "T-MIX:rep-3.rep_speed_max_rads": {
+      "gate": true,
+      "max_abs_error": 0.005565020343795579,
+      "n": 1,
+      "rmse": 0.005565020343795579,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-3.rep_speed_mean_rads": {
+      "gate": true,
+      "max_abs_error": 0.0032564283005841466,
+      "n": 1,
+      "rmse": 0.0032564283005841466,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-3.return_duration_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "T-MIX:rep-3.return_speed_max_rads": {
+      "gate": true,
+      "max_abs_error": 0.005376018793626258,
+      "n": 1,
+      "rmse": 0.005376018793626258,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-3.return_speed_mean_rads": {
+      "gate": true,
+      "max_abs_error": 0.0035188021059526786,
+      "n": 1,
+      "rmse": 0.0035188021059526786,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-3.rom_rad": {
+      "gate": true,
+      "max_abs_error": 0.007988543307595242,
+      "n": 1,
+      "rmse": 0.007988543307595242,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad"
+    },
+    "T-MIX:rep-3.speed_estimated_mean": {
+      "gate": true,
+      "max_abs_error": 0.0032564283005839245,
+      "n": 1,
+      "rmse": 0.0032564283005839245,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-3.speed_nominal_mean": {
+      "gate": true,
+      "max_abs_error": 0.0032564283005839245,
+      "n": 1,
+      "rmse": 0.0032564283005839245,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "T-MIX:rep-3.start_confirmation": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "T-MIX:rep-3.start_us": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 50000,
+      "unit": "us"
+    },
+    "elevation": {
+      "gate": true,
+      "max_abs_error": 0.005520077999633166,
+      "n": 1651,
+      "rmse": 0.002912821244607269,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "interval_speed": {
+      "gate": true,
+      "max_abs_error": 0.006414761173685557,
+      "n": 1650,
+      "rmse": 0.0033105193018093484,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.active_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.30000000000000004,
+      "unit": "s"
+    },
+    "summary.cadence_per_s": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.006609560067681895,
+      "unit": "s^-1"
+    },
+    "summary.elevation_duration_s.maximum": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "summary.elevation_duration_s.mean": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "summary.elevation_speed_max_rads.maximum": {
+      "gate": true,
+      "max_abs_error": 0.005565020343795579,
+      "n": 1,
+      "rmse": 0.005565020343795579,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.elevation_speed_max_rads.mean": {
+      "gate": true,
+      "max_abs_error": 0.005185897292979025,
+      "n": 1,
+      "rmse": 0.005185897292979025,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.elevation_speed_mean_rads.maximum": {
+      "gate": true,
+      "max_abs_error": 0.0041686796629418765,
+      "n": 1,
+      "rmse": 0.0041686796629418765,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.elevation_speed_mean_rads.mean": {
+      "gate": true,
+      "max_abs_error": 0.003874851640100818,
+      "n": 1,
+      "rmse": 0.003874851640100818,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.hold_duration_s.maximum": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "summary.hold_duration_s.mean": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "summary.hold_speed_max_rads.maximum": {
+      "gate": true,
+      "max_abs_error": 0.002756335377933405,
+      "n": 1,
+      "rmse": 0.002756335377933405,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.hold_speed_max_rads.mean": {
+      "gate": true,
+      "max_abs_error": 0.002393431539846799,
+      "n": 1,
+      "rmse": 0.002393431539846799,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.hold_speed_mean_rads.maximum": {
+      "gate": true,
+      "max_abs_error": 0.0021739147451651,
+      "n": 1,
+      "rmse": 0.0021739147451651,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.hold_speed_mean_rads.mean": {
+      "gate": true,
+      "max_abs_error": 0.001887547905844096,
+      "n": 1,
+      "rmse": 0.001887547905844096,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.peak_elevation_rad.maximum": {
+      "gate": true,
+      "max_abs_error": 0.005520077999633166,
+      "n": 1,
+      "rmse": 0.005520077999633166,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.peak_elevation_rad.mean": {
+      "gate": true,
+      "max_abs_error": 0.004815034429212384,
+      "n": 1,
+      "rmse": 0.004815034429212384,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.preceding_rest_duration_s.maximum": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "summary.preceding_rest_duration_s.mean": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "summary.rep_duration_s.maximum": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "summary.rep_duration_s.mean": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "summary.rep_speed_max_rads.maximum": {
+      "gate": true,
+      "max_abs_error": 0.005565020343795579,
+      "n": 1,
+      "rmse": 0.005565020343795579,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.rep_speed_max_rads.mean": {
+      "gate": true,
+      "max_abs_error": 0.005185897292979025,
+      "n": 1,
+      "rmse": 0.005185897292979025,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.rep_speed_mean_rads.maximum": {
+      "gate": true,
+      "max_abs_error": 0.0032564283005841466,
+      "n": 1,
+      "rmse": 0.0032564283005841466,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.rep_speed_mean_rads.mean": {
+      "gate": true,
+      "max_abs_error": 0.003239804330652296,
+      "n": 1,
+      "rmse": 0.003239804330652296,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.return_duration_s.maximum": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "summary.return_duration_s.mean": {
+      "gate": true,
+      "max_abs_error": 0.0,
+      "n": 1,
+      "rmse": 0.0,
+      "tolerance": 0.1,
+      "unit": "s"
+    },
+    "summary.return_speed_max_rads.maximum": {
+      "gate": true,
+      "max_abs_error": 0.005684868227145312,
+      "n": 1,
+      "rmse": 0.005684868227145312,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.return_speed_max_rads.mean": {
+      "gate": true,
+      "max_abs_error": 0.005481827834317499,
+      "n": 1,
+      "rmse": 0.005481827834317499,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.return_speed_mean_rads.maximum": {
+      "gate": true,
+      "max_abs_error": 0.003718530319610891,
+      "n": 1,
+      "rmse": 0.003718530319610891,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.return_speed_mean_rads.mean": {
+      "gate": true,
+      "max_abs_error": 0.0035856478957354554,
+      "n": 1,
+      "rmse": 0.0035856478957354554,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad/s"
+    },
+    "summary.rom_cv": {
+      "gate": true,
+      "max_abs_error": 0.00032315609691781856,
+      "n": 1,
+      "rmse": 0.00032315609691781856,
+      "tolerance": 0.051216389244558264,
+      "unit": "1"
+    },
+    "summary.rom_max_rad": {
+      "gate": true,
+      "max_abs_error": 0.008789315209804194,
+      "n": 1,
+      "rmse": 0.008789315209804194,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad"
+    },
+    "summary.rom_mean_rad": {
+      "gate": true,
+      "max_abs_error": 0.008264816219462512,
+      "n": 1,
+      "rmse": 0.008264816219462512,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad"
+    },
+    "summary.rom_rad.maximum": {
+      "gate": true,
+      "max_abs_error": 0.008789315209804194,
+      "n": 1,
+      "rmse": 0.008789315209804194,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad"
+    },
+    "summary.rom_rad.mean": {
+      "gate": true,
+      "max_abs_error": 0.008264816219462512,
+      "n": 1,
+      "rmse": 0.008264816219462512,
+      "tolerance": 0.03490658503988659,
+      "unit": "rad"
+    },
+    "summary.rom_range_rad": {
+      "gate": true,
+      "max_abs_error": 0.0008007719022089521,
+      "n": 1,
+      "rmse": 0.0008007719022089521,
+      "tolerance": 0.06981317007977318,
+      "unit": "rad"
+    },
+    "summary.rom_sd_rad": {
+      "gate": true,
+      "max_abs_error": 0.00045444587066892215,
+      "n": 1,
+      "rmse": 0.00045444587066892215,
+      "tolerance": 0.06981317007977318,
+      "unit": "rad"
+    },
+    "summary.thorax_axial_rotation_magnitude_rad.maximum": {
+      "gate": true,
+      "max_abs_error": 1.8953589809828086e-05,
+      "n": 1,
+      "rmse": 1.8953589809828086e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_axial_rotation_magnitude_rad.mean": {
+      "gate": true,
+      "max_abs_error": 1.6544264979961865e-05,
+      "n": 1,
+      "rmse": 1.6544264979961865e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_axial_rotation_max_rad.maximum": {
+      "gate": true,
+      "max_abs_error": 1.8953589809828086e-05,
+      "n": 1,
+      "rmse": 1.8953589809828086e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_axial_rotation_max_rad.mean": {
+      "gate": true,
+      "max_abs_error": 1.6544264979961865e-05,
+      "n": 1,
+      "rmse": 1.6544264979961865e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_axial_rotation_min_rad.maximum": {
+      "gate": true,
+      "max_abs_error": 4.3092150345236044e-05,
+      "n": 1,
+      "rmse": 4.3092150345236044e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_axial_rotation_min_rad.mean": {
+      "gate": true,
+      "max_abs_error": 4.267796371789853e-05,
+      "n": 1,
+      "rmse": 4.267796371789853e-05,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_extension_magnitude_rad.maximum": {
+      "gate": true,
+      "max_abs_error": 0.0005350209974633591,
+      "n": 1,
+      "rmse": 0.0005350209974633591,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_extension_magnitude_rad.mean": {
+      "gate": true,
+      "max_abs_error": 0.0004982332597709971,
+      "n": 1,
+      "rmse": 0.0004982332597709971,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_extension_max_rad.maximum": {
+      "gate": true,
+      "max_abs_error": 0.0005350209974633591,
+      "n": 1,
+      "rmse": 0.0005350209974633591,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_extension_max_rad.mean": {
+      "gate": true,
+      "max_abs_error": 0.0004982332597709971,
+      "n": 1,
+      "rmse": 0.0004982332597709971,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_extension_min_rad.maximum": {
+      "gate": true,
+      "max_abs_error": 0.00035872314702520974,
+      "n": 1,
+      "rmse": 0.00035872314702520974,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_extension_min_rad.mean": {
+      "gate": true,
+      "max_abs_error": 0.00042935609175931075,
+      "n": 1,
+      "rmse": 0.00042935609175931075,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_lateral_flexion_magnitude_rad.maximum": {
+      "gate": true,
+      "max_abs_error": 0.00016063871251545403,
+      "n": 1,
+      "rmse": 0.00016063871251545403,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_lateral_flexion_magnitude_rad.mean": {
+      "gate": true,
+      "max_abs_error": 0.00015395900555012498,
+      "n": 1,
+      "rmse": 0.00015395900555012498,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_lateral_flexion_max_rad.maximum": {
+      "gate": true,
+      "max_abs_error": 0.00016600329084362746,
+      "n": 1,
+      "rmse": 0.00016600329084362746,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_lateral_flexion_max_rad.mean": {
+      "gate": true,
+      "max_abs_error": 0.0001311907040989378,
+      "n": 1,
+      "rmse": 0.0001311907040989378,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_lateral_flexion_min_rad.maximum": {
+      "gate": true,
+      "max_abs_error": 0.00014144528644075005,
+      "n": 1,
+      "rmse": 0.00014144528644075005,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    },
+    "summary.thorax_lateral_flexion_min_rad.mean": {
+      "gate": true,
+      "max_abs_error": 0.00015395900555012498,
+      "n": 1,
+      "rmse": 0.00015395900555012498,
+      "tolerance": 0.017453292519943295,
+      "unit": "rad"
+    }
+  },
+  "failed_gates": [],
+  "false_candidate_ids": [],
+  "id": "T-MIX/CLEAN-Q/SAME/0",
+  "input_audit": {
+    "after": {
+      "AL90/A-si.json": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd",
+      "AL90/A.kimu": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487",
+      "AL90/B-si.json": "aad1e89ca579dc574c7927e687d5ba99e0b2245f2fe22989ee658d11265120e0",
+      "AL90/B.kimu": "ec5e32d084468464ba74801c7aa63a478ff42176f7b6be2030cc0cb894e2203b",
+      "AL90/metadata.json": "a28560b20526595da782d14de8234153cca7fd0eb4794539e0e9f8410285a964",
+      "AR90/A-si.json": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd",
+      "AR90/A.kimu": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487",
+      "AR90/B-si.json": "16d1b1bfa3c0275949baf48b759739b0539488568de60217908cb824d9009561",
+      "AR90/B.kimu": "de64431c62f58609ee807e3c655acc57caa957c32e2bb25039c3233483f64f3a",
+      "AR90/metadata.json": "11dce28f3fa52913f4d1f906b83054b0cde569a6e5e40350fc183739cb764142",
+      "F90/A-si.json": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd",
+      "F90/A.kimu": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487",
+      "F90/B-si.json": "8d6a956bc3dbb51e0c25cae5b60e2d78ed8f0e9e3beade4da766bd713db9e916",
+      "F90/B.kimu": "d07f099f4171a6a4c316e37c30c63731da98ac5733e59a172f16b471a6b1977b",
+      "F90/metadata.json": "350cfadd4ea809d2ec8f4930cbe05aed56ed2bc735bba4749f60bc75ceebcc9f",
+      "SHA256SUMS.json": "2aa180e32003f91e57accf1d53c5b4b914e0c9e9c0ab4cdb22db02a3ab0964f9",
+      "T-MIX/A-si.json": "8c4c60a7b191891e90e4e874b2e25260d6dc85bbf87f6a4e5e89797806957ac0",
+      "T-MIX/A.kimu": "848ff4efcc35bfe66a98f09eb0208a49b2eaeb644f9c0a8144c0231ea2aa7ac3",
+      "T-MIX/B-si.json": "9e02955eff0085aa533b09545d69e63222bb9d2287094acf21b0d2d29ecdb0a8",
+      "T-MIX/B.kimu": "4f759b2b564cf2930dbee8c636af7937df8377541a4fd7901e7568107af02999",
+      "T-MIX/metadata.json": "71a8bcbe9e7cebd4c299a5319e56e5b1a1bbe60c6a10c46648058fc0ac8a9649",
+      "annotations.json": "8b4211a5d4bdef93dcf4f970f44d99a57b7110d58665155c4d3dac65c111df9d",
+      "case-manifest.json": "5bab237edd4386c630fa25ddae4fa774d41e4d51cf2493f2d3f23b458234edee",
+      "manifest.json": "257499bcc53a1fb94f10b956159fd1030f30611272504fb9ed4a2bd97273cbfb",
+      "observation-labels.json": "f8c34af7377c975c1b69423461798ca6ece798596243efd2656e295a8135e452"
+    },
+    "before": {
+      "AL90/A-si.json": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd",
+      "AL90/A.kimu": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487",
+      "AL90/B-si.json": "aad1e89ca579dc574c7927e687d5ba99e0b2245f2fe22989ee658d11265120e0",
+      "AL90/B.kimu": "ec5e32d084468464ba74801c7aa63a478ff42176f7b6be2030cc0cb894e2203b",
+      "AL90/metadata.json": "a28560b20526595da782d14de8234153cca7fd0eb4794539e0e9f8410285a964",
+      "AR90/A-si.json": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd",
+      "AR90/A.kimu": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487",
+      "AR90/B-si.json": "16d1b1bfa3c0275949baf48b759739b0539488568de60217908cb824d9009561",
+      "AR90/B.kimu": "de64431c62f58609ee807e3c655acc57caa957c32e2bb25039c3233483f64f3a",
+      "AR90/metadata.json": "11dce28f3fa52913f4d1f906b83054b0cde569a6e5e40350fc183739cb764142",
+      "F90/A-si.json": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd",
+      "F90/A.kimu": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487",
+      "F90/B-si.json": "8d6a956bc3dbb51e0c25cae5b60e2d78ed8f0e9e3beade4da766bd713db9e916",
+      "F90/B.kimu": "d07f099f4171a6a4c316e37c30c63731da98ac5733e59a172f16b471a6b1977b",
+      "F90/metadata.json": "350cfadd4ea809d2ec8f4930cbe05aed56ed2bc735bba4749f60bc75ceebcc9f",
+      "SHA256SUMS.json": "2aa180e32003f91e57accf1d53c5b4b914e0c9e9c0ab4cdb22db02a3ab0964f9",
+      "T-MIX/A-si.json": "8c4c60a7b191891e90e4e874b2e25260d6dc85bbf87f6a4e5e89797806957ac0",
+      "T-MIX/A.kimu": "848ff4efcc35bfe66a98f09eb0208a49b2eaeb644f9c0a8144c0231ea2aa7ac3",
+      "T-MIX/B-si.json": "9e02955eff0085aa533b09545d69e63222bb9d2287094acf21b0d2d29ecdb0a8",
+      "T-MIX/B.kimu": "4f759b2b564cf2930dbee8c636af7937df8377541a4fd7901e7568107af02999",
+      "T-MIX/metadata.json": "71a8bcbe9e7cebd4c299a5319e56e5b1a1bbe60c6a10c46648058fc0ac8a9649",
+      "annotations.json": "8b4211a5d4bdef93dcf4f970f44d99a57b7110d58665155c4d3dac65c111df9d",
+      "case-manifest.json": "5bab237edd4386c630fa25ddae4fa774d41e4d51cf2493f2d3f23b458234edee",
+      "manifest.json": "257499bcc53a1fb94f10b956159fd1030f30611272504fb9ed4a2bd97273cbfb",
+      "observation-labels.json": "f8c34af7377c975c1b69423461798ca6ece798596243efd2656e295a8135e452"
+    }
+  },
+  "intended_class": "C",
+  "known_yaw_bound_rad": 0.0,
+  "matches": [
+    {
+      "candidate_id": 1,
+      "duplicate_overlaps": [],
+      "eligible": true,
+      "reasons": [
+        "ok"
+      ],
+      "truth_id": "T-MIX:rep-1",
+      "valid": true
+    },
+    {
+      "candidate_id": 2,
+      "duplicate_overlaps": [],
+      "eligible": true,
+      "reasons": [
+        "ok"
+      ],
+      "truth_id": "T-MIX:rep-2",
+      "valid": true
+    },
+    {
+      "candidate_id": 3,
+      "duplicate_overlaps": [],
+      "eligible": true,
+      "reasons": [
+        "ok"
+      ],
+      "truth_id": "T-MIX:rep-3",
+      "valid": true
+    }
+  ],
+  "missed_truth_ids": [],
+  "passed": true,
+  "path": "Q",
+  "perturbation": {
+    "accel_sigma": 0,
+    "bias_rads": 0,
+    "calibration": false,
+    "clock_enabled": false,
+    "clock_ppm": 0,
+    "gyro_sigma": 0,
+    "heading_path": "sensor",
+    "heading_rate_rads": 0,
+    "loss": "none",
+    "ramp_rads": 0,
+    "sample_jitter_us": 0,
+    "seed": 0,
+    "target": "SAME",
+    "timestamp_jitter_us": 0
+  },
+  "processing_version": "m5-processing/1.1",
+  "proxy_reasons": [],
+  "quantization": {
+    "A": {
+      "acceleration_component_max_mps2": 0.0005980519020307717,
+      "acceleration_half_lsb_mps2": 0.00059820565,
+      "rate_component_max_rads": 0.0001526441530887157,
+      "rate_half_lsb_rads": 0.00015271631
+    },
+    "B": {
+      "acceleration_component_max_mps2": 0.0005981815221272058,
+      "acceleration_half_lsb_mps2": 0.00059820565,
+      "rate_component_max_rads": 0.00015269085561386841,
+      "rate_half_lsb_rads": 0.00015271631
+    }
+  },
+  "relative_reasons": [
+    "valid"
+  ],
+  "replay_kind": "immutable stored synthetic Q",
+  "seed": 0,
+  "source_type": "synthetic",
+  "stage_disposition": "complete",
+  "target": "SAME",
+  "trajectory": "T-MIX",
+  "unmatched_truth_ids": []
+}

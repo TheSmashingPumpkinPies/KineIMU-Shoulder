@@ -1,0 +1,478 @@
+{
+  "decision": {
+    "max_limit_us": 1500.0,
+    "p95_limit_us": 1000.0,
+    "pair_max_within_limit": true,
+    "pair_p95_within_limit": true,
+    "reason": "held-out pairwise residuals meet the predeclared M1 timing limits",
+    "resolution_sufficient": true,
+    "status": "pass",
+    "threshold_separation_us": 500.0
+  },
+  "event_split": {
+    "disjoint": true,
+    "fit_event_ids": [
+      "E01",
+      "E03",
+      "E05"
+    ],
+    "held_out_event_ids": [
+      "E02",
+      "E04",
+      "E06"
+    ]
+  },
+  "events": [
+    {
+      "common_time_us": 10000000.0,
+      "event_id": "E01",
+      "observations": [
+        {
+          "clock_epoch": 0,
+          "device_time_us": 9998550,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "A",
+          "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "sample_sequence": null
+        },
+        {
+          "clock_epoch": 0,
+          "device_time_us": 10001050,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "B",
+          "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "sample_sequence": null
+        }
+      ],
+      "phase": "beginning",
+      "reference_method": "synthetic_exact_common_clock",
+      "reference_resolution_us": 1.0,
+      "reference_uncertainty_us": 0.2886751345948129,
+      "role": "fit"
+    },
+    {
+      "common_time_us": 300000000.0,
+      "event_id": "E02",
+      "observations": [
+        {
+          "clock_epoch": 0,
+          "device_time_us": 299992750,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "A",
+          "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "sample_sequence": null
+        },
+        {
+          "clock_epoch": 0,
+          "device_time_us": 300009750,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "B",
+          "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "sample_sequence": null
+        }
+      ],
+      "phase": "beginning",
+      "reference_method": "synthetic_exact_common_clock",
+      "reference_resolution_us": 1.0,
+      "reference_uncertainty_us": 0.2886751345948129,
+      "role": "held_out"
+    },
+    {
+      "common_time_us": 900000000.0,
+      "event_id": "E03",
+      "observations": [
+        {
+          "clock_epoch": 0,
+          "device_time_us": 899980750,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "A",
+          "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "sample_sequence": null
+        },
+        {
+          "clock_epoch": 0,
+          "device_time_us": 900027751,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "B",
+          "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "sample_sequence": null
+        }
+      ],
+      "phase": "middle",
+      "reference_method": "synthetic_exact_common_clock",
+      "reference_resolution_us": 1.0,
+      "reference_uncertainty_us": 0.2886751345948129,
+      "role": "fit"
+    },
+    {
+      "common_time_us": 1200000000.0,
+      "event_id": "E04",
+      "observations": [
+        {
+          "clock_epoch": 0,
+          "device_time_us": 1199974751,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "A",
+          "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "sample_sequence": null
+        },
+        {
+          "clock_epoch": 0,
+          "device_time_us": 1200036751,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "B",
+          "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "sample_sequence": null
+        }
+      ],
+      "phase": "middle",
+      "reference_method": "synthetic_exact_common_clock",
+      "reference_resolution_us": 1.0,
+      "reference_uncertainty_us": 0.2886751345948129,
+      "role": "held_out"
+    },
+    {
+      "common_time_us": 1790000000.0,
+      "event_id": "E05",
+      "observations": [
+        {
+          "clock_epoch": 0,
+          "device_time_us": 1789962951,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "A",
+          "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "sample_sequence": null
+        },
+        {
+          "clock_epoch": 0,
+          "device_time_us": 1790054452,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "B",
+          "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "sample_sequence": null
+        }
+      ],
+      "phase": "end",
+      "reference_method": "synthetic_exact_common_clock",
+      "reference_resolution_us": 1.0,
+      "reference_uncertainty_us": 0.2886751345948129,
+      "role": "fit"
+    },
+    {
+      "common_time_us": 1800000000.0,
+      "event_id": "E06",
+      "observations": [
+        {
+          "clock_epoch": 0,
+          "device_time_us": 1799962751,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "A",
+          "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "sample_sequence": null
+        },
+        {
+          "clock_epoch": 0,
+          "device_time_us": 1800054752,
+          "localization_method": "synthetic_exact_event_sample",
+          "localization_resolution_us": 1.0,
+          "localization_uncertainty_us": 0.2886751345948129,
+          "node_id": "B",
+          "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "sample_sequence": null
+        }
+      ],
+      "phase": "end",
+      "reference_method": "synthetic_exact_common_clock",
+      "reference_resolution_us": 1.0,
+      "reference_uncertainty_us": 0.2886751345948129,
+      "role": "held_out"
+    }
+  ],
+  "held_out": {
+    "nodes": [
+      {
+        "clock_epoch": 0,
+        "held_out": {
+          "coverage_factor": 2.0,
+          "decision_resolution_us": 1.4142135623730951,
+          "event_ids": [
+            "E02",
+            "E04",
+            "E06"
+          ],
+          "event_resolution_us": [
+            1.4142135623730951,
+            1.4142135623730951,
+            1.4142135623730951
+          ],
+          "expanded_uncertainties_us": [
+            1.0200028038463214,
+            0.9626948790324469,
+            1.108954253530232
+          ],
+          "max_event_resolution_us": 1.4142135623730951,
+          "max_expanded_uncertainty_us": 1.108954253530232,
+          "max_standard_uncertainty_us": 0.554477126765116,
+          "max_us": 0.4981377124786377,
+          "p50_us": 0.16105222702026367,
+          "p95_us": 0.46442916393280026,
+          "p99_us": 0.4913960027694702,
+          "residuals_us": [
+            0.0037457942962646484,
+            0.4981377124786377,
+            0.16105222702026367
+          ],
+          "resolution_sufficient": true,
+          "standard_uncertainties_us": [
+            0.5100014019231607,
+            0.48134743951622344,
+            0.554477126765116
+          ],
+          "threshold_separation_us": 500.0
+        },
+        "node_id": "A"
+      },
+      {
+        "clock_epoch": 0,
+        "held_out": {
+          "coverage_factor": 2.0,
+          "decision_resolution_us": 1.4142135623730951,
+          "event_ids": [
+            "E02",
+            "E04",
+            "E06"
+          ],
+          "event_resolution_us": [
+            1.4142135623730951,
+            1.4142135623730951,
+            1.4142135623730951
+          ],
+          "expanded_uncertainties_us": [
+            1.0199773041450722,
+            0.9626708118220672,
+            1.1089265299273674
+          ],
+          "max_event_resolution_us": 1.4142135623730951,
+          "max_expanded_uncertainty_us": 1.1089265299273674,
+          "max_standard_uncertainty_us": 0.5544632649636837,
+          "max_us": 0.3370680809020996,
+          "p50_us": 0.3258325457572937,
+          "p95_us": 0.33594452738761904,
+          "p99_us": 0.3368433701992035,
+          "residuals_us": [
+            0.3258325457572937,
+            0.3370680809020996,
+            0.011235237121582031
+          ],
+          "resolution_sufficient": true,
+          "standard_uncertainties_us": [
+            0.5099886520725361,
+            0.4813354059110336,
+            0.5544632649636837
+          ],
+          "threshold_separation_us": 500.0
+        },
+        "node_id": "B"
+      }
+    ],
+    "pair": {
+      "device_offset_b_minus_a_us_at_common_reference": 62000.8352060318,
+      "held_out": {
+        "coverage_factor": 2.0,
+        "decision_resolution_us": 1.7320508075688772,
+        "event_ids": [
+          "E02",
+          "E04",
+          "E06"
+        ],
+        "event_resolution_us": [
+          1.7320508075688772,
+          1.7320508075688772,
+          1.7320508075688772
+        ],
+        "expanded_uncertainties_us": [
+          1.1891563203207303,
+          1.0894263882350144,
+          1.3389663619870662
+        ],
+        "max_event_resolution_us": 1.7320508075688772,
+        "max_expanded_uncertainty_us": 1.3389663619870662,
+        "max_standard_uncertainty_us": 0.6694831809935331,
+        "max_us": 0.8352057933807373,
+        "p50_us": 0.32957834005355835,
+        "p95_us": 0.7846430480480193,
+        "p99_us": 0.8250932443141937,
+        "residuals_us": [
+          0.32957834005355835,
+          0.8352057933807373,
+          0.1722874641418457
+        ],
+        "resolution_sufficient": true,
+        "standard_uncertainties_us": [
+          0.5945781601603651,
+          0.5447131941175072,
+          0.6694831809935331
+        ],
+        "threshold_separation_us": 500.0
+      },
+      "mapping_pairs": [
+        {
+          "common_event_ids": [
+            "E02",
+            "E04",
+            "E06"
+          ],
+          "device_offset_b_minus_a_us_at_common_reference": 62000.8352060318,
+          "node_a_epoch": 0,
+          "node_b_epoch": 0,
+          "relative_drift_ppm": -49.99906176983426
+        }
+      ],
+      "relative_drift_ppm": -49.99906176983426
+    }
+  },
+  "input": {
+    "event_plan_schema_version": "kineimu.m1.sync-event-plan/0.1",
+    "fit_time_source": "device_time_us",
+    "fixture_description": "deterministic common events for TDD only",
+    "fixture_id": "synthetic-rigid-fixture",
+    "host_arrival_used_for_fit": false,
+    "raw_data_modified": false,
+    "raw_hashes_verified": false,
+    "raw_streams": [
+      {
+        "node_id": "A",
+        "path": "synthetic/node-a.raw",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      {
+        "node_id": "B",
+        "path": "synthetic/node-b.raw",
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      }
+    ],
+    "session_id": "synthetic-known-offset-drift"
+  },
+  "mappings": [
+    {
+      "clock_epoch": 0,
+      "coefficient_a": 1.0000199998381878,
+      "coefficient_b_us": 1250.1972883001145,
+      "coefficient_covariance": [
+        [
+          1.0521188411759422e-19,
+          -9.468867041213617e-11
+        ],
+        [
+          -9.468867041213617e-11,
+          0.14077464731436803
+        ]
+      ],
+      "common_reference_us": 900000000.0,
+      "fit_event_ids": [
+        "E01",
+        "E03",
+        "E05"
+      ],
+      "fit_residual_rms_us": 0.23570694615952734,
+      "fit_residuals_us": [
+        -0.1666704136878252,
+        0.3333395719528198,
+        -0.1666703224182129
+      ],
+      "fit_window_common_us": [
+        10000000.0,
+        1790000000.0
+      ],
+      "fit_window_device_us": [
+        9998550,
+        1789962951
+      ],
+      "model": "t_common_us = a_i * t_device_us + b_i",
+      "node_id": "A",
+      "offset_us_at_common_reference": 19249.666667103767,
+      "relative_drift_ppm": 19.99983818778972
+    },
+    {
+      "clock_epoch": 0,
+      "coefficient_a": 0.9999699997764449,
+      "coefficient_b_us": -749.9662638110749,
+      "coefficient_covariance": [
+        [
+          1.0519610344646384e-19,
+          -9.467941239888418e-11
+        ],
+        [
+          -9.467941239888418e-11,
+          0.14076798750883882
+        ]
+      ],
+      "common_reference_us": 900000000.0,
+      "fit_event_ids": [
+        "E01",
+        "E03",
+        "E05"
+      ],
+      "fit_residual_rms_us": 3.4064345916621276e-07,
+      "fit_residuals_us": [
+        -4.041939973831177e-07,
+        -3.5762786865234375e-07,
+        -2.384185791015625e-07
+      ],
+      "fit_window_common_us": [
+        10000000.0,
+        1790000000.0
+      ],
+      "fit_window_device_us": [
+        10001050,
+        1790054452
+      ],
+      "model": "t_common_us = a_i * t_device_us + b_i",
+      "node_id": "B",
+      "offset_us_at_common_reference": -27750.999999642372,
+      "relative_drift_ppm": -30.000223555148864
+    }
+  ],
+  "method": {
+    "coverage_factor": 2.0,
+    "fit": "weighted least squares using declared event standard uncertainties",
+    "model": "t_common_us = a_i * t_device_us + b_i",
+    "quantile_method": "numpy.quantile(method='linear')",
+    "version": "kineimu.m1.clock-mapping.ols-wls/0.1"
+  },
+  "processing": {
+    "raw_streams_unchanged": true,
+    "resampling": "none"
+  },
+  "reproducibility": {
+    "command": ".\\validation\\m1_clock_mapping.py --event-plan experiments/m1_clock_mapping_synthetic_20260915/event_plan.json --output experiments/m1_clock_mapping_synthetic_20260915/result.json",
+    "event_plan_path": "experiments\\m1_clock_mapping_synthetic_20260915\\event_plan.json",
+    "event_plan_sha256": "fc688afaaa0f5d5d81070a8d62dcc5da6628704af80abf9ad576c069731a800d",
+    "python": "3.12.14 (main, Aug 14 2026, 15:40:22) [MSC v.1944 64 bit (AMD64)]",
+    "raw_data_modified": false,
+    "software_commit": "6186ab7021e5c92bc1b25ee6bd32c9fd6080efe1"
+  },
+  "schema_version": "kineimu.m1.clock-mapping-validation/0.1"
+}

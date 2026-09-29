@@ -1,0 +1,1 @@
+{"cp3_passed": true, "inputs_and_source_unchanged": true, "node_samples_per_s": {"max": 272.3372097562982, "median": 246.6256097323029, "min": 192.10781122517892}, "protocol": "m6-demo-benchmark/1.1", "source_head": "3e0647c4f53803abf134fee68659f63ca006e407", "timed_count": 5, "wall_s": {"max": 89.5747023, "median": 69.7737758, "min": 63.1863711}}

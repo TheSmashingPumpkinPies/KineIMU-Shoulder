@@ -1,0 +1,30 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    ".\\benchmarks\\demo\\worker.py",
+    "--identity",
+    "<temporary-workspace>\\kineimu-m6-cp3-addcdd7f-batch02\\timed04\\worker.json",
+    "--output",
+    "<temporary-workspace>\\kineimu-m6-cp3-addcdd7f-batch02\\timed04\\demo"
+  ],
+  "counter_end_ns": 55164067010900,
+  "counter_start_ns": 55102065715900,
+  "cwd": ".",
+  "ended_utc": "2026-09-28T07:49:29.091686+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "launch_pid": 15236,
+  "log_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "f794ad0b69d8c22ec0420e21a8e5b2558de8a9ee925139a7ea9e128f6143b30c"
+  },
+  "node_samples_per_s": 277.5425900378371,
+  "started_utc": "2026-09-28T07:48:27.088556+00:00",
+  "wall_ns": 62001295000,
+  "wall_s": 62.001295
+}

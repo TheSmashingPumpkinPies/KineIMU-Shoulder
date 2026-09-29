@@ -1,0 +1,5 @@
+/* Keep sensor initialization under application control so the board's
+ * measured power-up delay is applied before the first I2C transaction. */
+&lsm6ds3tr_c {
+	zephyr,deferred-init;
+};

@@ -1,0 +1,51 @@
+"""Refresh resumable state after six-slot measurement, before final regression/proof."""
+import json
+import subprocess
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+EVIDENCE = Path(__file__).resolve().parent
+BATCH = Path(sys.argv[1]).resolve()
+head = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
+summary = json.loads((BATCH / "summary.json").read_bytes())
+assert summary["cp3_passed"] and summary["inputs_and_source_unchanged"] and summary["source_head"] == head
+state = f"""# KineIMU Shoulder — M6.3 six-slot benchmark PASS / final proof pending, 2026-09-28
+
+Measurement source HEAD {head}, main; protocol m6-demo-benchmark/1.1.
+Original consumed root {BATCH.as_posix()}.
+All6 slots PASS (warmup+timed01–05), each4Q/8 streams/17,208 samples/4,304 packets,
+27,160 independently recomputed error scalars per child; all22 canonical products/
+summary/inner indexes and24 other top hashes equal; original CP2 run whitelist passes.
+Input37 original/sample28 hashes and54 runtime source archive entries bind exact bytes;
+before/after source/input/head/tracked-clean checks pass. No edits or tests during batch03.
+Wall_s median {summary['wall_s']['median']:.6f}, min {summary['wall_s']['min']:.6f},
+max {summary['wall_s']['max']:.6f}; end-to-end rate median
+{summary['node_samples_per_s']['median']:.6f} node-samples/s. Includes startup/validation/
+I/O/report; pure production compute NOT MEASURED, no live/real-time claim.
+Windows11/build26200, Ryzen7 7735H8C/16T, Performance scheme, Python3.12.14,
+uv0.12.5, numerical thread environment1; machine/storage/memory/background snapshots retained.
+
+M0–M5 DONE; CP0–CP2 PASS. CP3 FINAL ACCEPTANCE PENDING original/copy recompute,
+full878 external-temp regression, REPORT/REPRODUCE and committed-byte proof.
+Prior preflight rejection and full failed1.0 batch02 retained; no replacement/relabelling.
+First full868pass/6 test-root guard failures retained; full retry must use external temp.
+Production algorithms/budgets/dependencies/schema/firmware/raw/old evidence unchanged.
+Exact next action: retain this original batch as exact-byte batch01 delivery copy,
+recompute both, start full878 regression using actual M1 root with external basetemp,
+author performance report/reproduction guide, preserve tamper controls and verification,
+bind committed bytes, then accept CP3 and hand off M6.4. No new timing or hardware action.
+CP4 licensing/packaging, CP5 fresh environment and overall M6 OPEN; Linux NOT RUN;
+sample INTERNAL ONLY. No physical, remote, release or history action. Historical scratch
+retained. Measurement finished; no owned benchmark worker. State/docs evidence pending commit.
+"""
+for name in ("CURRENT_TASK.md", "PROJECT_STATUS.md"):
+    path = ROOT / name
+    path.write_text(state + "\n## Previous state (superseded; retained for traceability)\n\n" +
+                    path.read_text(encoding="utf-8"), encoding="utf-8", newline="\n")
+(ROOT / "HANDOFF.md").write_text(state, encoding="utf-8", newline="\n")
+with (ROOT / "CHANGELOG_DEV.md").open("a", encoding="utf-8", newline="\n") as stream:
+    stream.write(f"\n## 2026-09-28 — CP3 protocol1.1 complete measurement\n\nSource {head}; "
+                 "warmup/all5 timed PASS, original whitelist/canonical equality and input/source hashes pass. "
+                 "Final acceptance still needs exact copy/recompute/full878/report/committed proof.\n")
+print("measurement recorded; final acceptance pending", head)

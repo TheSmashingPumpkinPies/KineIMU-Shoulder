@@ -1,0 +1,70 @@
+"""Refresh resumable source-lock state only after completed source-stage checks."""
+import json
+import re
+import subprocess
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+EVIDENCE = Path(__file__).resolve().parent
+head = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
+checks = ("focused-external", "focused-final22", "ruff-lock", "mypy-source", "mypy-lock",
+          "docs-lock-final", "whitespace-source", "build-final", "cp2-startup-audit")
+assert all(json.loads((EVIDENCE / f"{name}-check.json").read_bytes())["exit_code"] == 0 for name in checks)
+full = (EVIDENCE / "full-source.log").read_text()
+count = int(re.findall(r"(\d+) passed", full)[-1])
+assert count == 868 and "6 failed" in full
+assert "repository output must be a new top-level demo-output" in full
+assert "48 passed" in (EVIDENCE / "focused-external.log").read_text()
+docs_line = re.findall(r"Docs check: [^\n]+", (EVIDENCE / "docs-lock-final.log").read_text())[-1]
+state = f"""# KineIMU Shoulder — M6.3 source verified / formal benchmark pending, 2026-09-28
+
+Entry/verification HEAD {head}, main, with scoped CP3 additions pending source-lock commit.
+M0–M5 DONE; CP0/CP1/CP2 PASS; CP3–CP5 and overall M6 OPEN. Hardware frozen.
+Prepared benchmarks/demo/PROTOCOL.md (m6-demo-benchmark/1.0), standard-library
+parent runner, thin worker identity wrapper and raw-ns/audit recomputation entry.
+Required timing is complete four-Q end-to-end, with validation/report/I/O overhead;
+compute_s NOT MEASURED. One warmup + five sequential new workers/roots; no replacement.
+Windows venv launcher/worker PID difference proven by retained parent-child probe;
+bootstrap overhead is included and separate PIDs plus relationship are recorded.
+
+Fresh full-source attempt: {count} pass/6 CP2 failures because the chosen pytest
+basetemp was inside the repository and hit the existing Demo path guard. Original
+log retained; no production change. External-temp focused CP2+CP3 all48 pass;
+final CP3 focused22 pass (including actual uv build-suffix version gate).
+Full external-temp retry remains required after timing;877 tests now scheduled.
+Ruff, strict package mypy33 and runner mypy1, whitespace and pinned build pass.
+{docs_line}. Existing CP2 pair independently re-audited.
+All failed test/type/build attempts remain in experiments/M6_CP3_20260928.
+Production algorithms/budgets/backend/dependencies/schema/firmware/raw/old evidence unchanged.
+No CP3 performance measured yet. Linux NOT RUN; sample INTERNAL ONLY / licensing pending.
+
+Exact next action: commit verified protocol/runner/tests/evidence and state, resolve clean
+source lock with git rev-parse HEAD, then launch one fresh external six-slot batch using
+uv run --frozen python benchmarks/demo/run_benchmark.py --output <absent external root>.
+Never reuse a consumed root. Audit each slot, independently recompute, then rerun full
+regression with an external pytest basetemp before CP3 PASS. No full test during timing.
+Tracked work is scoped but not yet committed at this state write; normal-permission
+status distinguishes sandbox access artifacts. Historical scratch retained.
+No owned benchmark/hardware process; first full regression finished. No human physical action.
+Remote synchronization/storage remain deferred; no push/tag/Release/PyPI/history action.
+Source/state lock resolves via git log -1 --format=%H -- benchmarks/demo/PROTOCOL.md.
+"""
+for name in ("CURRENT_TASK.md", "PROJECT_STATUS.md"):
+    path = ROOT / name
+    path.write_text(state + "\n## Previous state (superseded; retained for traceability)\n\n" +
+                    path.read_text(encoding="utf-8"), encoding="utf-8", newline="\n")
+(ROOT / "HANDOFF.md").write_text(state + "\n## Resume\n\nRead standard startup documents, M6 plan, protocol and CP3 evidence README.\n"
+    "Formal timing must wait for clean committed source. Output must be external\n"
+    "because nested Demo roots inside the repository are protected. Preflight\n"
+    "audits the immutable CP2 pair; all sample/original hashes must remain unchanged.\n"
+    "After measurement retain batch01 exact-byte copy, recompute originals/copy,\n"
+    "author REPORT/REPRODUCE, bind committed delivery bytes and refresh final state.\n",
+    encoding="utf-8", newline="\n")
+with (ROOT / "CHANGELOG_DEV.md").open("a", encoding="utf-8", newline="\n") as stream:
+    stream.write(f"\n## 2026-09-28 — M6.3 source/protocol verified before timing\n\nEntry {head}; "
+                 f"full{count}pass/6 guarded-path failures retained; external focused48/CP3 focused22, "
+                 "Ruff/mypy/docs/whitespace/build and CP2 audit pass. "
+                 "Freeze one-warmup/five-repeat end-to-end protocol and launch/worker identity. "
+                 "No CP3 measurement; next clean source lock, six-slot batch, audit/recompute/report, "
+                 "then required full external-temp retry before final acceptance.\n")
+print("source verified; formal measurements not started", head, count)

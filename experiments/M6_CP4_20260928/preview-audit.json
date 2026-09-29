@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "cp4_status": "OPEN_MAINTAINER_REVIEW",
+  "public_release": false,
+  "artifacts": [
+    {
+      "attempt": "01",
+      "original": "dist/m6-review-01/.gitignore",
+      "retained": "experiments/M6_CP4_20260928/artifacts/attempt01/.gitignore",
+      "bytes": 1,
+      "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+      "status": "SUPERSEDED_INTERNAL_ATTEMPT"
+    },
+    {
+      "attempt": "01",
+      "original": "dist/m6-review-01/kineimu_shoulder-0.1.0-py3-none-any.whl",
+      "retained": "experiments/M6_CP4_20260928/artifacts/attempt01/kineimu_shoulder-0.1.0-py3-none-any.whl",
+      "bytes": 150929,
+      "sha256": "616c923576d912786ec5db78265ff5ae53c7f22320574bf19b758189a5885dd5",
+      "status": "SUPERSEDED_INTERNAL_ATTEMPT"
+    },
+    {
+      "attempt": "01",
+      "original": "dist/m6-review-01/kineimu_shoulder-0.1.0.tar.gz",
+      "retained": "experiments/M6_CP4_20260928/artifacts/attempt01/kineimu_shoulder-0.1.0.tar.gz",
+      "bytes": 219033,
+      "sha256": "0ff4476da7d6b163e8cb2995c5faaf75a8b5410ef2a23464a7b544f1bb70620b",
+      "status": "SUPERSEDED_INTERNAL_ATTEMPT"
+    },
+    {
+      "attempt": "02",
+      "original": "dist/m6-review-02/.gitignore",
+      "retained": "experiments/M6_CP4_20260928/artifacts/attempt02/.gitignore",
+      "bytes": 1,
+      "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+      "status": "SUPERSEDED_INTERNAL_ATTEMPT"
+    },
+    {
+      "attempt": "02",
+      "original": "dist/m6-review-02/kineimu_shoulder-0.1.0-py3-none-any.whl",
+      "retained": "experiments/M6_CP4_20260928/artifacts/attempt02/kineimu_shoulder-0.1.0-py3-none-any.whl",
+      "bytes": 292046,
+      "sha256": "68aef020d8ebb2fac2e123cc7883bb548b1af5bc4950dade3f910070652ece28",
+      "status": "SUPERSEDED_INTERNAL_ATTEMPT"
+    },
+    {
+      "attempt": "02",
+      "original": "dist/m6-review-02/kineimu_shoulder-0.1.0.tar.gz",
+      "retained": "experiments/M6_CP4_20260928/artifacts/attempt02/kineimu_shoulder-0.1.0.tar.gz",
+      "bytes": 220534,
+      "sha256": "13af9d13df55fe5d3706e80c2876d68221563f9ddf80fc3655a5dfde7137ed70",
+      "status": "SUPERSEDED_INTERNAL_ATTEMPT"
+    },
+    {
+      "attempt": "03",
+      "original": "dist/m6-review-03/.gitignore",
+      "retained": "experiments/M6_CP4_20260928/artifacts/attempt03/.gitignore",
+      "bytes": 1,
+      "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+      "status": "FINAL_INTERNAL_PREVIEW"
+    },
+    {
+      "attempt": "03",
+      "original": "dist/m6-review-03/kineimu_shoulder-0.1.0-py3-none-any.whl",
+      "retained": "experiments/M6_CP4_20260928/artifacts/attempt03/kineimu_shoulder-0.1.0-py3-none-any.whl",
+      "bytes": 292281,
+      "sha256": "b6cbf5447c933bda4f766274c36423016f419916916b4344ae109f595c862747",
+      "status": "FINAL_INTERNAL_PREVIEW"
+    },
+    {
+      "attempt": "03",
+      "original": "dist/m6-review-03/kineimu_shoulder-0.1.0.tar.gz",
+      "retained": "experiments/M6_CP4_20260928/artifacts/attempt03/kineimu_shoulder-0.1.0.tar.gz",
+      "bytes": 220828,
+      "sha256": "39d13ddc160b483b15a380c047fd887009f451b6026ed155957545e9b834e630",
+      "status": "FINAL_INTERNAL_PREVIEW"
+    }
+  ],
+  "required_checks": [
+    "full-01",
+    "ruff-final-02",
+    "mypy-02",
+    "build-03",
+    "archives-green-03",
+    "installs-attempt03"
+  ],
+  "install_commands_verified": 8,
+  "pytest": {
+    "passed": 878,
+    "skipped": 0,
+    "actual_external_m1_root": "<external-data>/kineimu_m1_usb_30min_20260925_01"
+  },
+  "sample_input_hashes": {
+    "SHA256SUMS.json": "2aa180e32003f91e57accf1d53c5b4b914e0c9e9c0ab4cdb22db02a3ab0964f9",
+    "annotations.json": "8b4211a5d4bdef93dcf4f970f44d99a57b7110d58665155c4d3dac65c111df9d",
+    "observation-labels.json": "f8c34af7377c975c1b69423461798ca6ece798596243efd2656e295a8135e452",
+    "case-manifest.json": "5bab237edd4386c630fa25ddae4fa774d41e4d51cf2493f2d3f23b458234edee",
+    "manifest.json": "257499bcc53a1fb94f10b956159fd1030f30611272504fb9ed4a2bd97273cbfb",
+    "F90/A.kimu": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487",
+    "F90/B.kimu": "d07f099f4171a6a4c316e37c30c63731da98ac5733e59a172f16b471a6b1977b",
+    "F90/metadata.json": "350cfadd4ea809d2ec8f4930cbe05aed56ed2bc735bba4749f60bc75ceebcc9f",
+    "F90/A-si.json": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd",
+    "F90/B-si.json": "8d6a956bc3dbb51e0c25cae5b60e2d78ed8f0e9e3beade4da766bd713db9e916",
+    "AL90/A.kimu": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487",
+    "AL90/B.kimu": "ec5e32d084468464ba74801c7aa63a478ff42176f7b6be2030cc0cb894e2203b",
+    "AL90/metadata.json": "a28560b20526595da782d14de8234153cca7fd0eb4794539e0e9f8410285a964",
+    "AL90/A-si.json": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd",
+    "AL90/B-si.json": "aad1e89ca579dc574c7927e687d5ba99e0b2245f2fe22989ee658d11265120e0",
+    "AR90/A.kimu": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487",
+    "AR90/B.kimu": "de64431c62f58609ee807e3c655acc57caa957c32e2bb25039c3233483f64f3a",
+    "AR90/metadata.json": "11dce28f3fa52913f4d1f906b83054b0cde569a6e5e40350fc183739cb764142",
+    "AR90/A-si.json": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd",
+    "AR90/B-si.json": "16d1b1bfa3c0275949baf48b759739b0539488568de60217908cb824d9009561",
+    "T-MIX/A.kimu": "848ff4efcc35bfe66a98f09eb0208a49b2eaeb644f9c0a8144c0231ea2aa7ac3",
+    "T-MIX/B.kimu": "4f759b2b564cf2930dbee8c636af7937df8377541a4fd7901e7568107af02999",
+    "T-MIX/metadata.json": "71a8bcbe9e7cebd4c299a5319e56e5b1a1bbe60c6a10c46648058fc0ac8a9649",
+    "T-MIX/A-si.json": "8c4c60a7b191891e90e4e874b2e25260d6dc85bbf87f6a4e5e89797806957ac0",
+    "T-MIX/B-si.json": "9e02955eff0085aa533b09545d69e63222bb9d2287094acf21b0d2d29ecdb0a8"
+  },
+  "sample_public_permission": "PENDING_INTERNAL_ONLY",
+  "original_installed_notice_files": 52,
+  "version_tag_notice_files": 2,
+  "cp3_frozen_records_verified": 556,
+  "cp3_anchor": "e2c4bf26f82014ca5bde7f0deca18bd622c8062a",
+  "cp3_current_readme_policy": "old exact bytes verified from accepted Git anchor; new CP4 README independent",
+  "unchanged_git_boundaries": [
+    "kineimu_shoulder",
+    "tests",
+    "protocols",
+    "uv.lock",
+    "firmware",
+    "datasets"
+  ],
+  "final_artifact_metadata": "0.1.0; license grant and citation authors not approved"
+}

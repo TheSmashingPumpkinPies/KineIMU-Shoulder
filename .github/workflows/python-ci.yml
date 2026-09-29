@@ -1,0 +1,43 @@
+name: Python CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install uv and Python
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.5"
+          python-version: "3.12.14"
+          enable-cache: true
+
+      - name: Install locked dependencies
+        run: uv sync --all-extras --frozen
+
+      - name: Run tests
+        run: uv run --frozen pytest
+
+      - name: Run lint
+        run: uv run --frozen ruff check .
+
+      - name: Run type checks
+        run: uv run --frozen mypy
+
+      - name: Check document consistency and source archive
+        run: uv run --frozen python scripts/check_docs_consistency.py
+
+      - name: Run complete hardware-free sensor replay Demo
+        run: uv run --frozen python examples/m6_demo.py --output demo-output-ci
+
+      - name: Build package
+        run: uv build

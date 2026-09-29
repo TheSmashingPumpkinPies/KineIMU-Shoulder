@@ -1,0 +1,8 @@
+{
+  "canonical_files_per_run": 5380,
+  "cp3_passed": false,
+  "evidence_git_commit": "82551792bb895782e4b36fa686093a166c7cb7d3",
+  "git_blobs_match_audited_disk_bytes": true,
+  "git_product_maps_equal": true,
+  "numerical_source_lock": "6f1dec791aa6e959fd41abbb46c0e7da5053601a"
+}

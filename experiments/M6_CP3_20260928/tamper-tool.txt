@@ -1,0 +1,66 @@
+"""Post-measurement negative copies: frozen-byte change and self-consistent false counter metadata."""
+import importlib.util
+import json
+import shutil
+import tempfile
+import traceback
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+EVIDENCE = Path(__file__).resolve().parent
+ORIGINAL = EVIDENCE / "batch01"
+spec = importlib.util.spec_from_file_location("cp3", ROOT / "benchmarks/demo/run_benchmark.py")
+runner = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(runner)
+before = runner.hashes(ORIGINAL)
+parent = Path(tempfile.mkdtemp(prefix="kineimu-m6-cp3-negative-copies-"))
+rows = []
+
+
+def replace_json(path, value):
+    assert path.resolve().is_relative_to(parent.resolve())
+    path.write_bytes((json.dumps(value, sort_keys=True, indent=2) + "\n").encode())
+
+
+for name in ("frozen-byte-change", "false-counter-rehashed"):
+    target = parent / name
+    shutil.copytree(ORIGINAL, target)
+    assert runner.hashes(target) == before
+    if name == "frozen-byte-change":
+        product = target / "summary.json"
+        product.write_bytes(product.read_bytes() + b" ")  # Parse-equivalent, but different frozen bytes.
+    else:
+        attempts = json.loads((target / "attempts.json").read_bytes())
+        row = attempts[3]
+        logs = target / row["slot"]
+        m = json.loads((logs / "measurement.json").read_bytes())
+        m["wall_ns"] += 1_000_000_000
+        m["wall_s"] = m["wall_ns"] / 1e9
+        m["node_samples_per_s"] = 17208 / m["wall_s"]
+        replace_json(logs / "measurement.json", m)
+        row.update(m)
+        membership = runner.hashes(logs)
+        membership.pop("attempt.json")
+        row["retained_sha256"] = membership
+        replace_json(logs / "attempt.json", row)
+        replace_json(target / "attempts.json", attempts)
+        membership = runner.hashes(target)
+        membership.pop("SHA256SUMS.json")
+        replace_json(target / "SHA256SUMS.json", membership)
+        assert runner.verify_inventory(target)  # Checksums alone cannot certify a invented duration.
+    try:
+        runner.recompute(target)
+    except (AssertionError, ValueError) as exc:
+        trace = traceback.format_exc()
+        if name == "frozen-byte-change":
+            assert isinstance(exc, ValueError) and "frozen inventory" in str(exc)
+        else:
+            assert "counter_end_ns" in trace  # Reaches raw counter check despite rehashed membership.
+        rows.append(dict(control=name, rejected=True, error_type=type(exc).__name__, traceback=trace,
+                         copied_root=str(target), copied_sha256=runner.hashes(target)))
+    else:
+        raise AssertionError(f"tamper was accepted: {name}")
+assert runner.hashes(ORIGINAL) == before
+runner.write(EVIDENCE / "tamper-controls.json", dict(passed=True, original_unchanged=True,
+                                                    controls=rows, scope="negative copies only; no new timed slots"))
+print(json.dumps(dict(negative_controls_rejected=2, original_unchanged=True)))

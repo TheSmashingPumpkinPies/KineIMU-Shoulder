@@ -1,0 +1,23 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "tests/integration/test_m6_demo.py",
+    "--tb=short",
+    "--basetemp",
+    "<temporary-workspace>/kineimu-m6-cp2-presentation"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T06:52:56.022640+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 0,
+  "log": "focused-presentation.log",
+  "sha256": "305fa28b1535391a087671a603a06667f51903706c58db7182802055c70a026f",
+  "started_utc": "2026-09-28T06:51:38.487455+00:00"
+}

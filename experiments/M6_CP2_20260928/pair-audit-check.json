@@ -1,0 +1,15 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    ".\\experiments\\M6_CP2_20260928\\audit.py",
+    "--run1",
+    "<temporary-workspace>\\kineimu-m6-cp2-formal-u7wsl7om\\run1",
+    "--run2",
+    "<temporary-workspace>\\kineimu-m6-cp2-formal-u7wsl7om\\run2",
+    "--output",
+    ".\\experiments\\M6_CP2_20260928\\pair-audit.json"
+  ],
+  "exit_code": 0,
+  "log": "pair-audit.log",
+  "sha256": "c1619c186de2a2236fe1bf0a0dce7b9a78a700dfa463d98642dbe2c72211303e"
+}

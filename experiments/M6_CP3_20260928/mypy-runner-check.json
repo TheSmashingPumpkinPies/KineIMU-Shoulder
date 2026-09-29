@@ -1,0 +1,21 @@
+{
+  "command": [
+    "<local-home>/.local/bin/uv.exe",
+    "run",
+    "--frozen",
+    "mypy",
+    "benchmarks/demo/run_benchmark.py"
+  ],
+  "cwd": ".",
+  "ended_utc": "2026-09-28T07:24:45.810274+00:00",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "exit_code": 1,
+  "log": "mypy-runner.log",
+  "sha256": "89a3bcd010ab60ab15273b7f37445fcf899ef8fa21016a665ec51c7e6eab813c",
+  "started_utc": "2026-09-28T07:24:44.639956+00:00"
+}

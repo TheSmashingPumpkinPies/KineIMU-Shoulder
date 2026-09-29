@@ -1,0 +1,28 @@
+{
+  "initial_full": {
+    "exit_code": 1,
+    "passed": 825,
+    "failed": 1,
+    "failure": "test_docs_consistency; deliberate removal of SHA256SUMS.json in a negative-control copy leaves a broken README link"
+  },
+  "initial_ruff": {
+    "exit_code": 1,
+    "failure": "E501 test_m6_sample.py line18 122 > 120; corrected wrapping only"
+  },
+  "diagnosis_log": "docs-diagnosis.log",
+  "correction": {
+    "local_git_info_exclude_added": [
+      "/.tmp-m6-cp1-green-normal/",
+      "/.tmp-m6-cp1-full-normal/",
+      "/.tmp-m6-cp1-red-normal/"
+    ],
+    "existing_local_rule": "/.pytest-*/",
+    "new_full_basetemp": ".pytest-m6-cp1-full2-normal",
+    "new_focused_basetemp": ".pytest-m6-cp1-green2-normal",
+    "public_ignore_policy_changed": false,
+    "failed_outputs_deleted_or_rewritten": false,
+    "production_or_numeric_change": false
+  },
+  "fresh_checks": "checks-focused2-ruff2-docs2-whitespace2.json",
+  "full_repeat": "checks-full2.json"
+}

@@ -1,0 +1,23 @@
+{
+  "source": "independent rational scalar F90 fixture, no AHRS or production imports",
+  "original_times_us": [
+    6490000,
+    6500000,
+    6510000
+  ],
+  "retained_times_us": [
+    6490000,
+    6510000
+  ],
+  "true_angles_deg": [
+    89.4,
+    90.0,
+    90.0
+  ],
+  "exact_retained_orientation_slerp_corner_deg": 89.7,
+  "true_pre_corner_speed_deg_s": 60.0,
+  "interpolated_pre_corner_speed_deg_s": 30.0,
+  "max_interval_error_deg_s": 30.0,
+  "frozen_working_speed_limit_deg_s": 6,
+  "conclusion": "Even perfect retained orientations yield 30 deg/s error against the frozen 10ms truth grid. Unchanged SLERP plus every-interval speed gate cannot pass this working loss case."
+}

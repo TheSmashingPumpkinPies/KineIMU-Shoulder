@@ -1,0 +1,38 @@
+"""Record pre-timing environmental rejection and the separately locked next invocation."""
+import subprocess
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+head = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
+state = f"""# KineIMU Shoulder — M6.3 locked protocol / pre-timing rejection retained, 2026-09-28
+
+Exact current source HEAD {head}, main. M0–M5 DONE; CP0–CP2 PASS; CP3–CP5 OPEN.
+Protocol/runner/worker/tests locked in1e6f98b4a9843da3e9335e670187b2cb09f8dfc3.
+Formal-batch01 rejected BEFORE root creation or any child launch: uv missing from
+the invoking Python PATH, though pinned absolute uv.exe is0.12.5. Six NOT RUN slots
+and complete diagnostic/command/log retained; no performance measured or rerun root.
+Fix is process PATH setup only; source/workload/timing/threshold/schema/hardware unchanged.
+
+External CP2+CP3 focused48 pass; latest CP3 focused22 pass; package mypy33/runner1,
+Ruff/docs/build/whitespace/CP2 audit pass. First full868pass/6 guarded-path failures
+retained;877-test external-temp full retry remains REQUIRED after performance timing.
+No full tests currently running. Old evidence/raw/sample untouched, hardware frozen.
+Exact next action: commit this state/evidence as new source lock, prepend verified
+<tool-directory> to this invocation's PATH, run benchmark in an absent
+external batch02 root. Preserve six roots and audit/recompute before report; then full
+external-temp regression, committed-byte proof and final CP3 state. No parallel tests
+during timing. Any failed batch remains consumed; never replace a slot or old root.
+Linux NOT RUN; CP4 licensing/packaging and CP5 fresh environment OPEN; sample INTERNAL ONLY.
+No physical or publication action. Historical scratch retained; scoped state/evidence
+pending commit. Source/state lock resolves via git log -1 --format=%H -- HANDOFF.md.
+"""
+for name in ("CURRENT_TASK.md", "PROJECT_STATUS.md"):
+    path = ROOT / name
+    path.write_text(state + "\n## Previous state (superseded; retained for traceability)\n\n" +
+                    path.read_text(encoding="utf-8"), encoding="utf-8", newline="\n")
+(ROOT / "HANDOFF.md").write_text(state, encoding="utf-8", newline="\n")
+with (ROOT / "CHANGELOG_DEV.md").open("a", encoding="utf-8", newline="\n") as stream:
+    stream.write(f"\n## 2026-09-28 — CP3 pre-timing PATH rejection\n\nExact HEAD {head}; "
+                 "zero children/root, all6 slots NOT RUN. Diagnosis confirms pinned uv0.12.5 absent "
+                 "from PATH. Next new source lock + process PATH + new batch02; full877 retry still required.\n")
+print(head, "pre-timing rejection recorded")

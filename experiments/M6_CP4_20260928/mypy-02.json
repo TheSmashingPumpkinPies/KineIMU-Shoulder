@@ -1,0 +1,22 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "--frozen",
+    "mypy"
+  ],
+  "cwd": ".",
+  "started_utc": "2026-09-28T09:42:49.953267+00:00",
+  "ended_utc": "2026-09-28T09:42:51.029953+00:00",
+  "exit_code": 0,
+  "log": "mypy-02.log",
+  "log_sha256": "0d42646ff848fddea83e113f5e72c066dc050fc901c93d17176142ab98c966e9",
+  "source_head": "acab57accbeee2d1fdb3cab0b6ab09c511dda0ec",
+  "environment": {
+    "KINEIMU_M1_RAW_ROOT": null,
+    "UV_CACHE_DIR": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null
+  }
+}

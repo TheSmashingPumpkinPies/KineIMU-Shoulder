@@ -1,0 +1,17 @@
+{
+  "executable": ".\\.venv\\Scripts\\python.exe",
+  "external_m1_root": null,
+  "pid": 19644,
+  "ppid": 33308,
+  "process_argv": [
+    "<python-installations>\\cpython-3.12.14-windows-x86_64-none\\python.exe",
+    ".\\benchmarks\\demo\\worker.py",
+    "--output",
+    "<temporary-workspace>\\kineimu-m6-cp3-3e0647c4-batch03\\timed03\\demo"
+  ],
+  "threads": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}
