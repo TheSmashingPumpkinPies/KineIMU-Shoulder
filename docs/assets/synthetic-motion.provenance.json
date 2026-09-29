@@ -30,8 +30,10 @@
   "plot": {
     "angle_conversion": "deg = rad * 180 / pi",
     "matplotlib": "3.11.1",
-    "numpy": "2.4.6",
-    "smoothing": false
+    "numpy": "2.5.2",
+    "smoothing": false,
+    "thorax_extrema_check_atol_rad": 1e-10,
+    "thorax_reference": "each detected repetition start; M4 Z-Y-X (-beta, -alpha, gamma)"
   },
   "products": {
     "replay/cases/Q-AL90/derived.json.gz": "3de4dc19be6856eca6bd7c13d85bb72215090067309e62d9d57664f19309d76f",

@@ -33,12 +33,18 @@ metrics invalid. See [architecture](ARCHITECTURE.md) for frame and timing contra
 
 ## Synthetic motion preview
 
-![Synthetic M6 replay: four humerothoracic elevation curves over time, each with three valid repetitions; no human or clinical validation.](docs/assets/synthetic-motion.png)
+![Synthetic M6 replay: four relative arm-elevation curves and a separate T-MIX thorax excursion panel showing extension, lateral flexion and axial rotation against a fixed-thorax control.](docs/assets/synthetic-motion.png)
 
 Actual M6 replay output from the [existing synthetic samples](datasets/samples/m6_synthetic/README.md),
 including the moving-thorax case. Curves show **humerothoracic elevation** over the
 5–21.5 s analysis window; radians are converted to degrees for display, with no
-smoothing. These are **synthetic**, with `anatomical_eligible=false`, and do not
+smoothing. The four cases share the same relative elevation profile; this scalar
+does not distinguish flexion from abduction or left from right. The bottom panel
+shows **T-MIX thorax excursion** on a separate scale, with stationary F90 as a
+control. Its three components are relative to each detected repetition's starting
+pose; gaps between repetitions are left blank. Thus similar relative arm curves
+do not imply a stationary thorax.
+These are **synthetic**, with `anatomical_eligible=false`, and do not
 demonstrate human-motion accuracy or clinical outcomes.
 See [figure provenance and reproduction](docs/assets/README.md).
 
