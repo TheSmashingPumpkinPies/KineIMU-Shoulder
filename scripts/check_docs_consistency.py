@@ -1,14 +1,75 @@
 """Check public contracts, navigation and explicitly immutable export members."""
 
+import argparse
 import hashlib
 import json
+import os
 import re
 import subprocess
+import tempfile
 import tomllib
 from pathlib import Path
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def refresh_index() -> int:
+    """Refresh current indexed bytes only; preserve rights and historical identities.
+
+    Missing/new members require separate review, not automatic removal/addition.
+    Validate the complete inventory and every immutable member before writing.
+    """
+    manifest_path = ROOT / "PUBLIC_EXPORT.json"
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        if manifest.get("schema") != "kineimu-public-export/1.0":
+            raise ValueError("unsupported public export schema")
+        names = set(subprocess.check_output(
+            ["git", "ls-files", "--cached", "--others", "--exclude-standard"], cwd=ROOT, text=True
+        ).splitlines()) - {"PUBLIC_EXPORT.json"}
+        seen: set[str] = set()
+        changed = 0
+        for entry in manifest["files"]:
+            name = entry["path"]
+            if (not isinstance(name, str) or "\\" in name or ":" in name or
+                    Path(name).is_absolute() or ".." in Path(name).parts or name in seen):
+                raise ValueError(f"unsafe or duplicate export path: {name}")
+            seen.add(name)
+            path = ROOT / name
+            if not path.is_file() or not path.resolve().is_relative_to(ROOT.resolve()):
+                raise ValueError(f"missing or unsafe export member: {name}")
+            data = path.read_bytes()
+            size, digest = len(data), hashlib.sha256(data).hexdigest()
+            if size != entry["bytes"] or digest != entry["export_sha256"]:
+                if entry["immutable"]:
+                    raise ValueError(f"changed immutable export: {name}")
+                entry["bytes"], entry["export_sha256"] = size, digest
+                changed += 1
+        if seen != names:
+            raise ValueError(f"inventory needs review: unindexed={sorted(names - seen)}, "
+                             f"untracked={sorted(seen - names)}")
+        if changed:
+            # Same-directory atomic replacement; no partial index on validation failure.
+            with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", newline="\n",
+                                             dir=ROOT, prefix=".public-export-", delete=False) as stream:
+                temporary = Path(stream.name)
+                try:
+                    stream.write(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
+                except BaseException:
+                    stream.close()
+                    temporary.unlink()
+                    raise
+            try:
+                os.replace(temporary, manifest_path)
+            finally:
+                temporary.unlink(missing_ok=True)
+        print(f"Public index: {len(seen)} members verified, {changed} mutable entries refreshed; "
+              "licenses and historical identities preserved")
+        return 0
+    except (OSError, ValueError, KeyError, TypeError, subprocess.CalledProcessError) as exc:
+        print(f"Public index refresh refused: {exc}")
+        return 1
 
 
 def main() -> int:
@@ -150,4 +211,11 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--refresh-index", action="store_true",
+                        help="verify inventory/immutable bytes, then refresh indexed mutable members")
+    arguments = parser.parse_args()
+    result = main()
+    if result == 0 and arguments.refresh_index:
+        result = refresh_index()
+    raise SystemExit(result)

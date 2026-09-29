@@ -1,8 +1,6 @@
 # KineIMU Shoulder 技术报告
 
 V1 技术报告；原验收记录日期 2026-09-28，公开说明更新于 2026-09-29。作者 Hongbo Liao，软件包版本 `0.1.0`。
-维护者已确认英文 README、中文报告、项目简介、MIT/CC0、版权年份 2026、
-引用作者 Hongbo Liao、公开仓库目标 `TheSmashingPumpkinPies/kineimu-shoulder`。
 当前源代码已公开；制品验证记录与分发边界见
 [发布审定页](release/REVIEW.md)。本报告是已存在方法和证据的汇总，不替代规范契约。
 报告编写基线 `acab57accbeee2d1fdb3cab0b6ab09c511dda0ec`；
@@ -142,6 +140,23 @@ M5 CP3 分类为 33 C、589 W、297 stress、122 evidence、67 boundary、34 rej
 [reproduction](validation/reproduce.md)。
 旧失败不改写；新 processing 的再验收不把旧产品重标为新版本。
 
+### M6.5 / CP5 独立收口
+
+以下保留该历史源码锁的验收记录；其中未执行发布的描述不代表当前发布状态。
+
+CP5总报告 (complete record retained in the local evidence archive)、
+覆盖表 (complete record retained in the local evidence archive)及实际command/product/install records
+绑定源码锁e55d68b537987f4a2cc2ac6d2ad58e15e077ed15。新clone/cache/venv，不连接设备、
+不设置PYTHONPATH或外部M1数据，README两次完整演示及27,160误差标量/run独立审核通过；
+同锁22规范产物及摘要一致。跨CP2锁21科学文件字节一致，摘要只替换source HEAD；
+来源/路径/Python同文件别名变化明示，不放宽科学/同锁比较门。
+完整877 passed/2预期外部M1 skips，与CP4维护者879/0skip分列。Ruff、mypy33、
+docs/39archive hashes、whitespace、独立build/archive及两个安装venv/8命令均PASS。
+收口仅修正文档检查器的过时M1 CURRENT_TASK词条；先RED的两项新控制、原docs integration
+和两项provenance控制共5PASS。分析源、门限、schema、依赖、固件、sample/raw和旧证据不变。
+M6本地验收DONE，首版候选仍0.1.0。Linux NOT RUN；公开仓库创建/push/tag/Release/PyPI
+及大证据迁移未执行。执行源码、构建制品和最终文档交付提交分别记录，不混用其HEAD。
+
 ## 7. Demo 与性能
 
 默认输入是 [synthetic sample](../datasets/samples/m6_synthetic/README.md) 的
@@ -195,7 +210,15 @@ wheel 提供库 API；sdist 提供重建 package 的代码及发布文档，两�
 本轮候选制品/检查记录 (complete record retained in the local evidence archive)。
 Linux 在本报告中 NOT RUN，Ubuntu CI 配置不是执行验收结果。
 
-## 9. 许可与引用
+## 9. 局限性
+
+真实双设备采集、synthetic known-motion 数值验证与 recorded replay 是不同证据层。
+真实 M1 pair 缺少有效 timing、heading 和 anatomical alignment，肩部输出仍为 null/invalid。
+双 BLE 限制、六轴 heading 漂移、未验证的人体佩戴/软组织影响仍存在；没有人体、动捕或
+临床验证。胸廓 excursion 仅为 proxy，不是临床代偿评分。Windows 记录不推广为 Linux 验证。
+完整风险及未来验证边界见 [验证计划](../VALIDATION.md)。
+
+## 10. 许可与引用
 
 原创代码/文档使用 MIT，Copyright (c) 2026 Hongbo Liao，版本 0.1.0。
 [LICENSE](../LICENSE) 与 [CITATION.cff](../CITATION.cff) 给出正式许可及引用信息。
@@ -204,63 +227,23 @@ Linux 在本报告中 NOT RUN，Ubuntu CI 配置不是执行验收结果。
 原始数据、来源摘要和失败事实不因公开整理改变；本地开发过程记录单独归档。
 本轮 MD 整理与此前源码验收、构建及实际公开操作分开记录。
 
-## M6.5 / CP5 独立收口
+## 11. Exercise API usage
 
-CP5总报告 (complete record retained in the local evidence archive)、
-覆盖表 (complete record retained in the local evidence archive)及实际command/product/install records
-绑定源码锁e55d68b537987f4a2cc2ac6d2ad58e15e077ed15。新clone/cache/venv，不连接设备、
-不设置PYTHONPATH或外部M1数据，README两次完整演示及27,160误差标量/run独立审核通过；
-同锁22规范产物及摘要一致。跨CP2锁21科学文件字节一致，摘要只替换source HEAD；
-来源/路径/Python同文件别名变化明示，不放宽科学/同锁比较门。
-完整877 passed/2预期外部M1 skips，与CP4维护者879/0skip分列。Ruff、mypy33、
-docs/39archive hashes、whitespace、独立build/archive及两个安装venv/8命令均PASS。
-收口仅修正文档检查器的过时M1 CURRENT_TASK词条；先RED的两项新控制、原docs integration
-和两项provenance控制共5PASS。分析源、门限、schema、依赖、固件、sample/raw和旧证据不变。
-M6本地验收DONE，首版候选仍0.1.0。Linux NOT RUN；公开仓库创建/push/tag/Release/PyPI
-及大证据迁移未执行。执行源码、构建制品和最终文档交付提交分别记录，不混用其HEAD。
+调用链为 `segment_shoulder_repetitions` → `compute_repetition_metrics` →
+`summarize_exercise`；可选胸廓路径为 `prepare_thorax_common_grid` → `compute_thorax_excursion`。
+接口分别位于 `kineimu_shoulder.exercise`、`.thorax`、`.summary`。输入关联的 M3 结果、
+`ExerciseConfig`、common-time window 和来源身份；只对已对齐的原胸廓流显式 SLERP，不重复对齐。
+候选/QC、排除原因、proxy 独立分母、SD/CV 与 `SummaryContext` / `compare_summaries`
+的 UTC、session identity、可比性及 later-minus-earlier 规则均以 [M4 契约](../protocols/M4_EXERCISE_CONTRACT.md)为准。
 
-## Exercise API usage
-
-## Pipeline
-
-1. Call `segment_shoulder_repetitions` with the two associated M3 results,
-   `ExerciseConfig`, exact common-time window, session/protocol identity and
-   calibration/processing hashes. Retain every candidate and QC break.
-2. Call `compute_repetition_metrics`. Complete eligible candidates contribute
-   closed ROM, peak, elapsed durations, holds and interval-speed statistics.
-   Excluded candidates retain their reasons and unavailable values.
-3. Optionally call `prepare_thorax_common_grid` on the original **already
-   aligned** thorax stream. Supply the same grid/configuration, its clock map,
-   alignment, calibration hash, original QC and explicit heading/drift evidence.
-   This visible SLERP operation retains original indices, brackets and weights.
-   Call `compute_thorax_excursion`; missing or ineligible trace excludes the
-   proxy independently of relative movement metrics.
-4. Call `summarize_exercise` with a `SummaryContext`. Mean/max/n, sample ROM SD,
-   CV, range, active-only cadence, window duration and overlapping exclusion
-   counts remain explicit. Call `compare_summaries` with UTC starts and unique
-   session IDs. Differences are later minus earlier means, with both n and
-   matching processing/evidence keys. Incomparable pairs expose differing keys.
-
-The APIs live in `kineimu_shoulder.exercise`, `kineimu_shoulder.thorax` and
-`kineimu_shoulder.summary`. Rotation remains quaternion-based internally.
-The thorax Z-Y-X decomposition reports excursion relative to each repetition's
-movement-start orientation; it is a compensation proxy with no clinical score.
-Speed is principal 3-D endpoint rotation magnitude divided by elapsed time,
-not a signed elevation derivative. Do not infer heading from static gravity.
-
-## Deterministic example
+可执行示例：[m4_dual_synthetic.py](../examples/m4_dual_synthetic.py)。固定环境下使用新目录：
 
 ```powershell
 uv sync --all-extras --frozen
-uv run --frozen python examples/m4_dual_synthetic.py --output-dir experiments/M4_CP5_20260926/my_run
+uv run --frozen python examples/m4_dual_synthetic.py --output-dir m4-example-new
 ```
 
-The destination must not exist; the example refuses to overwrite it. It
-constructs exact post-alignment dual-node segment quaternion streams from
-[A/B and T4 analytical truth](../tests/fixtures/M4_KNOWN_EXERCISES.md), runs
-M2.4 and M3 through M4, and emits five sessions: flexion, left/right abduction,
-wrong-plane exclusion, and later B-only flexion. The latter compares against
-the earlier A+B flexion session. No sensor calibration or AHRS is executed by
-this example. The M2 backend tests remain separate; no AHRS accuracy claim or
-new AHRS tolerance is implied. No noise is added and no input row is repaired.
-
+该例从 [A/B 与 T4 analytical truth](../tests/fixtures/M4_KNOWN_EXERCISES.md) 构造 exact
+post-alignment quaternions，经 M2.4 → M3 → M4 输出屈曲、左右外展、wrong-plane 排除和
+later B-only（与 earlier A+B 比较）五会话。它拒绝覆盖，不运行 sensor calibration/AHRS，
+不加噪声或修补输入；M2 backend tests 独立，不由此例推出 AHRS 或人体精度。

@@ -1,7 +1,8 @@
 # KineIMU Shoulder
 
 A hardware-tested dual-IMU research framework for shoulder rehabilitation movement
-analysis. It provides acquisition, calibration, quaternion orientation,
+analysis. Two sensors measure upper-arm movement relative to a thorax reference.
+It provides acquisition, calibration, quaternion orientation,
 humerothoracic kinematics, exercise metrics and reproducible validation.
 The complete hardware-free demo runs without devices.
 
@@ -44,21 +45,22 @@ boards with LSM6DS3TR-C IMUs using dual USB. Hardware is frozen within V1 scope;
 dual BLE throughput remains a documented limitation. M0–M6 are DONE within the
 documented engineering boundary. This does not establish human or clinical accuracy.
 
-| Topic | Documentation |
-|---|---|
-| Scope and system | [Scope](PROJECT_SCOPE.md), [architecture](ARCHITECTURE.md), [metric definitions](docs/METRICS.md) |
-| Hardware and capture | [Hardware](HARDWARE_PROFILE.md), [firmware](firmware/xiao_nrf52840_sense/README.md), [mounting](MOUNTING_PROTOCOL.md), [acquisition contract](protocols/M1_ACQUISITION_CONTRACT.md) |
-| Units and processing | [Data format](DATA_FORMAT.md), [backends](DEPENDENCIES.md), [processing contracts](protocols/M2_PROCESSING_CONTRACT.md), [reconstruction](protocols/M5_PROCESSING_V1_1.md) |
-| Validation | [Methods and commands](VALIDATION.md), [coverage](docs/validation/coverage.md), [reproduction](docs/validation/reproduce.md), [technical report](docs/M6_TECHNICAL_REPORT.md) |
-| Benchmarks | [Protocol](benchmarks/demo/PROTOCOL.md), [historical results](benchmarks/demo/REPORT.md), [reproduction](benchmarks/demo/REPRODUCE.md) |
-| Distribution and rights | [Packages](docs/release/PACKAGING.md), [third-party notices](THIRD_PARTY_NOTICES.md), [public audit](docs/PUBLIC_AUDIT.md) |
-
 Outputs describe **humerothoracic movement**, not glenohumeral or scapular angles.
 Static gravity does not determine anatomical heading. Recorded shoulder metrics
 remain null/invalid when timing, heading or anatomical alignment evidence is missing.
 The default demo is synthetic with `anatomical_eligible=false`; its calibration,
 alignment and clocks are constructed assumptions. Human-subject, motion-capture
 and clinical validation, battery/enclosure and wearability are outside V1 scope.
+
+## Documentation
+
+| Reading route | Start here |
+|---|---|
+| Getting started | [Demo guide](docs/M6_DEMO.md), [sample inputs](datasets/samples/m6_synthetic/README.md) |
+| System and methods | [Scope](PROJECT_SCOPE.md), [technical report](docs/M6_TECHNICAL_REPORT.md), [architecture](ARCHITECTURE.md), [metrics](docs/METRICS.md) |
+| Validation and evidence | [Methods](VALIDATION.md), [coverage](docs/validation/coverage.md), [physical acquisition](docs/validation/acquisition.md), [historical benchmark](benchmarks/demo/REPORT.md) |
+| Developer references | [Reproduction](docs/validation/reproduce.md), [data format](DATA_FORMAT.md), [backends](DEPENDENCIES.md), [M1–M5 contracts](protocols/), [M6 output contract](docs/M6_DEMO_CONTRACT.md) |
+| Licensing and release | [Release status](docs/release/REVIEW.md), [packaging](docs/release/PACKAGING.md), [third-party notices](THIRD_PARTY_NOTICES.md), [public audit](docs/PUBLIC_AUDIT.md); exact grants below |
 
 ## Tests and builds
 

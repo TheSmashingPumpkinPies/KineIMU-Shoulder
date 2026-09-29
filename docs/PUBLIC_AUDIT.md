@@ -28,6 +28,8 @@ Ruff, strict type checks, links and integrity checks passed. Linux and optional 
 physical replay are not claimed. Privacy review inspected 422 outer/nested members,
 with 0 prohibited findings, 37 licensed upstream contacts and 0 unreviewed contacts.
 
+<a id="not-distributed-in-this-source-snapshot"></a>
+
 ## Preservation and review
 
 All 703 additional candidate data/companion files were reviewed for local paths,

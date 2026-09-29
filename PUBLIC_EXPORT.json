@@ -98,8 +98,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5361,
-      "export_sha256": "c7a05c5a75d0235176f94f0d9e12eff2b4090cda02fd4a8aebce3441265fdc9d",
+      "bytes": 5334,
+      "export_sha256": "4ea50a60f508b9e1aeaa51a34e729573d440216eae678565efb01f288d016557",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -119,8 +119,8 @@
     },
     {
       "path": "benchmarks/demo/PROTOCOL.md",
-      "bytes": 9172,
-      "export_sha256": "57ab281fbf2958f098a7996cc357607638d8cb2d0b7e8fa8c642a30c16dd0e00",
+      "bytes": 9464,
+      "export_sha256": "021bd22a1814d6fc9a8206134836b82d74439117ef716773728d0dc6f5cf4d14",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -623,8 +623,8 @@
     },
     {
       "path": "docs/M6_DEMO.md",
-      "bytes": 5684,
-      "export_sha256": "b60bc705088feccf7418069af1f92381d087377db148b50f9aa550dcd595316a",
+      "bytes": 5637,
+      "export_sha256": "82fb7f8801caf99fd562120d348ef44c1d102d62870e7241c14d0d13594283cf",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -637,8 +637,8 @@
     },
     {
       "path": "docs/M6_TECHNICAL_REPORT.md",
-      "bytes": 16858,
-      "export_sha256": "f19e8cadd1748291c6f5085ee28ddc793d47c50e07697e0b5ecfe368458ab952",
+      "bytes": 16062,
+      "export_sha256": "4dc6b94c72fde28fef4dd2822597e7e51ff45cf3bbcd08703051e73ee4073d8f",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -651,8 +651,8 @@
     },
     {
       "path": "docs/PUBLIC_AUDIT.md",
-      "bytes": 7459,
-      "export_sha256": "3cf60828fc04df16d17b0b9a8c5f7ad66c1a52aa0b1a3719ce9be4d013765187",
+      "bytes": 7513,
+      "export_sha256": "67c82924f3ebc2fbb23b2d0948548de4bd9685dcaec0640ee4fb4a460074b620",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -721,8 +721,8 @@
     },
     {
       "path": "docs/release/PACKAGING.md",
-      "bytes": 1231,
-      "export_sha256": "b5fb1abb653fb75f78990b8da87a04bbd9f9c009eb38b9694ecf66438e7f0733",
+      "bytes": 2175,
+      "export_sha256": "5237bde29a320a4d021313b784e8873b0060daa9a4adde8b1289f46166c1f521",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -1960,8 +1960,8 @@
     },
     {
       "path": "scripts/check_docs_consistency.py",
-      "bytes": 6939,
-      "export_sha256": "7241f092fed3659fd50a3a22628f5f66dec48b86b87683c5fe944c1eeb6998d1",
+      "bytes": 10333,
+      "export_sha256": "9890b2bfdec2d76ec6989c387d2441aaae983c1da5f71195d4d7e59b8fdf2c86",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },

@@ -9,9 +9,11 @@ budgets, thread settings, failure retention and statistics defined below.
 The historical [report](REPORT.md) remains protocol 1.1 evidence; its results
 are unchanged and must not be attributed to the current source.
 
-## Historical measured protocol 1.1
+Current collection and independent recomputation commands are in
+[REPRODUCE.md](REPRODUCE.md#new-collection). Use a clean source lock and fresh external
+roots; the historical [report](REPORT.md) is not a benchmark of your current checkout.
 
-# KineIMU Shoulder — M6 CP3 frozen benchmark protocol
+## Historical measured protocol 1.1
 
 Protocol `m6-demo-benchmark/1.1`, frozen before its formal measurement on 2026-09-28.
 This implements the CP0 draft (preserved in the local historical archive) and
@@ -20,7 +22,7 @@ The source lock is the clean Git HEAD containing this protocol and runner, recor
 in each batch's `lock.json` before launching any child. Later evidence/state commits
 do not change that measurement lock. Never resume or overwrite a consumed batch.
 
-## Fixed workload and measurement
+## Shared workload and timing boundary (1.1 / 1.2)
 
 Use the unchanged CP1 sample `datasets/samples/m6_synthetic`: complete F90, AL90,
 AR90 and T-MIX stored Q trajectories; eight node streams, 17,208 node-samples,
@@ -76,7 +78,8 @@ before imports and has KINEIMU_M1_RAW_ROOT removed. Keep ordinary desktop condit
 no exclusive CPU reservation, cache flush or frequency/thermal control. This is a
 warm OS cache experiment with fresh processes and AHRS, not cold disk measurement.
 
-Run the retained CP2 pair's independent audit before any benchmark child. Failure
+Protocol 1.1 ran the retained CP2 pair's independent audit before any benchmark child.
+Current protocol 1.2 creates and audits its own fresh preflight pair instead. Failure
 records all six slots NOT RUN. Then execute one complete `warmup`, independently
 audit it, and sequentially execute exactly `timed01` through `timed05`, each with
 a new Python process and output root. Warmup failure blocks all timed slots.

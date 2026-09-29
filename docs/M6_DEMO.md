@@ -1,11 +1,10 @@
 # KineIMU Shoulder — 完整传感器回放 Demo
 
-M6.2 / CP2 入口，遵循 [冻结契约](M6_DEMO_CONTRACT.md)。
-在含 Git 元数据的仓库 clone 中，从八条原始合成 `.kimu` 流开始，实际执行
-packet 解码、QC、SI 转换、校准、AHRS、显式节点/节段对齐、clock/heading/common-grid、
-M3、M4 分段与指标、thorax proxy 和 session summary。没有连接硬件或在线生成替代观测。
+从八条已存储的 synthetic `.kimu` 流运行完整离线分析，无需设备。
+全链路方法见 [技术报告](M6_TECHNICAL_REPORT.md)，输入/输出及路径规则遵循
+[M6.2 / CP2 冻结契约](M6_DEMO_CONTRACT.md)。不会在线生成替代观测。
 
-## 一次命令
+## 环境与完整演示
 
 从仓库根执行，使用 CPython 3.12.14 和 uv 0.12.5：
 
@@ -15,13 +14,14 @@ uv run --frozen python examples/m6_demo.py --output demo-output-01
 ```
 
 安装后，第二条命令即完整演示。首次安装需要网络或已有依赖缓存。
+
+## 输入与输出路径
+
 输入自动定位到 [m6_synthetic sample](../datasets/samples/m6_synthetic/README.md)，
 无需 `KINEIMU_M1_RAW_ROOT`、PYTHONPATH 或设备。四轨迹为 F90、AL90、AR90、T-MIX；
 共 17,208 node-samples / 4,304 packets，100 Hz synthetic；真实硬件 ODR 104 Hz 单独表述。
-所选原创 sample 已获公开授权，采用
-[CC0-1.0 数据许可附页](../datasets/samples/m6_synthetic/LICENSE.md)。
-sample README 提供当前使用说明；原字节 provenance 中的许可字段描述授权前的
-构造时点，当前授权以许可附页为准。
+输入定义与原构造 provenance 见 sample README；当前公开授权以
+[25-member CC0-1.0 附页](../datasets/samples/m6_synthetic/LICENSE.md)为准。
 
 命令只提供必需的 `--output PATH` 和 `--help`。相对输出按调用 cwd 解析，
 输入按脚本所在仓库定位；可从其他 cwd 用脚本绝对路径执行。
@@ -30,24 +30,14 @@ sample README 提供当前使用说明；原字节 provenance 中的许可字段
 
 ## 查看结果
 
-成功根共 26 个文件：
+成功根共 26 个文件；完整布局见 [输出契约](M6_DEMO_CONTRACT.md)。
 
-```text
-demo-output-01/
-  summary.md
-  run.json
-  SHA256SUMS.txt
-  replay/
-    manifest.json
-    report.json
-    SHA256SUMS.txt
-    cases/Q-{F90,AL90,AR90,T-MIX}/
-      result.json
-      processed.json.gz
-      derived.json.gz
-      annotations.json.gz
-      errors.json.gz
-```
+| 路径（输出根内） | 用途 |
+|---|---|
+| `summary.md` | 首先阅读的指标、有效性与误差摘要 |
+| `run.json` / `SHA256SUMS.txt` | 本次 M6 状态、来源与顶层完整性 |
+| `replay/{manifest.json,report.json,SHA256SUMS.txt}` | 原 M5 stage-B 来源、处置与 canonical 校验表 |
+| `replay/cases/Q-{F90,AL90,AR90,T-MIX}/` | 每轨迹 `result.json` 和 gzip 的 `processed`、`derived`、`annotations`、`errors` JSON |
 
 先读 `summary.md`。每轨迹包含 exercise/side、动作/排除/partial/interrupted 数量、
 独立 proxy 分母、QC/校准/AHRS、来源 hash、八类核心指标、逐动作 phase/hold 支持及
@@ -84,22 +74,21 @@ uv run --frozen python examples/m6_demo.py --output demo-output-02
 ```
 
 比较全部 22 replay products、内部 SHA256SUMS 和 summary 的字节。
-run.json 仅 output path、command 的 output 参数、UTC、duration、PID 允许不同；
-两个顶层校验表分别验证完整性，其余 24 项 hash 一致。
-CP2 实际执行/独立审核/失败记录见 [验收证据](validation/demo.md)。
+`run.json` 仅允许契约列举的进程元数据不同；两个顶层校验表分别验证完整性，
+其余 24 项 hash 一致。完整比较规则见 [输出契约](M6_DEMO_CONTRACT.md)。
+独立数值审计命令见 [复现指南](validation/reproduce.md)；历史 CP2 执行与失败记录见
+[验收证据](validation/demo.md)。底层 stage-B CLI 及其独立范围见 [stored replay](M5_STORED_DEMO.md)。
 
 ## 证据范围
 
-所有默认输入 synthetic，`anatomical_eligible=false`。Observed 是 capture/QC/time；
-Derived 是算出的指标；Assumed 是已知 synthetic calibration、initialization、alignment、
-heading 和 clock；Validated 仅指 M5 已测试 synthetic domain 的原门；Experimental 原样保留。
+所有默认输入 synthetic，`anatomical_eligible=false`。校准、初始姿态、对齐、heading
+和 clock 是合成构造假设；数值 gate 通过不建立人体准确性。输出保留原证据标签，
+其定义与边界见 [指标文档](METRICS.md#evidence-labels-and-interpretation)。
 静态重力不能给出完整 heading，独立 AHRS worlds 不自动相减。thorax excursion 是 proxy，
 不合成为临床评分；四条不同 exercise/side 不合并成纵向康复效果。
 无人体、临床、glenohumeral 或 scapular 准确性声明。
 
 Demo 需要仓库的 protocols、fixtures、audit source 和 Git；wheel 单独安装不含完整资产。
 Windows 是首个执行验收平台；Linux CI 增加了 smoke 命令，但实际 Linux 验收须有执行记录。
-CP3 benchmark 已独立通过；CP4 文案/许可/作者/仓库身份已明确接受，
-候选构建及安装验证 (complete record retained in the local evidence archive) 单独留证。
-CP5 fresh clone/fresh environment 验收已通过；报告及证据 (complete record retained in the local evidence archive)
-记录两次完整Demo、独立审核、full877+2预期skip和新环境检查。Linux NOT RUN，公开发布尚未执行。
+当前源码已公开；[发布状态](release/REVIEW.md)与历史验收分开记录。
+benchmark 历史数值、CP4 制品验证和 CP5 fresh-clone 结果见 [技术报告](M6_TECHNICAL_REPORT.md)。
