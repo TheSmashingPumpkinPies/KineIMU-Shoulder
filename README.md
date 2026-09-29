@@ -9,6 +9,39 @@ The complete hardware-free demo runs without devices.
 KineIMU Shoulder 以胸廓为参考分析上臂运动，提供可追溯的采集、处理、指标与验证结果。
 本项目用于研究，不是医疗诊断系统，也未建立人体运动精度或临床有效性。
 
+## System data flow
+
+```mermaid
+flowchart TD
+    A["Dual IMU acquisition: A thorax + B upper arm<br/>USB tested; BLE limited"] --> C["Immutable recordings / replay"]
+    B["Stored synthetic dual-node samples<br/>Hardware-free demo"] --> C
+    C --> D["Packet decoding + QC<br/>Device timestamps, sequence counters, SI units"]
+    D --> E["Sensor calibration + frame conversion"]
+    E --> F["Orientation estimation per node<br/>Explicit initial orientation"]
+    F --> G["Sensor-to-segment alignment<br/>Common-world heading + clock mapping"]
+    G --> H["Time synchronization<br/>Thorax–humerus relative orientation"]
+    H --> I["Humerothoracic elevation + angular speed"]
+    I --> J["Exercise segmentation + repetition metrics"]
+    G --> K["Thorax excursion proxy"]
+    J --> L["Session summary + validity / evidence labels<br/>JSON products, Markdown report, SHA-256 provenance"]
+    K --> L
+```
+
+The demo follows the stored synthetic input branch. Calibration, initial heading,
+alignment and clocks are constructed assumptions; missing evidence keeps affected
+metrics invalid. See [architecture](ARCHITECTURE.md) for frame and timing contracts.
+
+## Synthetic motion preview
+
+![Synthetic M6 replay: four humerothoracic elevation curves over time, each with three valid repetitions; no human or clinical validation.](docs/assets/synthetic-motion.png)
+
+Actual M6 replay output from the [existing synthetic samples](datasets/samples/m6_synthetic/README.md),
+including the moving-thorax case. Curves show **humerothoracic elevation** over the
+5–21.5 s analysis window; radians are converted to degrees for display, with no
+smoothing. These are **synthetic**, with `anatomical_eligible=false`, and do not
+demonstrate human-motion accuracy or clinical outcomes.
+See [figure provenance and reproduction](docs/assets/README.md).
+
 ## Quick start
 
 Use CPython **3.12.14** and uv **0.12.5**:
