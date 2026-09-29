@@ -20,7 +20,8 @@ uv run --frozen python examples/m6_demo.py --output demo-output-01
 共 17,208 node-samples / 4,304 packets，100 Hz synthetic；真实硬件 ODR 104 Hz 单独表述。
 所选原创 sample 已获公开授权，采用
 [CC0-1.0 数据许可附页](../datasets/samples/m6_synthetic/LICENSE.md)。
-原始 README/provenance 的 INTERNAL ONLY 标签保留为历史记录，当前授权以附页为准。
+sample README 提供当前使用说明；原字节 provenance 中的许可字段描述授权前的
+构造时点，当前授权以许可附页为准。
 
 命令只提供必需的 `--output PATH` 和 `--help`。相对输出按调用 cwd 解析，
 输入按脚本所在仓库定位；可从其他 cwd 用脚本绝对路径执行。

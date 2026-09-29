@@ -3,7 +3,7 @@
 契约标识：`m6-demo-contract/1.0`。2026-09-28 M6.0 / CP0 规格冻结。
 适用范围：clean-clone、离线处理的双节点 **synthetic stored-Q replay**。
 入口基线：`main` / `566ce905e7fea5ddbc2f33b3432c68fd0c2b6907`。
-本契约定义输入、输出和支持范围；历史验收见技术报告，当前候选校验单独记录。
+本契约定义输入、输出和支持范围；验收见技术报告，公开源代码的验证记录见 PUBLIC_VERIFICATION.json。
 
 依据：M6 计划 (complete record retained in the local evidence archive)、[验收要求](../ACCEPTANCE_CRITERIA.md)、
 [M5 processing/1.1](../protocols/M5_PROCESSING_V1_1.md)、
@@ -43,7 +43,7 @@ M6 `run.json` 是演示运行记录，不作为新的公共科学数据交换 sc
 其余 12 个成员不属于 `input_audit` 的必需集合。不得声称 sample 是原 run1
 完整副本或所有 map 成员都已分发；CP1 来源清单明确列出选定及未分发成员。
 不重写 map、不去重同 hash 的 A 文件、不缩减成单轨迹、不在线再生成观测。
-原 sample 的历史 INTERNAL ONLY 标签保留；当前已批准的 25-member CC0 授权以 [许可附页](../datasets/samples/m6_synthetic/LICENSE.md) 为准。
+原字节 provenance 的许可字段描述授权前的构造时点；当前已批准的 25-member CC0 授权以 [许可附页](../datasets/samples/m6_synthetic/LICENSE.md) 为准。
 
 | 默认顺序 | 运动/侧别 | 节点角色 | 每节点输入 | 数值验收支持 |
 |---|---|---|---|---|

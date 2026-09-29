@@ -6,7 +6,8 @@ Date: 2026-09-26. Branch `main`. **M5.1 / CP1 PASS at source-tool scope.**
 Source base: `044c61d`. Exact source/tool lock:
 `ee0741334e430c7cf8b5b9845d0a9b48426fecad`.
 Two independent processes ran from that clean tracked lock, with no source
-changes between launches. CP2–CP5 and overall M5 remain open.
+changes between launches. CP2–CP5 were outstanding at this historical
+checkpoint; current accepted coverage is documented in [coverage.md](coverage.md).
 
 The generator uses SciPy rotations and analytical body rates. The independent
 oracle imports only immutable motion parameters, uses explicit scalar matrix
@@ -109,7 +110,7 @@ missing `.kimu` outer framing; both were fixed with passing regression checks.
 The final dynamic-state docs check initially caught a removed M1 milestone
 heading, which was restored before the clean lock. No tolerances were changed.
 
-**Exact next action:** M5.2/CP2 runner over the frozen unperturbed E/S/Q controls,
+**Historical next action at CP1 (subsequently completed):** M5.2/CP2 runner over the frozen unperturbed E/S/Q controls,
 using existing calibration/AHRS and explicit alignment/maps/heading/grid, all
 independent row/rep/phase/proxy/summary gates, warmup diagnostics and two clean
 locked processes. The boundary/evidence recipes must be implemented explicitly;

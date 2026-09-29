@@ -1,3 +1,6 @@
+> Historical CP2 acceptance record, 2026-09-28. Later V1 checks completed and the
+> source is published; current commands are in [VALIDATION.md](../../VALIDATION.md).
+
 # M6.2 / CP2 — complete sensor replay Demo acceptance
 
 Project: KineIMU Shoulder. Entry `main` / `ff0051cd` (full SHA in state and checks).
@@ -23,7 +26,8 @@ the existing CP3 O/F/T arithmetic auditor for every trajectory, checks frames,
 calibration/AHRS/QC/source/support and both checksum inventories, and compares all
 22 canonical products, inner checksums, summary and all run fields except the
 contract's explicitly permitted process metadata. Input maps are audited before
-and after collection. Public redistribution remains pending.
+and after collection. The selected inputs subsequently received the
+[25-member CC0 permission](../../datasets/samples/m6_synthetic/LICENSE.md).
 
 Test-first/failed attempts retained:
 
@@ -95,6 +99,7 @@ bytes, including all26 files in both retained roots and the runtime source archi
 Dynamic state, the snapshot itself and later proof files are outside that map.
 
 Linux execution: NOT RUN in this Windows session. CI includes an explicit complete
-Demo smoke command; configuration is not execution evidence. CP3 performance,
-CP4 license/citation/packaging, CP5 fresh clone/environment and overall M6 remain
-OPEN. No remote push/tag/Release/PyPI or hardware/human action.
+Demo smoke command; configuration is not execution evidence. At this CP2 checkpoint, performance, packaging and fresh-clone checks were
+still outstanding; they subsequently completed within V1 scope. This record
+performed no remote publication or hardware/human action. Current publication
+status is recorded in [the release page](../release/REVIEW.md).

@@ -1,9 +1,9 @@
 {
   "schema": "kineimu-public-export/1.0",
   "source_head": "476635cced69e4861a4f98254e8b937712fb37a7",
-  "scope": "Current public file integrity; index excludes itself; private original/copy map excluded",
+  "scope": "Current public file integrity; index excludes itself; source_head records curation origin; publication verification identifies the initial published commit",
   "destination": "https://github.com/TheSmashingPumpkinPies/KineIMU-Shoulder",
-  "publication_status": "LOCAL RELEASE; NO PUSH PERFORMED",
+  "publication_status": "PUBLISHED ON GITHUB MAIN",
   "files": [
     {
       "path": ".gitattributes",
@@ -70,8 +70,8 @@
     },
     {
       "path": "HARDWARE_PROFILE.md",
-      "bytes": 5381,
-      "export_sha256": "331b2bd5f980a76fa188b283c47523e0a3692f1416365e05eab765b1a7a35e03",
+      "bytes": 5596,
+      "export_sha256": "c499416bd833bfe9b68430528019b264d54fb1b305b56fdc7b491b6947f74529",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -112,22 +112,22 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 8271,
-      "export_sha256": "2f0ad8410dc0981ae92e259a99f38bb753fa2c62789abe520e7e97188405c9c5",
+      "bytes": 8288,
+      "export_sha256": "39b25f521a2f76292daad1d79d620b0400587d97b758e2ee5851cd9bd1ef3b4d",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
     {
       "path": "benchmarks/demo/PROTOCOL.md",
-      "bytes": 9027,
-      "export_sha256": "64b1cb6904a2124522b3d556611b3bee8170ee668e747d48bd2ea7a3176afbf5",
+      "bytes": 9172,
+      "export_sha256": "57ab281fbf2958f098a7996cc357607638d8cb2d0b7e8fa8c642a30c16dd0e00",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
     {
       "path": "benchmarks/demo/REPORT.md",
-      "bytes": 8708,
-      "export_sha256": "d3c2a8336466e1300e02b1dee2348ba0ee2aecaf7c6ccf103a54b59bcbf09906",
+      "bytes": 9185,
+      "export_sha256": "c95e27f76e9bb1fb07034911d8786a7588ec588b800d903a4a2b4dc01cd38cea",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -532,10 +532,10 @@
     },
     {
       "path": "datasets/samples/m6_synthetic/README.md",
-      "bytes": 4163,
-      "export_sha256": "faf5bfb725f19adb309bdc3818b22c8ae4d254560e0fba9f4d64c1b162315080",
-      "immutable": true,
-      "license": "Existing25-member CC0-1.0 annex; companion docs/provenance retain existing terms"
+      "bytes": 4526,
+      "export_sha256": "d49e6072adbf670f737365f76f5c31cdf9a1fe0cbff59274d02550bf5c4547f3",
+      "immutable": false,
+      "license": "MIT (maintained sample documentation); exact 25-input CC0 grant unchanged"
     },
     {
       "path": "datasets/samples/m6_synthetic/SHA256SUMS.json",
@@ -623,36 +623,36 @@
     },
     {
       "path": "docs/M6_DEMO.md",
-      "bytes": 5637,
-      "export_sha256": "b291df78f59a934438952dbd3e9d9a9564a74bab8ad444d0bb4a9d27f5935860",
+      "bytes": 5684,
+      "export_sha256": "b60bc705088feccf7418069af1f92381d087377db148b50f9aa550dcd595316a",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
     {
       "path": "docs/M6_DEMO_CONTRACT.md",
-      "bytes": 17081,
-      "export_sha256": "5949f259967dd5d20f3737772a05c4392c595a62ce9cbf1eee0d80d4d6a24840",
+      "bytes": 17122,
+      "export_sha256": "ac51ad36a2eb38e172ea364514bddc9bd815b8bec7f9dc7f1c2ccca69e38e826",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
     {
       "path": "docs/M6_TECHNICAL_REPORT.md",
-      "bytes": 16820,
-      "export_sha256": "1676406d1234e7c48d9523235230f7d68fda8f48d2655be39b01bd1d01603b13",
+      "bytes": 16858,
+      "export_sha256": "f19e8cadd1748291c6f5085ee28ddc793d47c50e07697e0b5ecfe368458ab952",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
     {
       "path": "docs/METRICS.md",
-      "bytes": 5158,
-      "export_sha256": "514d7509710d2e1de0cccf4fd9eba1b5f4384cb3e1757157ac652ceba7486b04",
+      "bytes": 4856,
+      "export_sha256": "0aef1daf106dc1daf1bb209b33597a7d9871bef3db2e3c6223c12102680bc214",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
     {
       "path": "docs/PUBLIC_AUDIT.md",
-      "bytes": 7056,
-      "export_sha256": "69b62eb5c45b991c4782235b6589e62275fc156911e6eb9de7203811f4ea23cc",
+      "bytes": 7459,
+      "export_sha256": "3cf60828fc04df16d17b0b9a8c5f7ad66c1a52aa0b1a3719ce9be4d013765187",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -672,8 +672,8 @@
     },
     {
       "path": "docs/PUBLIC_VERIFICATION.json",
-      "bytes": 19137,
-      "export_sha256": "d02c7eef90edebd085509eb37b798e6f9762b6fab23ac882d354a2f2065cee6d",
+      "bytes": 19778,
+      "export_sha256": "405010e8aae88087cb7d5948c0f07b5a8848c649fe4a751b9ecf1767a1d3062d",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -728,8 +728,8 @@
     },
     {
       "path": "docs/release/REVIEW.md",
-      "bytes": 1290,
-      "export_sha256": "4c1709a46187bc2cc365a14da0351c6ce20f0c106dd4ede03c58032d2c1c1e29",
+      "bytes": 1615,
+      "export_sha256": "37a8f6ee21a6633c70a03ae91dcf6558164852eb142519cf983b721864fdef37",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -1155,15 +1155,15 @@
     },
     {
       "path": "docs/validation/demo.md",
-      "bytes": 6956,
-      "export_sha256": "c428de8281425612c3ab50ea64e829cba201f81c1dce83ecfdb184b8484b1b37",
+      "bytes": 7337,
+      "export_sha256": "0fd779c8e650471e78e5fb12498ffa011a443e8f6930460e7890ba67503d055c",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
     {
       "path": "docs/validation/exercise.md",
-      "bytes": 8519,
-      "export_sha256": "46f579b8d63bfd2981ddbfeb5854d2d5a773843d6893e7abfac61a993936d3a0",
+      "bytes": 8566,
+      "export_sha256": "8fba772a9f71e43586fc3e3029a75270921e51eb9eee57f7e272e693d8aca185",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -1183,8 +1183,8 @@
     },
     {
       "path": "docs/validation/sample-provenance.md",
-      "bytes": 8853,
-      "export_sha256": "2aed890efde8252edd9eb435da4eb1059097c3e5b1c8d7e8841e22d66e2e601d",
+      "bytes": 8981,
+      "export_sha256": "e0dfdf955474fbb51dd622d21171b1bc7ad1466061e5fc9af41755809fc2b1bc",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -1253,15 +1253,15 @@
     },
     {
       "path": "firmware/xiao_nrf52840_sense/README.md",
-      "bytes": 13038,
-      "export_sha256": "60a8d7e1c12e9628e900592a6a795331fa109610038cc12d039af54b9b9179db",
+      "bytes": 13378,
+      "export_sha256": "f8fcfa0f6d8c9911063aeccdb2c939340385b64b3d3a02f6b637576a0b203c5b",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
     {
       "path": "firmware/xiao_nrf52840_sense/evidence/node_b_20260913_compatibility.md",
-      "bytes": 13222,
-      "export_sha256": "d653928f34b02a1311aa2716ae0b5a5df2fb8c6cb0a35f877ab0a13dd8ba7d73",
+      "bytes": 13568,
+      "export_sha256": "217cc824da90d545ff71f24d2591f07098be39c503aefe0fc5aa0b282b8cc538",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -1281,8 +1281,8 @@
     },
     {
       "path": "firmware/xiao_nrf52840_sense/m1_ble/README.md",
-      "bytes": 8545,
-      "export_sha256": "a6b2ccceff044a40e00b7f5a137cec734a4bec913aa661e10b67453b3e9162e8",
+      "bytes": 8891,
+      "export_sha256": "fbc066467a0a69bf5f391d29309deeaa2115bd6d3bc1660e84470d045c8c48c8",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -1316,8 +1316,8 @@
     },
     {
       "path": "firmware/xiao_nrf52840_sense/node_a_bringup/README.md",
-      "bytes": 15545,
-      "export_sha256": "b3b9bfa43a341f7a7e8bc8e2d0f89645e7a57ee533e011fd0d9de293bba5b46b",
+      "bytes": 15891,
+      "export_sha256": "e2bfe827fecc200838df98bd4b27b2609314a03615db43a98fde7501fd16ea7a",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -1883,15 +1883,15 @@
     },
     {
       "path": "protocols/M3_KINEMATICS_CONTRACT.md",
-      "bytes": 9302,
-      "export_sha256": "8625f1608b7dc4de6cad2a5dc869e2d9ad384d9d7bd32079028a7c39b05c4edd",
+      "bytes": 9396,
+      "export_sha256": "bb7328190adbb4a461eaa29ddf452a3fb39ab94603fab095da7a4e6d1db2d1e9",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
     {
       "path": "protocols/M4_EXERCISE_CONTRACT.md",
-      "bytes": 21393,
-      "export_sha256": "9b9cb01245451557e31515110502d48d05877fb5d666affdc603b1ebcc42587f",
+      "bytes": 21525,
+      "export_sha256": "5cc2cdc6e3e4251e19da89a6c3a5c7067325c5320bf1e231f9347756ae492a27",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -1904,8 +1904,8 @@
     },
     {
       "path": "protocols/M5_RECORDED_SEGMENTS_V1.md",
-      "bytes": 4283,
-      "export_sha256": "82bafe74275a8fb70a8982ffb5790e35b75cbf91d3c1af0a4336e667ec428b6c",
+      "bytes": 4401,
+      "export_sha256": "a4aef994c7485db36bcb165eba16f7f3ff20b7c8e5080dd86d102a66ef999306",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -2574,5 +2574,7 @@
       "immutable": false,
       "license": "MIT (original code/documentation)"
     }
-  ]
+  ],
+  "publication_verified_commit": "bd78fbab7ffd8dfbef064de87f39dde62c8b7944",
+  "publication_verified_date": "2026-09-29"
 }

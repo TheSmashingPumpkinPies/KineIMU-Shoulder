@@ -135,7 +135,7 @@ No hardware/firmware, raw/public acquisition schema, dependency or M2/M3
 interface changed. The exact implementation commit is recorded in
 [HANDOFF.md — historical availability](../PUBLIC_AUDIT.md#not-distributed-in-this-source-snapshot); content identity is recorded above.
 
-## Exact next action
+## Historical next action at M4 completion (subsequently completed)
 
 Start M5 by drafting its controlled perturbation and recorded-replay validation
 plan against the accepted M2/M3/M4 contracts. Fix independent truths,

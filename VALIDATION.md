@@ -42,7 +42,7 @@ recording → replay → preprocessing → orientation → relative kinematics
 Replay must preserve source hashes and must not silently repair, filter, interpolate or
 resample raw inputs. Tests compare deterministic replays and explicitly exercise QC failures.
 
-## Planned algorithm endpoints
+## Implemented algorithm endpoints and evidence
 
 | Endpoint | V1 evidence |
 |---|---|

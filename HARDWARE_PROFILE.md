@@ -13,8 +13,8 @@ remains limited and is not covered by the USB pass. Wearable-product feasibility
 is outside the current V1 mainline under ADR-008. See
 `docs/validation/acquisition.md`.
 
-The prior StickS3/ESP-IDF skeleton is retained under `firmware/sticks3/` as historical
-compiler evidence. It is not the active M1 firmware target.
+Earlier StickS3/ESP-IDF compiler evidence remains in the private historical archive;
+the published reference firmware targets the selected XIAO boards.
 
 [ADR-007](docs/adr/ADR-007-select-upstream-zephyr.md) selects upstream Zephyr v4.4.0
 with Zephyr SDK 1.0.1 and board target `xiao_ble/nrf52840/sense`. nRF Connect SDK is
@@ -46,9 +46,12 @@ facts. On 2026-09-11 Node A was identified through its UF2 bootloader, flashed, 
 USB CDC and returned continuous onboard LSM6DS3TR-C data through the in-tree driver after a
 documented 50 ms deferred-init probe. Front/rear photographs show the model/regulatory and rear
 board markings but no explicit PCB revision; `board_revision` is therefore recorded as `null`, not
-inferred from those identifiers. Production data-ready timing, FIFO behavior and Node B compatibility remain open.
+inferred from those identifiers. These are the limits of the early Node A bring-up record. Later Node B
+compatibility and the formal dual-node acquisition gate are documented in
+[the M1 result](docs/validation/acquisition.md); unsupported internal FIFO
+characteristics remain unmeasured rather than inferred from the USB pass.
 
-## Physical board and driver evidence still required
+## Physical board and driver evidence requirements
 
 Manufacturer and upstream references checked 2026-09-07:
 [Seeed product documentation](https://wiki.seeedstudio.com/XIAO_BLE/),

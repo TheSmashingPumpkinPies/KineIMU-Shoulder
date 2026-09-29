@@ -1,7 +1,8 @@
 # M3 Kinematics Contract — KineIMU Shoulder
 
-Status: **CP0 contract freeze**, 2026-09-25 (Asia/Shanghai). This is a
-processed/derived interface contract for M3.1–M3.4, not an implementation or a
+Status: **implemented V1 contract**, originally frozen 2026-09-25 (Asia/Shanghai).
+This defines the processed/derived M3 interface. Implementation and known-input
+tests are delivered; see [metric coverage](../docs/METRICS.md). It does not make a
 change to the M1 packet, normalized table, or public schema 0.1. Numerical
 examples and independent expected values are in
 `tests/fixtures/M3_KNOWN_MOTION.md`. A change to these metric definitions or

@@ -1,7 +1,9 @@
 # KineIMU Shoulder — synthetic stored-Q sample
 
-**INTERNAL ONLY / public redistribution pending.** 数据许可尚未由维护者决定；
-本地 CP1 输入放行不授予公开分发许可。四条轨迹均为 synthetic，
+**已公开授权：25 个原始输入文件采用 CC0-1.0。** 维护者于 2026-09-28
+批准公开分发；精确文件范围及 SHA-256 见 [许可附页](LICENSE.md)。
+本 README 是当前使用说明；原始构造来源记录 `provenance.json` 保持原字节，
+其中许可状态只描述授权前的 CP1 时点，当前权限以许可附页为准。四条轨迹均为 synthetic，
 不含人体采集、视频或个人数据，不代表解剖、临床或诊断验证。
 
 按 [M6 Demo 契约](../../../docs/M6_DEMO_CONTRACT.md) §1，选取
@@ -62,4 +64,6 @@ uv run --frozen pytest tests/integration/test_m6_sample.py
 审核只读；缺文件抛 FileNotFoundError，map 篡改或成员 hash 失配抛 ValueError。
 原 map 由独立固定 hash 锚定，重算篡改成员的 hash 不能绕过审核。
 `run_stored` 在处理前拒绝四种 ID 之外的轨迹。
-M6 一次命令完整演示是后续 CP2 交付；本目录当前只交付输入。
+完整硬件无关演示已交付：在仓库根目录运行
+`uv run --frozen python examples/m6_demo.py --output demo-output-01`，
+随后打开 `demo-output-01/summary.md`；详见 [Demo 使用说明](../../../docs/M6_DEMO.md)。

@@ -1,3 +1,9 @@
+> Historical firmware/build evidence. Unfinished checks below describe that
+> source and date, not current V1 status. The later dual-USB acquisition gate
+> passed; dual-BLE throughput remains limited and hardware is frozen. See
+> [hardware status](../../HARDWARE_PROFILE.md) and
+> [formal M1 result](../../docs/validation/acquisition.md).
+
 # XIAO nRF52840 Sense Zephyr compile spike
 
 This directory records the reproducible platform and Node A hardware-gate evidence for

@@ -68,5 +68,7 @@ development A/B execution plus independent raw/partition/SI/backend/null/
 downstream audit. All eleven external manifest entries and manifest hash must
 match before/after; retain source ZIP, commands, exits and product hashes.
 Original failed D root and original auditor remain immutable.
-CP4 stays OPEN until separately authorized E two-process B/C/D byte/audit
-acceptance, using this policy for D. CP5 and hardware work are outside this segment.
+This originally defined the D reacceptance segment, before the subsequent
+two-process B/C/D acceptance. Current V1 validation coverage is recorded in
+[the coverage report](../docs/validation/coverage.md). Original failed D evidence
+remains historical; hardware remains frozen.

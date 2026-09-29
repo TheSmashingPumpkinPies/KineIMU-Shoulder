@@ -16,7 +16,11 @@ protocols, fixtures and samples. See [packaging](PACKAGING.md) and
 [third-party notices](../../THIRD_PARTY_NOTICES.md). Historical package checks and
 failed attempts remain historical evidence; rebuilding requires fresh verification.
 
-The created GitHub destination is KineIMU-Shoulder. Local curation and publication
-are separate: further pushes, releases and visibility changes remain paused.
+The curated source is published on [GitHub](https://github.com/TheSmashingPumpkinPies/KineIMU-Shoulder).
+The initial curated main commit `bd78fbab7ffd8dfbef064de87f39dde62c8b7944`
+was pushed and independently verified on 2026-09-29. V1 engineering acceptance
+is complete within its documented scope. Version `0.1.0` identifies the source/package;
+no GitHub Release, release tag, PyPI publication or DOI is declared.
+Publication records identify the independently verified main commit.
 The [disclosure audit](../PUBLIC_AUDIT.md) distinguishes prior acceptance from the
 current complete public file selection, preservation and verification records.

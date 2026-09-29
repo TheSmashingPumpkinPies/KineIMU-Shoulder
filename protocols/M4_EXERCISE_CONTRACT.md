@@ -1,10 +1,10 @@
 # M4 Exercise Contract — KineIMU Shoulder
 
 Definition freeze: `m4-exercise/1.0`, 2026-09-26 (Asia/Shanghai).
-This governs M4.1–M4.5 processed/derived output only. CP0 review is in
-`experiments/M4_CP0_REVIEW_20260926.md`; independent truths are in
-`tests/fixtures/M4_KNOWN_EXERCISES.md`. No M4 numerical implementation is
-asserted. Definition changes require a reviewed revision and new fixtures.
+This governs the implemented M4 processed/derived output. The original CP0
+review remains in the private historical archive; independent truths are in
+`tests/fixtures/M4_KNOWN_EXERCISES.md`. Implementation and exact-input acceptance
+are delivered. Definition changes require a reviewed revision and new fixtures.
 M1 packets, normalized schema 0.1, raw files and M2/M3 definitions are unchanged.
 
 ## Inputs and evidence
@@ -327,7 +327,7 @@ time belongs to invalid duration, so the two sum to window elapsed time.
 A QC-interrupted window is not certified as complete observation
 of all true repetitions, even if some eligible candidates remain.
 
-## Acceptance tolerances and next gate
+## Acceptance tolerances
 
 Exact fixtures: angle/ROM/proxy/SD absolute tolerance 1e-10 rad,
 speed 1e-10 rad/s, dimensionless fraction/CV 1e-12, duration/cadence
@@ -336,4 +336,6 @@ and comparison keys match exactly, with no fuzzy threshold slack.
 Analytical equality fixtures should construct matching symbolic inputs.
 End-to-end AHRS tolerances must be separately declared at CP5 from M2's
 existing backend error contract, not silently substituted for these direct
-exact-input gates. CP0 freezes expectations only; CP1–CP5 remain open.
+exact-input gates. The implemented V1 metrics and subsequent tested coverage
+are documented in [metric definitions](../docs/METRICS.md) and
+[validation coverage](../docs/validation/coverage.md).

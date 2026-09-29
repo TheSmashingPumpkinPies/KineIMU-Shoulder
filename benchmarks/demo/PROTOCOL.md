@@ -28,7 +28,9 @@ AR90 and T-MIX stored Q trajectories; eight node streams, 17,208 node-samples,
 Original digest-map SHA-256:
 `2aa180e32003f91e57accf1d53c5b4b914e0c9e9c0ab4cdb22db02a3ab0964f9`.
 No truncation, generated replacement, seed selection or exact-E workload.
-Synthetic only, anatomical_eligible=false; sample INTERNAL ONLY / redistribution pending.
+Synthetic only, anatomical_eligible=false. The 25 original inputs are authorized
+under [CC0-1.0](../../datasets/samples/m6_synthetic/LICENSE.md). The original
+measurement-time permission record remains in the preserved source archive.
 
 Primary `wall_ns`: parent `time.perf_counter_ns()` immediately before
 `subprocess.Popen([sys.executable, benchmarks/demo/worker.py, --output, fresh_root])`,

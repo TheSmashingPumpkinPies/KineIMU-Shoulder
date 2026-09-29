@@ -1,3 +1,9 @@
+> Historical firmware/build evidence. Unfinished checks below describe that
+> source and date, not current V1 status. The later dual-USB acquisition gate
+> passed; dual-BLE throughput remains limited and hardware is frozen. See
+> [hardware status](../../../HARDWARE_PROFILE.md) and
+> [formal M1 result](../../../docs/validation/acquisition.md).
+
 # M1 BLE acquisition application
 
 This is the first buildable BLE acquisition slice for the XIAO nRF52840 Sense

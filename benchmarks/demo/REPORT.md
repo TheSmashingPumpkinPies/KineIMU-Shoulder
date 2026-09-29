@@ -1,6 +1,8 @@
-> Scope: the historical evidence below describes the complete pre-curation snapshot.
-> The smaller candidate passed local verification; publication remains paused.
-> Some detailed payloads are archived locally. See the consolidated public audit below.
+> Historical benchmark: protocol 1.1, measured 2026-09-28 at the source lock below.
+> V1 source is now published; this report does not describe current publication status.
+> Public counter records reproduce the timing statistics; complete original output
+> inventories are archived locally. See [reproduction](REPRODUCE.md) and the
+> [current release audit](../../docs/PUBLIC_AUDIT.md).
 
 # KineIMU Shoulder — M6.3 end-to-end performance report
 
@@ -64,11 +66,14 @@ Preflight batch01 at1e6f98b4: uv absent from Python PATH, output root/children n
 Preflight rejection (complete record retained in the local evidence archive) · failed batch (complete record retained in the local evidence archive) · failed diagnosis (complete record retained in the local evidence archive).
 
 First full regression invocation used a repository-local pytest basetemp, producing868 pass/6 existing Demo guard failures. All48 CP2/CP3 tests passed with external temp, then23 final CP3 regressions passed. The final external-temp retry passed all878 tests with the actual external M1 root and zero skips. Ruff, strict package mypy33 plus runner1, docs/39 archive hashes/whitespace and pinned sdist/wheel build pass. Exact commands/exits/raw logs are retained; committed-byte proof is a separate post-delivery record. Other failed test/type/build/doc attempts are retained.
-Synthetic/humerothoracic research only, anatomical_eligible=false, sample INTERNAL ONLY pending redistribution. No anatomical/clinical/glenohumeral/scapular accuracy claim. Static gravity does not establish full heading. Hardware frozen; no acquisition. Linux NOT RUN; CP4/CP5 and overall M6 remain OPEN. The unchanged Demo retains historical CP2 limitation text; new benchmark acceptance is defined by this separate protocol/evidence/report.
+Synthetic/humerothoracic research only, anatomical_eligible=false. No anatomical/clinical/glenohumeral/scapular accuracy claim. Static gravity does not establish full heading. Hardware frozen; no acquisition. Linux was NOT RUN in this measurement. At measurement time later release checks were unfinished; they subsequently completed within V1 scope. Current sample permission is [CC0-1.0](../../datasets/samples/m6_synthetic/LICENSE.md). The numerical results above retain their original source and protocol identities.
 
 ## Recompute
 
-From clone root with frozen dependencies; use a NEW audit output:
+For full historical recomputation, use the archived development checkout containing
+the complete `experiments/M6_CP3_20260928/batch01` inventory and a NEW audit output.
+That inventory is not bundled in the public clone. Public timing recomputation and
+fresh protocol 1.2 collection are documented in [REPRODUCE.md](REPRODUCE.md):
 
 ```powershell
 uv run --frozen python benchmarks/demo/run_benchmark.py --recompute experiments/M6_CP3_20260928/batch01 --output recomputed-cp3-new.json

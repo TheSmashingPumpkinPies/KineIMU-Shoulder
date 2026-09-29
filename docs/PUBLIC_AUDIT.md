@@ -5,7 +5,7 @@ the original authorized sample, core regression tests, independent auditors and
 compact reference evidence. Development handoffs, execution plans, repeated
 derived outputs, obsolete host diagnosis campaigns and local caches are excluded.
 
-## Final selection — 2026-09-29
+## Initial curated selection — 2026-09-29
 
 | Original audited set | Byte-identical retained | Modified public copies | Kept in private archive |
 |---|---:|---:|---:|
@@ -19,7 +19,7 @@ does not erase original failures. Reasons are duplication, obsolete campaign too
 execution diaries, repeated generated outputs, or local-only build/evidence artifacts.
 Scientific algorithms, public schemas and numerical budgets are unchanged.
 
-Final regression: **728 passed, 2 expected external-M1 skips, 0 failed** (730 cases,
+Curated-source verification: **728 passed, 2 expected external-M1 skips, 0 failed** (730 cases,
 49 modules). Two independent demos reproduced 27,160 numerical error scalars each,
 22 equal canonical products and equal summaries. Wheel/sdist source and all 57
 third-party notices verified; both fresh isolated numerical API installations passed.
@@ -43,9 +43,10 @@ The additional 703-member review comprised 397 unchanged, 304 modified and two
 excluded source archives; the archives are software, not CC0 research data.
 These are historical audit counts, not the membership of this compact release.
 
-The original 25 CC0 demonstration inputs, permission and other provenance files
-are byte-preserved. One ancillary README link points to the retained source description
-in its new location; original wording and its historical status are unchanged. Duplicate experiment copies of those inputs are omitted; default
+The original 25 CC0 demonstration inputs, permission annex and provenance files
+are byte-preserved. The sample README is maintained public documentation: its
+current permission and complete-demo instructions supersede the earlier CP1 text.
+The pre-edit README remains preserved in the private archive and prior Git commit. Duplicate experiment copies of those inputs are omitted; default
 replay reads the bundled sample. Original code/documentation retain MIT; reference
 firmware and 57 third-party notice texts keep their own terms. Additional CC0
 records are restricted to the retained entries in [the whitelist](PUBLIC_DATA_LICENSE.json).
@@ -56,8 +57,10 @@ No identifiable human recording or third-party dataset is distributed.
 The public-only [integrity index](../PUBLIC_EXPORT.json) lists final file paths,
 SHA-256 values, sizes and terms, excluding itself. The private original/copy map,
 unmodified originals and developer Git history are not release members.
-[Verification](PUBLIC_VERIFICATION.json) records tests and reproduction on this
-release. Complete private validation logs, original failures and prior candidate
+[Verification](PUBLIC_VERIFICATION.json) separates historical suite/source identities
+from the verified public main publication. The initial curated commit was pushed
+and independently verified on 2026-09-29. Documentation corrections update this
+index without changing original inputs, numerical code or measured results. Complete private validation logs, original failures and prior candidate
 history remain locally recoverable.
 
 Core numerical, packet/QC, calibration, orientation, metric, evidence and tamper
@@ -103,7 +106,8 @@ Full612 passed/2 existing external-M1 skips in359.79s; all16 CP3 regression test
 included; Ruff/strict mypy25 files/docs/whitespace passed. The prior OpenBLAS
 resource failure and temporary owned-worker scheduling throttle are documented.
 No production, raw, public schema, frozen truth/seed/budget or backend change.
-CP3/CP4/CP5/overall M5 remain OPEN; no physical hardware action.
+At that 2026-09-26 failed-run checkpoint, CP3/CP4/CP5/overall M5 were OPEN;
+this is a historical disposition, not the current V1 status.
 
 
 That original failed perturbation disposition remains historical. Accepted

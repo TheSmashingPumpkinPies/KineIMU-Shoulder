@@ -1,9 +1,9 @@
 # KineIMU Shoulder 技术报告
 
-M6.5 本地发布候选验收报告 / 2026-09-28。作者 Hongbo Liao，软件包版本 `0.1.0`。
+V1 技术报告；原验收记录日期 2026-09-28，公开说明更新于 2026-09-29。作者 Hongbo Liao，软件包版本 `0.1.0`。
 维护者已确认英文 README、中文报告、项目简介、MIT/CC0、版权年份 2026、
 引用作者 Hongbo Liao、公开仓库目标 `TheSmashingPumpkinPies/kineimu-shoulder`。
-制品验证状态、候选 ref 与后续公开发布边界见
+当前源代码已公开；制品验证记录与分发边界见
 [发布审定页](release/REVIEW.md)。本报告是已存在方法和证据的汇总，不替代规范契约。
 报告编写基线 `acab57accbeee2d1fdb3cab0b6ab09c511dda0ec`；
 CP3 测量源码锁和交付锁分别保留在下文，不用当前文档提交冒充数值运行源码。

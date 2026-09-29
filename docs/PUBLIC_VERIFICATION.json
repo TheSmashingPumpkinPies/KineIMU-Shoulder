@@ -63,7 +63,7 @@
     "datasets/samples/m6_synthetic/F90/B.kimu": "d07f099f4171a6a4c316e37c30c63731da98ac5733e59a172f16b471a6b1977b",
     "datasets/samples/m6_synthetic/F90/metadata.json": "350cfadd4ea809d2ec8f4930cbe05aed56ed2bc735bba4749f60bc75ceebcc9f",
     "datasets/samples/m6_synthetic/LICENSE.md": "d187cc4d9f2519f2717e755c5d6095de5834880686829325f7e326039cc9883b",
-    "datasets/samples/m6_synthetic/README.md": "faf5bfb725f19adb309bdc3818b22c8ae4d254560e0fba9f4d64c1b162315080",
+    "datasets/samples/m6_synthetic/README.md": "d49e6072adbf670f737365f76f5c31cdf9a1fe0cbff59274d02550bf5c4547f3",
     "datasets/samples/m6_synthetic/SHA256SUMS.json": "2aa180e32003f91e57accf1d53c5b4b914e0c9e9c0ab4cdb22db02a3ab0964f9",
     "datasets/samples/m6_synthetic/T-MIX/A-si.json": "8c4c60a7b191891e90e4e874b2e25260d6dc85bbf87f6a4e5e89797806957ac0",
     "datasets/samples/m6_synthetic/T-MIX/A.kimu": "848ff4efcc35bfe66a98f09eb0208a49b2eaeb644f9c0a8144c0231ea2aa7ac3",
@@ -117,10 +117,10 @@
     "protocols/M1_ACQUISITION_CONTRACT.md": "3829c351a1304eb597c86b7f6b98a3732e961970212f16d40363427ee72bc4e1",
     "protocols/M1_TIMING_BUDGET.md": "c5622e69da9a29bebf15ed0bcb293ee7dd47ebd00c513110b585b80441ae4aa0",
     "protocols/M2_PROCESSING_CONTRACT.md": "521f7cdf1b1138b896ed71ad0f458bf8ac5aad4bee36ea6b690d57e55f5b04b5",
-    "protocols/M3_KINEMATICS_CONTRACT.md": "8625f1608b7dc4de6cad2a5dc869e2d9ad384d9d7bd32079028a7c39b05c4edd",
-    "protocols/M4_EXERCISE_CONTRACT.md": "9b9cb01245451557e31515110502d48d05877fb5d666affdc603b1ebcc42587f",
+    "protocols/M3_KINEMATICS_CONTRACT.md": "bb7328190adbb4a461eaa29ddf452a3fb39ab94603fab095da7a4e6d1db2d1e9",
+    "protocols/M4_EXERCISE_CONTRACT.md": "5cc2cdc6e3e4251e19da89a6c3a5c7067325c5320bf1e231f9347756ae492a27",
     "protocols/M5_PROCESSING_V1_1.md": "ccf770f7b38468254045315969c494ce22d4ec72f19428619f1f85c924147ee0",
-    "protocols/M5_RECORDED_SEGMENTS_V1.md": "82bafe74275a8fb70a8982ffb5790e35b75cbf91d3c1af0a4336e667ec428b6c",
+    "protocols/M5_RECORDED_SEGMENTS_V1.md": "a4aef994c7485db36bcb165eba16f7f3ff20b7c8e5080dd86d102a66ef999306",
     "protocols/M5_VALIDATION_CONTRACT.md": "2b32c81e123cafecb4351a023ca279e59eb0e8881c51e235e618aa1d4f409d0d",
     "protocols/examples/m1-session-manifest-0.1.example.json": "f54b3d0b20f06fd30a418b3bb2c02a025470c4c54874380c7556a53dc9d095d4",
     "protocols/schemas/m1-session-manifest-0.1.schema.json": "1fecf0d5238ed319e105b33ffed53f78d26d992762bc406002b6158e614ec884",
@@ -203,5 +203,16 @@
     "validation/transport_experiment.py": "3325be0d68fb020fc05c2b6df9656b5ff728edb0dddf2d419426fd5f79296ef0"
   },
   "linux_execution": "NOT RUN",
-  "remote_push_performed": false
+  "remote_push_performed": true,
+  "publication": {
+    "destination": "https://github.com/TheSmashingPumpkinPies/KineIMU-Shoulder",
+    "branch": "main",
+    "verified_commit": "bd78fbab7ffd8dfbef064de87f39dde62c8b7944",
+    "date": "2026-09-29",
+    "operation": "ordinary fast-forward main push; independently verified remote ref",
+    "scope": "Initial curated publication; later documentation commits do not replace historical scientific source identities",
+    "github_release_declared": false,
+    "release_tag_declared": false
+  },
+  "runtime_file_sha256_scope": "Current listed file bytes; historical regression source identity remains in regression.source_commit"
 }
