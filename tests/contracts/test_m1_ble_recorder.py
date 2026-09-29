@@ -11,8 +11,6 @@ from typing import Any
 
 import pytest
 
-from experiments import m1_ble_link_matrix
-from experiments.m1_transport_experiment import EventLog
 from kineimu_shoulder.io.m1_capture import iter_capture_records
 from kineimu_shoulder.io.m1_control import (
     AcquisitionState,
@@ -32,6 +30,8 @@ from kineimu_shoulder.io.m1_packet import (
     SamplePacket,
     encode_sample_packet,
 )
+from validation import acquisition_ble as m1_ble_link_matrix
+from validation.transport_experiment import EventLog
 
 IDENTITY_UUID = "f7d20002-4b49-4e45-494d-552d53484c44"
 TELEMETRY_UUID = "f7d20003-4b49-4e45-494d-552d53484c44"

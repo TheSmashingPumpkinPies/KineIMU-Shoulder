@@ -8,9 +8,10 @@ from types import SimpleNamespace
 
 import pytest
 
-import experiments.m1_ble_physical_gates as physical_gates
-from experiments.m1_ble_link_matrix import _MatrixConnectionGate
-from experiments.m1_ble_physical_gates import (
+import validation.acquisition_gates as physical_gates
+from kineimu_shoulder.io.m1_packet import NodeId
+from validation.acquisition_ble import _MatrixConnectionGate
+from validation.acquisition_gates import (
     await_cleanup_to_completion,
     await_thread_to_completion,
     evaluate_acquisition_artifacts,
@@ -18,8 +19,7 @@ from experiments.m1_ble_physical_gates import (
     parse_acquisition_trace,
     run_gates,
 )
-from experiments.m1_transport_experiment import EventLog
-from kineimu_shoulder.io.m1_packet import NodeId
+from validation.transport_experiment import EventLog
 
 
 def test_cancel_waits_for_cdc_worker_before_reporting_cancelled() -> None:

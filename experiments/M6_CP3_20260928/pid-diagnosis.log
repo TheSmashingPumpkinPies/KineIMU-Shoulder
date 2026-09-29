@@ -1,1 +1,0 @@
-{"parent_pid": 22996, "launch_pid": 13644, "worker": {"pid": 31852, "ppid": 13644}, "child_parent_is_launch": true, "executable": ".\\.venv\\Scripts\\python.exe", "base_executable": "<python-installations>\\cpython-3.12.14-windows-x86_64-none\\python.exe", "executable_bytes": 262144, "base_bytes": 91648}

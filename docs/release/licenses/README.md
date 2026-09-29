@@ -6,7 +6,7 @@ copied original member, size and SHA-256. Texts have a `.txt` suffix appended to
 their original member paths; **their bytes are unchanged**. Extra suffixes keep
 upstream license fragments out of the repository Markdown-link checker.
 
-Generated once by [snapshot_notices.py](../../../experiments/M6_CP4_20260928/snapshot_notices.py).
+Generated once by [snapshot_notices.py](../../PUBLIC_AUDIT.md).
 Recreation requires the matching frozen environment and a new snapshot destination;
 the script refuses to overwrite its existing inventory. Before/after checks bind
 all copied bytes. Version/classifier metadata is evidence of upstream declarations,

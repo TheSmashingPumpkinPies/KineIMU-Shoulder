@@ -1,8 +1,7 @@
 # Project Scope — KineIMU Shoulder
 
 Accepted 2026-09-07 and bounded for V1 on 2026-09-19:
-[ADR-005](docs/adr/ADR-005-pivot-to-kineimu-shoulder.md) and
-[ADR-008](docs/adr/ADR-008-hardware-tested-software-complete-v1.md).
+the current scope below and [V1 boundary decision](docs/adr/ADR-008-hardware-tested-software-complete-v1.md).
 
 KineIMU Shoulder is a hardware-tested, open-source dual-IMU research framework for
 quantitative shoulder rehabilitation motion analysis.
@@ -16,7 +15,7 @@ V1 exercise analytics focus on shoulder flexion and abduction. Scaption and exte
 rotation are future candidates, not V1 accuracy claims. Sessions support research-grade
 exercise summaries and longitudinal session comparison.
 
-Eight core families are frozen in [01_PROJECT_SPEC.md](01_PROJECT_SPEC.md):
+Eight core families are frozen in [docs/METRICS.md](docs/METRICS.md):
 humerothoracic ROM, peak elevation angle, repetition count, movement/phase duration,
 hold duration, angular velocity, rep-to-rep variability and thorax compensation excursion.
 M3 implements relative kinematics; M4 implements the focused exercise metrics,

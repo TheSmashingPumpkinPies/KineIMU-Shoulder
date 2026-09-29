@@ -3,22 +3,22 @@
 契约标识：`m6-demo-contract/1.0`。2026-09-28 M6.0 / CP0 规格冻结。
 适用范围：clean-clone、离线处理的双节点 **synthetic stored-Q replay**。
 入口基线：`main` / `566ce905e7fea5ddbc2f33b3432c68fd0c2b6907`。
-规格冻结不代表 Demo 已实现或 CP1–CP5 已通过。
+本契约定义输入、输出和支持范围；历史验收见技术报告，当前候选校验单独记录。
 
-依据：[M6 计划](../M6_DEVELOPMENT_PLAN.md)、[验收要求](../ACCEPTANCE_CRITERIA.md)、
+依据：M6 计划 (complete record retained in the local evidence archive)、[验收要求](../ACCEPTANCE_CRITERIA.md)、
 [M5 processing/1.1](../protocols/M5_PROCESSING_V1_1.md)、
 [M5 validation/1.0](../protocols/M5_VALIDATION_CONTRACT.md)、
-[CP0 实测盘点](../experiments/M6_CP0_20260928/inventory.json)。
+[CP0 实测盘点](../tests/fixtures/demo/input-inventory.json)。
 本契约只冻结输入分发、调用、展示及验收边界；不改公开采集 schema 0.1、
 生产 API、指标定义、算法、门限、依赖、旧证据或已接受 ADR。
 M6 `run.json` 是演示运行记录，不作为新的公共科学数据交换 schema。
 
 ## 1. 输入及分发决定
 
-CP1 将以下 **25 个必要文件按原字节复制**到 `datasets/samples/m6_synthetic/`，
+默认读取以下 **25 个原字节必要文件**，保留于 `datasets/samples/m6_synthetic/`，
 另加 README 和来源清单。默认入口只从该仓库相对路径读取，不回退到外部磁盘、
-原 `.venv`、`KINEIMU_M1_RAW_ROOT` 或本机 CP1 绝对路径。CP0 尚未复制数据。
-原来源 `experiments/M5_CP1_20260926/run1` 保持只读。
+原 `.venv`、`KINEIMU_M1_RAW_ROOT` 或本机 CP1 绝对路径。
+原来源 `datasets/samples/m6_synthetic` 保持只读。
 
 | 文件族（sample 根相对路径） | 数量 | 用途及消费者 |
 |---|---:|---|
@@ -43,7 +43,7 @@ CP1 将以下 **25 个必要文件按原字节复制**到 `datasets/samples/m6_s
 其余 12 个成员不属于 `input_audit` 的必需集合。不得声称 sample 是原 run1
 完整副本或所有 map 成员都已分发；CP1 来源清单明确列出选定及未分发成员。
 不重写 map、不去重同 hash 的 A 文件、不缩减成单轨迹、不在线再生成观测。
-许可未决时 sample 标为 **INTERNAL ONLY / public redistribution pending**。
+原 sample 的历史 INTERNAL ONLY 标签保留；当前已批准的 25-member CC0 授权以 [许可附页](../datasets/samples/m6_synthetic/LICENSE.md) 为准。
 
 | 默认顺序 | 运动/侧别 | 节点角色 | 每节点输入 | 数值验收支持 |
 |---|---|---|---|---|
@@ -86,7 +86,7 @@ Exporter 除输入外还读 40 个仓库文件：32 个 package `.py` 和以下 
 - `uv.lock`
 - `protocols/M5_VALIDATION_CONTRACT.md`、`protocols/M5_PROCESSING_V1_1.md`
 - `tests/fixtures/M5_KNOWN_SENSOR_MOTIONS.md`、`tests/integration/test_m5_stored_demo.py`
-- `experiments/M5_CP3_20260926/audit.py`、`experiments/M5_CP4_STAGE_B_20260927/audit.py`
+- `validation/auditors/synthetic.py`、`validation/auditors/stored.py`
 - `docs/M5_STORED_DEMO.md`
 
 这些非 package 文件用于 manifest 身份绑定；exporter 还调用 Git 获取 HEAD/dirty。
@@ -232,14 +232,3 @@ errors 保留 1,651 elevation / 1,650 interval-speed evaluation supports。
 既有 `compare_summaries` 支持有 provenance/comparability 的跨会话比较；默认四条
 不同运动/侧别不得合并为纵向康复效果。CP2 无新增趋势算法或额外 longitudinal UI。
 
-## 7. 支持与后续门
-
-首个执行验收目标 Windows + pinned environment；CP0 仅实测 import/input/decode/guard。
-Linux clean-clone smoke 在 CP2/CP5 的可用独立环境或 CI 实测，未执行写 NOT RUN，
-不以 Ubuntu workflow 存在代替结果。相同平台确定性与跨平台 equality 分开记录。
-CP1 负责 sample 字节绑定；CP2 负责一次命令实现、负控制、独立审核和两次确定性；
-CP3 按 [benchmark 草案](../benchmarks/demo/PROTOCOL_DRAFT.md) 冻结协议后测量；
-CP4 负责文档/许可/引用/包装；CP5 在不继承环境的 clone 独立收口。
-全部要求及可观察判据见 [发布验收清单](M6_RELEASE_CHECKLIST.md)。
-项目/sample LICENSE、引用作者和最终发布版本仍待维护者决定，阻断 CP4 发布门；
-不阻断 CP0 文档冻结。远端同步/大证据分发待总收口，原数据/历史继续保留。

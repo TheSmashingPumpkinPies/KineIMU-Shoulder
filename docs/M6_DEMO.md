@@ -85,7 +85,7 @@ uv run --frozen python examples/m6_demo.py --output demo-output-02
 比较全部 22 replay products、内部 SHA256SUMS 和 summary 的字节。
 run.json 仅 output path、command 的 output 参数、UTC、duration、PID 允许不同；
 两个顶层校验表分别验证完整性，其余 24 项 hash 一致。
-CP2 实际执行/独立审核/失败记录见 [验收证据](../experiments/M6_CP2_20260928/README.md)。
+CP2 实际执行/独立审核/失败记录见 [验收证据](validation/demo.md)。
 
 ## 证据范围
 
@@ -99,6 +99,6 @@ heading 和 clock；Validated 仅指 M5 已测试 synthetic domain 的原门；E
 Demo 需要仓库的 protocols、fixtures、audit source 和 Git；wheel 单独安装不含完整资产。
 Windows 是首个执行验收平台；Linux CI 增加了 smoke 命令，但实际 Linux 验收须有执行记录。
 CP3 benchmark 已独立通过；CP4 文案/许可/作者/仓库身份已明确接受，
-[候选构建及安装验证](../experiments/M6_CP4_FINAL_20260928/README.md) 单独留证。
-CP5 fresh clone/fresh environment 验收已通过；[报告及证据](../experiments/M6_CP5_20260928/REPORT.md)
+候选构建及安装验证 (complete record retained in the local evidence archive) 单独留证。
+CP5 fresh clone/fresh environment 验收已通过；报告及证据 (complete record retained in the local evidence archive)
 记录两次完整Demo、独立审核、full877+2预期skip和新环境检查。Linux NOT RUN，公开发布尚未执行。

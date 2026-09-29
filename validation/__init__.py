@@ -1,1 +1,1 @@
-"""Validation runners kept separate from the production processing package."""
+"""Independent acquisition and scientific validation tools."""

@@ -1,9 +1,0 @@
-{
-  "cp3_passed": false,
-  "inputs_and_source_unchanged": true,
-  "node_samples_per_s": null,
-  "protocol": "m6-demo-benchmark/1.0",
-  "source_head": "addcdd7fb0ce2e187ebf32daa6af6051241113cd",
-  "timed_count": 5,
-  "wall_s": null
-}

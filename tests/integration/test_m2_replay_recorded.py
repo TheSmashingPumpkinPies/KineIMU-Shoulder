@@ -32,7 +32,7 @@ def test_recorded_node_b_replays_with_pinned_hash_and_original_timing() -> None:
     first = replay_capture(path, expected_sha256=digest, expected_node_id=NodeId.B, config=config)
     second = replay_capture(path, expected_sha256=digest, expected_node_id=NodeId.B, config=config)
 
-    # Counts/hash are fixed in experiments/m1_single_node_smoke_20260915/config.json.
+    # Counts/hash are fixed in tests/fixtures/acquisition/node-config.json.
     assert first.source_sha256 == second.source_sha256 == digest
     assert first.qc == second.qc
     assert first.qc.issues == ()

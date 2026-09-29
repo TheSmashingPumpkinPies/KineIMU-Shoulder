@@ -11,7 +11,7 @@ platform and USB acquisition path are **frozen**. Reopen only for a documented
 firmware/acquisition defect or a new maintainer decision. Dual BLE throughput
 remains limited and is not covered by the USB pass. Wearable-product feasibility
 is outside the current V1 mainline under ADR-008. See
-`experiments/M1_DUAL_USB_30MIN_RESULT_20260925.md`.
+`docs/validation/acquisition.md`.
 
 The prior StickS3/ESP-IDF skeleton is retained under `firmware/sticks3/` as historical
 compiler evidence. It is not the active M1 firmware target.
@@ -79,3 +79,14 @@ evidence are preserved. Unsupported cumulative counters and pairwise timing/
 synchronization metrics are recorded as not measured. Revisit the selected
 boards only for a documented firmware/acquisition blocker or new maintainer
 decision; battery, mounting and comfort do not block the hardware freeze.
+
+## Current transport and freeze policy
+
+The formal M1 long bench uses simultaneous dual USB packet capture with the same
+frozen packet/device-time/sequence semantics. Preserve the failed/inconclusive
+completion-window dual-BLE evidence; USB success does not validate BLE throughput.
+The earlier V9 result follows the first-connected link and remains inconclusive
+under its predeclared classification, without an established peripheral repair.
+[The original 30-minute result](docs/validation/acquisition.md)
+records acquisition gates and unmeasured timing fields. Hardware remains frozen;
+battery/enclosure/wearability and human/clinical studies are outside V1.

@@ -139,7 +139,7 @@ error/fatal status. A callback without an ISR timestamp is discarded and can
 request another bounded re-arm, but it is never assigned deferred-handler
 time and never becomes a sample. The detailed QEMU RED/GREEN/mutation record
 is in
-[`node_a_20260914_drdy_toctou.md`](../evidence/node_a_20260914_drdy_toctou.md).
+`node_a_20260914_drdy_toctou.md` (complete record retained in the local evidence archive).
 
 ## Current validation boundary
 

@@ -1,10 +1,12 @@
-# M5.4 stage B — immutable dual-node synthetic demo
+# Stored dual-node sensor replay
 
-This development entry reads the complete retained CP1 `run1` Q captures for
+This validation entry reads the bundled, immutable stored Q captures for
 F90, AL90, AR90 and T-MIX. Each node has 538 packets and 2,151 samples over
 0–21.5 s. The frozen evaluation window is 5–21.5 s; initialization at 0 and
 5 s is checked separately. This is synthetic evidence with
-`anatomical_eligible=false`. CP4 remains OPEN until stages C/D/E are delivered.
+`anatomical_eligible=false`. The subreport retains its original stage-B semantics:
+`formal=false` and `checkpoint_disposition=OPEN`. This describes the scope of this
+entry, not the current overall V1 completion status. See [validation](../VALIDATION.md).
 
 ```powershell
 .venv/Scripts/python.exe -m kineimu_shoulder.validation.stored_demo --output <absent-development-root>
@@ -50,5 +52,5 @@ retained CP3 auditor, checking scalar arithmetic, geodesics, O/F/T expectations,
 reconstruction conservation, retention, coverage and full error support. Its
 corruption control changes only a test output and must fail the auditor.
 No production algorithm, backend, schema, frozen gate, raw source or hardware
-is modified by this stage. C/D recorded-node replay and E two-process acceptance
-are separate obligations under [the replay plan](../M5_4_REPLAY_PLAN.md).
+is modified by this entry. Recorded-node and dual-stream audits remain separate
+validation layers. See [reproduction](validation/reproduce.md).

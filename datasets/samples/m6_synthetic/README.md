@@ -5,7 +5,7 @@
 不含人体采集、视频或个人数据，不代表解剖、临床或诊断验证。
 
 按 [M6 Demo 契约](../../../docs/M6_DEMO_CONTRACT.md) §1，选取
-原 [M5 CP1 run1](../../../experiments/M5_CP1_20260926/README.md) 的
+原 [M5 CP1 run1](../../../docs/validation/sample-provenance.md) 的
 25 个必要文件，逐字节复制，合计 **4,539,058 bytes**。
 来源、逐文件大小和 SHA-256、生成源码 hash、配置引用及未分发成员见
 [provenance.json](provenance.json)。本目录不是原 run1 的完整副本。

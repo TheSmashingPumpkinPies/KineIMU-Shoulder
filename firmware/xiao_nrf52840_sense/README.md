@@ -123,7 +123,7 @@ Sense`, application `VID:PID 2886:8045`, serial/device identifier
 identity snapshot, physical markings, PCB revision and sensor compatibility
 remained open. The complete observation and
 non-inference boundary are recorded in
-[evidence/node_b_20260913_identity.md](evidence/node_b_20260913_identity.md).
+evidence/node_b_20260913_identity.md (complete record retained in the local evidence archive).
 
 ## Node B physical compatibility result — 2026-09-13 (raw-axis behavior recorded)
 
@@ -201,7 +201,7 @@ norm `0.066799 rad/s`; this is wiring/readout sanity evidence only, not calibrat
 accuracy validation.
 
 The buildable probe is in [node_a_bringup](node_a_bringup/README.md). The complete record and
-console capture are in [evidence/node_a_20260911.md](evidence/node_a_20260911.md) and
+console capture are in evidence/node_a_20260911.md (complete record retained in the local evidence archive) and
 `evidence/node_a_20260911_serial.txt`. Separate-axis motion mapping also passed: with the
 component side up and USB toward the operator, USB-edge-up maps to gyro `+Y`, right-edge-up
 maps to gyro `-X`, and clockwise viewed from above maps to gyro `-Z`.
@@ -214,20 +214,20 @@ than inference. The photo hashes are recorded in the evidence file; the images w
 The Node A physical inventory/core bring-up checklist, configured data-ready delivery and GPIO ISR
 timestamp delivery are `PASS`. The timestamp TDD, reference-board build, flashed artifact identity and
 physical CDC observations are recorded in
-[evidence/node_a_20260912_isr_timestamp.md](evidence/node_a_20260912_isr_timestamp.md). The physical
+evidence/node_a_20260912_isr_timestamp.md (complete record retained in the local evidence archive). The physical
 capture contained 1,230 strictly increasing timestamps and no `missing ISR timestamp` message. This
 does not characterize timing, jitter, latency or loss. Independent sample/packet counter software and
 its reference-board build are recorded in
-[evidence/node_a_20260912_counters.md](evidence/node_a_20260912_counters.md); the counter artifact has
+evidence/node_a_20260912_counters.md (complete record retained in the local evidence archive); the counter artifact has
 not been flashed. The fixed-capacity FIFO, explicit drop-newest policy and saturating queue-loss
 accounting are recorded in
-[evidence/node_a_20260912_sample_queue.md](evidence/node_a_20260912_sample_queue.md); its reference
+evidence/node_a_20260912_sample_queue.md (complete record retained in the local evidence archive); its reference
 artifact has not been flashed, so physical queue-pressure/loss behavior remains open.
 The Node A v1 packet USB-C staging slice is now implemented and physically exercised with the final
 source-tree artifact. The flashed
 reference artifact, complete CDC byte stream, frozen `.kimu` records, parser/QC sidecar and explicit
 end-of-window truncation are recorded in
-[evidence/node_a_20260913_usb_packet_v1.md](evidence/node_a_20260913_usb_packet_v1.md). This is
+evidence/node_a_20260913_usb_packet_v1.md (complete record retained in the local evidence archive). This is
 single-node transport evidence before BLE, not M1 completion. The first capture used UF2
 `0cb593223cea93f22b6dc6b6fc1aa4431656177bab28f10defce55db0e4a7a98d`; the final clean build
 `3dd80115deaabeb7e61111e29d930c06e9591df93664fe497fe0bc4e61e87b50` was flashed and recaptured.

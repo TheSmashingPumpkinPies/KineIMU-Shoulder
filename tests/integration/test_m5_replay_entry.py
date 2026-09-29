@@ -177,7 +177,7 @@ def test_output_protection_precedes_input_read(capture, tmp_path, monkeypatch, k
         assert not output.exists()
 
 
-@pytest.mark.parametrize("parent", ["firmware", "datasets", "experiments/M5_CP3_UNBLOCK_20260927/formal1"])
+@pytest.mark.parametrize("parent", ["firmware", "datasets", "docs/validation"])
 def test_repository_sources_and_old_formal_evidence_are_protected(capture, parent):
     module = api()
     output = module.ROOT / parent / "m54-never-created"

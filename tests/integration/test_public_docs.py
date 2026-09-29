@@ -16,7 +16,7 @@ def public_tree(tmp_path):
     subprocess.run(["git", "init", "-q", str(tmp_path)], check=True)
     required = [
         "README.md", "PROJECT_SCOPE.md", "HARDWARE_PROFILE.md", "MOUNTING_PROTOCOL.md",
-        "VALIDATION_PLAN.md", "01_PROJECT_SPEC.md", "02_DEVELOPMENT_ROADMAP.md",
+        "VALIDATION.md", "docs/METRICS.md",
         "ARCHITECTURE.md", "pyproject.toml", "uv.lock",
         "docs/adr/ADR-006-select-xiao-nrf52840-sense.md",
         "docs/adr/ADR-007-select-upstream-zephyr.md",

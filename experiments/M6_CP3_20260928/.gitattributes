@@ -1,7 +1,0 @@
-# Retain exact executed/evidence bytes, including original Windows process streams.
-* -text
-*.log binary
-# JSON evidence may use native CRLF; preserve bytes and accept that line ending.
-*.json whitespace=cr-at-eol
-# Original rejected helper is an archival byte record, not active source.
-report-tool-attempt01.txt binary

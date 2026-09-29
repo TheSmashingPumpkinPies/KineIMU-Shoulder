@@ -89,7 +89,7 @@ The timestamp extension added a Zephyr GPIO-emulator test. RED passed the five e
 cases and failed the new case at the `-ENOSYS` weak fallback; GREEN passed 6/6. A
 temporary zero-timestamp mutation failed the strict-monotonic assertion before
 restoration. The detailed software and build record is
-[node_a_20260912_isr_timestamp.md](../evidence/node_a_20260912_isr_timestamp.md).
+node_a_20260912_isr_timestamp.md (complete record retained in the local evidence archive).
 
 The independent-counter extension assigns a sample sequence only after a coherent
 sensor read and exposes a separate packet-sequence allocator for the later packetizer.
@@ -98,7 +98,7 @@ clock epoch and resets both counters; an in-boot clock reset advances the epoch 
 atomically resets both sequence frontiers while acquisition is stopped. RED retained
 the six prior passes and failed all four new cases; GREEN passed 10/10. A mutation that
 made packet allocation advance the sample counter failed the four counter cases. See
-[node_a_20260912_counters.md](../evidence/node_a_20260912_counters.md). The acquisition queue,
+node_a_20260912_counters.md (complete record retained in the local evidence archive). The acquisition queue,
 sensor FIFO/overflow policy and v1 binary packet emission remain separate steps at that point.
 
 The bounded-queue extension preserves the complete timestamp/epoch/sequence-bearing raw-count sample
@@ -106,7 +106,7 @@ in FIFO order, supports blocking consumption, records occupancy high-water, and 
 sample at capacity with saturating loss counters. RED passed the 10 prior cases and failed all 4 initial
 queue cases; GREEN passed 14/14. A deliberate drop-oldest mutation motivated and failed a fifth policy
 test, and restoration passed 15/15. See
-[node_a_20260912_sample_queue.md](../evidence/node_a_20260912_sample_queue.md). Sensor FIFO policy,
+node_a_20260912_sample_queue.md (complete record retained in the local evidence archive). Sensor FIFO policy,
 and v1 binary packet emission remain separate steps.
 
 The raw boundary deliberately does not call `sensor_sample_fetch()` or `sensor_channel_get()` for
@@ -171,7 +171,7 @@ The first physical capture used flashed UF2
 clean build after explicit queue-flag initialization hardening is UF2
 `3dd80115deaabeb7e61111e29d930c06e9591df93664fe497fe0bc4e61e87b50`; it was
 subsequently flashed to the same verified Node A and recaptured. See the final
-artifact section in [node_a_20260913_usb_packet_v1.md](../evidence/node_a_20260913_usb_packet_v1.md).
+artifact section in node_a_20260913_usb_packet_v1.md (complete record retained in the local evidence archive).
 
 ## Sensor FIFO/overflow visibility
 
@@ -190,7 +190,7 @@ It establishes an auditable status boundary and console visibility without claim
 that a FIFO is the active sample source. Physical FIFO pressure/overflow behavior,
 including a deliberate overflow run, remains open for a later validation slice.
 The QEMU tests and build record are in
-[node_a_20260913_fifo_visibility.md](../evidence/node_a_20260913_fifo_visibility.md).
+node_a_20260913_fifo_visibility.md (complete record retained in the local evidence archive).
 
 At startup the bring-up application reads and prints `WHO_AM_I`, `INT1_CTRL`,
 `CTRL1_XL` and `CTRL2_G`, then stops if the requested identity, data-ready route,
@@ -253,4 +253,4 @@ the raw sample format, with `sample_sequence=0` through `823`, zero sequence gap
 non-increasing adjacent `timestamp_us` values. The first and last device timestamps were
 32,427,154 and 40,312,591 us. This verifies physical raw-count delivery and short-capture
 continuity only; it is not a FIFO-pressure, rate, jitter, loss or long-duration result.
-See [node_a_20260912_raw_signed_counts.md](../evidence/node_a_20260912_raw_signed_counts.md).
+See node_a_20260912_raw_signed_counts.md (complete record retained in the local evidence archive).

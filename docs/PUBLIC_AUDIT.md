@@ -1,85 +1,113 @@
-# Public disclosure audit — 2026-09-29
+# Public release audit
 
-Scope: every one of the703additional candidate data/companion files, together
-with all selected code, documentation, notices and nested ZIP/gzip members.
-The original25-member CC0 demo grant is unchanged. No original development Git
-history, local cache, untouched private originals or original/public mapping is
-included in the public repository.
+The release contains maintained source, reference firmware, necessary protocols,
+the original authorized sample, core regression tests, independent auditors and
+compact reference evidence. Development handoffs, execution plans, repeated
+derived outputs, obsolete host diagnosis campaigns and local caches are excluded.
 
-| Reviewed set | Retained byte-identically | Modified public copies | Excluded |
+## Final selection — 2026-09-29
+
+| Original audited set | Byte-identical retained | Modified public copies | Kept in private archive |
 |---|---:|---:|---:|
-| Original selected snapshot, including its old index | 949 | 485 | 4 |
-| Additional703candidate data/companion files | 397 | 304 | 2 |
+| All 1,438 original selected files | 249 | 113 | 1076 |
+| Additional 703 data/companion candidates | 4 | 22 | 677 |
 
-Four new public documents provide the accepted decision, this audit, and the
-separate data grant/whitelist. The final public tree has1438files including its
-public-only index; the index lists1437members and omits itself.
+The compact working tree has 368 files, including six generated release/test/index
+members. The file payload is approximately 8.3 MB, excluding Git history and local
+environments. Omitted records remain intact locally; omission from the public tree
+does not erase original failures. Reasons are duplication, obsolete campaign tools,
+execution diaries, repeated generated outputs, or local-only build/evidence artifacts.
+Scientific algorithms, public schemas and numerical budgets are unchanged.
 
-## Treatment and reasons
+Final regression: **728 passed, 2 expected external-M1 skips, 0 failed** (730 cases,
+49 modules). Two independent demos reproduced 27,160 numerical error scalars each,
+22 equal canonical products and equal summaries. Wheel/sdist source and all 57
+third-party notices verified; both fresh isolated numerical API installations passed.
+The new protocol 1.2 benchmark collector and complete independent recomputation passed.
+Ruff, strict type checks, links and integrity checks passed. Linux and optional external
+physical replay are not claimed. Privacy review inspected 422 outer/nested members,
+with 0 prohibited findings, 37 licensed upstream contacts and 0 unreviewed contacts.
 
-Retained files include all29sample-directory members and all59raw binary members.
-The originally approved25demo members, sample permission/provenance and frozen
-CP1 inputs remain byte-identical. Models, firmware revisions, sample parameters,
-conditions, measured counters, results and failed dispositions are retained.
+## Preservation and review
 
-Modified copies replace machine absolute paths with repository-relative paths or
-generic placeholders and use consistent anonymous device/USB/BLE identities.
-Distinct identity roles and relationships remain distinct. Related public-copy
-SHA-256 indexes/source metadata were recomputed; historical reports explicitly
-retain their original scope. Numerical algorithms and acceptance tolerances were
-not weakened. A machine-specific optional validation input default was replaced
-with a generic external-data placeholder; explicit input configuration remains
-available. Publication metadata/navigation and separate rights notices were updated.
+All 703 additional candidate data/companion files were reviewed for local paths,
+usernames, serial numbers, credentials, personal information and third-party rights.
+Originals remain in a private local archive with SHA-256 correspondence. Public
+copies use relative paths or generic placeholders and consistent anonymous node
+identities. Device models, firmware, sample settings and experimental conditions
+are retained. Numerical results, thresholds and failed dispositions are unchanged.
 
-Four historical local software artifacts are excluded: two wheels and two source
-distributions from the old CP4 preview/final artifact folders. Two of these sdists
-were incorrectly included in the703data candidates by their filename suffix; they
-receive no CC0 data grant. Their inspection reports, failed attempts, original
-measured conclusions and reasons remain. Final packages are rebuilt and verified
-separately rather than distributing unreviewed embedded copies. See
-[historical package scope](PUBLIC_EVIDENCE.md#historical-local-packages).
+The full original selected snapshot had 1,438 files: 949 byte-identical copies,
+485 reviewed modifications and four excluded historical local Python build artifacts.
+The additional 703-member review comprised 397 unchanged, 304 modified and two
+excluded source archives; the archives are software, not CC0 research data.
+These are historical audit counts, not the membership of this compact release.
 
-## Privacy and rights review
+The original 25 CC0 demonstration inputs, permission and other provenance files
+are byte-preserved. One ancillary README link points to the retained source description
+in its new location; original wording and its historical status are unchanged. Duplicate experiment copies of those inputs are omitted; default
+replay reads the bundled sample. Original code/documentation retain MIT; reference
+firmware and 57 third-party notice texts keep their own terms. Additional CC0
+records are restricted to the retained entries in [the whitelist](PUBLIC_DATA_LICENSE.json).
+No identifiable human recording or third-party dataset is distributed.
 
-Final scan inspected1997outer, nested and decompressed members, with0remaining
-prohibited local paths/real-device identities/credentials and0unreviewed contacts.
-Usernames, device serial/register identities, home/tool/temp paths and host/object
-identities were reviewed. Public author/copyright attribution and38upstream contact
-occurrences in licensed notices/CFF citation material are intentionally preserved.
-No identifiable human video, human-subject data or externally sourced dataset is
-selected. Original raw packet layouts were inspected for identity-bearing fields;
-selected raw binary bytes are unchanged.
+## Release integrity and validation
 
-The701accepted additional members are documented project-generated synthetic
-inputs/derived results, maintainer-controlled bench recordings, or project-authored
-acquisition/verification companion records. Maintainer authority and the bounded
-grant are recorded in [ADR-015](adr/ADR-015-audited-public-data-copies.md),
-[PUBLIC_DATA_LICENSE.md](PUBLIC_DATA_LICENSE.md) and its exact public-copy hash
-[whitelist](PUBLIC_DATA_LICENSE.json). These grants do not relicense code or
-third-party works. Original project code/docs retain MIT; firmware and dependencies
-retain their applicable terms and full notices. CFF source/citation remains
-[CC-BY-4.0](https://github.com/citation-file-format/citation-file-format/tree/1.2.0).
+The public-only [integrity index](../PUBLIC_EXPORT.json) lists final file paths,
+SHA-256 values, sizes and terms, excluding itself. The private original/copy map,
+unmodified originals and developer Git history are not release members.
+[Verification](PUBLIC_VERIFICATION.json) records tests and reproduction on this
+release. Complete private validation logs, original failures and prior candidate
+history remain locally recoverable.
 
-## Scientific preservation and integrity
+Core numerical, packet/QC, calibration, orientation, metric, evidence and tamper
+tests are retained. Thirteen test modules specific to obsolete host diagnosis
+campaigns or historical collection orchestration remain in the local development
+archive with their source tools. Scientific assertions and budgets are unchanged.
+The release adds checks that replay defaults and benchmark source archives work
+without the former experiment tree. Fresh generated outputs are audited, avoiding
+bundled duplicate demo results. Historical reports retain their original scope.
 
-Private deep JSON/gzip/ZIP comparison verified16,617,110identical scalar values,
-with0unexpected numerical, boolean, key, type or array-length changes.2375digest
-fields and716privacy strings changed; raw packets and original failed records
-were preserved. The original CP2 auditor independently recomputed27,160error
-scalars per retained run and verified22equal canonical products and equal summary.
-Reconstruction from54reviewed archived sources independently checked6benchmark
-slots and reproduced the original summary exactly. No new performance measurement
-is substituted for the original counters or statistics.
+The benchmark report describes the measured protocol 1.1 source. Compact counter
+records and the reviewed source archive support timing arithmetic; the complete
+historical output inventory remains in the local archive. Current collection uses
+protocol 1.2 and audits a fresh preflight pair before its unchanged timed workload.
+New measurements never replace historical results.
 
-129historical summarized payload entries were already outside the selected public
-snapshot. Their original historical digests/reasons remain and are not falsely
-reported as present or freshly verified. Original software-package inspection
-hashes remain scoped to their excluded historical packages. Current integrity is
-provided by [PUBLIC_EXPORT.json](../PUBLIC_EXPORT.json), which includes only
-public paths, byte sizes, digests and licenses.
+## Earlier verification failures
 
-Untouched originals and complete original/public SHA-256 correspondence, including
-nested members, exclusions and anonymous identity mappings, are retained locally
-with the maintainer. They are not public repository members. Final fresh-copy
-tests, Demo reproduction, package/install verification and transfer evidence are
-reported separately in [PUBLIC_VERIFICATION.md](PUBLIC_VERIFICATION.md).
+Preserved failures include the original dual-BLE throughput gate, the failed
+complete perturbation run below, benchmark protocol 1.0 command-identity failure,
+a Windows temporary-directory rename failure, README line-ending package mismatch
+and initial curation dependency omissions. Later successful checks do not relabel
+those failures. Two external-M1 tests and Linux execution remain separate claims.
+
+## Complete M5.3 disposition — 2026-09-26
+
+The complete perturbation report (complete record retained in the local evidence archive)
+retains1,142 cases per formal4 run from source lock6f1dec791aa6e959fd41abbb46c0e7da5053601a.
+Both launches exited1 because CP3 FAILED, with0 not-run and0 unexpected exceptions.
+Independent audit passes:5,380 files/1,661,983,578 bytes per run, all bytes equal;
+13,865,857 error scalars per run independently recomputed.
+
+All589 W cases meet >=98% full time coverage and complete-rep recall1.0,
+with0 missed/false reps. However39 loss/jitter W cases fail numerical budgets
+(max interval-speed error61.223146deg/s versus6deg/s; packet-one node orientation
+up to1.442900deg versus1deg). One300s correct -500ppm map loses the final10ms
+support and returns interrupted/upstream_invalid instead of partial_end on the
+55th incomplete candidate, though all54 eligible repetitions pass numeric/recall
+gates. Six heading/A-map/B-map E/S reference-hash controls fail evidence binding;
+raw-file hash/CRC/node controls pass. Stress completion remains a limitation record.
+
+Full612 passed/2 existing external-M1 skips in359.79s; all16 CP3 regression tests
+included; Ruff/strict mypy25 files/docs/whitespace passed. The prior OpenBLAS
+resource failure and temporary owned-worker scheduling throttle are documented.
+No production, raw, public schema, frozen truth/seed/budget or backend change.
+CP3/CP4/CP5/overall M5 remain OPEN; no physical hardware action.
+
+
+That original failed perturbation disposition remains historical. Accepted
+[processing/1.1](../protocols/M5_PROCESSING_V1_1.md) and the retained
+[coverage report](validation/coverage.md) describe subsequent
+reacceptance without relabeling the failed run. Exact original/current document
+correspondence and identities remain private; they are never repository exports.

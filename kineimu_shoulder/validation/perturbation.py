@@ -1211,7 +1211,7 @@ def export(output: Path, *, formal: bool = True, workers: int = 4) -> bool:
         "protocols/M5_VALIDATION_CONTRACT.md",
         "protocols/M5_PROCESSING_V1_1.md",
         "tests/fixtures/M5_KNOWN_SENSOR_MOTIONS.md",
-        "experiments/M5_CP1_20260926/case-manifest.json",
+        "datasets/samples/m6_synthetic/case-manifest.json",
         "examples/m5_perturbation.py",
         "tests/unit/test_m4_segmentation.py",
         "tests/unit/test_m4_metrics.py",
@@ -1221,15 +1221,13 @@ def export(output: Path, *, formal: bool = True, workers: int = 4) -> bool:
     ]
     files += [str(p.relative_to(ROOT)).replace("\\", "/") for p in sorted((ROOT / "tests").rglob("*.py"))]
     files += [
-        "experiments/M5_CP3_20260926/audit.py",
-        "experiments/M5_CP3_20260926/diagnostics.json",
-        "experiments/M5_CP3_20260926/partial-attempts.json",
+        "validation/auditors/synthetic.py",
     ]
     tracked = set(git("ls-files").splitlines())
     if formal and any(f not in tracked for f in files):
         raise ValueError("uncommitted source file")
     matrix_cases = cases()
-    frozen = json.loads((ROOT / "experiments/M5_CP1_20260926/case-manifest.json").read_text())
+    frozen = json.loads((ROOT / "datasets/samples/m6_synthetic/case-manifest.json").read_text())
     frozen_rows = frozen["cases"] if isinstance(frozen, dict) else frozen
     if frozen_rows != matrix_cases:
         raise ValueError("case manifest differs from frozen CP1")

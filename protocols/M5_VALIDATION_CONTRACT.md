@@ -2,7 +2,7 @@
 
 Version: `m5-validation/1.0`. Frozen at CP0 on 2026-09-26 (Asia/Shanghai),
 before M5 generators, oracles or acceptance runs. Governing scope:
-[M5 plan](../M5_DEVELOPMENT_PLAN.md), [acceptance](../ACCEPTANCE_CRITERIA.md),
+M5 plan (complete record retained in the local evidence archive), [acceptance](../ACCEPTANCE_CRITERIA.md),
 [M2](M2_PROCESSING_CONTRACT.md), [M3](M3_KINEMATICS_CONTRACT.md) and
 [M4](M4_EXERCISE_CONTRACT.md). Independent constructions and case IDs:
 [M5 known sensor motions](../tests/fixtures/M5_KNOWN_SENSOR_MOTIONS.md).

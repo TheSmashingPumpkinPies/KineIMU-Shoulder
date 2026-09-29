@@ -1,0 +1,44 @@
+{
+  "schema_version": "kineimu.m1.single_node_smoke.config/0.1",
+  "repository_root": "../../..",
+  "input_path": "firmware/xiao_nrf52840_sense/evidence/node_b_20260913_stationary.kimu",
+  "expected_input_sha256": "1abc499b99a1b2b0b81c91c62bf3113ac1b5633a41c887391b3456c8590cc201",
+  "node_id": "B",
+  "expected_packet_count": 208,
+  "expected_sample_count": 832,
+  "firmware": {
+    "application": "firmware/xiao_nrf52840_sense/node_a_bringup",
+    "source_commit": "87131b2d3b6931b3d8fd47b25740bf833f0af23b",
+    "uf2_sha256": "c782627573c07e099c092fc5b526181c22c8f7f35a8ca6c3c66dedd12360c9e7",
+    "board_target": "xiao_ble/nrf52840/sense",
+    "build_selection": "KINEIMU_NODE_ID=2",
+    "evidence": "firmware/xiao_nrf52840_sense/evidence/node_b_20260913_compatibility.md"
+  },
+  "sensor": {
+    "model": "LSM6DS3TR-C",
+    "driver": "Zephyr st,lsm6dsl-compatible direct raw boundary",
+    "accel_odr_hz": 104.0,
+    "gyro_odr_hz": 104.0,
+    "accel_range_g": 4.0,
+    "gyro_range_dps": 500.0,
+    "accel_sensitivity_mg_per_lsb": 0.122,
+    "gyro_sensitivity_mdps_per_lsb": 17.5,
+    "raw_register_order": ["X", "Y", "Z"],
+    "timestamp_source": "mcu_drdy_isr",
+    "sensor_to_node": {
+      "sensor_axes": ["sensor_x", "sensor_y", "sensor_z"],
+      "node_axes": ["node_x", "node_y", "node_z"],
+      "matrix": [
+        [1.0, 0.0, 0.0],
+        [0.0, 1.0, 0.0],
+        [0.0, 0.0, 1.0]
+      ],
+      "description": "identity: this smoke declares the sensor register frame as the node frame; no anatomical alignment is inferred"
+    }
+  },
+  "checks": {
+    "timestamp_dt_us_bounds": [8000.0, 12000.0],
+    "stationary_accel_norm_g_bounds": [0.5, 1.5],
+    "stationary_gyro_norm_max_rads": 0.5
+  }
+}

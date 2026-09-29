@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parents[2]
 SAMPLE = ROOT / "datasets/samples/m6_synthetic"
 SLOTS = ("warmup", "timed01", "timed02", "timed03", "timed04", "timed05")
 THREADS = ("OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS")
-PROTOCOL = "m6-demo-benchmark/1.1"
+PROTOCOL = "m6-demo-benchmark/1.2"
 NODE_SAMPLES = 17208
 
 
@@ -181,7 +181,7 @@ def environment(output: Path, env: dict[str, str]) -> dict[str, Any]:
 
 
 def auditor() -> Any:
-    spec = importlib.util.spec_from_file_location("m6_cp2_audit", ROOT / "experiments/M6_CP2_20260928/audit.py")
+    spec = importlib.util.spec_from_file_location("m6_cp2_audit", ROOT / "validation/auditors/demo.py")
     assert spec is not None and spec.loader is not None
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -189,15 +189,19 @@ def auditor() -> Any:
 
 
 def inputs() -> dict[str, Any]:
-    return dict(sample=hashes(SAMPLE), original=hashes(ROOT / "experiments/M5_CP1_20260926/run1"))
+    return dict(sample=hashes(SAMPLE))
 
 
 def archive_source(output: Path) -> dict[str, str]:
-    prior = read(ROOT / "experiments/M6_CP2_20260928/runtime-source-sha256.json")
-    names = set(prior) | {"benchmarks/demo/run_benchmark.py", "benchmarks/demo/worker.py",
-                          "benchmarks/demo/PROTOCOL.md",
-                          "uv.lock", "pyproject.toml", "docs/M6_DEMO_CONTRACT.md",
-                          "experiments/M5_CP3_20260926/audit.py", "tests/integration/test_m6_benchmark.py"}
+    names = {p.relative_to(ROOT).as_posix() for directory in
+             ("kineimu_shoulder", "validation/auditors")
+             for p in (ROOT / directory).rglob("*.py")}
+    names |= {"benchmarks/demo/run_benchmark.py", "benchmarks/demo/worker.py",
+              "benchmarks/demo/PROTOCOL.md", "uv.lock", "pyproject.toml",
+              "protocols/M5_VALIDATION_CONTRACT.md", "protocols/M5_PROCESSING_V1_1.md",
+              "tests/fixtures/M5_KNOWN_SENSOR_MOTIONS.md", "tests/integration/test_m5_stored_demo.py",
+              "docs/M5_STORED_DEMO.md", "docs/M6_DEMO_CONTRACT.md",
+              "tests/integration/test_m6_benchmark.py"}
     sources = {name: sha256((ROOT / name).read_bytes()).hexdigest() for name in sorted(names)}
     with zipfile.ZipFile(output / "runtime-source.zip", "x", compression=zipfile.ZIP_DEFLATED) as archive:
         for name in sorted(names):
@@ -235,8 +239,17 @@ def collect(output: Path) -> dict[str, Any]:
     audit = auditor()
     preflight_ok = False
     try:
-        preflight = audit.audit_pair(ROOT / "experiments/M6_CP2_20260928/run1",
-                                     ROOT / "experiments/M6_CP2_20260928/run2")
+        preflight_roots = []
+        for index in (1, 2):
+            logs = output / f"preflight{index}"
+            logs.mkdir()
+            child = logs / "demo"
+            command = [sys.executable, str(ROOT / "benchmarks/demo/worker.py"), "--output", str(child)]
+            measurement = measure(command, ROOT, env, logs)
+            if measurement["exit_code"] != 0:
+                raise ValueError(f"preflight child exit {measurement['exit_code']}")
+            preflight_roots.append(child)
+        preflight = audit.audit_pair(*preflight_roots)
         write(output / "preflight-audit.json", preflight)
         preflight_ok = True
     except Exception as exc:

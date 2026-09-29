@@ -175,7 +175,7 @@ def test_all_bad_node_cannot_complete_or_invent_downstream_input(tmp_path):
 
 
 def auditor():
-    path = Path(__file__).resolve().parents[2]/"experiments/M5_CP4_STAGE_D2_20260927/audit.py"
+    path = Path(__file__).resolve().parents[2]/"validation/auditors/recorded_segments.py"
     spec = importlib.util.spec_from_file_location("cp4_stage_d2_audit", path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)

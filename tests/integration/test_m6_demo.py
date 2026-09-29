@@ -36,7 +36,7 @@ def verify_index(root):
 
 
 def independent_auditor():
-    path = ROOT / "experiments/M6_CP2_20260928/audit.py"
+    path = ROOT / "validation/auditors/demo.py"
     assert path.exists(), "independent CP2 pair auditor is missing"
     spec = importlib.util.spec_from_file_location("m6_pair_audit", path)
     module = importlib.util.module_from_spec(spec)

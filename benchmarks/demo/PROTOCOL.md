@@ -1,8 +1,21 @@
+# Benchmark protocol
+
+Current collector: `m6-demo-benchmark/1.2`.
+It creates and independently audits two fresh preflight demo runs outside the
+timed slots, uses the bundled sample as its single input source, and archives the
+actual current source rather than requiring an old experiment checkout.
+One warmup and five timed workers retain the workload, timing boundary, numerical
+budgets, thread settings, failure retention and statistics defined below.
+The historical [report](REPORT.md) remains protocol 1.1 evidence; its results
+are unchanged and must not be attributed to the current source.
+
+## Historical measured protocol 1.1
+
 # KineIMU Shoulder — M6 CP3 frozen benchmark protocol
 
 Protocol `m6-demo-benchmark/1.1`, frozen before its formal measurement on 2026-09-28.
-This implements the [CP0 draft](PROTOCOL_DRAFT.md) and
-[M6.3 acceptance](../../M6_DEVELOPMENT_PLAN.md). No speed threshold is imposed.
+This implements the CP0 draft (preserved in the local historical archive) and
+M6.3 acceptance (complete record retained in the local evidence archive). No speed threshold is imposed.
 The source lock is the clean Git HEAD containing this protocol and runner, recorded
 in each batch's `lock.json` before launching any child. Later evidence/state commits
 do not change that measurement lock. Never resume or overwrite a consumed batch.
@@ -36,7 +49,7 @@ OS argument. Record sys.orig_argv and bind its script/arguments to the launch.
 Version1.0 added a variable --identity path that failed the original CP2 command
 whitelist even though all numerical products matched. Its complete six-slot batch
 remains FAIL, with raw times and withheld successful statistics in
-[failed diagnosis](../../experiments/M6_CP3_20260928/failed-diagnosis.json).
+failed diagnosis (complete record retained in the local evidence archive).
 Version1.1 changes only sidecar argument plumbing; workload/timing/correctness
 budgets and the original CP2 variation whitelist remain unchanged. Never resume1.0.
 
@@ -75,7 +88,7 @@ choice; the workload, schedule and timing boundary are unchanged.
 ## Correctness and acceptance
 
 Post-wait audit is outside timing. Use the unchanged independent
-`experiments/M6_CP2_20260928/audit.py`, which calls the frozen M5 CP3 numerical
+`validation/auditors/demo.py`, which calls the frozen M5 CP3 numerical
 oracle. Warmup uses `audit_run`; each timed child uses `audit_pair(warmup, child)`.
 Check exit0, complete four-Q stage, worker/source identity, 25-input before/after
 hashes, all output membership/checksums, calibration/frames/AHRS, QC/timing,

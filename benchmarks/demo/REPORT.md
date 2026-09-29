@@ -1,3 +1,7 @@
+> Scope: the historical evidence below describes the complete pre-curation snapshot.
+> The smaller candidate passed local verification; publication remains paused.
+> Some detailed payloads are archived locally. See the consolidated public audit below.
+
 # KineIMU Shoulder — M6.3 end-to-end performance report
 
 2026-09-28 / Windows measurement and required repository verification gates PASS.
@@ -6,7 +10,7 @@ Exact committed-byte proof is generated after the frozen delivery commit in
 are distinct. Dynamic state records final CP3 acceptance after that proof.
 
 Protocol: [m6-demo-benchmark/1.1](PROTOCOL.md). Measurement source lock: `3e0647c4f53803abf134fee68659f63ca006e407`.
-Formal run: batch03; repository exact-byte delivery copy: [batch01](../../experiments/M6_CP3_20260928/batch01/summary.json). Earlier invocations/failed1.0 results remain separate and are not replacement repeats.
+Formal run: batch03; repository exact-byte delivery copy: batch01 (complete record retained in the local evidence archive). Earlier invocations/failed1.0 results remain separate and are not replacement repeats.
 Frozen batch inventory SHA-256: `8c60adc45de79f654db9cbac9d664b39885ca6355e784c6648688fd0056aa708`;203 retained files including the index itself.
 
 ## Measured scope
@@ -17,7 +21,7 @@ One warmup and five sequential timed processes; fresh AHRS/output roots; no cach
 
 ## All scheduled results
 
-[Raw attempts](../../experiments/M6_CP3_20260928/batch01/attempts.json) retain integer counter bounds, ns, full-precision s/rates, commands, launcher/worker identity, exits, logs and audits.
+Raw attempts (complete record retained in the local evidence archive) retain integer counter bounds, ns, full-precision s/rates, commands, launcher/worker identity, exits, logs and audits.
 
 | Slot | wall_ns | wall_s | node-samples/s | Exit / correctness | Statistical use |
 |---|---:|---:|---:|---|---|
@@ -45,19 +49,19 @@ wall_s=wall_ns/1e9; rate=17208/(wall_ns/1e9), individually per attempt. Median i
 - OPENBLAS_NUM_THREADS=OMP_NUM_THREADS=MKL_NUM_THREADS=1 before each child imports; external M1 root removed. These are configured limits; live threadpool size is unavailable.
 - C: external temp storage, D: source checkout; disk model/media/free space, Python executable/hash, all installed distribution versions, raw probe command/output/exit and background process snapshots are in the environment records. NumPy build/BLAS configuration retained; live threadpool identity unavailable. The optional PyYAML formatting warning is preserved; no dependency added.
 
-[Environment before](../../experiments/M6_CP3_20260928/batch01/environment-before.json) · [environment after](../../experiments/M6_CP3_20260928/batch01/environment-after.json) · [source/input/runtime lock](../../experiments/M6_CP3_20260928/batch01/lock.json).
+Environment before (complete record retained in the local evidence archive) · environment after (complete record retained in the local evidence archive) · source/input/runtime lock (complete record retained in the local evidence archive).
 
 ## Correctness and provenance
 
 All six children exit0 and pass existing numerical/QC/support/labels/coordinate/time/count gates. Independent audit recomputes27,160 error scalars per child; each trajectory3 valid repetitions, missed=false=0, relative/recall/proxy coverage1. Each timed pair with warmup has22 canonical products, summary and inner index equal,24 other top hashes equal, and all non-whitelisted run fields equal. Original37 and sample28 files unchanged. All54 source ZIP members verified; source HEAD/tracked cleanliness and byte hashes match before/after. No code/tests edited during successful batch03.
 Original and retained copies each underwent a fresh independent full numerical/counter/checksum audit; their recomputation JSON is identical. The independent report-values check uses exact rational arithmetic and independently sorted values, comparing floating output within two ULPs solely for arithmetic rounding, not a changed scientific tolerance.
 
-[Original recompute](../../experiments/M6_CP3_20260928/original-recompute.json) · [retained recompute](../../experiments/M6_CP3_20260928/retained-recompute.json) · [independent displayed-value audit](../../experiments/M6_CP3_20260928/report-values-audit.json).
+Original recompute (complete record retained in the local evidence archive) · retained recompute (complete record retained in the local evidence archive) · independent displayed-value audit (complete record retained in the local evidence archive).
 
 ## Prior failures and limits
 
 Preflight batch01 at1e6f98b4: uv absent from Python PATH, output root/children never created, six slots NOT RUN. Protocol1.0 batch02 ataddcdd7f: all six measured, numerical products equal; five timed comparisons FAIL because --identity varied in actual sys.orig_argv. Successful statistics remain null. Original203-file failed root/copy/source/commands/times/logs remain. Its diagnosis also records a brief test-only draft edit/restoration; it is not clean-source acceptance. Protocol1.1 changes only output-derived sidecar argument plumbing and binds actual argv; original CP2 whitelist and scientific gates unchanged. This report uses only the complete separately committed protocol1.1 batch.
-[Preflight rejection](../../experiments/M6_CP3_20260928/preflight-rejection-batch01.json) · [failed batch](../../experiments/M6_CP3_20260928/failed-batch02/summary.json) · [failed diagnosis](../../experiments/M6_CP3_20260928/failed-diagnosis.json).
+Preflight rejection (complete record retained in the local evidence archive) · failed batch (complete record retained in the local evidence archive) · failed diagnosis (complete record retained in the local evidence archive).
 
 First full regression invocation used a repository-local pytest basetemp, producing868 pass/6 existing Demo guard failures. All48 CP2/CP3 tests passed with external temp, then23 final CP3 regressions passed. The final external-temp retry passed all878 tests with the actual external M1 root and zero skips. Ruff, strict package mypy33 plus runner1, docs/39 archive hashes/whitespace and pinned sdist/wheel build pass. Exact commands/exits/raw logs are retained; committed-byte proof is a separate post-delivery record. Other failed test/type/build/doc attempts are retained.
 Synthetic/humerothoracic research only, anatomical_eligible=false, sample INTERNAL ONLY pending redistribution. No anatomical/clinical/glenohumeral/scapular accuracy claim. Static gravity does not establish full heading. Hardware frozen; no acquisition. Linux NOT RUN; CP4/CP5 and overall M6 remain OPEN. The unchanged Demo retains historical CP2 limitation text; new benchmark acceptance is defined by this separate protocol/evidence/report.

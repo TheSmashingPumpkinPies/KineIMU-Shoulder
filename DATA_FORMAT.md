@@ -149,3 +149,16 @@ Nominally simultaneous rows need not represent simultaneous samples. See SYNC_PR
 Derived per-repetition/session outputs require metric definition/version, units, evidence labels
 (Observed, Derived, Assumed, Validated, Experimental), validity/exclusion reason, exercise/side,
 phase boundaries and processing provenance. Output schema is deferred until the relevant milestone.
+
+## Public data boundary
+
+Distribute only synthetic, non-identifying or explicitly approved de-identified
+records. Do not commit identifiable human video, personal information, credentials,
+machine home paths or unique physical-device identifiers. Use consistent anonymous
+IDs without encoding names/contact details. Preserve untouched originals privately,
+with original/public correspondence and SHA-256 records. Raw data and failed records
+are immutable; redaction applies to reviewed public copies and provenance metadata.
+The [sample annex](datasets/samples/m6_synthetic/LICENSE.md) and
+[additional-data grant](docs/PUBLIC_DATA_LICENSE.md) define separate bounded rights.
+Code and third-party material retain their own licenses. Human/clinical validation
+is outside V1; engineering self-tests do not establish population-level validity.

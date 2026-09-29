@@ -114,3 +114,42 @@ continuity during the intentional outage.
 
 Any limit revision after observing the characterization data is a new budget version
 and cannot be used retrospectively to pass the same run.
+
+## Clock event annotation and reproduction
+
+Concurrent USB arrival, a common start command and BLE callback timing do not
+establish sample synchronization. Use a rigid co-mounted bench pair and a repeated
+common event with an independent reference clock; movement of separately worn
+segments is not a shared-event reference. Record fixture/mounting/configuration,
+reference/localization methods, resolution/standard uncertainty, raw hashes,
+node IDs, device time, sample sequence and uninterrupted clock epochs.
+The annotation format remains
+[m1-sync-event-plan-0.1](schemas/m1-sync-event-plan-0.1.schema.json).
+
+Predeclare E01/E02 at the beginning, E03/E04 in the middle and E05/E06 at the end:
+odd IDs are fit events, even IDs held-out. They must be disjoint, cover both nodes
+and all phases. Every evaluated epoch needs at least two fit events and one held-out
+event; reset/discontinuity starts a new epoch rather than bridging it.
+Fit centered t_common_us = a_i * t_device_us + b_i; report uncentered coefficients,
+covariance, source-event IDs/windows and (a_i - 1) * 1e6 drift ppm. Pairwise
+B-minus-A offset and (a_B / a_A - 1) * 1e6 drift stay scoped to each epoch pair.
+
+For uniform resolution bins, standard uncertainty is resolution_us / sqrt(12);
+other distributions require a recorded method. Expanded uncertainty uses k = 2.
+The guard is the larger of maximum expanded uncertainty and conservative combined
+reference/localization resolution. At >=500 µs it cannot distinguish the frozen
+1.0 ms p95 / 1.5 ms maximum limits, so the result is inconclusive. With sufficient
+resolution, exceedance fails. Roughly 100 Hz nearest-sample annotation is normally
+insufficient; sub-sample localization requires independent resolution justification.
+Interpolation for event localization is explicit processed work, never a raw rewrite.
+
+```text
+python -m validation.m1_clock_mapping --event-plan path/to/sync-events.json --output path/to/clock-mapping-report.json --verify-raw
+```
+
+Raw streams are read only for hash verification. Reports retain per-node/epoch and
+pairwise held-out p50/p95/p99/max, per-event uncertainty, resolution and guard.
+The implementation records fit_time_source=device_time_us,
+host_arrival_used_for_fit=false, resampling=none and raw_data_modified=false.
+A physical pilot does not replace the uninterrupted 30-minute bench; this optional
+reference study is not a reason to reopen frozen hardware.

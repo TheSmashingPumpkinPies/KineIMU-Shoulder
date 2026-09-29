@@ -1,198 +1,207 @@
 {
   "schema": "kineimu-public-verification/1.0",
+  "status": "PASS",
   "date": "2026-09-29",
-  "result": "Final audited public copies PASS locally; transfer OPEN",
-  "scientific_execution_head": "7dd991878b5e8b40d6fab12cb3a58a37155c9b6a",
-  "scientific_execution_identity": "Independent local reviewed-copy checkpoint, not a claimed published Git commit",
-  "platform": "Windows",
-  "python": "3.12.14",
-  "uv": "0.12.5",
-  "independent_clone_no_hardlinks": true,
-  "independent_venv": true,
-  "pythonpath": "UNSET",
-  "external_m1_root": "UNSET",
-  "tests": {
-    "passed": 883,
+  "regression": {
+    "source_commit": "465abc30136f35727d56e4efdd806c5eac7c8e06",
+    "collected": 730,
+    "modules": 49,
+    "passed": 728,
     "skipped": 2,
-    "skip_reason": "Expected omitted external M1 capture roots",
-    "pytest_seconds": 674.99
+    "failed": 0,
+    "skip_reason": "Optional external M1 physical recordings unavailable"
   },
   "demo": {
-    "processes": 2,
-    "trajectories_per_run": 4,
-    "files_per_run": 26,
-    "independently_recomputed_error_scalars_per_run": 27160,
+    "independent_runs": 2,
+    "numeric_error_scalars_per_run": 27160,
     "equal_canonical_products": 22,
-    "equal_summary": true,
-    "audit_sha256": "723bfeb0d5018942de4fcb3aa8e70cb105e349be61d07a2b80bfe7a9168be618"
-  },
-  "static": {
-    "ruff": "PASS",
-    "strict_mypy_package_source_files": 33,
-    "strict_mypy_benchmark_source_files": 1,
-    "executed_docs": {
-      "markdown_files": 194,
-      "immutable_members": 1089,
-      "errors": 0
-    }
-  },
-  "benchmark": {
-    "result": "PASS reviewed-copy six-slot numerical audits and original statistics",
-    "runtime_source_members": 54,
-    "new_performance_measurements": false,
-    "method": "PUBLIC_BENCHMARK.md"
+    "equal_summary": true
   },
   "packages": {
-    "result": "PASS",
-    "source_members": 34,
-    "notice_files": 57,
-    "independent_environments": 2,
-    "isolated_python": true,
-    "artifacts": [
-      {
-        "name": "kineimu_shoulder-0.1.0-py3-none-any.whl",
-        "bytes": 293040,
-        "sha256": "13b9e39fef587783d74bb3be7954b779781da016745bad882af8096bdbb953fb"
-      },
-      {
-        "name": "kineimu_shoulder-0.1.0.tar.gz",
-        "bytes": 221311,
-        "sha256": "3c5c79be7c3a5036b61e54e4bb432d0155bc7d3beb8a0dd71605cca4c8c70454"
-      }
-    ],
-    "checker_sha256": "7d062d954ed15ba746ec8e68ec6c308ab3d43da9905b5ef30849aa5431555c8a",
-    "checker_adaptation": "Only expected GitHub destination casing/URL changed; all original numerical/missing-evidence/import-isolation/metadata/installed-notice assertions retained"
+    "wheel": "PASS",
+    "sdist": "PASS",
+    "isolated_numerical_api_installs": 2,
+    "source_members": 33,
+    "third_party_notice_texts": 57
   },
-  "preserved_preparation_attempts": [
-    {
-      "operation": "First final full pytest",
-      "result": "882passed/2expectedskips/1Windows temporary-directory rename denied",
-      "code_or_assertion_relaxed": false,
-      "resolution": "New shorter unused temporary directory; full unchanged suite passed"
-    },
-    {
-      "operation": "First final package archive audit",
-      "result": "README CRLF versus standard metadata LF mismatch",
-      "resolution": "Only public README newline normalization; new build and original archive/install assertions passed"
-    }
-  ],
-  "publication_reports_and_index": "Closing documentation/index differ from execution checkpoint; every production/test/example/reference input is byte-identical, final docs/integrity repeated separately",
-  "linux_execution": "NOT RUN; remote CI pending",
-  "transfer": "OPEN",
-  "command_records": [
-    {
-      "name": "final-pytest-02",
-      "exit_code": 0,
-      "seconds": 675.75,
-      "log_sha256": "9cb5504750264c986c9f8f31d9f5f32897e88da24b2dd54222e642dbffcefc60"
-    },
-    {
-      "name": "final-ruff",
-      "exit_code": 0,
-      "seconds": 0.234,
-      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
-    },
-    {
-      "name": "final-mypy",
-      "exit_code": 0,
-      "seconds": 8.812,
-      "log_sha256": "0d42646ff848fddea83e113f5e72c066dc050fc901c93d17176142ab98c966e9"
-    },
-    {
-      "name": "final-benchmark-mypy",
-      "exit_code": 0,
-      "seconds": 1.172,
-      "log_sha256": "8e63ae22e8213e327a5e9cbd584067681681bd8ef7f25c869877887ccdcfc4ff"
-    },
-    {
-      "name": "final-docs",
-      "exit_code": 0,
-      "seconds": 4.563,
-      "log_sha256": "09088931d2b66a5c631d5ee1b3bfd2f2e500853a0ce9a75000e8990f4ab4c283"
-    },
-    {
-      "name": "final-whitespace",
-      "exit_code": 0,
-      "seconds": 0.078,
-      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "final-demo-01",
-      "exit_code": 0,
-      "seconds": 95.937,
-      "log_sha256": "9506e42607e443b1acc3c349b5c0390915f8092a72d320eb6b2d0b2c725d4633"
-    },
-    {
-      "name": "final-demo-02",
-      "exit_code": 0,
-      "seconds": 95.078,
-      "log_sha256": "ace1dc7e8feb25849620e235b020c18f217997fcd147bd63ea0c1adb8ef2a781"
-    },
-    {
-      "name": "final-demo-audit",
-      "exit_code": 0,
-      "seconds": 4.844,
-      "log_sha256": "c1619c186de2a2236fe1bf0a0dce7b9a78a700dfa463d98642dbe2c72211303e"
-    },
-    {
-      "name": "audited-build",
-      "exit_code": 0,
-      "seconds": 5.5,
-      "log_sha256": "eeceeff7d4a13da184b58023ad8cadacd6a0684fe66dc0b3a9d6b5aadbabe01f"
-    },
-    {
-      "name": "audited-package-archive",
-      "exit_code": 0,
-      "seconds": 0.422,
-      "log_sha256": "70391137ae33fb338c727ecd284ef19d2300ae47f9424aedef2a16d3fea3ed16"
-    },
-    {
-      "name": "wheel-venv",
-      "exit_code": 0,
-      "seconds": 0.078,
-      "log_sha256": "3627f9a8dcb06b8f7ed484d36db36534d7218d5ce73d15129d26dac18f2e8eb0"
-    },
-    {
-      "name": "wheel-dependencies",
-      "exit_code": 0,
-      "seconds": 9.609,
-      "log_sha256": "8aa824b5b95e3872996b00aae09f71a990f423ab93d2c79226fc4db6c665488e"
-    },
-    {
-      "name": "wheel-install",
-      "exit_code": 0,
-      "seconds": 1.125,
-      "log_sha256": "a49854bfc1f4fa3a188c4487d9c6115c16fa314371ff53d3b7eae1e030ed36b8"
-    },
-    {
-      "name": "wheel-isolated-api",
-      "exit_code": 0,
-      "seconds": 7.156,
-      "log_sha256": "5858b589ec379473a58ac38086d58bdf7ede60c28b6c112540e79b9aad7a5080"
-    },
-    {
-      "name": "sdist-venv",
-      "exit_code": 0,
-      "seconds": 0.078,
-      "log_sha256": "3409a789ad1eb7b87a04fbc23f6f81f9f4de426b3df10ffacc78810c1150446c"
-    },
-    {
-      "name": "sdist-dependencies",
-      "exit_code": 0,
-      "seconds": 8.235,
-      "log_sha256": "80091409e338dff986f85acb139aa989308bc0365aa3c7499735cc99fa1dae5c"
-    },
-    {
-      "name": "sdist-install",
-      "exit_code": 0,
-      "seconds": 4.359,
-      "log_sha256": "5bc530f37d5ff44eddebd99f32c07759215aa4f5c1579e2e72d6958d88f214fc"
-    },
-    {
-      "name": "sdist-isolated-api",
-      "exit_code": 0,
-      "seconds": 7.656,
-      "log_sha256": "1f39253e46df9bb91cae342a9400c57ed84747716cd76cd9efc2315824beb342"
-    }
-  ]
+  "benchmark": {
+    "current_protocol": "m6-demo-benchmark/1.2",
+    "collection": "PASS",
+    "complete_recomputation": "PASS",
+    "historical_protocol_1_1_results_unchanged": true,
+    "note": "Final documentation consolidation changes descriptive source hashes; collect a fresh batch at the revision used"
+  },
+  "preservation": {
+    "originals_kept_privately": 1438,
+    "original_cc0_inputs_unchanged": 25,
+    "ancillary_navigation_only_changes": 1,
+    "production_numerical_ast_unchanged": true
+  },
+  "privacy": {
+    "inspected_members": 422,
+    "prohibited_findings": 0,
+    "licensed_upstream_contact_occurrences": 37,
+    "unreviewed_contacts": 0
+  },
+  "runtime_file_sha256": {
+    "benchmarks/demo/run_benchmark.py": "816b4809e4e6a813594cdf702f67ff3df3661a2db4cbc2f22776ca9f46ed869d",
+    "benchmarks/demo/worker.py": "39941336c182848fa74abc5ca713ef2e54a3a974d4daa34526efb398e33c3a2c",
+    "datasets/samples/m6_synthetic/.gitattributes": "93aeb3496e53a3e6e12214ac864b3de0c7ae903cc5d9c7bf0bcfc1f0809228c9",
+    "datasets/samples/m6_synthetic/AL90/A-si.json": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd",
+    "datasets/samples/m6_synthetic/AL90/A.kimu": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487",
+    "datasets/samples/m6_synthetic/AL90/B-si.json": "aad1e89ca579dc574c7927e687d5ba99e0b2245f2fe22989ee658d11265120e0",
+    "datasets/samples/m6_synthetic/AL90/B.kimu": "ec5e32d084468464ba74801c7aa63a478ff42176f7b6be2030cc0cb894e2203b",
+    "datasets/samples/m6_synthetic/AL90/metadata.json": "a28560b20526595da782d14de8234153cca7fd0eb4794539e0e9f8410285a964",
+    "datasets/samples/m6_synthetic/AR90/A-si.json": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd",
+    "datasets/samples/m6_synthetic/AR90/A.kimu": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487",
+    "datasets/samples/m6_synthetic/AR90/B-si.json": "16d1b1bfa3c0275949baf48b759739b0539488568de60217908cb824d9009561",
+    "datasets/samples/m6_synthetic/AR90/B.kimu": "de64431c62f58609ee807e3c655acc57caa957c32e2bb25039c3233483f64f3a",
+    "datasets/samples/m6_synthetic/AR90/metadata.json": "11dce28f3fa52913f4d1f906b83054b0cde569a6e5e40350fc183739cb764142",
+    "datasets/samples/m6_synthetic/F90/A-si.json": "338b33d2df48a720d53ed34d0cd55e51416e8e08fb94917f03d26d83853a2fbd",
+    "datasets/samples/m6_synthetic/F90/A.kimu": "e5bf18d8ffd43257c0e745223da5c5506205c5658763f324bccae9241371d487",
+    "datasets/samples/m6_synthetic/F90/B-si.json": "8d6a956bc3dbb51e0c25cae5b60e2d78ed8f0e9e3beade4da766bd713db9e916",
+    "datasets/samples/m6_synthetic/F90/B.kimu": "d07f099f4171a6a4c316e37c30c63731da98ac5733e59a172f16b471a6b1977b",
+    "datasets/samples/m6_synthetic/F90/metadata.json": "350cfadd4ea809d2ec8f4930cbe05aed56ed2bc735bba4749f60bc75ceebcc9f",
+    "datasets/samples/m6_synthetic/LICENSE.md": "d187cc4d9f2519f2717e755c5d6095de5834880686829325f7e326039cc9883b",
+    "datasets/samples/m6_synthetic/README.md": "faf5bfb725f19adb309bdc3818b22c8ae4d254560e0fba9f4d64c1b162315080",
+    "datasets/samples/m6_synthetic/SHA256SUMS.json": "2aa180e32003f91e57accf1d53c5b4b914e0c9e9c0ab4cdb22db02a3ab0964f9",
+    "datasets/samples/m6_synthetic/T-MIX/A-si.json": "8c4c60a7b191891e90e4e874b2e25260d6dc85bbf87f6a4e5e89797806957ac0",
+    "datasets/samples/m6_synthetic/T-MIX/A.kimu": "848ff4efcc35bfe66a98f09eb0208a49b2eaeb644f9c0a8144c0231ea2aa7ac3",
+    "datasets/samples/m6_synthetic/T-MIX/B-si.json": "9e02955eff0085aa533b09545d69e63222bb9d2287094acf21b0d2d29ecdb0a8",
+    "datasets/samples/m6_synthetic/T-MIX/B.kimu": "4f759b2b564cf2930dbee8c636af7937df8377541a4fd7901e7568107af02999",
+    "datasets/samples/m6_synthetic/T-MIX/metadata.json": "71a8bcbe9e7cebd4c299a5319e56e5b1a1bbe60c6a10c46648058fc0ac8a9649",
+    "datasets/samples/m6_synthetic/annotations.json": "8b4211a5d4bdef93dcf4f970f44d99a57b7110d58665155c4d3dac65c111df9d",
+    "datasets/samples/m6_synthetic/case-manifest.json": "5bab237edd4386c630fa25ddae4fa774d41e4d51cf2493f2d3f23b458234edee",
+    "datasets/samples/m6_synthetic/manifest.json": "257499bcc53a1fb94f10b956159fd1030f30611272504fb9ed4a2bd97273cbfb",
+    "datasets/samples/m6_synthetic/observation-labels.json": "f8c34af7377c975c1b69423461798ca6ece798596243efd2656e295a8135e452",
+    "datasets/samples/m6_synthetic/provenance.json": "f6dfad6fac2ceba1530fe7e4cd392dfbb9ebb8d7e25a88631298ac2a8c4fc887",
+    "examples/m2_offline_replay.py": "13eaa6955bd43ac1a40099890bbea5c4138f57f8f30264e988fca6bcc2c4d9a7",
+    "examples/m3_dual_synthetic.py": "01d7358a6746a669ead4a941416ec8080f3bebe5dfc94377a8578a42f02b5c86",
+    "examples/m4_dual_synthetic.py": "c6689739d561c4be48d4aa91037f34aff5c5648f13a794fdc384409cadcae317",
+    "examples/m5_baseline.py": "6e36222915b9979801234f94efe5d91f1c1894690ea16da488f830c275b6afe5",
+    "examples/m5_perturbation.py": "6852837015c27f89eac708803652c6abd42a3a5152c07800bf469eada91979c0",
+    "examples/m5_sensor_source.py": "c8d7107d186c25843b66c5db9c0f4c2d73ab936377f247ece2f62f9a4fad3cee",
+    "examples/m6_demo.py": "97d656795389eb3d9f5db99fceb4329e1801769d5707671498fa9d10d4470bb0",
+    "kineimu_shoulder/__init__.py": "54101172ee18c1cff6aee8c64e175dc9d3650e41a2a042929d42d8b7641a5b37",
+    "kineimu_shoulder/calibration/__init__.py": "1e7013dc31d3f22f365f78c1d33b921767d847117d480186204f34d02583b2fc",
+    "kineimu_shoulder/exercise.py": "4dec6e86da259f85a7635d51f4cd1681aebf1d36df8b0ce77d388c55880471df",
+    "kineimu_shoulder/frames/__init__.py": "4ba23edfdc2fa301518594d94a7b69b3f9d75fa5837649a7105f00193ea0f543",
+    "kineimu_shoulder/io/__init__.py": "85d576de1fccf81d337c5982c891b15fee6d2e06991acd51996684aaec636363",
+    "kineimu_shoulder/io/m1_ble.py": "d3ed7a2227f659d9281f42b9302d94d310bea9992659f170724bfcf747c78e14",
+    "kineimu_shoulder/io/m1_capture.py": "8e9a5dfbafdb59f0f8463a5bd200efba98800f43705d62eaf1f7c43fdbccded5",
+    "kineimu_shoulder/io/m1_control.py": "00b7aabc16153fc4c16fa8e229ebb580500c0e98a9e2c34ddc56bef1dcde5e26",
+    "kineimu_shoulder/io/m1_packet.py": "91a7cd4bc53db67fbe2d83663e162b7729f1b3a6d322c7106f51e38720fe8a74",
+    "kineimu_shoulder/io/m1_qc.py": "8093d8b473e21989483f38b5c5f47a89fd852d54024b9fc432abe2b64dba67ce",
+    "kineimu_shoulder/io/m1_raw.py": "24b57ebe32e7953420e0b2c1a583e77566ec969b3e2a829ada37a19a49a04e2f",
+    "kineimu_shoulder/io/m1_usb.py": "c086d1e7af67288d28c8cbbf36b278b387064216f73adce43a08f1c7591fad19",
+    "kineimu_shoulder/io/m2_replay.py": "289113f0ede0eb2e57f07ce02d118fcdbcf7d17d817b8d7def03a1d63b133693",
+    "kineimu_shoulder/orientation/__init__.py": "e386a40bcf477233d86255bd6b3a71c09227e102ec360305fc094034991c92ec",
+    "kineimu_shoulder/reconstruction.py": "e70352d647715e3d15ca6ddfad763e7b795ea30d0a3bf68a4f649088913c114d",
+    "kineimu_shoulder/relative_orientation.py": "06952745c1cf2819aab5567f26e9dcd23e47cce38f4b494eb893069acbcb3097",
+    "kineimu_shoulder/shoulder/__init__.py": "2ad62cf9680434b9a35588ef7e6301f86127bdcb3fbfd2e1932c0a2d9e5c242b",
+    "kineimu_shoulder/summary.py": "5f72396acdcd02979deabcf289639dc1cef3efcff316c07d55f49cf70b6ae90a",
+    "kineimu_shoulder/thorax.py": "c5ab47d81b7edf5a7000b24569b019b8e2f7162f89627127a39f0fd83a52d83c",
+    "kineimu_shoulder/validation/__init__.py": "54165f33131d9018845e617a38540db863e73f738d13921565bf6babd611e978",
+    "kineimu_shoulder/validation/baseline.py": "dde260dd29de6cd94078e3050f7eebea27ff521a3961678c1db2446c4802d039",
+    "kineimu_shoulder/validation/demo.py": "32bf7f1587c7f2c448196659becd8a75e2e2a8c0f7a50c56e1a30853bd8f024d",
+    "kineimu_shoulder/validation/manifest.py": "49ef995d6437907d589efcb2b8708d761696c6d9a6c1ce9edec2e7a331a1f543",
+    "kineimu_shoulder/validation/motions.py": "0fbbb062250c39f8bce2682be068ef6d7d928bfaf124ca1ecc81c60b85ecfdbd",
+    "kineimu_shoulder/validation/oracle.py": "1c041a20ec7d7afc4a5bf14a6d6c5849077d84010c7b53a2e19b8e0f0253fb29",
+    "kineimu_shoulder/validation/perturbation.py": "de7eefc4d38e4b3158cf7f4caeb2479b1afb041913257b62d567813b1683efd6",
+    "kineimu_shoulder/validation/recorded_dual.py": "492bef0e037cd8d292d68644f7d749e389b234daf8c1b90cc8d6cf7594d80fa4",
+    "kineimu_shoulder/validation/recorded_node.py": "5c90a65d36d2f22a8bef643b149c635670e8e9f3839fbe3ebf6ba95ccb51c77c",
+    "kineimu_shoulder/validation/recorded_segments.py": "07467ce9f1ead925041b99a931e8468fb787c09bd127c830e63a80b70f940755",
+    "kineimu_shoulder/validation/replay.py": "cb870e8cd5d46d75990527cebdc6f16250d1ba655b079edad0af727bde850ef3",
+    "kineimu_shoulder/validation/source.py": "fa6c9961da7ee13477c0c153eea36d322bda3437bfb1231b240797cf6fe5f55d",
+    "kineimu_shoulder/validation/stored_demo.py": "3b3fa8a15b7f82e093eec979057cc3e0cae9ff8d89bc423d4c6d1e4df6cb643a",
+    "protocols/M1_ACQUISITION_CONTRACT.md": "3829c351a1304eb597c86b7f6b98a3732e961970212f16d40363427ee72bc4e1",
+    "protocols/M1_TIMING_BUDGET.md": "c5622e69da9a29bebf15ed0bcb293ee7dd47ebd00c513110b585b80441ae4aa0",
+    "protocols/M2_PROCESSING_CONTRACT.md": "521f7cdf1b1138b896ed71ad0f458bf8ac5aad4bee36ea6b690d57e55f5b04b5",
+    "protocols/M3_KINEMATICS_CONTRACT.md": "8625f1608b7dc4de6cad2a5dc869e2d9ad384d9d7bd32079028a7c39b05c4edd",
+    "protocols/M4_EXERCISE_CONTRACT.md": "9b9cb01245451557e31515110502d48d05877fb5d666affdc603b1ebcc42587f",
+    "protocols/M5_PROCESSING_V1_1.md": "ccf770f7b38468254045315969c494ce22d4ec72f19428619f1f85c924147ee0",
+    "protocols/M5_RECORDED_SEGMENTS_V1.md": "82bafe74275a8fb70a8982ffb5790e35b75cbf91d3c1af0a4336e667ec428b6c",
+    "protocols/M5_VALIDATION_CONTRACT.md": "2b32c81e123cafecb4351a023ca279e59eb0e8881c51e235e618aa1d4f409d0d",
+    "protocols/examples/m1-session-manifest-0.1.example.json": "f54b3d0b20f06fd30a418b3bb2c02a025470c4c54874380c7556a53dc9d095d4",
+    "protocols/schemas/m1-session-manifest-0.1.schema.json": "1fecf0d5238ed319e105b33ffed53f78d26d992762bc406002b6158e614ec884",
+    "protocols/schemas/m1-sync-event-plan-0.1.schema.json": "b3ab6f2e4adc01ae4bf5f8860f705910de27ed3690bfbb95e9bb22f345e29664",
+    "pyproject.toml": "9c21deb8907e7e2fb97dbd8bf9e37cd7b645b25a341f817f0fe8aa14cbf23af1",
+    "scripts/capture_m1_ble.py": "97fa0eff3ea02ca1e0ced224fd2f23ee8e3e589e35828aa291c6098ef6bf849a",
+    "scripts/capture_m1_usb.py": "09ad9a9c971893f82e0b49cb22e2af88c9db6aece4d1e9298bd58772cd5ca51a",
+    "scripts/check_docs_consistency.py": "7241f092fed3659fd50a3a22628f5f66dec48b86b87683c5fe944c1eeb6998d1",
+    "tests/contracts/test_m1_bench_summary.py": "2a742b018fc97ee446e7642009d44a91824df327bbc61a9dfefac48de08755f3",
+    "tests/contracts/test_m1_ble_physical_gates.py": "32a1122d49e88b32f0cb7267b7c6d7885cff6005a5ba80e0d46a1e0c188e4f3f",
+    "tests/contracts/test_m1_ble_recorder.py": "6a403218122d5dedce118a4df90d010c8a1fd4d7d938243ebcea658c042edce7",
+    "tests/contracts/test_m1_ble_recovery.py": "3d7a950e756bab5b40d5dc63518693822ef25a1bc105fd3b1b99c4ac5bbe0655",
+    "tests/contracts/test_m1_capture.py": "bab39ad500daa43e28e2b41efe1c38c14314f9096fdc5d3bdb777c1f11369a89",
+    "tests/contracts/test_m1_control.py": "bc1de9e68550ab00deb2e656bace92736b3ed0fd3925bbab5a7622f2be6123b1",
+    "tests/contracts/test_m1_packet.py": "679c65e678b99ae867fc925f67da7bf27dcc2313a8f36ae0da99301260194d60",
+    "tests/contracts/test_m1_sequence_qc.py": "9caee07cc3c39bc2e3cc02dd972c5abc603e1a7ea5ec26c011baf6bf40e893c6",
+    "tests/contracts/test_m1_usb.py": "16858cf38716f25018e26cf57d5ed8a5c0ebad92cc5e5bac828ab46134f37a46",
+    "tests/contracts/test_m1_usb_dual_bench.py": "0362883bda2265dccbd25702c545763479ec6275502f4869c670d01cb0317372",
+    "tests/fixtures/M3_KNOWN_MOTION.md": "e51350fcab7402317e4ddf6c303b3fde238e195a75c0a8fac1cc005a73be48f9",
+    "tests/fixtures/M4_KNOWN_EXERCISES.md": "7ecccadea01033101ea4245f8328e849cfa0aade0c59d7798ce0995322bcc4f9",
+    "tests/fixtures/M5_KNOWN_SENSOR_MOTIONS.md": "1cd431c694f09ddf5e62b31353bde39939481f5a5bca417acb9049c3c86636fe",
+    "tests/fixtures/acquisition/clock-events.json": "fc688afaaa0f5d5d81070a8d62dcc5da6628704af80abf9ad576c069731a800d",
+    "tests/fixtures/acquisition/clock-result.json": "fd29f27c478fbd315667cd9e54559df8de71f5df8e1be0e111af79d6d8da39f5",
+    "tests/fixtures/acquisition/node-config.json": "dfd6d59ed5df05e3b925fa49e6ef13588f9f6d04d677abb160ff9dc4c245532a",
+    "tests/fixtures/demo/input-inventory.json": "6ba73faaf2a04d0883e4ccaab6960f076715d92cc31bc6892897fd5057aaa5f7",
+    "tests/integration/test_dependency_smoke.py": "63da80d48280ac054f5f98cdf8710187f6b9b758817dcb5d87a5815a005f2ab9",
+    "tests/integration/test_docs_consistency.py": "d51532ee64655ffe4dd3bf37c540c9772db77c9c8d19cb34678f687bfbf73ece",
+    "tests/integration/test_m1_clock_mapping_synthetic.py": "e424ccce0216f81829d8785d9266affa5482f0753385eac298350be964bb8cf4",
+    "tests/integration/test_m1_single_node_smoke.py": "d3f3714154df2304df6207c608ddcf5e7c5e92f04508442111625baa29f19de0",
+    "tests/integration/test_m2_offline_example.py": "dbd5c2b22d37d518c4846d856722a5a66a4f8edc14eb86edf7a8bbbfde121e37",
+    "tests/integration/test_m2_replay_m1_bench.py": "a028a4d61ee2eedcb74c8369cd74c457104b8a329eb82fbbf36089a22ee73ad7",
+    "tests/integration/test_m2_replay_recorded.py": "94f85614b2c77c291832e3680dafad4cc054bf3f33a2766554a4570a064689da",
+    "tests/integration/test_m3_synthetic_pipeline.py": "f8eab1aabdb7fa0b21aa0aad395794c795ed73eeba37ff30aa486151ea67de30",
+    "tests/integration/test_m4_synthetic_pipeline.py": "2f475d645f15d921fe2ad9ee7a69a48dd9a084b34d3afd49220b8a1fad0bbc8a",
+    "tests/integration/test_m5_baseline.py": "64e53379aa9710512e942e44a77dd5a356936abdb52e4acdc1137c4af3d5aa66",
+    "tests/integration/test_m5_perturbation.py": "f33b3732a0b505e467e23dadc4cd93cab8b2d96f3c32abddfa72669189608c29",
+    "tests/integration/test_m5_recorded_dual.py": "11a5fad4736069f77484224ba5d4fb0846efc841ff7e98feea004988143ab6c8",
+    "tests/integration/test_m5_recorded_node.py": "b086d6662125448f9f0298c2f8676c9b54b8b9e639efb630b1f2409406c676f7",
+    "tests/integration/test_m5_recorded_segments.py": "4441abd3e06bb0e04101fada1652fb5da3a062215e30408d58bc23a1c11f324d",
+    "tests/integration/test_m5_replay_entry.py": "95cc6558df73eda1396665ca5dda49f6c4f6a0cf9b77c1fcf9445f966030c72f",
+    "tests/integration/test_m5_source_export.py": "126d4f48b0f9603764af101c1cb217289847e139261801135691af9363911978",
+    "tests/integration/test_m5_stored_demo.py": "e7514abdac3b294e3d8c9ccb95b9e38f0e4bd0f0a95fe0a1eff2769d35d0f72c",
+    "tests/integration/test_m6_benchmark.py": "08a7a2fd4fe71499cf9e469c085f6b6e3dd7068eaf32892f69a09deba024c0b9",
+    "tests/integration/test_m6_demo.py": "7955238ea36dcc7097fdec4df60847cb96ae0656b059d9b6aaa9ceb99ffc82be",
+    "tests/integration/test_m6_sample.py": "3e131b00c32bc35ba951991e800949d937c2185084f80d78850ab0f3bc5e92f4",
+    "tests/integration/test_public_docs.py": "b4315b6346a4f25f016e4fa2795e1ceeb852525bb4a587e807a1d80deafdef0b",
+    "tests/integration/test_release_layout.py": "9406ff06fcb28eefa648ded7767d8114a49592b33afe80f35489c6d8eef485bd",
+    "tests/unit/test_m1_clock_mapping.py": "9ee479ecf7957e9ff92118891355d75c196993d510da6b2b5ae4a05946ad4b67",
+    "tests/unit/test_m1_raw_adapter.py": "7f6171b2b9bf5cbb5b9388ced55e5e4b35e564d3d30ca0fa57c19a5c51acd390",
+    "tests/unit/test_m2_calibration.py": "ca7d21927002ef8113221ac7cfb7e8a0c7dffeff21988e3d7bed54a813c7cf9d",
+    "tests/unit/test_m2_frames.py": "bf6901b5bb616ab27dafbcdf2c245c4c7a242e31a7b6c174702e87c562812388",
+    "tests/unit/test_m2_orientation.py": "7ca83d3a9bf3fc22829afaa69277129ef269fbd1f675801bd060b38d433b346f",
+    "tests/unit/test_m2_relative_orientation.py": "1b2fbfccd331e3461e94954cc55300c67653d6387a7e146e983da4113a4dfc13",
+    "tests/unit/test_m2_replay.py": "78743bfe640b102c2ef38f4db679aea705e97d4ebf5433ca82b1d11fb45b4247",
+    "tests/unit/test_m3_angular_speed.py": "0634f304354ebb00dbd54337db5b2fe8e9e286509960e6ca3c35c564fccf556f",
+    "tests/unit/test_m3_elevation.py": "75ca9f1b0b1c7dadd3698eb8baab178d858b9ffbcb19b6bf5ace192aad825078",
+    "tests/unit/test_m3_interval_rom.py": "592ce683cd2d9747a13da598c5139d72fab849be42255ab4fa222a314d59c6e9",
+    "tests/unit/test_m4_metrics.py": "71b6dd4d21a064be4ab5945fcc3c607c194acf977e1c484af274f486d5413e99",
+    "tests/unit/test_m4_segmentation.py": "5bd72534b0018dd7ebc5aaf5246c2d242e9ca1d599f2a43bad7b73a72c6a3995",
+    "tests/unit/test_m4_summary.py": "ca3df1bb19deff20e718a55abf612bb36e1d37e6793223456abbc97823b0f5b8",
+    "tests/unit/test_m4_thorax.py": "0bd8fc61c58448392970c184fb31d3359c5f457b5f33f7779f8eca14341bdaa1",
+    "tests/unit/test_m5_manifest.py": "e362a7178f6d08f0cef7ab6f3ead9dd9f77d35b53ab8e7ed2426595555048f9e",
+    "tests/unit/test_m5_source.py": "37ef27845fbcbe99a8812b4ff0e291cd3dedbddfeb59fc6c3e315d197f99265f",
+    "tests/unit/test_reconstruction.py": "67df7c73e6b19e6831f4f03220a0b2ed67acc0dab8b27b3ce18fef59744dbf53",
+    "uv.lock": "ff2893aaa21f7ec97dfe487ca4c0e80af18d45e1293e47e28cd696feaf8d7c3e",
+    "validation/__init__.py": "384137ab2669d84af50f4a69278a9292d76f9d55d5b6205f4523878757dbd5fd",
+    "validation/acquisition_ble.py": "6402aa7aafb7f2738494ea0ef96588d223591985948401a62e77094447c9df39",
+    "validation/acquisition_gates.py": "957528ec8e96e8c7577cc0903f98bd4726054ff59ebdf139800a34a9f91c0f32",
+    "validation/acquisition_summary.py": "98938fc0dd0f6a36944e6b9ee09cc8ff40598039df67f26c0c65eac6a7f92fa8",
+    "validation/auditors/demo.py": "a2886b57a13e887898ae7f6239d71639631242e342e8918eaf6a8dc6df27b591",
+    "validation/auditors/recorded_dual.py": "94ab13e645d635e3a938c0b97162c4da16c51e53a44174df49a29eb61b9a9aa5",
+    "validation/auditors/recorded_node.py": "95fe5594d9bc1c8e2de1eb7544910e911a18fb44e989a431e0bcf5a453792ee5",
+    "validation/auditors/recorded_segments.py": "d87d8c3082d6e5a79990f3e3ea152d56afb09e0a2832bf867ceef94d070f57b4",
+    "validation/auditors/stored.py": "949685dbe30f58edb6265e7285ec10337f71ee8463bac05ccd069754d42c6a7b",
+    "validation/auditors/synthetic.py": "ef0ef9519598d576aa1cfe60cee1569798406b8bf044a1dfe3412662a0caef71",
+    "validation/dual_usb_bench.py": "1bd9d74a7e2de5b836d2209889c482595588f00c6605b511fbcc6f1b9aaee441",
+    "validation/m1_clock_mapping.py": "dd1322aae17363425e8b9f7a83401061d5949dc53c1c899abc805844a0374772",
+    "validation/m1_single_node_smoke.py": "daee5a3bcd38966447322c38fc74434b46719f435d03aa41b8f8f2efabb16dd2",
+    "validation/transport_audit.py": "d93dd5ee0b09618dd97914d42268bac6f7a796282e35a8fca0e9e53ee6654c6b",
+    "validation/transport_experiment.py": "3325be0d68fb020fc05c2b6df9656b5ff728edb0dddf2d419426fd5f79296ef0"
+  },
+  "linux_execution": "NOT RUN",
+  "remote_push_performed": false
 }

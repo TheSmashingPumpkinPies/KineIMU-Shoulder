@@ -21,8 +21,10 @@ def test_independent_frame_audit_of_retained_complete_demo(tmp_path):
     module = runner()
     # Actual retained observations remain in sensor axes until apply_calibration;
     # the independent audit must compare R_NS against calibrated node SI.
-    process = subprocess.run([sys.executable, str(module.ROOT / "experiments/M5_CP4_STAGE_B_20260927/audit.py"),
-                              "experiments/M5_CP4_STAGE_B_DEMO_20260927", str(tmp_path / "audit.json")],
+    output = tmp_path / "stored"
+    assert module.export_stored(output) == 0
+    process = subprocess.run([sys.executable, str(module.ROOT / "validation/auditors/stored.py"),
+                              str(output), str(tmp_path / "audit.json")],
                              cwd=module.ROOT, capture_output=True, text=True)
     assert process.returncode == 0, process.stdout + process.stderr
 
@@ -93,7 +95,7 @@ def test_export_keeps_cp4_open_and_binds_all_products(tmp_path):
     assert manifest["processing_version"] == "m5-processing/1.1"
     # Existing independent CP3 auditor recomputes O/F/T matrices, geodesics,
     # arithmetic, retention and full support, without invoking the pipeline.
-    spec = importlib.util.spec_from_file_location("cp3_audit", module.ROOT / "experiments/M5_CP3_20260926/audit.py")
+    spec = importlib.util.spec_from_file_location("cp3_audit", module.ROOT / "validation/auditors/synthetic.py")
     audit = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(audit)
     for trajectory in ("F90", "AL90", "AR90", "T-MIX"):

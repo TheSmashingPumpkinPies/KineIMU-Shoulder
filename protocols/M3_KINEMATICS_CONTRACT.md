@@ -158,5 +158,5 @@ comparison tolerance is `1e-10 rad` absolute; CP2 speed is `1e-10 rad/s`
 absolute and elapsed duration is `1e-12 s` absolute. These are floating-point
 algorithm checks, not physical sensor accuracy. Invalid cases require exact
 validity/reason behavior instead of a numeric tolerance. CP0 review checks
-this contract against M2.4, `01_PROJECT_SPEC.md`, `DATA_FORMAT.md` and
+this contract against M2.4, `docs/METRICS.md`, `DATA_FORMAT.md` and
 `ACCEPTANCE_CRITERIA.md` before any CP1 implementation.

@@ -2,5 +2,5 @@
 * -text whitespace=cr-at-eol
 # Exact upstream/archival text can contain original trailing spaces; never normalize it.
 docs/release/licenses/** -whitespace
-experiments/** -whitespace
+benchmarks/demo/reference/** -whitespace
 firmware/**/LICENSE*.txt -whitespace

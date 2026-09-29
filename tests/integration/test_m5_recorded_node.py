@@ -204,7 +204,7 @@ def test_cli_runs_complete_node_b_without_accepting_cp4(tmp_path):
 
 
 def auditor():
-    path = Path(__file__).resolve().parents[2] / "experiments/M5_CP4_STAGE_C_20260927/audit.py"
+    path = Path(__file__).resolve().parents[2] / "validation/auditors/recorded_node.py"
     assert path.exists(), "independent stage C raw/product auditor is missing"
     spec = importlib.util.spec_from_file_location("cp4_stage_c_audit", path)
     module = importlib.util.module_from_spec(spec)

@@ -52,4 +52,4 @@ Thumbs.db
 
 # Original ZIP stays on disk; extracted sources have a checksum manifest
 /KineIMU_Project_Pack.zip
-/experiments/M5_CP3_UNBLOCK_20260927/formal*/run*/operational/
+/demo-output-*/

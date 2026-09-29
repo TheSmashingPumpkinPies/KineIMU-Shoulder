@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from experiments.m1_transport_audit import _parse_cdc
+from validation.transport_audit import _parse_cdc
 
 FIRMWARE_SERVICE = Path(
     "firmware/xiao_nrf52840_sense/node_a_bringup/src/m1_ble_service.c"

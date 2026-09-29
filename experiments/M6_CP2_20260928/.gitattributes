@@ -1,4 +1,0 @@
-# Preserve source, process logs, archives and machine evidence exactly.
-* -text
-*.log binary
-*-exit.txt binary

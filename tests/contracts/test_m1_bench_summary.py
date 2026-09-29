@@ -7,9 +7,6 @@ from pathlib import Path
 
 import pytest
 
-from experiments.m1_bench_summary import summarize_stream
-from experiments.m1_transport_audit import check_plan_parameters
-from experiments.m1_transport_experiment import build_argument_parser
 from kineimu_shoulder.io.m1_capture import encode_capture_record
 from kineimu_shoulder.io.m1_packet import (
     NodeId,
@@ -19,6 +16,9 @@ from kineimu_shoulder.io.m1_packet import (
     SamplePacket,
     encode_sample_packet,
 )
+from validation.acquisition_summary import summarize_stream
+from validation.transport_audit import check_plan_parameters
+from validation.transport_experiment import build_argument_parser
 
 
 def _packet(packet_sequence: int, first_sample_sequence: int) -> bytes:

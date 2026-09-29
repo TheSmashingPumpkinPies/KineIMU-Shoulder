@@ -51,7 +51,7 @@ Zephyr v4.4.0 与 SDK 1.0.1；board target `xiao_ble/nrf52840/sense`。
 [固件编译证据](../firmware/xiao_nrf52840_sense/README.md)保存源码、west revisions、
 SDK、配置、命令与 UF2 hashes；本轮发布包装不修改或重编固件。
 
-[M1 1,800 s 双 USB 实测](../experiments/M1_DUAL_USB_30MIN_RESULT_20260925.md)
+[M1 1,800 s 双 USB 实测](validation/acquisition.md)
 通过原 acquisition-stability gates。报告保留 A/B 序列计数、设备时间、主机到达
 时间、原 USB 字节、accepted packet、事件与独立完整性索引。
 主机到达时间不当作设备采样时间，累计设备状态和 pairwise clock 指标未测。
@@ -59,7 +59,7 @@ SDK、配置、命令与 UF2 hashes；本轮发布包装不修改或重编固件
 
 双 BLE 在当前 Windows/MediaTek controller 上仍受限，V9 正式分类为
 INCONCLUSIVE。USB 通过不迁移为 BLE 通过，也不构成 BLE 根因或修复结论。
-依据：[ADR-009](adr/ADR-009-dual-usb-m1-bench-fallback.md)、
+依据：[ADR-009](../HARDWARE_PROFILE.md)、
 [硬件边界](../HARDWARE_PROFILE.md)。安装/轴向概念见
 [mounting protocol](../MOUNTING_PROTOCOL.md)，其描述不等于已验证的人体对齐。
 
@@ -137,9 +137,9 @@ Observed 表示观测/capture/QC/time；Derived 表示处理推导；Assumed 表
 M5 CP3 分类为 33 C、589 W、297 stress、122 evidence、67 boundary、34 rejection；
 结果按原类别判定，不把预期拒绝或压力域处理成数值准确性通过。
 完整 coverage、数值/source/tool locks、原失败与复现入口见
-[M5 总报告](../experiments/M5_CP5_20260928/README.md)、
-[coverage](../experiments/M5_CP5_20260928/COVERAGE.md)和
-[reproduction](../experiments/M5_CP5_20260928/REPRODUCE.md)。
+[M5 总报告](validation/summary.md)、
+[coverage](validation/coverage.md)和
+[reproduction](validation/reproduce.md)。
 旧失败不改写；新 processing 的再验收不把旧产品重标为新版本。
 
 ## 7. Demo 与性能
@@ -161,7 +161,7 @@ warmup 排除，五次全纳入，无删 outlier 或替换失败 slot。
 | processing rate / node-samples/s | 246.625610 | 192.107811 | 272.337210 |
 
 上表逐项来自 [性能报告](../benchmarks/demo/REPORT.md)及
-[独立 displayed-value audit](../experiments/M6_CP3_20260928/report-values-audit.json)。
+独立 displayed-value audit (complete record retained in the local evidence archive)。
 原整数 ns、全部 attempts、源码 ZIP、机器快照、audit 和失败 batch 全保留。
 机器为 Windows 11 build 26200、Ryzen 7 7735H（8C/16T）、Performance scheme；
 Python 3.12.14、uv 0.12.5，三个数值线程环境变量设为 1。
@@ -192,32 +192,22 @@ wheel 提供库 API；sdist 提供重建 package 的代码及发布文档，两�
 完整 repository demo/fixtures/实验记录或 Git metadata。CP4 验证两类制品在
 独立 venv 的安装及真实 API 调用；CP5 另在 fresh clone/venv 验证 README
 完整 demo。详见 [packaging contract](release/PACKAGING.md)及
-[本轮候选制品/检查记录](../experiments/M6_CP4_FINAL_20260928/README.md)。
+本轮候选制品/检查记录 (complete record retained in the local evidence archive)。
 Linux 在本报告中 NOT RUN，Ubuntu CI 配置不是执行验收结果。
 
-## 9. 许可、引用与剩余发布门
+## 9. 许可与引用
 
-[ADR-012](adr/ADR-012-release-documentation-and-license-selection.md) 记录维护者
-2026-09-28 接受 MIT 原创代码/文档、CC0 原创合成 sample、版权持有人 Hongbo Liao
-及首发版本 `0.1.0`；后续明确同意版权年份 2026、引用作者 Hongbo Liao 和仓库 owner。
-[LICENSE](../LICENSE) 为完整 MIT 正文，版权声明 `Copyright (c) 2026 Hongbo Liao`。
-sample 已获公开授权，确切成员及当前条款见
-[数据许可附页](../datasets/samples/m6_synthetic/LICENSE.md)；原 provenance/map/旧声明
-保持原字节。第三方内容保留自己的文本和权属，原历史来源包不自动改为项目许可。
-[CITATION.cff](../CITATION.cff) 填写已确认的作者、title、版本、MIT 和公开仓库目标。
-实际发布日期/DOI 尚不存在而省略；机构/ORCID 按维护者要求不填。
-公开仓库目标已选定，当前 origin 仍为管理仓库，不声称已发布。
-依赖/算法引用见 [THIRD_PARTY_NOTICES](../THIRD_PARTY_NOTICES.md)。
-
-CP4 在许可/CFF/文档一致性和新制品构建安装均验证后才能 PASS；
-CP5 clean-clone 接受后才可收口 M6。当前 M0–M5 DONE、M6 CP0–CP3 PASS。
-本地构建和文档草稿不声称 push/tag/Release/PyPI 已发布。
-完整发布要求逐项映射见 [M6 checklist](M6_RELEASE_CHECKLIST.md)。
+原创代码/文档使用 MIT，Copyright (c) 2026 Hongbo Liao，版本 0.1.0。
+[LICENSE](../LICENSE) 与 [CITATION.cff](../CITATION.cff) 给出正式许可及引用信息。
+原 25 个合成样本的 [CC0 附页](../datasets/samples/m6_synthetic/LICENSE.md)
+与 [新增数据许可](PUBLIC_DATA_LICENSE.md) 各自限定成员；第三方资料保留原许可。
+原始数据、来源摘要和失败事实不因公开整理改变；本地开发过程记录单独归档。
+本轮 MD 整理与此前源码验收、构建及实际公开操作分开记录。
 
 ## M6.5 / CP5 独立收口
 
-[CP5总报告](../experiments/M6_CP5_20260928/REPORT.md)、
-[覆盖表](../experiments/M6_CP5_20260928/COVERAGE.md)及实际command/product/install records
+CP5总报告 (complete record retained in the local evidence archive)、
+覆盖表 (complete record retained in the local evidence archive)及实际command/product/install records
 绑定源码锁e55d68b537987f4a2cc2ac6d2ad58e15e077ed15。新clone/cache/venv，不连接设备、
 不设置PYTHONPATH或外部M1数据，README两次完整演示及27,160误差标量/run独立审核通过；
 同锁22规范产物及摘要一致。跨CP2锁21科学文件字节一致，摘要只替换source HEAD；
@@ -228,3 +218,49 @@ docs/39archive hashes、whitespace、独立build/archive及两个安装venv/8命
 和两项provenance控制共5PASS。分析源、门限、schema、依赖、固件、sample/raw和旧证据不变。
 M6本地验收DONE，首版候选仍0.1.0。Linux NOT RUN；公开仓库创建/push/tag/Release/PyPI
 及大证据迁移未执行。执行源码、构建制品和最终文档交付提交分别记录，不混用其HEAD。
+
+## Exercise API usage
+
+## Pipeline
+
+1. Call `segment_shoulder_repetitions` with the two associated M3 results,
+   `ExerciseConfig`, exact common-time window, session/protocol identity and
+   calibration/processing hashes. Retain every candidate and QC break.
+2. Call `compute_repetition_metrics`. Complete eligible candidates contribute
+   closed ROM, peak, elapsed durations, holds and interval-speed statistics.
+   Excluded candidates retain their reasons and unavailable values.
+3. Optionally call `prepare_thorax_common_grid` on the original **already
+   aligned** thorax stream. Supply the same grid/configuration, its clock map,
+   alignment, calibration hash, original QC and explicit heading/drift evidence.
+   This visible SLERP operation retains original indices, brackets and weights.
+   Call `compute_thorax_excursion`; missing or ineligible trace excludes the
+   proxy independently of relative movement metrics.
+4. Call `summarize_exercise` with a `SummaryContext`. Mean/max/n, sample ROM SD,
+   CV, range, active-only cadence, window duration and overlapping exclusion
+   counts remain explicit. Call `compare_summaries` with UTC starts and unique
+   session IDs. Differences are later minus earlier means, with both n and
+   matching processing/evidence keys. Incomparable pairs expose differing keys.
+
+The APIs live in `kineimu_shoulder.exercise`, `kineimu_shoulder.thorax` and
+`kineimu_shoulder.summary`. Rotation remains quaternion-based internally.
+The thorax Z-Y-X decomposition reports excursion relative to each repetition's
+movement-start orientation; it is a compensation proxy with no clinical score.
+Speed is principal 3-D endpoint rotation magnitude divided by elapsed time,
+not a signed elevation derivative. Do not infer heading from static gravity.
+
+## Deterministic example
+
+```powershell
+uv sync --all-extras --frozen
+uv run --frozen python examples/m4_dual_synthetic.py --output-dir experiments/M4_CP5_20260926/my_run
+```
+
+The destination must not exist; the example refuses to overwrite it. It
+constructs exact post-alignment dual-node segment quaternion streams from
+[A/B and T4 analytical truth](../tests/fixtures/M4_KNOWN_EXERCISES.md), runs
+M2.4 and M3 through M4, and emits five sessions: flexion, left/right abduction,
+wrong-plane exclusion, and later B-only flexion. The latter compares against
+the earlier A+B flexion session. No sensor calibration or AHRS is executed by
+this example. The M2 backend tests remain separate; no AHRS accuracy claim or
+new AHRS tolerance is implied. No noise is added and no input row is repaired.
+

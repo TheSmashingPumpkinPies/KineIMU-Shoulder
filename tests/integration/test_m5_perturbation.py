@@ -104,7 +104,7 @@ def test_independent_auditor_catches_error_arithmetic_tamper(tmp_path):
     folder = tmp_path / "case"
     module._worker((case("N-G-L", seed=1103), str(folder)))
     spec = importlib.util.spec_from_file_location(
-        "cp3_auditor", Path(module.ROOT) / "experiments/M5_CP3_20260926/audit.py"
+        "cp3_auditor", Path(module.ROOT) / "validation/auditors/synthetic.py"
     )
     auditor = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(auditor)
@@ -185,7 +185,7 @@ def test_independent_auditor_catches_inserted_rate_tamper(tmp_path):
     c = case("L-P-ONE", "B")
     module._worker((c, str(folder)))
     spec = importlib.util.spec_from_file_location("cp3_reconstruction_auditor",
-                                               Path(module.ROOT) / "experiments/M5_CP3_20260926/audit.py")
+                                               Path(module.ROOT) / "validation/auditors/synthetic.py")
     auditor = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(auditor)
     assert auditor.audit_case(folder, c) > 0

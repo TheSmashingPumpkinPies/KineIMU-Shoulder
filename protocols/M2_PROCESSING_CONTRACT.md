@@ -203,7 +203,7 @@ of the public M1 raw or normalized schema. Each artifact preserves original
 device times, sample sequences, `q_WN`, scalar-first/active frame convention,
 calibration parameters, source hash, gap limit and heading limitation. The
 report identifies QC scope, dependency lock and output hashes. See
-`experiments/M2_REPLAY_20260925/README.md` for exact commands and digests.
+`docs/validation/calibration.md` for exact commands and digests.
 
 M3's anatomical metric input requires valid `q_TH` from the separate M2.4
 relative-orientation operation, plus its two source streams, clock maps,

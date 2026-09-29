@@ -8,11 +8,6 @@ from types import SimpleNamespace
 
 import pytest
 
-from experiments.m1_usb_dual_bench import (
-    assess_pair,
-    resolve_ports,
-    verify_identity_pilot,
-)
 from kineimu_shoulder.io.m1_packet import (
     NodeId,
     PacketFlags,
@@ -20,6 +15,11 @@ from kineimu_shoulder.io.m1_packet import (
     SampleFlags,
     SamplePacket,
     encode_sample_packet,
+)
+from validation.dual_usb_bench import (
+    assess_pair,
+    resolve_ports,
+    verify_identity_pilot,
 )
 
 

@@ -207,9 +207,10 @@ def export_recorded(output: Path, *, selected: ReplayInput = NODE_B) -> int:
 
     files = sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "kineimu_shoulder").rglob("*.py"))
     files += ["uv.lock", "pyproject.toml", "protocols/M5_VALIDATION_CONTRACT.md", "protocols/M5_PROCESSING_V1_1.md",
-              "tests/fixtures/M5_KNOWN_SENSOR_MOTIONS.md", "experiments/M5_CP1_20260926/case-manifest.json",
-              "tests/integration/test_m5_recorded_node.py", "M5_4_REPLAY_PLAN.md", "docs/M5_RECORDED_NODE.md",
-              "experiments/M5_CP4_STAGE_C_20260927/audit.py",
+              "tests/fixtures/M5_KNOWN_SENSOR_MOTIONS.md", "datasets/samples/m6_synthetic/case-manifest.json",
+              "tests/integration/test_m5_recorded_node.py", "protocols/M5_VALIDATION_CONTRACT.md",
+              "docs/validation/calibration.md",
+              "validation/auditors/recorded_node.py",
               "firmware/xiao_nrf52840_sense/evidence/node_b_20260913_compatibility.md"]
     manifest = dict(
         schema_version="m5-report/1.0", checkpoint="CP4", stage="C-recorded-node-B", formal=False,

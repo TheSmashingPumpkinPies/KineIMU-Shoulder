@@ -29,7 +29,7 @@ from kineimu_shoulder.validation.perturbation import _session
 from kineimu_shoulder.validation.replay import ReplayInput, _protect
 from kineimu_shoulder.validation.source import DualSource, NodeSource, Perturbation
 
-CP1_ROOT = ROOT / "experiments/M5_CP1_20260926/run1"
+CP1_ROOT = ROOT / "datasets/samples/m6_synthetic"
 # Committed CP1 digest map, anchored independently of caller-selected files.
 CP1_MAP_SHA256 = "2aa180e32003f91e57accf1d53c5b4b914e0c9e9c0ab4cdb22db02a3ab0964f9"
 TRAJECTORIES = ("F90", "AL90", "AR90", "T-MIX")
@@ -160,7 +160,7 @@ def export_stored(output: Path, *, input_root: Path = CP1_ROOT) -> int:
     files = sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "kineimu_shoulder").rglob("*.py"))
     files += ["uv.lock", "protocols/M5_VALIDATION_CONTRACT.md", "protocols/M5_PROCESSING_V1_1.md",
               "tests/fixtures/M5_KNOWN_SENSOR_MOTIONS.md", "tests/integration/test_m5_stored_demo.py",
-              "experiments/M5_CP3_20260926/audit.py", "experiments/M5_CP4_STAGE_B_20260927/audit.py",
+              "validation/auditors/synthetic.py", "validation/auditors/stored.py",
               "docs/M5_STORED_DEMO.md"]
     write("manifest.json", dict(
         schema_version="m5-report/1.0", checkpoint="CP4", stage="B-stored-Q", formal=False,

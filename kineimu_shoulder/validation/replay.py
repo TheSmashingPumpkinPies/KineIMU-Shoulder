@@ -82,7 +82,9 @@ def _protect(output: Path, inputs: tuple[ReplayInput, ...]) -> None:
     protected += [parent.parent for row in inputs for parent in row.path.resolve().parents
                   if parent.name.lower() == "raw"]
     # Existing evidence trees remain immutable, including nested formal roots.
-    protected += [p for p in (ROOT / "experiments").iterdir() if p.is_dir()]
+    protected += [ROOT / "validation", ROOT / "docs", ROOT / "benchmarks"]
+    if (ROOT / "experiments").is_dir():
+        protected += [p for p in (ROOT / "experiments").iterdir() if p.is_dir()]
     if (any(part.lower() == "raw" for part in output.parts)
         or output == ROOT or any(output.is_relative_to(p) or p.is_relative_to(output) for p in protected)):
         raise ValueError("output must be outside raw, input/source trees and existing evidence roots")
@@ -164,8 +166,8 @@ def export_entry(output: Path, inputs: tuple[ReplayInput, ...]) -> int:
 
     sources = sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "kineimu_shoulder").rglob("*.py"))
     sources += ["uv.lock", "protocols/M5_VALIDATION_CONTRACT.md", "protocols/M5_PROCESSING_V1_1.md",
-                "tests/fixtures/M5_KNOWN_SENSOR_MOTIONS.md", "experiments/M5_CP1_20260926/case-manifest.json",
-                "tests/integration/test_m5_replay_entry.py", "M5_4_REPLAY_PLAN.md"]
+                "tests/fixtures/M5_KNOWN_SENSOR_MOTIONS.md", "datasets/samples/m6_synthetic/case-manifest.json",
+                "tests/integration/test_m5_replay_entry.py", "protocols/M5_VALIDATION_CONTRACT.md"]
     manifest = dict(
         schema_version="m5-report/1.0", checkpoint="CP4", stage="A-entry-only", formal=False,
         git_commit=git("rev-parse", "HEAD"),

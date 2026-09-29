@@ -58,7 +58,7 @@ def export(output: Path) -> None:
         "kineimu_shoulder/io/m1_packet.py",
         "kineimu_shoulder/io/m1_capture.py",
         "kineimu_shoulder/io/m2_replay.py",
-        "experiments/M5_CP1_20260926/case-manifest.json",
+        "datasets/samples/m6_synthetic/case-manifest.json",
     ]
     source_files += [
         str(p.relative_to(ROOT)).replace("\\", "/") for p in sorted((ROOT / "kineimu_shoulder/validation").glob("*.py"))

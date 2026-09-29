@@ -25,7 +25,7 @@ NAMES = (
 
 def test_sample_matches_independently_frozen_cp0_inventory():
     # Expected identity/size comes from committed CP0 inventory, not this copy.
-    inventory = json.loads((ROOT / "experiments/M6_CP0_20260928/inventory.json").read_bytes())
+    inventory = json.loads((ROOT / "tests/fixtures/demo/input-inventory.json").read_bytes())
     expected = {row["path"]: row["sha256"] for row in inventory["inputs"]}
     before = {name: sha256((SAMPLE / name).read_bytes()).hexdigest() for name in NAMES}
     assert input_audit(SAMPLE) == expected == before

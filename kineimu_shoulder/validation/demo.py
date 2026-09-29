@@ -26,7 +26,7 @@ SAMPLE = ROOT / "datasets/samples/m6_synthetic"
 TRAJECTORIES = ("F90", "AL90", "AR90", "T-MIX")
 CONTRACT = "m6-demo-contract/1.0"
 LIMITATIONS = [
-    "Synthetic stored sensor observations; anatomical_eligible=false; INTERNAL ONLY / redistribution pending.",
+    "Synthetic stored sensor observations; anatomical_eligible=false; current 25-input permission: CC0-1.0.",
     "Known calibration, initialization, alignment, heading and clock are Assumed construction conditions.",
     "Static gravity does not determine full heading; independent AHRS worlds cannot be composed automatically.",
     "Humerothoracic metrics and thorax excursion proxy; no clinical, glenohumeral or scapular validation.",

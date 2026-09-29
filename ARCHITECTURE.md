@@ -12,9 +12,7 @@ Live dual IMU | Recorded Replay | Synthetic Ground Truth
 ```
 
 Hardware is an input backend, not a dependency of the analysis stack. The current
-BLE/USB recorders remain transport adapters. M2 must add or confirm the smallest
-equivalent interfaces needed for deterministic replay and synthetic sources; do not
-rename working code merely to match a `DataSource` diagram.
+BLE/USB recorders remain transport adapters. replay and synthetic inputs use the same explicit normalized-data boundary.
 
 Alignment supplies explicit sensor-to-segment transforms. The implementation must declare
 whether calibrated signals are rotated before AHRS or sensor-frame orientation is rotated afterward.
@@ -22,23 +20,17 @@ Never apply alignment twice.
 
 ## Code boundaries
 
-Retain kineimu_shoulder/io/ and validation/; add calibration/, orientation/, frames/
-or shoulder/ only when the corresponding milestone implements them;
-retain firmware/sticks3/ as historical M0 evidence and create the active upstream-Zephyr
-XIAO firmware application only for the concrete M1 implementation; retain datasets,
-protocols, integrations and benchmarks.
-Create sync/, alignment/ or source abstractions only for a concrete implementation requirement.
-No new empty application modules are necessary for this pivot. Validation stays separate from production.
-
-Natural functions: estimate_orientation, calibrate_imu, synchronize_streams,
-compute_humerothoracic_rom, segment_shoulder_repetitions, compute_thorax_compensation.
-These are design examples, not existing APIs.
-No UniversalMotionAnalyzer, GenericJoint, GenericBodyModel, BodySegmentGraph or ArbitrarySensorNetwork.
+`io/` holds transport, packet parsing, raw-count conversion and replay. Calibration,
+orientation, frames, reconstruction, relative orientation, shoulder, exercise,
+thorax and summary modules implement the analysis pipeline. `validation/` holds
+synthetic sources, independent oracles and replay/Demo acceptance orchestration;
+validation remains separate from production. `firmware/xiao_nrf52840_sense/` is the
+reference acquisition application. Backend-specific conversion stays in adapters.
 
 ## Frames and timing
 
-SI and normalized quaternions internally. M2 must freeze component order, handedness,
-active/passive and sensor→segment→world conventions with tests.
+SI and normalized quaternions internally. Component order, handedness,
+active/passive and sensor→segment→world conventions follow the tested M2 contract.
 For active R_WT mapping thorax vectors to a common world and R_WH mapping humerus to that same world,
 R_TH = transpose(R_WT) R_WH maps humerus to thorax. Quaternion composition follows the declared convention.
 Independent AHRS startup frames are not automatically the same world.
@@ -55,7 +47,7 @@ Host arrival times are transport observations, not sample times.
 
 Raw immutable; QC failures explicit; coordinate/unit conversions traceable.
 Resampling creates processed data with source hashes, grid and gap policy; never hide it in adapters.
-Enforce [BACKEND_CONTRACTS.md](BACKEND_CONTRACTS.md).
+Enforce [BACKEND_CONTRACTS.md](DEPENDENCIES.md).
 Prefer mature algorithms; new algorithms require justification and known-input tests.
 Formal results carry provenance/evidence labels. Embedded results require Python-reference comparison.
 Synthetic generators and replay readers must identify their source type and preserve

@@ -140,13 +140,14 @@ def export_dual(output: Path, *, root: Path, inputs: tuple[ReplayInput, ...] | N
         raise ValueError("inputs must be bound to manifest members")
     files = sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "kineimu_shoulder").rglob("*.py"))
     files += ["uv.lock", "pyproject.toml", "protocols/M5_VALIDATION_CONTRACT.md",
-              "protocols/M5_PROCESSING_V1_1.md", "M5_4_REPLAY_PLAN.md", "docs/M5_RECORDED_DUAL.md",
+              "protocols/M5_PROCESSING_V1_1.md", "protocols/M5_VALIDATION_CONTRACT.md",
+              "docs/validation/acquisition.md",
               "tests/integration/test_m5_recorded_dual.py", "tests/integration/test_m2_replay_m1_bench.py",
-              "experiments/M5_CP4_STAGE_D_20260927/audit.py"]
+              "validation/auditors/recorded_dual.py"]
     if segmented:
         files += ["protocols/M5_RECORDED_SEGMENTS_V1.md", "protocols/M2_PROCESSING_CONTRACT.md",
                   "docs/adr/ADR-011-recorded-quality-segments.md",
-                  "tests/integration/test_m5_recorded_segments.py", "experiments/M5_CP4_STAGE_D2_20260927/audit.py"]
+                  "tests/integration/test_m5_recorded_segments.py", "validation/auditors/recorded_segments.py"]
     manifest = dict(schema_version="m5-report/1.0", checkpoint="CP4", stage="D-recorded-dual-USB", formal=False,
         git_commit=subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
         tracked_dirty=bool(subprocess.check_output(

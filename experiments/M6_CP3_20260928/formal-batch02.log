@@ -1,9 +1,0 @@
-.\.venv\Lib\site-packages\numpy\__config__.py:155: UserWarning: Install `pyyaml` for better output
-  warnings.warn("Install `pyyaml` for better output", stacklevel=1)
-{"slot": "warmup", "disposition": "PASS", "wall_s": 83.0417592}
-{"slot": "timed01", "disposition": "FAIL", "wall_s": 83.3166633}
-{"slot": "timed02", "disposition": "FAIL", "wall_s": 62.0425444}
-{"slot": "timed03", "disposition": "FAIL", "wall_s": 61.6656865}
-{"slot": "timed04", "disposition": "FAIL", "wall_s": 62.001295}
-{"slot": "timed05", "disposition": "FAIL", "wall_s": 75.6454961}
-{"cp3_passed": false, "inputs_and_source_unchanged": true, "node_samples_per_s": null, "protocol": "m6-demo-benchmark/1.0", "source_head": "addcdd7fb0ce2e187ebf32daa6af6051241113cd", "timed_count": 5, "wall_s": null}

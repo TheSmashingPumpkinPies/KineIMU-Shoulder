@@ -10,7 +10,7 @@ from validation.m1_single_node_smoke import load_smoke_config, run_smoke
 pytestmark = pytest.mark.integration
 
 ROOT = Path(__file__).resolve().parents[2]
-CONFIG_PATH = ROOT / "experiments" / "m1_single_node_smoke_20260915" / "config.json"
+CONFIG_PATH = ROOT / "tests/fixtures/acquisition/node-config.json"
 
 
 def test_retained_node_b_record_reaches_calibration_and_ahrs_interfaces() -> None:

@@ -10,7 +10,7 @@ from validation.m1_clock_mapping import analyze_clock_mapping, load_event_plan
 pytestmark = pytest.mark.integration
 
 ROOT = Path(__file__).resolve().parents[2]
-PLAN_PATH = ROOT / "experiments" / "m1_clock_mapping_synthetic_20260915" / "event_plan.json"
+PLAN_PATH = ROOT / "tests/fixtures/acquisition/clock-events.json"
 
 
 def test_checked_in_synthetic_known_offset_drift_meets_held_out_gate() -> None:
@@ -33,7 +33,7 @@ def test_checked_in_synthetic_known_offset_drift_meets_held_out_gate() -> None:
 def test_checked_in_synthetic_report_records_independent_evidence_fields() -> None:
     import json
 
-    report_path = ROOT / "experiments" / "m1_clock_mapping_synthetic_20260915" / "result.json"
+    report_path = ROOT / "tests/fixtures/acquisition/clock-result.json"
     result = cast(dict[str, Any], json.loads(report_path.read_text(encoding="utf-8")))
 
     assert result["schema_version"] == "kineimu.m1.clock-mapping-validation/0.1"

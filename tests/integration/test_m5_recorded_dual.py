@@ -186,7 +186,7 @@ def test_node_or_gate_failure_preserves_partial_and_never_passes(tmp_path, monke
 
 
 def auditor():
-    path = Path(__file__).resolve().parents[2] / "experiments/M5_CP4_STAGE_D_20260927/audit.py"
+    path = Path(__file__).resolve().parents[2] / "validation/auditors/recorded_dual.py"
     spec = importlib.util.spec_from_file_location("cp4_stage_d_audit", path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)

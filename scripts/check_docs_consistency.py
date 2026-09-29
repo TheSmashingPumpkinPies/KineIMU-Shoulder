@@ -118,7 +118,7 @@ def main() -> int:
             "nRF Connect SDK is not an active dependency",
         ],
         "MOUNTING_PROTOCOL.md": ["jugular notch", "mid-humerus", "future don/doff"],
-        "VALIDATION_PLAN.md": [
+        "VALIDATION.md": [
             "Deterministic synthetic validation",
             "Recorded replay validation",
             "motion-capture comparison",
@@ -134,11 +134,11 @@ def main() -> int:
         for term in terms:
             if term.casefold() not in text.casefold():
                 errors.append(f"{name}: missing {term}")
-    spec = (ROOT / "01_PROJECT_SPEC.md").read_text(encoding="utf-8")
+    spec = (ROOT / "docs/METRICS.md").read_text(encoding="utf-8")
     ids = re.findall(r"^\| (\d+) \|", spec, re.MULTILINE)
     if ids != [str(index) for index in range(1, 13)]:
         errors.append("metric table must contain eight core plus four extension IDs")
-    for name in ["README.md", "ARCHITECTURE.md", "PROJECT_SCOPE.md", "02_DEVELOPMENT_ROADMAP.md"]:
+    for name in ["README.md", "ARCHITECTURE.md", "PROJECT_SCOPE.md"]:
         text = (ROOT / name).read_text(encoding="utf-8")
         if re.search(r"lower.back|kineimu/|kineimu\.(?:gait|posture)|M[7-9]\s*[—-]", text, re.I):
             errors.append(f"{name}: obsolete active architecture/roadmap")

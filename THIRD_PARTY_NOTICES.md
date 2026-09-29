@@ -57,11 +57,11 @@ distributions for embedded notices. The lockfile is the dependency-version
 authority, not this summary alone.
 
 The validation-only CFF 1.2.0 schema retained in the
-[CP4 evidence](experiments/M6_CP4_20260928/README.md) is an unmodified copy from
+CP4 evidence (complete record retained in the local evidence archive) is an unmodified copy from
 the Citation File Format project under CC-BY-4.0. Its official
 [source](https://github.com/citation-file-format/citation-file-format/tree/1.2.0),
-[original license](experiments/M6_CP4_20260928/cff-upstream-LICENSE.txt) and
-[original author/citation notice](experiments/M6_CP4_20260928/cff-upstream-CITATION-cff.txt)
+original license (complete record retained in the local evidence archive) and
+original author/citation notice (complete record retained in the local evidence archive)
 are preserved. The schema is not included in the Python wheel/sdist.
 PyYAML/jsonschema were used from existing external validation tooling, without
 adding either to the project dependency lock.

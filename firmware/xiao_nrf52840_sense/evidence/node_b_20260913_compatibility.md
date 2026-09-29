@@ -176,14 +176,14 @@ clockwise viewed from above (flat)   -> gyro -Z
 ```
 
 The detailed raw excerpts are in
-[`node_b_20260913_axis_mapping.txt`](node_b_20260913_axis_mapping.txt).
+`node_b_20260913_axis_mapping.txt` (complete record retained in the local evidence archive).
 The selected immutable capture triplets are:
 
 | Capture | Valid packets / samples | Parser/QC observation | `.usb.bin` SHA-256 | `.kimu` SHA-256 | `.events.ndjson` SHA-256 |
 |---|---:|---|---|---|---|
-| [`axis_right_controlled`](node_b_20260913_axis_right_controlled.usb.bin) | 540 / 2,160 | 95 noise bytes, one CRC issue and one timed-stop tail; valid-record QC has 2,538 missing packets / 10,152 samples | `59cd08d4161c7a1f1e55c1d45de6e400ae0759ee3693a34dfa5b6cd0ac683704` | `dd2f0cf0c44052c76541957711e8d8d0c809e62eee568d7451c9e7e257e00c3f` | `bcc8188dac91e7be017ab6dae1558947fb3f71f179539e5053495f8323e4d32f` |
-| [`axis_usb_controlled_retry`](node_b_20260913_axis_usb_controlled_retry.usb.bin) | 540 / 2,160 | 95 noise bytes, one CRC issue and one timed-stop tail; valid-record QC has 1,327 missing packets / 5,308 samples | `2474fc9b4f6ebae2a2b08077e3f9cbf354c9fbe1615359db6d52ec0bf5d943c3` | `bd8a1b1d7c15f24b02fec61c3016b54295bf271aba94064d84a9984e1e0e4c1f` | `e1bc6bd37e6a4e461736e6b0af4c7e410a3322596cc9d527ced7892ee73f674b` |
-| [`axis_yaw_controlled`](node_b_20260913_axis_yaw_controlled.usb.bin) | 531 / 2,124 | zero valid-record sequence/QC errors; one expected timed-stop tail | `c899edf53cdd49111fdbad6111fc669fd0a60f689afaf2c9abe5c8afcf7e49ed` | `d82e455ea7ccf35f42b6237ff696073d52defbd2555111fad062ae005187fb9b` | `00456d01027166de84f9427923f11cc065357a83e44448385170d525b1df0020` |
+| `axis_right_controlled` (complete record retained in the local evidence archive) | 540 / 2,160 | 95 noise bytes, one CRC issue and one timed-stop tail; valid-record QC has 2,538 missing packets / 10,152 samples | `59cd08d4161c7a1f1e55c1d45de6e400ae0759ee3693a34dfa5b6cd0ac683704` | `dd2f0cf0c44052c76541957711e8d8d0c809e62eee568d7451c9e7e257e00c3f` | `bcc8188dac91e7be017ab6dae1558947fb3f71f179539e5053495f8323e4d32f` |
+| `axis_usb_controlled_retry` (complete record retained in the local evidence archive) | 540 / 2,160 | 95 noise bytes, one CRC issue and one timed-stop tail; valid-record QC has 1,327 missing packets / 5,308 samples | `2474fc9b4f6ebae2a2b08077e3f9cbf354c9fbe1615359db6d52ec0bf5d943c3` | `bd8a1b1d7c15f24b02fec61c3016b54295bf271aba94064d84a9984e1e0e4c1f` | `e1bc6bd37e6a4e461736e6b0af4c7e410a3322596cc9d527ced7892ee73f674b` |
+| `axis_yaw_controlled` (complete record retained in the local evidence archive) | 531 / 2,124 | zero valid-record sequence/QC errors; one expected timed-stop tail | `c899edf53cdd49111fdbad6111fc669fd0a60f689afaf2c9abe5c8afcf7e49ed` | `d82e455ea7ccf35f42b6237ff696073d52defbd2555111fad062ae005187fb9b` | `00456d01027166de84f9427923f11cc065357a83e44448385170d525b1df0020` |
 
 The right and USB retry mappings use only the valid decoded records in the
 selected motion windows; the retained CRC, tail and sequence-gap diagnostics

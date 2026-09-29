@@ -494,7 +494,7 @@ def export(output: Path, *, formal: bool = True) -> bool:
     source_files = [str(p.relative_to(ROOT)).replace("\\", "/") for p in sorted(
         (ROOT / "kineimu_shoulder").rglob("*.py"))]
     source_files += ["uv.lock", "protocols/M5_VALIDATION_CONTRACT.md", "tests/fixtures/M5_KNOWN_SENSOR_MOTIONS.md",
-                     "experiments/M5_CP1_20260926/case-manifest.json", "examples/m5_baseline.py"]
+                     "datasets/samples/m6_synthetic/case-manifest.json", "examples/m5_baseline.py"]
     previous_attempts_path = "experiments/M5_CP2_20260926/partial-attempts.json"
     if (ROOT / previous_attempts_path).exists():
         source_files.append(previous_attempts_path)
