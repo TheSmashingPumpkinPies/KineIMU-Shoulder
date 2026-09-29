@@ -98,8 +98,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5334,
-      "export_sha256": "4ea50a60f508b9e1aeaa51a34e729573d440216eae678565efb01f288d016557",
+      "bytes": 7166,
+      "export_sha256": "359aaff657569a1a6487f75fbcefa1db81fdbbbe58aba6ccd249a67bd1302146",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -716,6 +716,27 @@
       "path": "docs/adr/ADR-012-release-documentation-and-license-selection.md",
       "bytes": 999,
       "export_sha256": "85033139ab8484b8d9c1e8692ee83cefdbcbd820cc3c620a9b2e29bdd2844673",
+      "immutable": false,
+      "license": "MIT (original code/documentation)"
+    },
+    {
+      "path": "docs/assets/README.md",
+      "bytes": 2076,
+      "export_sha256": "b041fba4a808a8a40242295d896dfb944ce7c629a183bbcd83dbea1a7767442e",
+      "immutable": false,
+      "license": "MIT (original code/documentation)"
+    },
+    {
+      "path": "docs/assets/synthetic-motion.png",
+      "bytes": 205556,
+      "export_sha256": "2af547d460bdff551b7f9cacc3dce5e54faf19a3736b2d913feb514690be8510",
+      "immutable": false,
+      "license": "MIT (original code/documentation)"
+    },
+    {
+      "path": "docs/assets/synthetic-motion.provenance.json",
+      "bytes": 3873,
+      "export_sha256": "338203eefaf2259805019bdd54c86cdad9860e338621ffbf4e59a15be8c57cd8",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
@@ -1962,6 +1983,13 @@
       "path": "scripts/check_docs_consistency.py",
       "bytes": 10333,
       "export_sha256": "9890b2bfdec2d76ec6989c387d2441aaae983c1da5f71195d4d7e59b8fdf2c86",
+      "immutable": false,
+      "license": "MIT (original code/documentation)"
+    },
+    {
+      "path": "scripts/plot_readme_demo.py",
+      "bytes": 4475,
+      "export_sha256": "66ba07cfbedc86e5ee95a12856a03cb909678b6f47d0a49f1cac44ffc551c9b8",
       "immutable": false,
       "license": "MIT (original code/documentation)"
     },
